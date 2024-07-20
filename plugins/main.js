@@ -231,12 +231,12 @@
         }
       });
       const _0x542b06 = {
-        pattern: "menu",
-        react: "✅",
-        alias: ["panel", "list", "commands", "cmds", "cmd"],
+        pattern: "menu2",
+        react: "2️⃣ ", 
+        alias: ["bmenu", "newmenu", "help"],
         desc: "Get bot's command list.",
         category: "main",
-        use: "${xprefix}menu",
+        use: `${xprefix}menu`,
         filename: __filename
       };
       cmd(_0x542b06, async (_0x3a3ae0, _0x5d149b, _0x3b8a7f, {
@@ -279,7 +279,7 @@
               }
             }
           }
-          const _0x32d4b0 = "Hey " + _0x457280 + "\n*I'm X-BYTE*\n  \n> *Memory:* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n> *Runtime:* " + runtime(process.uptime());
+          const _0x32d4b0 = "〖 X-BYTE 〗*\n> Prefix -"+"["+ xprefix +"]" +  "\n> *Memory:* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n> *Runtime:* " + runtime(process.uptime());
           const _0x463791 = [];
           const _0x181fa0 = new Map();
           for (let _0x37434c = 0; _0x37434c < 1; _0x37434c++) {
@@ -296,16 +296,16 @@
           const _0x10cdf6 = [];
           for (const _0x7dca68 of _0x463791) {
             const _0x5a637b = {
-              header: '',
+              header: 'Select menu type',
               title: "MAIN MENU",
               description: "Main commands",
               id: ".mainmenu"
             };
             const _0x41d75d = {
-              header: "Select menu type",
+              header: '',
               title: "DOWNLOAD MENU",
               description: "Download commands",
-              id: `${xprefix}downmenu`
+              id: `.downmenu`
             };
             const _0x48e60c = {
               header: '',
@@ -384,9 +384,9 @@
         }
       });
       const _0x57e463 = {
-        pattern: "menu2",
-        react: '2️⃣',
-        alias: ["help", "oyemenu2"],
+        pattern: "menu",
+        react: '✅',
+        alias: ["list", "oyemenu", "commands"],
         desc: "Get bot's command list.",
         category: "main",
         use: ".menu",
@@ -677,7 +677,7 @@
             }
           }
           ;
-          let _0x8e9c18 = "*Hello* " + _0x2f5e9b + "\n\n*╭─     ᴄᴏᴍᴍᴀɴᴅꜱ ᴘᴀɴᴇʟ*\n*│𝘙𝘶𝘯 𝘛𝘪𝘮𝘦 -* " + runtime(process.uptime()) + " \n*│ 𝘙𝘢𝘮 𝘜𝘴𝘦 -* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n*╰──────────●●►*\n*👸 X-BYTE 𝘊𝘰𝘮𝘮𝘢𝘮𝘥 𝘗𝘢𝘯𝘦𝘭*\n> *╭──────────●●►*\n> *│ DOWNLOAD COMMANDS*\n> *│   ───────*\n\n" + _0x1f9061 + "*╰───────────●●►*\n> *╭──────────●●►*\n> *│ SEARCH COMMANDS*\n> *│   ───────*\n\n" + _0x3ea1e0 + "*╰───────────●●►*\n\n> *╭──────────●●►*\n> *│ CONVERT COMMANDS*\n> *│   ───────*\n\n" + _0x2ace9b + "*╰───────────●●►*\n\n> *╭──────────●●►*\n> *│ LOGO COMMANDS*\n> *│   ───────*\n\n" + _0x4046ab + "*╰───────────●●►*\n\n> *╭──────────●●►*\n> *│ MAIN COMMANDS*\n> *│   ───────*\n\n" + _0x9abccf + "*╰───────────●●►*\n\n> *╭──────────●●►*\n> *│ GROUP COMMANDS*\n> *│   ───────*\n\n" + _0x8d8eb5 + "*╰───────────●●►*\n\n> *╭──────────●●►*\n> *│ BUG COMMANDS*\n> *│   ───────*\n\n" + _0x253600 + "*╰───────────●●►*\n\n> *╭──────────●●►*\n> *│ OTHER COMMANDS*\n> *│   ───────*\n\n" + _0x5829ec + "*╰───────────●●►*\t\n *POWERED BY TALKDROVE:)*";
+          let _0x8e9c18 = "*╭─    〖 X-BYTE 〗*\n│o: Prefix -"+"["+ xprefix +"]"+ "\n*│o:Run Time -* " + runtime(process.uptime()) + " \n*│o:Ram usage -* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n\n\n*╰──────────●●►*\n*X-BYTE COMMANDS*\n> *╭──────────●●►*\n> *│ DOWNLOAD COMMANDS*\n> *│   ───────*\n\n" + _0x1f9061 + "*╰───────────●●►*\n> *╭──────────●●►*\n> *│ SEARCH COMMANDS*\n> *│   ───────*\n\n" + _0x3ea1e0 + "*╰───────────●●►*\n\n> *╭──────────●●►*\n> *│ CONVERT COMMANDS*\n> *│   ───────*\n\n" + _0x2ace9b + "*╰───────────●●►*\n\n> *╭──────────●●►*\n> *│ LOGO COMMANDS*\n> *│   ───────*\n\n" + _0x4046ab + "*╰───────────●●►*\n\n> *╭──────────●●►*\n> *│ MAIN COMMANDS*\n> *│   ───────*\n\n" + _0x9abccf + "*╰───────────●●►*\n\n> *╭──────────●●►*\n> *│ GROUP COMMANDS*\n> *│   ───────*\n\n" + _0x8d8eb5 + "*╰───────────●●►*\n\n> *╭──────────●●►*\n> *│ BUG COMMANDS*\n> *│   ───────*\n\n" + _0x253600 + "*╰───────────●●►*\n\n> *╭──────────●●►*\n> *│ OTHER COMMANDS*\n> *│   ───────*\n\n" + _0x5829ec + "*╰───────────●●►*\t\n *POWERED BY TALKDROVE:)*";
           const _0x1150b3 = {
             url: config.LOGO
           };
