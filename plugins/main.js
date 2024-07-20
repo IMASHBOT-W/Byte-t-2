@@ -609,7 +609,7 @@
           for (let _0x4fa158 = 0; _0x4fa158 < commands.length; _0x4fa158++) {
             if (commands[_0x4fa158].category === "download") {
               if (!commands[_0x4fa158].dontAddCommandList) {
-                _0x1f9061 += "*${xprefix}* " + commands[_0x4fa158].pattern + "\n";
+                _0x1f9061 += `${xprefix}` + commands[_0x4fa158].pattern + "\n";
               }
             }
           }
@@ -618,7 +618,7 @@
           for (let _0xc0ad7 = 0; _0xc0ad7 < commands.length; _0xc0ad7++) {
             if (commands[_0xc0ad7].category === "search") {
               if (!commands[_0xc0ad7].dontAddCommandList) {
-                _0x3ea1e0 += "*${xprefix}* " + commands[_0xc0ad7].pattern + "\n";
+                _0x3ea1e0 += `${xprefix}` + commands[_0xc0ad7].pattern + "\n";
               }
             }
           }
@@ -627,7 +627,7 @@
           for (let _0x617090 = 0; _0x617090 < commands.length; _0x617090++) {
             if (commands[_0x617090].category === "convert") {
               if (!commands[_0x617090].dontAddCommandList) {
-                _0x2ace9b += "*${xprefix}* " + commands[_0x617090].pattern + "\n";
+                _0x2ace9b += `${xprefix}` + commands[_0x617090].pattern + "\n";
               }
             }
           }
@@ -636,7 +636,7 @@
           for (let _0x2a82bd = 0; _0x2a82bd < commands.length; _0x2a82bd++) {
             if (commands[_0x2a82bd].category === "logo") {
               if (!commands[_0x2a82bd].dontAddCommandList) {
-                _0x4046ab += "*${xprefix}* " + commands[_0x2a82bd].pattern + "\n";
+                _0x4046ab += `${xprefix}` + commands[_0x2a82bd].pattern + "\n";
               }
             }
           }
@@ -645,7 +645,7 @@
           for (let _0x5ebe59 = 0; _0x5ebe59 < commands.length; _0x5ebe59++) {
             if (commands[_0x5ebe59].category === "main") {
               if (!commands[_0x5ebe59].dontAddCommandList) {
-                _0x9abccf += "*${xprefix}* " + commands[_0x5ebe59].pattern + "\n";
+                _0x9abccf += `${xprefix}` + commands[_0x5ebe59].pattern + "\n";
               }
             }
           }
@@ -654,7 +654,7 @@
           for (let _0x224fb4 = 0; _0x224fb4 < commands.length; _0x224fb4++) {
             if (commands[_0x224fb4].category === "group") {
               if (!commands[_0x224fb4].dontAddCommandList) {
-                _0x8d8eb5 += "*${xprefix}* " + commands[_0x224fb4].pattern + "\n";
+                _0x8d8eb5 += `${xprefix}` + commands[_0x224fb4].pattern + "\n";
               }
             }
           }
@@ -663,7 +663,7 @@
           for (let _0x40ac3a = 0; _0x40ac3a < commands.length; _0x40ac3a++) {
             if (commands[_0x40ac3a].category === "bug") {
               if (!commands[_0x40ac3a].dontAddCommandList) {
-                _0x253600 += "*${xprefix}* " + commands[_0x40ac3a].pattern + "\n";
+                _0x253600 += `${xprefix}` + commands[_0x40ac3a].pattern + "\n";
               }
             }
           }
@@ -672,7 +672,7 @@
           for (let _0x180506 = 0; _0x180506 < commands.length; _0x180506++) {
             if (commands[_0x180506].category === "other") {
               if (!commands[_0x180506].dontAddCommandList) {
-                _0x5829ec += "*${xprefix}* " + commands[_0x180506].pattern + "\n";
+                _0x5829ec += `${xprefix}` + commands[_0x180506].pattern + "\n";
               }
             }
           }
