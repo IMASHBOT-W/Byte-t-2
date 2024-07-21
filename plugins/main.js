@@ -98,7 +98,7 @@
               }
             }
           }
-          const _0x2eae7c = "👋 Hello " + _0x35e518 + " I'm alive" + "\n*Im X-Byte*\n *Version:* " + require("../package.json").version + "\n *Memory:* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n *Runtime:* " + runtime(process.uptime()) + "\n *Platform:* " + hostname;
+          const _0x2eae7c = "👋 Hello " + _0x35e518 + " I'm alive" + "\n*Im X-Byte*\n> *Version:* " + require("../package.json").version + "\n> *Memory:* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n> *Runtime:* " + runtime(process.uptime()) + "\n> *Platform:* " + hostname;
           const _0x15cb75 = {
             display_text: config.BTN,
             url: config.BTNURL,
@@ -175,7 +175,7 @@
               }
             }
           }
-          const _0x2cfda9 = "👋 Hello " + _0x4701d9 + "\n*X-Byte*\n  \n *Version:* " + require("../package.json").version + "\n *Memory:* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n *Runtime:* " + runtime(process.uptime()) + "\n *Platform:* " + hostname;
+          const _0x2cfda9 = "👋 Hello " + _0x4701d9 + "\n*X-Byte*\n  \n> *Version:* " + require("../package.json").version + "\n> *Memory:* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n> *Runtime:* " + runtime(process.uptime()) + "\n> *Platform:* " + hostname;
           let _0x5a5ac0 = [{
             'name': "cta_url",
             'buttonParamsJson': JSON.stringify({
@@ -232,7 +232,7 @@
       });
       const _0x542b06 = {
         pattern: "menu2",
-        react: "2️", 
+        react: "2️⃣ ", 
         alias: ["bmenu", "newmenu", "help"],
         desc: "Get bot's command list.",
         category: "main",
@@ -279,7 +279,7 @@
               }
             }
           }
-          const _0x32d4b0 = "*╭────〖 X-BYTE 〗────╮*\n| *Prefix:* "+"[ "+ xprefix +" ]" +  "\n| *Memory:* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n| *Runtime:* " + runtime(process.uptime());
+          const _0x32d4b0 = "〖 X-BYTE 〗*\n> Prefix -"+"["+ xprefix +"]" +  "\n> *Memory:* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n> *Runtime:* " + runtime(process.uptime());
           const _0x463791 = [];
           const _0x181fa0 = new Map();
           for (let _0x37434c = 0; _0x37434c < 1; _0x37434c++) {
@@ -295,17 +295,17 @@
           }
           const _0x10cdf6 = [];
           for (const _0x7dca68 of _0x463791) {
-            const _0x41d75d = {
-              header: '',
-              title: "DOWNLOAD MENU",
-              description: "Download commands",
-              id: `.downmenu`
-            };
             const _0x5a637b = {
               header: 'Select menu type',
               title: "MAIN MENU",
               description: "Main commands",
               id: ".mainmenu"
+            };
+            const _0x41d75d = {
+              header: '',
+              title: "DOWNLOAD MENU",
+              description: "Download commands",
+              id: `.downmenu`
             };
             const _0x48e60c = {
               header: '',
@@ -677,7 +677,7 @@
             }
           }
           ;
-          let _0x8e9c18 = "*╭──── 〖 X-BYTE 〗────╮*\n*│o: Prefix:* "+"[ "+ xprefix +" ]"+ "\n*│o:Run Time:* " + runtime(process.uptime()) + " \n*│o:Ram usage:* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n*╰──────────●●►*\n*X-BYTE COMMANDS*\n *╭──────────●●►*\n\n\n\n *│ DOWNLOAD COMMANDS*\n *│   *\n" + _0x1f9061 + "*╰───────────●●►*\n *╭──────────●●►*\n *│ SEARCH COMMANDS*\n *│   *\n" + _0x3ea1e0 + "*╰───────────●●►*\n *╭──────────●●►*\n *│ CONVERT COMMANDS*\n *│   *\n" + _0x2ace9b + "*╰───────────●●►*\n *╭──────────●●►*\n *│ LOGO COMMANDS*\n *│   *\n" + _0x4046ab + "*╰───────────●●►*\n *╭──────────●●►*\n *│ MAIN COMMANDS*\n *│   *\n" + _0x9abccf + "*╰───────────●●►*\n *╭──────────●●►*\n *│ GROUP COMMANDS*\n *│   *\n" + _0x8d8eb5 + "*╰───────────●●►*\n *╭──────────●●►*\n *│ BUG COMMANDS*\n *│   *\n" + _0x253600 + "*╰───────────●●►*\n *╭──────────●●►*\n *│ OTHER COMMANDS*\n *│   *\n" + _0x5829ec + "*╰───────────●●►*\t\n\n *POWERED BY TALKDROVE*";
+          let _0x8e9c18 = "*╭─    〖 X-BYTE 〗*\n│o: Prefix -"+"["+ xprefix +"]"+ "\n*│o:Run Time -* " + runtime(process.uptime()) + " \n*│o:Ram usage -* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n\n\n*╰──────────●●►*\n*X-BYTE COMMANDS*\n> *╭──────────●●►*\n> *│ DOWNLOAD COMMANDS*\n> *│   ───────*\n\n" + _0x1f9061 + "*╰───────────●●►*\n> *╭──────────●●►*\n> *│ SEARCH COMMANDS*\n> *│   ───────*\n\n" + _0x3ea1e0 + "*╰───────────●●►*\n\n> *╭──────────●●►*\n> *│ CONVERT COMMANDS*\n> *│   ───────*\n\n" + _0x2ace9b + "*╰───────────●●►*\n\n> *╭──────────●●►*\n> *│ LOGO COMMANDS*\n> *│   ───────*\n\n" + _0x4046ab + "*╰───────────●●►*\n\n> *╭──────────●●►*\n> *│ MAIN COMMANDS*\n> *│   ───────*\n\n" + _0x9abccf + "*╰───────────●●►*\n\n> *╭──────────●●►*\n> *│ GROUP COMMANDS*\n> *│   ───────*\n\n" + _0x8d8eb5 + "*╰───────────●●►*\n\n> *╭──────────●●►*\n> *│ BUG COMMANDS*\n> *│   ───────*\n\n" + _0x253600 + "*╰───────────●●►*\n\n> *╭──────────●●►*\n> *│ OTHER COMMANDS*\n> *│   ───────*\n\n" + _0x5829ec + "*╰───────────●●►*\t\n *POWERED BY TALKDROVE:)*";
           const _0x1150b3 = {
             url: config.LOGO
           };
@@ -802,7 +802,7 @@
             }
           }
           ;
-          let _0xbb4f82 = "\n *╭──────────●●►*\n *│ DOWNLOAD COMMANDS*\n *│   *\n" + _0x2abda3 + "*╰───────────●●►*\nPowered by TalkDrove";
+          let _0xbb4f82 = "\n> *╭──────────●●►*\n> *│ DOWNLOAD COMMANDS*\n> *│   ───────*\n" + _0x2abda3 + "*╰───────────●●►*\nPowered by TalkDrove";
           const _0x454809 = {
             url: config.LOGO
           };
@@ -929,7 +929,7 @@
             }
           }
           ;
-          let _0x45eb07 = "\n *╭──────────●●►*\n *│ SEARCH COMMANDS*\n *│   *\n" + _0x12ed53 + "*╰───────────●●►*\nPowered by TalkDrove";
+          let _0x45eb07 = "\n> *╭──────────●●►*\n> *│ SEARCH COMMANDS*\n> *│   ───────*\n" + _0x12ed53 + "*╰───────────●●►*\nPowered by TalkDrove";
           const _0x41011a = {
             url: config.LOGO
           };
@@ -1047,7 +1047,7 @@
             }
           }
           ;
-          let _0x269b93 = "\n *╭──────────●●►*\n *│ CONVERT COMMANDS*\n *│   *\n" + _0x4b2f8d + "*╰───────────●●►*\nPowered by TalkDrove";
+          let _0x269b93 = "\n> *╭──────────●●►*\n> *│ CONVERT COMMANDS*\n> *│   ───────*\n" + _0x4b2f8d + "*╰───────────●●►*\nPowered by TalkDrove";
           const _0x2dfe0a = {
             url: config.LOGO
           };
@@ -1170,7 +1170,7 @@
             }
           }
           ;
-          let _0x1725f5 = "\n *╭──────────●●►*\n *│ LOGO COMMANDS*\n *│   *\n" + _0x36dfbb + "*╰───────────●●►*\nPowered by TalkDrove";
+          let _0x1725f5 = "\n> *╭──────────●●►*\n> *│ LOGO COMMANDS*\n> *│   ───────*\n" + _0x36dfbb + "*╰───────────●●►*\nPowered by TalkDrove";
           const _0x472cb0 = {
             url: config.LOGO
           };
@@ -1287,7 +1287,7 @@
             }
           }
           ;
-          let _0x3e8641 = "\n *╭──────────●●►*\n *│ MAIN COMMANDS*\n *│   *\n" + _0x5be7de + "*╰───────────●●►*\nPowered by TalkDrove";
+          let _0x3e8641 = "\n> *╭──────────●●►*\n> *│ MAIN COMMANDS*\n> *│   ───────*\n" + _0x5be7de + "*╰───────────●●►*\nPowered by TalkDrove";
           const _0x5592c1 = {
             url: config.LOGO
           };
@@ -1389,7 +1389,7 @@
             }
           }
           ;
-          let _0x56515f = "\n *╭──────────●●►*\n *│ GROUP COMMANDS*\n *│   *\n" + _0x4568fa + "*╰───────────●●►*\nPowered by TalkDrove";
+          let _0x56515f = "\n> *╭──────────●●►*\n> *│ GROUP COMMANDS*\n> *│   ───────*\n" + _0x4568fa + "*╰───────────●●►*\nPowered by TalkDrove";
           const _0x2e55e9 = {
             url: config.LOGO
           };
@@ -1500,7 +1500,7 @@
             }
           }
           ;
-          let _0x175040 = "\n *╭──────────●●►*\n *│ BUG COMMANDS*\n *│   *\n" + _0x3a953e + "*╰───────────●●►*\nPowered by TalkDrove";
+          let _0x175040 = "\n> *╭──────────●●►*\n> *│ BUG COMMANDS*\n> *│   ───────*\n" + _0x3a953e + "*╰───────────●●►*\nPowered by TalkDrove";
           const _0x46bb9f = {
             url: config.LOGO
           };
@@ -1627,7 +1627,7 @@
             }
           }
           ;
-          let _0x537d3b = "\n *╭──────────●●►*\n *│ OTHER COMMANDS*\n *│   *\n" + _0x31621a + "*╰───────────●●►*\nPowered by TalkDrove";
+          let _0x537d3b = "\n> *╭──────────●●►*\n> *│ OTHER COMMANDS*\n> *│   ───────*\n" + _0x31621a + "*╰───────────●●►*\nPowered by TalkDrove";
           const _0x3031c7 = {
             url: config.LOGO
           };
