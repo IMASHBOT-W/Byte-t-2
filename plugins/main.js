@@ -211,18 +211,28 @@
   
   if (!fs.existsSync(__dirname + "/session/creds.json")) {
     if (config.SESSION_ID) {
-      // Decode the Base64 encoded session ID
-      const decodedSessionId = decodeBase64(config.SESSION_ID.replace("Byte;;;", ''));
-      const filer = File.fromURL("https://mega.nz/file/" + decodedSessionId);
+      try {
+        // Decode the Base64 encoded session ID
+        const decodedSessionId = decodeBase64(config.SESSION_ID.replace("Byte;;;", ''));
   
-      filer.download((_0x16bc8e, _0x1d1d23) => {
-        if (_0x16bc8e) {
-          throw _0x16bc8e;
+        // Ensure the decodedSessionId contains the required hash part
+        if (!/^[-A-Za-z0-9_]+$/.test(decodedSessionId)) {
+          throw new Error("Invalid session ID format.");
         }
-        fs.writeFile(__dirname + "/session/creds.json", _0x1d1d23, () => {
-          console.log("Session download completed !! ✓");
+  
+        const filer = File.fromURL("https://mega.nz/file/" + decodedSessionId);
+  
+        filer.download((_0x16bc8e, _0x1d1d23) => {
+          if (_0x16bc8e) {
+            throw _0x16bc8e;
+          }
+          fs.writeFile(__dirname + "/session/creds.json", _0x1d1d23, () => {
+            console.log("Session download completed !! ✓");
+          });
         });
-      });
+      } catch (error) {
+        console.error("Failed to decode or download session ID:", error.message);
+      }
     }
   }
   const express = require("express");
