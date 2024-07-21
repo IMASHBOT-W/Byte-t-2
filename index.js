@@ -53,6 +53,7 @@
     syncgit
   } = require("./lib/scraper");
   const NodeCache = require("node-cache");
+  const msgRetryCounterCache = new NodeCache();
   function _0x40a5e0(_0x4f9ed7, _0x3c173d, _0x4067a3, _0x293bc7, _0x3adb62) {
     return _0x5e79(_0x3c173d + 0x4b, _0x4f9ed7);
   }
