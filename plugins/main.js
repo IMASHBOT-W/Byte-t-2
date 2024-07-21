@@ -797,7 +797,7 @@
           for (let _0x5f2522 = 0; _0x5f2522 < commands.length; _0x5f2522++) {
             if (commands[_0x5f2522].category === "download") {
               if (!commands[_0x5f2522].dontAddCommandList) {
-                _0x2abda3 += "*:o* "+xprefix + commands[_0x5f2522].pattern + "\n *:o* " + commands[_0x5f2522].desc + "\n *:o* " + commands[_0x5f2522].use + "\n\n";
+                _0x2abda3 += "| *:o* "+xprefix + commands[_0x5f2522].pattern + "\n| *:o* " + commands[_0x5f2522].desc + "\n| *:o* " + commands[_0x5f2522].use + "\n\n";
               }
             }
           }
@@ -924,7 +924,7 @@
           for (let _0x1169d8 = 0; _0x1169d8 < commands.length; _0x1169d8++) {
             if (commands[_0x1169d8].category === "search") {
               if (!commands[_0x1169d8].dontAddCommandList) {
-                _0x12ed53 += "*:o* "+xprefix + commands[_0x1169d8].pattern + "\n *:o* " + commands[_0x1169d8].desc + "\n *:o* " + commands[_0x1169d8].use + "\n\n";
+                _0x12ed53 += "| *:o* "+xprefix + commands[_0x1169d8].pattern + "\n| *:o* " + commands[_0x1169d8].desc + "\n| *:o* " + commands[_0x1169d8].use + "\n\n";
               }
             }
           }
@@ -1042,7 +1042,7 @@
           for (let _0x21bbc8 = 0; _0x21bbc8 < commands.length; _0x21bbc8++) {
             if (commands[_0x21bbc8].category === "convert") {
               if (!commands[_0x21bbc8].dontAddCommandList) {
-                _0x4b2f8d += "*:o* "+xprefix + commands[_0x21bbc8].pattern + "\n *:o* " + commands[_0x21bbc8].desc + "\n *:o* " + commands[_0x21bbc8].use + "\n\n";
+                _0x4b2f8d += "| *:o* "+xprefix + commands[_0x21bbc8].pattern + "\n| *:o* " + commands[_0x21bbc8].desc + "\n| *:o* " + commands[_0x21bbc8].use + "\n\n";
               }
             }
           }
@@ -1165,7 +1165,7 @@
           for (let _0x281d5c = 0; _0x281d5c < commands.length; _0x281d5c++) {
             if (commands[_0x281d5c].category === "logo") {
               if (!commands[_0x281d5c].dontAddCommandList) {
-                _0x36dfbb += "*:o* "+xprefix + commands[_0x281d5c].pattern + "\n *:o* " + commands[_0x281d5c].desc + "\n *:o* " + commands[_0x281d5c].use + "\n\n";
+                _0x36dfbb += "| *:o* "+xprefix + commands[_0x281d5c].pattern + "\n| *:o* " + commands[_0x281d5c].desc + "\n| *:o* " + commands[_0x281d5c].use + "\n\n";
               }
             }
           }
@@ -1282,7 +1282,7 @@
           for (let _0x2a7fb3 = 0; _0x2a7fb3 < commands.length; _0x2a7fb3++) {
             if (commands[_0x2a7fb3].category === "main") {
               if (!commands[_0x2a7fb3].dontAddCommandList) {
-                _0x5be7de += "*:o* "+xprefix + commands[_0x2a7fb3].pattern + "\n *:o* " + commands[_0x2a7fb3].desc + "\n *:o* " + commands[_0x2a7fb3].use + "\n\n";
+                _0x5be7de += "| *:o* "+xprefix + commands[_0x2a7fb3].pattern + "\n| *:o* " + commands[_0x2a7fb3].desc + "\n| *:o* " + commands[_0x2a7fb3].use + "\n\n";
               }
             }
           }
@@ -1384,7 +1384,7 @@
           for (let _0x2903a7 = 0; _0x2903a7 < commands.length; _0x2903a7++) {
             if (commands[_0x2903a7].category === "group") {
               if (!commands[_0x2903a7].dontAddCommandList) {
-                _0x4568fa += "*:o* "+xprefix + commands[_0x2903a7].pattern + "\n *:o* " + commands[_0x2903a7].desc + "\n *:o* " + commands[_0x2903a7].use + "\n\n";
+                _0x4568fa += "| *:o* "+xprefix + commands[_0x2903a7].pattern + "\n| *:o* " + commands[_0x2903a7].desc + "\n| *:o* " + commands[_0x2903a7].use + "\n\n";
               }
             }
           }
@@ -1495,7 +1495,7 @@
           for (let _0x2d3841 = 0; _0x2d3841 < commands.length; _0x2d3841++) {
             if (commands[_0x2d3841].category === "bug") {
               if (!commands[_0x2d3841].dontAddCommandList) {
-                _0x3a953e += "*:o* "+xprefix + commands[_0x2d3841].pattern + "\n *:o* " + commands[_0x2d3841].desc + "\n *:o* " + commands[_0x2d3841].use + "\n\n";
+                _0x3a953e += "| *:o* "+xprefix + commands[_0x2d3841].pattern + "\n| *:o* " + commands[_0x2d3841].desc + "\n| *:o* " + commands[_0x2d3841].use + "\n\n";
               }
             }
           }
@@ -1622,7 +1622,7 @@
           for (let _0x2b13c2 = 0; _0x2b13c2 < commands.length; _0x2b13c2++) {
             if (commands[_0x2b13c2].category === "other") {
               if (!commands[_0x2b13c2].dontAddCommandList) {
-                _0x31621a += "*:o* "+xprefix + commands[_0x2b13c2].pattern + "\n *:o* " + commands[_0x2b13c2].desc + "\n *:o* " + commands[_0x2b13c2].use + "\n\n";
+                _0x31621a += "| *:o* "+xprefix + commands[_0x2b13c2].pattern + "\n| *:o* " + commands[_0x2b13c2].desc + "\n| *:o* " + commands[_0x2b13c2].use + "\n\n";
               }
             }
           }
