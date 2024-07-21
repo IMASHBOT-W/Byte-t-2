@@ -184,38 +184,67 @@
     fetchBuffer,
     getFile
   } = require("./lib/functions");
-  const {
-    sms,
-    downloadMediaMessage
-  } = require("./lib/msg");
+  const { sms, downloadMediaMessage } = require("./lib/msg");
   const axios = require("axios");
-  const {
-    File
-  } = require("megajs");
+  const { File } = require("megajs");
   const path = require("path");
+  const fs = require("fs");
+  const NodeCache = require("node-cache");
   const msgRetryCounterCache = new NodeCache();
-  function genMsgId() {
-    let _0x38f1d3 = "3EB";
-    for (let _0x1e5475 = "3EB".length; _0x1e5475 < 22; _0x1e5475++) {
-      const _0x1e0814 = Math.floor(Math.random() * "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".length);
-      _0x38f1d3 += "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".charAt(_0x1e0814);
-    }
-    return _0x38f1d3;
+  const settings = require('../settings'); // Adjust the path to your settings.js
+  
+  // Function to decode Base64
+  function decodeBase64(base64Str) {
+    return Buffer.from(base64Str, 'base64').toString('utf-8');
   }
-  if (!fs.existsSync(__dirname + "/session/creds.json")) {
-    if (config.SESSION_ID) {
-      const sessdata = config.SESSION_ID.replace("XByte=", '');
-      const filer = File.fromURL("https://mega.nz/file/" + sessdata);
-      filer.download((_0x16bc8e, _0x1d1d23) => {
-        if (_0x16bc8e) {
-          throw _0x16bc8e;
+  
+  // Ensure the session directory exists
+  const sessionDir = path.join(__dirname, 'session');
+  if (!fs.existsSync(sessionDir)) {
+    fs.mkdirSync(sessionDir);
+  }
+  
+  // Function to save decoded session data
+  function saveDecodedSessionData(decodedData) {
+    const filePath = path.join(sessionDir, 'creds.json');
+    fs.writeFile(filePath, decodedData, (err) => {
+      if (err) {
+        console.error("Failed to save session data:", err.message);
+        return;
+      }
+      console.log("Session data saved successfully.");
+    });
+  }
+  
+  // Check if creds.json does not exist
+  if (!fs.existsSync(path.join(sessionDir, 'creds.json'))) {
+    if (settings.SESSION_ID) {
+      try {
+        // Decode the Base64 encoded session ID
+        const decodedSessionId = decodeBase64(settings.SESSION_ID.replace("Byte;;;", ''));
+        
+        // Log the decoded session ID for debugging
+        console.log("Decoded Session ID:", decodedSessionId);
+  
+        // Ensure the decodedSessionId contains the required hash part
+        if (!/^[-A-Za-z0-9_]+$/.test(decodedSessionId)) {
+          throw new Error("Invalid session ID format.");
         }
-        fs.writeFile(__dirname + "/session/creds.json", _0x1d1d23, () => {
-          console.log("Session download completed !! ✓");
-        });
-      });
+  
+        // Save the decoded session data to creds.json
+        saveDecodedSessionData(decodedSessionId);
+        
+      } catch (error) {
+        console.error("Failed to decode or save session ID:", error.message);
+      }
+    } else {
+      console.error("No SESSION_ID found in settings.");
     }
+  } else {
+    console.log("Session already exists.");
   }
+  
+  
   const express = require("express");
   const app = express();
   const port = process.env.PORT || 8000;
@@ -259,10 +288,10 @@
               require("./plugins/" + _0x115ac5);
             }
           });
-          console.log("Plugins installed ✅");
-          console.log("Bot connected ✅");
+          console.log("X-BYTE connected ✅");
+          console.log("Created by Hamza 🐼");
           await _0x2c419a.sendMessage(ownerNumber + "@s.whatsapp.net", {
-            'text': "Connected to whatsapp"
+            'text': "X-BYTE conneted"
           });
         }
       }
@@ -1690,7 +1719,7 @@
           }
           if (/amdi|queen|black|amda|achiya|achintha/gi.test(_0x198a09)) {
             _0xdfc59c.is_bot = true;
-            _0xdfc59c.bot_name = "XByte-V5";
+            _0xdfc59c.bot_name = "XByte";
           }
           return _0xdfc59c;
         };
@@ -1750,9 +1779,9 @@
     });
   }
   app.get('/', (_0x35f19f, _0x58057f) => {
-    _0x58057f.send("📟 XByte Working successfully!");
+    _0x58057f.send("XByte Working successfully!");
   });
-  app.listen(port, () => console.log("XByte Server listening on port http://localhost:" + port));
+  app.listen(port, () => console.log("TalkDrove Server listening on port http://localhost:" + port));
   setTimeout(() => {
     connectToWA();
   }, 3000);
