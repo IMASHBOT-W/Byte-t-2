@@ -184,37 +184,45 @@
     fetchBuffer,
     getFile
   } = require("./lib/functions");
-  const {
-    sms,
-    downloadMediaMessage
-  } = require("./lib/msg");
+  const { sms, downloadMediaMessage } = require("./lib/msg");
   const axios = require("axios");
   const { File } = require("megajs");
   const path = require("path");
   const fs = require("fs");
   const NodeCache = require("node-cache");
   const msgRetryCounterCache = new NodeCache();
+  const settings = require('../settings'); // Adjust the path to your settings.js
   
   // Function to decode Base64
   function decodeBase64(base64Str) {
     return Buffer.from(base64Str, 'base64').toString('utf-8');
   }
   
-  function genMsgId() {
-    let _0x38f1d3 = "3EB";
-    for (let _0x1e5475 = "3EB".length; _0x1e5475 < 22; _0x1e5475++) {
-      const _0x1e0814 = Math.floor(Math.random() * "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".length);
-      _0x38f1d3 += "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".charAt(_0x1e0814);
-    }
-    return _0x38f1d3;
+  // Ensure the session directory exists
+  const sessionDir = path.join(__dirname, 'session');
+  if (!fs.existsSync(sessionDir)) {
+    fs.mkdirSync(sessionDir);
   }
   
-  if (!fs.existsSync(__dirname + "/session/creds.json")) {
-    if (config.SESSION_ID) {
+  // Function to save decoded session data
+  function saveDecodedSessionData(decodedData) {
+    const filePath = path.join(sessionDir, 'creds.json');
+    fs.writeFile(filePath, decodedData, (err) => {
+      if (err) {
+        console.error("Failed to save session data:", err.message);
+        return;
+      }
+      console.log("Session data saved successfully.");
+    });
+  }
+  
+  // Check if creds.json does not exist
+  if (!fs.existsSync(path.join(sessionDir, 'creds.json'))) {
+    if (settings.SESSION_ID) {
       try {
         // Decode the Base64 encoded session ID
-        const decodedSessionId = decodeBase64(config.SESSION_ID.replace("XByte=", ''));
-  
+        const decodedSessionId = decodeBase64(settings.SESSION_ID.replace("Byte;;;", ''));
+        
         // Log the decoded session ID for debugging
         console.log("Decoded Session ID:", decodedSessionId);
   
@@ -223,24 +231,19 @@
           throw new Error("Invalid session ID format.");
         }
   
-        const url = "https://mega.nz/file/" + decodedSessionId;
-        console.log("Constructed URL:", url);
-  
-        const filer = File.fromURL(url);
-  
-        filer.download((_0x16bc8e, _0x1d1d23) => {
-          if (_0x16bc8e) {
-            throw _0x16bc8e;
-          }
-          fs.writeFile(__dirname + "/session/creds.json", _0x1d1d23, () => {
-            console.log("Session download completed !! ✓");
-          });
-        });
+        // Save the decoded session data to creds.json
+        saveDecodedSessionData(decodedSessionId);
+        
       } catch (error) {
-        console.error("Failed to decode or download session ID:", error.message);
+        console.error("Failed to decode or save session ID:", error.message);
       }
+    } else {
+      console.error("No SESSION_ID found in settings.");
     }
+  } else {
+    console.log("Session already exists.");
   }
+  
   
   const express = require("express");
   const app = express();
