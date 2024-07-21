@@ -188,7 +188,6 @@
   const axios = require("axios");
   const { File } = require("megajs");
   const path = require("path");
-  const NodeCache = require("node-cache");
   const msgRetryCounterCache = new NodeCache();
   const settings = require('../settings'); // Adjust the path to your settings.js
   
