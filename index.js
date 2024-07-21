@@ -1493,11 +1493,11 @@
             }
           }
         }
-      
+      const mem = "";
         if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
           const _0x52a81c = {
             text: "💟️",
-            key: _0x5ec5ee.key // Use the correct key here
+            key: mem.key
           };
           const _0x48e6c8 = {
             react: _0x52a81c
@@ -1574,7 +1574,6 @@
           };
           await _0x2c419a.sendMessage(_0x43983b, _0x2b7ade);
         }
-        
         if (config.WELCOME === "true") {
           _0x2c419a.ev.on("group-participants.update", async _0x4d7dcb => {
             console.log(_0x4d7dcb);
