@@ -279,7 +279,7 @@
               }
             }
           }
-          const _0x32d4b0 = "*╭──〖 X-BYTE 〗────╮*\n| *Prefix:* "+"[ "+ xprefix +" ]" +  "\n| *Memory:* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n| *Runtime:* " + runtime(process.uptime());
+          const _0x32d4b0 = "*╭──〖 X-BYTE 〗────╮*\n| *Prefix:* "+"[ "+ xprefix +" ]" +  "\n| *Memory:* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n| *Runtime:* " + runtime(process.uptime())+"\n\n";
           const _0x463791 = [];
           const _0x181fa0 = new Map();
           for (let _0x37434c = 0; _0x37434c < 1; _0x37434c++) {
@@ -343,10 +343,10 @@
               description: "Other commands",
               id: ".othermenu"
             };
-            _0x10cdf6.push(_0x55776a);
+            _0x10cdf6.push(_0x5a637b);
             _0x10cdf6.push(_0x41d75d);
             _0x10cdf6.push(_0x48e60c);
-            _0x10cdf6.push(_0x5a637b);
+            _0x10cdf6.push(_0x55776a);
             _0x10cdf6.push(_0x24709f);
             _0x10cdf6.push(_0x4c56eb);
             _0x10cdf6.push(_0x82d34a);
