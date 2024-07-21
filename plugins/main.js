@@ -1,1787 +1,3150 @@
-(function (_0x1ee4a6, _0x3201a7) {
-    const _0x39b7ed = _0x1ee4a6();
-    while (true) {
-      try {
-        const _0x9bbbbb = parseInt(_0x5e79(2418, '@N8t')) / 1 + parseInt(_0x5e79(1304, ')Aia')) / 2 * (-parseInt(_0x5e79(742, 'P^bj')) / 3) + parseInt(_0x5e79(2210, '!4Mt')) / 4 * (-parseInt(_0x5e79(4709, 'ACfR')) / 5) + parseInt(_0x5e79(1166, 'C90@')) / 6 + parseInt(_0x5e79(1751, 'oHkV')) / 7 + parseInt(_0x5e79(2737, 'Q2]x')) / 8 + -parseInt(_0x5e79(1405, '&Lhl')) / 9;
-        if (_0x9bbbbb === _0x3201a7) {
-          break;
-        } else {
-          _0x39b7ed.push(_0x39b7ed.shift());
+  (function (_0x13a391, _0x3806ec) {
+      const _0x458761 = _0x13a391();
+      while (true) {
+        try {
+          const _0x266164 = parseInt(_0x10cc(2492, 'S3YK')) / 1 * (parseInt(_0x10cc(3531, 'mnFs')) / 2) + parseInt(_0x10cc(2651, 'CmR(')) / 3 * (-parseInt(_0x10cc(2781, 'CmR(')) / 4) + -parseInt(_0x10cc(1088, 'CmR(')) / 5 + parseInt(_0x10cc(3680, 'W4GC')) / 6 + -parseInt(_0x10cc(1978, '7Ei@')) / 7 * (-parseInt(_0x10cc(3197, 'eSAt')) / 8) + parseInt(_0x10cc(3477, '7PN$')) / 9 * (-parseInt(_0x10cc(1573, 'bLlT')) / 10) + parseInt(_0x10cc(1880, 'Sq21')) / 11 * (parseInt(_0x10cc(2279, 'PCIH')) / 12);
+          if (_0x266164 === _0x3806ec) {
+            break;
+          } else {
+            _0x458761.push(_0x458761.shift());
+          }
+        } catch (_0x5befb4) {
+          _0x458761.push(_0x458761.shift());
         }
-      } catch (_0x264321) {
-        _0x39b7ed.push(_0x39b7ed.shift());
       }
+    })(_0x138f, 936871);
+    const config = require("../settings");
+    let xprefix = config.PREFIX;
+    const os = require('os');
+    const fs = require('fs');
+    function _0x506a47(_0x4da53b, _0x529055, _0x47b0b6, _0xc785f5, _0x35fc6b) {
+      return _0x10cc(_0x47b0b6 - 0xf5, _0x35fc6b);
     }
-  })(_0x8de2, 487765);
-  const {
-    default: makeWASocket,
-    getAggregateVotesInPollMessage,
-    useMultiFileAuthState,
-    DisconnectReason,
-    getDevice,
-    fetchLatestBaileysVersion,
-    jidNormalizedUser,
-    getContentType,
-    Browsers,
-    makeInMemoryStore,
-    makeCacheableSignalKeyStore,
-    downloadContentFromMessage,
-    generateWAMessageFromContent,
-    prepareWAMessageMedia,
-    proto
-  } = require("@whiskeysockets/baileys");
-  const fs = require('fs');
-  const P = require("pino");
-  const FileType = require("file-type");
-  const l = console.log;
-  var config = require("./settings");
-  const {
-    searchSinhalasub,
-    downSinhalasub
-  } = require("./lib/movie.js");
-  const {
-    pinterest,
-    wallpaper,
-    wikimedia,
-    quotesAnime,
-    aiovideodl,
-    umma,
-    ringtone,
-    styletext,
-    sync,
-    updatedb,
-    syncgit
-  } = require("./lib/scraper");
-  const NodeCache = require("node-cache");
-  function _0x40a5e0(_0x4f9ed7, _0x3c173d, _0x4067a3, _0x293bc7, _0x3adb62) {
-    return _0x5e79(_0x3c173d + 0x4b, _0x4f9ed7);
-  }
-  function _0x5e79(_0x27ba5b, _0x3691a3) {
-    const _0x56414c = _0x8de2();
-    _0x5e79 = function (_0x3ae901, _0x446f9f) {
-      _0x3ae901 = _0x3ae901 - 379;
-      let _0x30dc1f = _0x56414c[_0x3ae901];
-      if (_0x5e79.RAiyFQ === undefined) {
-        var _0x2a680a = function (_0x4eedaa) {
-          let _0x36e863 = '';
-          let _0x32f2e3 = '';
-          let _0x2bf6f9 = 0;
-          let _0x4e2efc;
-          let _0x219a82;
-          for (let _0x3f28c5 = 0; _0x219a82 = _0x4eedaa.charAt(_0x3f28c5++); ~_0x219a82 && (_0x4e2efc = _0x2bf6f9 % 4 ? _0x4e2efc * 64 + _0x219a82 : _0x219a82, _0x2bf6f9++ % 4) ? _0x36e863 += String.fromCharCode(255 & _0x4e2efc >> (-2 * _0x2bf6f9 & 6)) : 0) {
-            _0x219a82 = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/='.indexOf(_0x219a82);
-          }
-          let _0xf69939 = 0;
-          for (let _0x512deb = _0x36e863.length; _0xf69939 < _0x512deb; _0xf69939++) {
-            _0x32f2e3 += '%' + ('00' + _0x36e863.charCodeAt(_0xf69939).toString(16)).slice(-2);
-          }
-          return decodeURIComponent(_0x32f2e3);
-        };
-        const _0x5a5561 = function (_0x18ae51, _0x35f541) {
-          let _0x5dc360 = [];
-          let _0x9313f0 = 0;
-          let _0xb5be65;
-          let _0x396f8b = '';
-          _0x18ae51 = _0x2a680a(_0x18ae51);
-          let _0x57a653;
-          for (_0x57a653 = 0; _0x57a653 < 256; _0x57a653++) {
-            _0x5dc360[_0x57a653] = _0x57a653;
-          }
-          for (_0x57a653 = 0; _0x57a653 < 256; _0x57a653++) {
-            _0x9313f0 = (_0x9313f0 + _0x5dc360[_0x57a653] + _0x35f541.charCodeAt(_0x57a653 % _0x35f541.length)) % 256;
-            _0xb5be65 = _0x5dc360[_0x57a653];
-            _0x5dc360[_0x57a653] = _0x5dc360[_0x9313f0];
-            _0x5dc360[_0x9313f0] = _0xb5be65;
-          }
-          _0x57a653 = 0;
-          _0x9313f0 = 0;
-          for (let _0x246efa = 0; _0x246efa < _0x18ae51.length; _0x246efa++) {
-            _0x57a653 = (_0x57a653 + 1) % 256;
-            _0x9313f0 = (_0x9313f0 + _0x5dc360[_0x57a653]) % 256;
-            _0xb5be65 = _0x5dc360[_0x57a653];
-            _0x5dc360[_0x57a653] = _0x5dc360[_0x9313f0];
-            _0x5dc360[_0x9313f0] = _0xb5be65;
-            _0x396f8b += String.fromCharCode(_0x18ae51.charCodeAt(_0x246efa) ^ _0x5dc360[(_0x5dc360[_0x57a653] + _0x5dc360[_0x9313f0]) % 256]);
-          }
-          return _0x396f8b;
-        };
-        _0x5e79.RijMlf = _0x5a5561;
-        _0x27ba5b = arguments;
-        _0x5e79.RAiyFQ = true;
+    const owner = JSON.parse(fs.readFileSync("./lib/owner.json"));
+    const l = console.log;
+    const {
+      cmd,
+      commands
+    } = require("../lib/command");
+    const {
+      getBuffer,
+      getGroupAdmins,
+      getRandom,
+      h2k,
+      isUrl,
+      Json,
+      runtime,
+      sleep,
+      fetchJson,
+      clockString,
+      jsonformat,
+      forwardMessage
+    } = require("../lib/functions");
+    function genMsgId() {
+      let _0x1ccec0 = "3EB";
+      for (let _0x3358c1 = "3EB".length; _0x3358c1 < 22; _0x3358c1++) {
+        const _0x30463d = Math.floor(Math.random() * "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".length);
+        _0x1ccec0 += "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".charAt(_0x30463d);
       }
-      const _0x3be03e = _0x56414c[0];
-      const _0x44709c = _0x3ae901 + _0x3be03e;
-      const _0x3c93f2 = _0x27ba5b[_0x44709c];
-      if (!_0x3c93f2) {
-        if (_0x5e79.ouwaUn === undefined) {
-          _0x5e79.ouwaUn = true;
-        }
-        _0x30dc1f = _0x5e79.RijMlf(_0x30dc1f, _0x446f9f);
-        _0x27ba5b[_0x44709c] = _0x30dc1f;
-      } else {
-        _0x30dc1f = _0x3c93f2;
-      }
-      return _0x30dc1f;
-    };
-    return _0x5e79(_0x27ba5b, _0x3691a3);
-  }
-  function _0xc08cbb(_0x24c768, _0x30a333, _0x138697, _0x8be6bf, _0x1fd9c3) {
-    return _0x5e79(_0x24c768 + 0x2f2, _0x138697);
-  }
-  const {
-    imageToWebp,
-    videoToWebp,
-    writeExifImg,
-    writeExifVid
-  } = require("./lib/exif");
-  function _0x5c2ee6(_0x1148a7, _0x2dd7a7, _0x20c423, _0xcaa064, _0x11277f) {
-    return _0x5e79(_0x2dd7a7 + 0x8, _0xcaa064);
-  }
-  var {
-    get_set,
-    input_set
-  } = require("./lib/set_db");
-  var {
-    updateCMDStore,
-    isbtnID,
-    getCMDStore,
-    getCmdForCmdId,
-    connectdb,
-    input,
-    get,
-    updb,
-    updfb
-  } = require("./lib/database");
-  const ownerNumber = global.owner;
-  const owner = global.owner;
-  function _0x2a8944(_0x2d29c5, _0x38e4ae, _0x5947eb, _0x35eaa, _0x2bc721) {
-    return _0x5e79(_0x38e4ae + 0x226, _0x35eaa);
-  }
-  function _0x8de2() {
-    const _0x4f2db8 = ['WRmezGL6', 'aSkzWPjuCG', 'nCkYg8kjW7S', 'W6RdLmkXW6NdUa', 'WOZdVmorW7BdTW', 'wbqWWQHc', 'gmkkWPFdH0a', 'W7WVfxvn', 'o8oFW6RdI8on', 'WRecoYnS', 'bCk7iCkKW6K', 'WQqHg8k9WPy', 'yLJdOI0t', 'WOBdRX8Maa', 'ihW5WQjx', 'W5LfWRSFWOq', 'W419W6TWeG', 'd8kqWR/dHNK', 'WRS1bdXl', 'cCkMmCkPW7S', 'W6pcJmk/WOLR', 'ehldG8oPWRG', 'lCocW73dMSok', 'WOhcGbGQcG', 'dMZdMmoyWQq', 'WPhcQZ0mWPC', 'omo8ASobWRy', 'W7ZcKSkJWQ1f', 'WR7dGtCpba', 'WQCMC3RcHW', 'WQZdHcVINPy', 'W4pdRIZdOMO', 'WRBdM0TuWRW', 'z8oVW7u', 'WOldVamUDa', 'WRNdOmoHfG', 'WR7dSIebpW', 'W706c8oywa', 'g8kfW55vqG', 'FYlcKmoGhW', 'W7ldNSoXW7BdTq', 'wwtcGmk/W74', 'emkEWOvJoa', 'WQ88W7FcSru', 'WRHtW4fGtW', 'WR02ad9K', 'W58XwmopvG', 'WOW4xSklqa', 'WRBdJ0WrDW', 'W4v0WR8eWOq', 'pqxdTHtdIa', 'iMtdP8kZsG', 'jSoZW7/dVCoq', 'mXNdG8k0WR4', 'BGWpWR99', 'b34sWOTx', 'rxhdQG1k', 'lmohFmocWQq', 'W4mYuW', 'WRBdJWecrW', 'WPhdGmowW43dOG', 'W5mxW4ddOW', 'WRbOuMWa', 'j1GWWP8', 'u07cL8k1W6S', 'vL3cGmkGW6G', 'C8oaW6hcQb0', 'WOBdScyUda', 'vK3dOW', 'l1z+W4ed', 'u2dcI8k/WRW', 'WRJdJtagdW', 'W6xdHHJcISkV', 'W5ddTdBdUNG', 'W7WatSoeqW', 'WOuOW48QW4C', 'W5Ocx8oLFW', 'W5tcNCoxW5/dPa', 'xxNcICkHWRW', 'W6RdNSoNW6u', 'CeRdOSoQFq', 'WPmUW48zW4W', 'W6DfhSoliW', 'hSojxCo/WQK', 'ycJcH8k7jW', 'W7tdKqi', 'W6RdTqWNsa', 'cSkBWQL8lW', 'bCkMhCkQW7m', 'WPZcOdO0WOC', 'WQRdIZyDcW', 'WQmKW4G2W40', 'k8orW4FdL8oa', 'sMZcLSk9W7i', 'WRyAqSkFBq', 'W53dIZqPrW', 'WQy1CuJcQW', 'WP4/W5fZca', 'd8kLkCkCW6y', 'nmo0W57dNCkT', 'W4VdSGG5yG', 'lmoDymowWRe', 'WQRdKsmRlq', 'dSkBWQ3dKv8', 'nr7dHa/dPW', 'AmkxWRdcMmoI', 'WPhcTHmf', 'kvv2W4a8', 'W63dRmo2W6xdQq', 'lGJdHSkUWRW', 'rgfTW4LP', 'WPTVWOVcMXi', 'W6/dHdlcUmkH', 'dSkNWQL7eq', 'W7/dJ8oSW7ddSq', 'W5r+WRmkWPe', 'WQqhrmkqBq', 'WRhdPuRdTgW', 'WR7dKfTQWRq', 'l2ZdN8orWPq', 'ofXZW5aJ', 'WOG5W44', 'h8kfWPK', 'qx1mW61Q', 'E8odW7ZcKrG', 'W7ujySopbq', 'WQNdQSoKcYO', 'ALrkWR4x', 'emkzWOP2uG', 'eHRdLCkxWRy', 'W55+WRbiWPm', 'cSkzWPbNiG', 'W5frWOFdHZXJW43dJCoUjW', '8ykOTSkYmq', 'W6RWPzAxW58fqa', 'W6xcKSkzWRLf', 'W5FdRc/dVM4', 'WPZcLa0AWPm', 'W50WWPKWla', 'e3FdHSohWO8', 'FvZcLa', 'W73dTJueqG', 'W6VcRSoSWRTQ', 'i8o+W4/dKSoM', 'kZNdVSkDWOq', 'u8kBWQFcJSoS', 'W60yC8oyla', 'nbhdLCkGWRC', 'WPHTWRtcSc4', 'zKLnWROc', 'WQuEkZjS', '8yENVeW4aCof', 'zHBcPmoJnq', 'WRRdRmoXbHO', 'W5VdPq7cJCk/', 'WRaAkX5N', 'oHxdM8kFWOG', 'ESodW7lcIGu', 'kCk2eSka', 'tLJdJZnt', 'WOqzlXj8', 'BCodW6lcNq', 'WPjZWR3cRsK', 'WPL4WRtcRbC', 'WPK6Amk9', 'WPa1thS', 'WOCaymkytG', 'rLldTJv8', 'WRZcQG00WPm', 'W5NdRqVcR8kb', 'AgJcL8kSW7u', 'g8kgWOPrsa', 'l2TCWRKe', 'WPGNW5r6hq', 'F8ktWRe', 'e8ojDmo2WQe', 'pWRdVJG', 'WQeSbcLA', 'kSkNWPj1hq', 'nEkTSUkENmkLtW', 'pmosW7ZdNCkk', 'WOXOWRFcVqy', 'WPzqW7PIBq', 'WRZdLISEbq', 'vvBdVY1A', 'fmkqWQJdSMO', 'W7GLcSo3WPa', 'W7y9wmomwW', 'rwRdSY1b', 'nmkMeSkBAG', 'WPqLz1xcKa', 'W5y6W47dHmoK', 'W4akW4ZdHx0', 'ka/dNCkPWRu', 'WOqwW4jbnq', 'W5mCuSouFG', 'W71tWQKiWRe', 'l2fmWRmC', 'vSk/WOFcLSo0', 'pSkCWQ3dH8kN', 'W7ZdKGKQBq', 'WRCRfJPj', 'WOD8WQ7cJq4', 'WQeRaY5c', 'W5pdJYtcR8kc', 'sI8VWRLB', 'W6NdICo2W6xdPa', 'W7VdImk/W53dRG', 'WQldHsKp', 'sZy6WRTF', 'W40ypmoAWOm', 'yJdcS8oOfW', 'W4NdKItcUq', 'vHuqWQPC', 'WPZcRdah', 'W4OAW43dSSoc', 'WOZcOcyu', 'WRqsoW', 'qHFdHLfd', 'WQ3dPSoHcGm', 'nmkMbSkjyq', 'W68CASoy', 'WOtcVgm', 'gMvMW589', 'g8oXW6JdQmon', 'WRddQSo8', 'yaldH8oNWQa', 'WR02rt9b', 'W63dImo+W7BdPa', 'W7eCdCoPWP4', 'WRddGwddSIy', 'AHuQWRXE', 'ACkgWRRcKmoC', 'ECouW77cMau', 'WPFdUKiKxW', 'j8onASoCWQq', 'WRJdL19CWRm', 'vc4mWPDa', 'W7tdHXyGqq', 'x1hdVWPq', 'u8kBWRRcICoK', '4BwGW57QN6VlIog0VG', 'i8ogBCozWRa', 'puD1', 'thdcLCk9', 'AmoiW6ZdICol', 'vqZcGGuo', 'bmkrWRNdL14', 'W6NdL2RdOcO', 'W4nLWRejWQi', 'WQZdK3JdSM0', 'amkEWRX2oa', 'WRmTatjb', 'Bfi/W5CV', 'WRGBW74', 'W7pcPSkP', 'WQCtCxJcGa', 'qLxdHqC', 'jNxdKLvn', 'u2ZcNa', 'W7iqkmoJWQ8', 'WOidD0ZcHG', 'mKS4WPC7', 'WQZdN11zWRG', 'neehWP5u', 'dCkCjG', 'fdtdRSkLWP8', 'e8kGbmkHEa', 'W6usW4/dPCoY', 'lcBdPZddJG', 'e8kFWR3dHW', 'W50hCCoouG', 'xHi6', 'WPpdOCowW4RdTa', 'W5X0WQC', 'kSk8lSkT', 'WQy9hs8', 'W589W6BdOCoU', 'WQVdJePBWRq', 'W6RdHWS3Bq', 'WPHUWQVcQaq', 'fmkAWPfxvq', 'uuHnW59I', 'W4FdSSo2W6ldMW', 'oa7dHSkOWQa', 'jCogA8orWO8', 'WPjoW6D1FG', 'W6qfC8oyjG', 'WRmUzaXV', 'oSojW6JdI8on', 'WOmpW44RW4a', 'WQyVBSklxq', 'WRJdGtCE', 'dHNdHSkXWRC', 'W5v+WQOPWOu', 'lu8XWPvV', 'W7W1qSoqyG', 'l8kWWOxdQ3C', 'lq7dNCkXWRm', 'zmoeW7tcJa', 'rSo1hq', 'cCkTj8k8W7K', 'WPbFWRn0Aq', 'W60rBSotlW', 'W6/dJJlcSCkM', 'WQJdM0fzWPa', 'W7CWc8kDfG', 'imoFW6JdM8ob', 'wGi2WQLx', 'WRCOW5CJW7e', 'WPpcOcC', 'WOddKJqybW', '4P6aWOrUdW4', 'WQ0nW4BcJdy', 'W7q7wCo5vG', 'WQRdJ2xdPw8', 'ofz8W4a6', 'W7ldPs/dP3q', 'uwFcHSk0W6K', 'b8kzkSkFW70', 'WO0jW4hcNd8', 'W6WzW6/dJSon', '77+n772I77Yvl8oF', 'DXi6WPL2', 'WPqntW5+', 'WOeYW4XWga', 'WQn4W7TzAq', 'f8kfWO1zqa', 'xe3dOmoOzG', 'mG3dVdRdMa', 'WPCUW4KdW4m', 'imoVFCo7WP8', 'WOmhW5VcIZi', 'w8kBWOpcJCom', 'W5ehW44OWOi', 'WR3dTGC5xW', 'o8o0uSorBW', 'W7SNAmoruW', 'vaZcR20C', 'wZFcT8ovjG', 'WRtdLdSOqa', 'W7mlW4ldPCox', 'W6VdRba+qG', 'W6yZs8oeWPO', 'WPqZW68UW5C', 'W50YW5KKgG', 'cGJdKSknWRC', 'fHFdItXh', 'neDKW5u9', 'WOGVW5G', 'WOhdVdGRqW', 'WRacxmkEAq', 'DYhcTmoqea', 'WOVcUb8Ekq', 'WPrUW7JcPay', 'Cd7cO8oPeW', 'W5pcRmkFWOHm', 'W5hdKIy', 'WQZdN3PnWRe', 'WQ4jqr8', 'ECohW6pcIGu', 'AmosW4dcUtq', 'W7iCymoyAa', 'W4ysAmozkG', 'WQeqv8kg', 'W77cPmkR', 'cSoaW6VdQCoL', 'WOieW5RcNdW', 'AtFcUNNWLygi', 'WOmhW5VcMt4', 'W6PPuw5McSozih/cKW', 'W5BdUSomW7RdUa', 'rL5iW6XI', 'u3/dLX9D', 'W4b/WRiiWPe', 'WQ/dIYKhcW', 'l0bXW4iR', 'j0ZdRmobWQa', 'WOKessLI', 'fvej', 'WQKoW5pcHIq', 'WPujW43cSHS', 'ALv6WR4d', 'e8keWPLl', 'WQ3dGcClgq', 'WPdcIGiraq', 'W7malIqJ', 'W65A4Q2K4PYEW5i', 'WQH2WPdcGGa', 'WOhcOayW', 'WOeGW48YW4C', 'WP89fIHp', 'WPq5W48JW4W', 'k8kMamkmtq', 'rXuxWPrN', 'W73dJri9ta', 'WP5jW5b9Aa', 'jCoFW7RdJmof', 'nJtdP8knWQa', 'WQ/cNK1eW6C', 'owTiW6mR', 'fmkMeSkBAG', 'aw3dVxvH', 'W6WKbmoLWOu', 'Cw/cG8kHW68', 'WQyatCkyAq', 'W7pcRCkjWQ5J', 'WOPnWPhcIHa', 'hSkWl8kNW6G', 'WPldHSo/oqm', 'k8ovW6FdI8of', 'o8ohFSocWPi', 'd8k6lmk8W7K', 'WQ7cIH8gbq', 'WRaDcZLK', 'W4dVVz4zwVczOAJIGAJWQjkr', 'wqKTWPHt', 'WPtdKGaIdG', 'W40hbmo7WPS', 'WPGUW5u', 'mbNdMSkZWRS', '8j2gTCkXWRmjaa', 'kCokW7NdK8on', 'WR3dUSoRdbG', '8lMgSuuErCoX', 'mmkTaSkeFG', 'n8k7WPBdOxW', 'emkdWOPmsa', 'kuFdUG', 'W7iyACozcG', 'FcCwWRP4', 'WQC+W5W', 'W7NdNSkL', 'aSkrWQ7dRey', 'W7jFWPaxWQO', 'nMjbW5eV', 'WQFdHhG', 'iKmVWPn1', 'WP3dMxVdTG', 'WPxcHGGqcW', 'key6WQfI', 'WP0BW5rhW5a', 'WP4YW4PJgq', 'WPpdG8oeW4O', 'WOrkW795Ea', 'WORcNc4Aea', 'lHNdMSkJWRC', 'W53VVkVdRCoP8kEIOUkdGpcuORa', 'nHNdJq', 'WQS+W5rWlW', 'odhdSmkoWQO', 'gCoGW5NdJmov', 'v0jnW7i', 'jCojAG', 'W58Vg8o1', 'WPn4WQ/cUG8', 'W6DdWR8qWPW', 'W7BdGItcGSk7', 'dmkdWP90AW', 'WPv4WRNcRqy', 'W6uYga', 'WRdcGb8pcG', 'W7ldRG0eqq', 'W4PIWR/dN3C', 'B8ouW77cKW', 'WOyHW6HwW4HUW7fTmCopwG', 'W6VcVCk6WQft', 'eK0gWOfq', 'krZdPdBdVG', 'ymoiW6hcIXG', 'vWtcHCollq', 'WPRdPvJdGem', 'lCkadmkzBG', 'W7VdImoSW7ddPG', 'WP0qvSoEla', 'WQJdJmoQcWK', 'lCkucCkkzG', 'nfO7WPnV', 'uuHAW6H1', 'W47dR8o6W5JdMa', 'W6GSamoPWOu', 'suVdQCoGAa', 'WQddOSoNW7ddMa', 'WQFdVCoCW5ldQq', 'W4JdIdxcP8kT', 'WPtcQJK', 'A0jDWOSv', 'W4vCWQCIoa', 'xCoZW5dcHdK', 'jvRdPSoTWRW', 'WOm1qa', 'punGW4aG', 'WRmTetnb', 'WO3dU8o9W4NdQa', 'WRdcSreqWOG', 'iCksWOL1jq', 'avpdKv1f', 'WRbCW6Dbvq', 'W6hdLIG2uW', 'lXNdMSkJWRC', 'iCoOW6JdL8oU', 'FvBdP8kIWRW', 'mCkSoCkpuG', 'mSoEWQdcLCoS', 'WPqGE8k9uW', 'WOS6z0BcHa', 'W65vWPyJWRG', 'W6emW4xdQW', 'W6hcOmkQga0', 'W7ZdMHuHrq', 'W6FdUCoiW73dUa', 'WOqnxW', 'rXisWRHb', 'WOa1rW', 'hmkfWPjMjG', 'WOO/da10', 'W7yoW7RdLmom', 'WPaDW4BcLW', 'W7vDzCoeCG', 'WQvUW4T9Ea', 'hmo4bCkPW7e', 'F1NdQIL5', 'lKNdVCoUWPS', 'E8kjWQFcKCoO', 'geZdKez6', 'W5pdGcu', 'm08VWP5I', 'WPjBWPxcUGS', 'aCktWR8', 'zLr2WQGE', 'kK8M', 'WONdQX8WvW', 'WQddIYm', 'W6ZdN8o6W7xdJW', 'WRBcQ+kSKEkFMSoO', 'WO84W4XkeG', 'afhdHKbs', 'zJlcVmoEca', 'W7msCmoo', 'cLFdH1Lw', 'bKhdUmoN', 'W4OzF8oOua', 'bLhdH1u', 'WRSwsSk/Aq', 'W7uiDCoyhq', 'WRidlG', 'WPOqis5R', 'WOejsXvP', 'FwLTW79t', 'WOrZWRS', 'pubKW4aQ', 'WPzRWO7cMYG', 'lG/dLCkGWRC', 'wNNdNG1n', 'k8ovW6FdICob', 'pSkcW7q', 'WOmXW5C', 'WRmnW4FcIti', 'BmoEW6u', 'WQ0bySkxFW', 'WPL4WQRcUKi', 'W7quDSotpW', 'W6lcQSk+WOTN', 'tvLKW650', 'WPyxE0ZcTq', 'WPjjW6bXAW', 'heRdMLLE', 'WQ3cJWGdWPO', 'rt3cM8o3eW', 'E2nOW59X', 'WOyXW6ZcTb8', 'luu4', 'WRJdOmoOaG0', 'uSkWWOTusW', 'WOSuW7uKW6W', 'cuVdHLvq', 'WR4UW5z2', 'WO/cPcWeWOC', 'WOFdTaC6rG', 'WQJdM0fzWO0', 'dCo4d8kSWRW', 'eCkAWOv6ja', 'WPbBWR1+DG', 'pfVdM8kKuG', 'W64dgCo8', 'WOKyW4hcLJG', 'W53dUGFdH1q', 'kSknWQ3dRLG', 'rSktWR/dJ1e', 'WOJdNCoIW4JdIW', 'h8kMi8kVW7K', 'iKFdSmo7', 'WOrBW7r1', 'WP82pcfB', 'W6msC8oZpq', 'W55+WRa', 's0FdTCoX', 'lwCNWPbY', 'qGpcNCoMca', 'WOFdNSoCW5q', 'wfddOSoWDW', 'W5NdJZu', 'nmkplCkDW6u', 'uxNcKCkXW7m', 'WO7dTmohW6VdPa', 'mG3dPJJdIa', 'pCkIWRX2zq', 'oLXIW6aV', 'sSoFW6BcMGu', 'WP7dIWSeza', 'ASojW7/cIGK', 'W5nWWQOg', 'WRJdQ8kt', 'CYhcVCo9pW', 'vKjeW7TO', 'aL/cLvDF', 'W6ZdVCo5W6ddJW', 'W7ldPq3cKCkI', 'BCkkWQBcLmoJ', 'W5uxW4S7cW', 'W5tdQdC', 'WOldHmowW5RdRa', 'h13dM1bN', 'WRNcQJS2WQ8', 'WPddSehdHMe', 'pmkNqCojkG', 'W7BdGWe', 'fahdTG', 'aCkeWPi', 'F8knWPlcKSok', 'WO92WRBcPJi', 'WPZdNt3dQW', 'nSk8WQv6bW', 'yKtdQJW', 'WOVdLHGrvq', 'W7eBW5/dPCor', 'W5FdHdm', 'qLtdRJvm', 'WOvvW6rzAa', 'W4D+WRilWQu', 'mCkMamkmBG', 'W4RcVSk/WRrA', 'W6FdINVdTa', 'eNDCW78K', 'lu8RWPD/', 'WQNdOmoYjGG', 'teFdO8oHvW', 'tupdO8oHAa', 'oxddNSoqWRK', 'E8kAW7tdNmkS', 'WOmbBNJcPa', 'oLxdUL92', '8yQlMW/dMeJdHG', 'jCk2WPpdLfq', 'WRtdN0S', 'jCojW64', 'W5KuWR0W', 'WPNdH0NdIK8', 'W7ZdMSo8W4BdLa', 'cMVdR0fn', 'W6e4qSoFuG', 'WOS4W5DHgq', 'WOqKW79NeW', 'BCkwWRVcISom', 'hL3cLruw', 'WO3dICoDW57dSW', 'm0uOWRT/', 'W5JdRctcUmk7', 'B8ojW77cIGK', 'Ew/cGCktW6u', 'WP8YW4H5bq', 'mSkMga', 'nuutWP1S', 'WQ7dKtaEbq', 'cLFdH3fw', 'f8kNWQpdIv4', 'smkNWP3cJCoA', 'WOzVW5WNW48', 'nwGyWP5d', 'uePnW7fu', 'hConqmo5WQS', 'DwZcOSkOW6u', 'WPWKW5uYW4S', 'WQmQbJrk', 'WRRdJeHo', 'WOKYW5rWca', 'W4qYttxdMa', 'FejxWRSv', 'W6BcRSk0WOW', 'b8onFCogWQq', 'qKtdQJW', 'WP/dI8oKdq8', 'W7KXuG', 'W6yBW4ldOSoZ', 'WOZcMKWcbq', 'WRa1v2FdNq', 'W67dPXJcRCkc', 'WObWy2dcGa', 'W6aAySo0la', 'bCkMbmkNW64', 'W4pVV4lVVyHvsq', 'WRmAqmkgAq', 'WOBcNb8uaW', 'W6pdHZ02tW', 'ovr8W50F', 'W5jJW6m', 'gmk8nSkKW7K', 'W7RdJqSNrq', 'CCkoWP3cL8oG', 'lCkzWPjdaG', 'WRK9ha', 'mMD1W506', 'WQfxvmoyjG', 'nq3dQW', 'WRCifZri', 'WRq9fW', 'W70aimogWPS', 'W67dN8o+W6xdPa', 'WR7dT8oXcGi', 'vwVcI8k5W7u', 'WRuCW5xcVmkj', 'xMBcL8kVW70', 'WRNdHKNdVui', 'WOhdTHGouW', 'WP3cTI0bWOu', 'wwRcKCkXW6O', 'WPfvW6fNBq', 'mv3dU8o2WQS', 'bN7dOSo4WR0', 'WRCQmtnB', 'fmktWOv2jq', 'EJJcOSoWpW', 'W7PcWPyZWOu', 'WRmlqWH+', '8lI4Kmk/WRVdLtG', 'WOS6eWTi', 'WOJdOmowW6ddOq', 'W4K4F8oncq', 'd8oSW63dMmoG', 'qCoaWP1SC0BcQdS', 'W4ddUZRdSKO', 'W7ywW43dTmoI', 'cSkpWOf/mG', 'xJ7cG8oPbG', 'W44/tSo4lq', 'WO5XWRhcQGy', 'C8ksWPFcICok', 'W4NdIGqczW', 'WQpdU8omaqO', 'WRlcJCk5WPyI', 'WPaDW4BcLXK', 'WPpcGX0GhG', 'WQ8/EvFcTa', 'WOi/rKRcKW', 'cCoXW6JdLSok', 'W4VdKYJcV8kT', 'WOJcIHu', 'y1pdKHv4', 'WRldOCkFWP1S', 'WRddOSoqcJW', 'WPFcHHGzaq', 'e08VWP5I', 'WPqrqSkByG', 'WOJdMHqeBG', 'W5rCs8kW8ykdLW', 'W5LAWQSgWR0', 'WPaMW54', 'WPJdT0rrWPa', 'WOqnsc5+', 'rKHhW69I', 'W7O0W4FdOmoA', 'WQFdJ35a8yEZPW', 'FCkxWQtcNmoJ', 'WPqhybvS', 'kSoBW6ddK8oD', 'W6lcUCkJWP5R', 'EeHDW6PJ', 'WRW2W5mrW7O', 'WR5vW5fftW', 'WOtdKtRcT1G', 'WPadcGD0', 'WOOYWPHXgq', 'W6/dGWKMrq', 'WPZcQIKoWO4', 'BYhcTa', 'WOdcJHGCcW', 'omkqWRxcKmoO', 'i0FdUSo2WQS', 'W6ZdKHe6tq', 'W6qoDmoClW', 'cCkTnG', 'fu8NWOyH', 'WOyeW5RcKcu', 'gGZdHCkDWRK', 'mvzJW5yV', 'WPeKAdH1', 'W5zfWRSeWPG', 'bCkmWPNdG0a', 'BSkFWQBcICoK', 'WRSrsSkwwa', 'W7G3dmo1W5u', 'aSkeWPfEtG', 'g8klWOfNiG', 'WPzzW6D5yW', 'hmoGW6ddRCoT', 'W5r8WRO', 'CJtcVCoHbG', 'WPnFW791Ea', 'kCkUnCk5wa', 'fKRdUYOj', 'h8ktWO1lrG', 'k8oBW7NdI8on', 'WQqzW6dcUtK', 'uSoCWQ1Dsq', 'pCk/eSkQW5m', 'Dg5yW7Pl', 'aCoCW6/dHSox', 'mW3dTJtdJq', 'WQ3dL0TyWRi', 'dCkyWP0', 'c8kpWP93bG', 'oSoDFCoDWQS', 'W7BcPmk7WPzU', 'aLOfWR5s', 's1BdQmo3sG', 'W7SBW4FdG8oZ', 'la3dOJhdJq', 'fmkeWPfvAG', 'WRCAs8kl', 'WR0qtSkwAq', 'WPmjW5lcMNC', 'WQ0bzSkCAG', 'W7KjtSotlG', 'W4jtWRmIWQy', 'WRX7r8ovvq', 'bvtdKgDo', '8yceJSo4WOqgWRK', 'W5/dJcu', 'd8klkSk7wa', 'WQ/dM1Dj', 'WOuqwb91', 'CCkqWQC', 'cmkunSk8W64', 'WQ8RW73cJs8', 'W7agW5JdO8on', 'kfPKW4KR', 'pmoQW7RdNmom', 'WQJdKYVdKIO', 'WRZdJsOf', 'WR7dVCorbXK', 'WRTApJhdKG', 'WOxcMGiwea', 'WPCJvwJcLW', 'W4NdJCoiW7/dQa', 'a8krWRFdJ1i', 'WP7cTZenWRC', 'k8oAy8kzW6u', 'B3JdMSoUCq', 'W4n4WQOlWPu', 'nmklW7xcJq', 'wCokW6tcMqu', 'vLvqW6vg', 'bhiMWQvp', 'd8kRWR9rpq', 'WQRcIXWfna', 'WP7dGtCAbq', 'jSoHESoWWRy', 'WPqCxaKH', 'W4mTW5xdG8or', 'WO1tWP3cKW0', 'W73dLmoYW7ZdOa', 'kr3dL8kVWR8', 'W6ZdN8o2W7ddRW', 'kSkMd8kmBG', 'W6hcUmk18ygKP3q', 'omk3ba', 'fmk9WRFdK1y', 'W7vWWQqSWQe', 'W6O1h8o5WPO', 'e8kBWRNdLLO', 'leFdSW', 'pmkjcmkm', 'WR4Vfq1D', 'gf3dM11z', 'r8oQW5NcJY4', 'WOezwMNcNq', 'fCkpWOjGkG', '4BE1Y4JHTR814BwD', 'otZcVSoYgW', 'WP4gntXa', 'WR89cY9h', 'dmkpWOjN', 'W4FdSY3dSxm', 'W444C8oCba', 'WQVdIc0UoW', 'WPjvWQJcHGe', 'WR7WSAIFWRe', 'kSk3amkgCq', 'kvVdMCoN', 'W6JdUYJcMCkb', 'WQBdTCo9W5VdIa', 'd0ldNK1h', 'weHAW7HM', 'W7ddImk/W7JdRW', 'wKbAW6XH', 'WOddMmktW53dPG', 'WOWoAsXJ', 'WPqiW5i2W4G', 'W6WHdmoCWQa', 'WRSRrtzl', 'W4hdPta', 'W7anW5/dP8oe', 'wLTm8l2vT2y', 'WPa1r3S', 'W6G5bCo2WPW', 'lNNdSq', 'WOa0W5qYW4C', 'WO7dGZGjta', 'omohECog', 'W6pcJCkPWQ9B', 'lZddOaZdNa', 'WROejdbO', 'WPNdMmo6W5FdOq', 'W48oW5ZcKZi', 'pvr1', 'orpdL8kYWR8', 'WO54WRtcRaa', 'nNVcGSoHha', 'ExH9W7jx', 'k1TXW5e9', 'W4r0WRadWRK', 'WO8IW4XHeW', 'AvvwWRiY', 'eSoqW7/dKCo9', 'WO8gsr5r', 'WROeBZPM', 'aCkfWP9FqG', 'WR8RaG', 'W5NdSYtcUmk4', 'WOFcIH8wfG', 'i8kgW44', 'W5mWzmoBhG', 'p8kSe8kFAG', 'WO4jW5NcVJm', 'W7CSxW', 'WRapW68pW70', 'WPimW5dcMXK', 'tCkDWRBcRSo+', 'W5ddHdxcRSkS', 'WQNdM05zWPa', 'WRCyodLV', 'WR7dUmo2aWK', 'wLhdVSoKya', 'WRxdIZfkhq', 'wmowWQe', 'WPFcQxBcOsVcVmk2pbDbW5VdVq', 'WPddNSoyW5VdPG', 'WQddNwu', 'a1BdHLf6', 'WQFdGwFdKM4', 'gX/dUs/dJG', 'WP/dRg3dShi', 'WQyCfZTm', 'FCopW7/cMr8', 'WRNdI1TjWRi', 'W7tdQXBdSha', 'CKLeW7XD', 'CcGaWPr2', 'hx52W6au', 'W4eBW5tdSSkz', 'W5xdJYlcP8k9', 'rr3dUYTm', 'W7X7u8ozwa', 'B8ojW6pcIq0', 'WQNdQX8WvW', 'F159WPSg', 'WPyMva5z', 'gSkcWOPi', 'W6/dIZtcPmk4', 'W7hdHc/cV8kH', 'jfiR', 'WOVcPdKf', 'WPK+W4X5gq', 'lSkfWQj3cG', 'rmo8W5FcTt4', 'WP42W59W', 'W7RdJqSWqq', 'tam8WRjC', 'kuRdH1Tf', 'W6qpu8ovpq', 'sGa5WRHa', 'W7NcRSk1WOTT', 'fvv2W5W9', 'W7ZdKaq/Bq', 'WR3dJNNdG1m', 'WPeEW7/cQW8', 'oXVdOtZdIW', 'WQVdSJmiiG', 'W47dHghcGSkU', 'WORcQIKPWOy', 'FYlcNmoH', 'WR7dKfS', 'C8ojA8oikW', 'nCkUWOL6DW', 'W5xcVfXWaa', 'kSkIbSkn', 'WProW7P/yG', 'WR9EW7m', 'vSkSWRhdNVcKKPO', 'w1JdTc1a', 'W702W77dQSo7', 'sae4WQLu', 'W6RdJraHqW', 'pmkZdCkrkW', 'W5qAW4hdR8on', 'W6hcV8k+WPfS', 'WROvoInQ', 'dCkXlmkSW74', 'WPmCW5tcJsm', 'W6aysSooua', 'WQaYW4TMhq', 'W4eZW67dQ8oB', 'WQmRW7dcIcu', 'qLJdOI0', 'm0BcLa', 'CYlcOSoLfq', 'WOddJXG3ra', 'W5m0W6tdQ8oc', 'WQhcVqq1WO8', 'oKz+W4y6', 'W5GBW5JdP8oh', 'omkrWQJdH1G', 'WPNdQ8oBW4ZdOW', 'WR/dSxhdGg8', 'W6NdGNlcQsa', 'v8koWPbNkG', 'W5i0vmo7pW', 'E0XeW64', 'WRinW4xcKY4', 'imkHa8kGxa', 'WOP/d8os8jYrIG', 'W6S8qSoFuG', 'W5CzqCo1la', 'lqNdH8kV', 'oCkzWOpdO1q', 'WPivFLxcPa', 'kIhdLbNdRW', 'WQeTbYHA', 'W6atC8kDjG', 'W57dLWpcICkL', 'dgfvW6mh', 'W7JdLIGREG', 'W7FdImoDW77dTq', 'W5tdJ8owW7ldQG', 'WPxdIColW40', 'W6pcQ0VdTCoO', 'W7xdK18o', 'W7ZdLmoRW5/dTa', 'bSklWQ7dL0e', 'oNZdNK1w', 'yJtcOSoW', 'D1nWWRew', 'WOW6W4ZcKqm', 'W5eYW5OWW4S', 'W6GIdSo0W5u', 'wHuSWRXv', 'auVdKG', 'WPVcRc4bWOW', 'xqnNWRWf', 'WQJdU8oKhrG', 'WP0XW658mq', 'EmkxWRJcMmob', 'W5SJC8oqxG', 'WPqYW4GNW4u', 'h03dL15s', 'WR3dLg7dOuC', 'gSkajmkFEq', 'WOqnxXLP', 'WQffW7JcU3C', 'WPjZWQVcRc4', 'pSksm8k6wq', 'WOxcGb4cbq', 'WO58WR/cRa', 'WPqcW5Xrda', 'lmohFmoWWQq', 'WR3dL0nyW7a', 'W4r0WRadWPu', 'W7W5hCoHWQ8', 'WQ/dQmo/W6pdRq', 'sgxcGmkSW7K', 'W4auW6RdVSoK', 'W5ZdRcSJEG', 'W5r5WPWuWR8', 'WOaYW4TMhq', 'aCkxWPLD', 'uGmSWQ5t', 'oXpdHSkWWRm', 'WOxdUHKW', 'cmoHqq', 'WPCUW5qYW4C', 'lCo8W6xdKmot', 'edFdSCk2WRe', 'WP3cVsOfWPa', 'p8kSdSkCBG', 'kGNdStxdGq', 'oCkydSkkW7S', 'xHq4WQ4', 'vKRdRmoRya', 'WQC5AX92', 'lX3dVsNdIq', 'bCkMaCkLW7G', 'W7FcR8oSW5KJ', 'sSk6WO7cHmo6', 'W4rHWRioWOq', 'W7FdImk/W7ZdPa', 'W4JdGSoZW6hdRW', 'D3/dMr1S', 'F25JW6Xk', 'WPqnW7aPW7a', 'FejxWRSG', 'o8kZfmk/W5C', 'oCohE8ohWQy', 'vw7dMbnp', '8yQlNG/dMfJdIW', 'WRBdM0fjWRq', 'Be5jWR4E', 'lr3dHSk0WRC', 'mK3dUCoTWRO', 'l8oQq8oZWRe', 'WQpdIMjyWQ4', 'W6ykW4xdPCoi', 'W4ddTgPvWQP4WORdMwRcTq', 'FbLdW4aG', 'WOTqWOdcOtK', 'WOvFW6n8Bq', 'WPRdLxHSWOK', 'uuBdVG', 'k8kSfSkHBW', 'WRddNGCnvW', 'xeJcKCkSW64', 'c8kWWRbQgG', 'WRFdH2j3WO8', 'WORdJ37dVx4', 'nmkMd8kCyG', 'fJJdQY/dJW', 'AvpcTCkRW60', 'W7KZcSoZWOe', 'W4hdIthdUW', 'W7pdJqW9', 'B8ouW77cKY4', 'W6ZdN8o2W7/dPG', 'W6q9t8ozwa', 'jCojASoHWQO', 'uaG6WRL4', 'WRuwW4NdTmog', 'W55IW74kWPu', 'W6aZeG', 'FfDvWRye', 'W4tcQSk6WRXm', 'WQCqtSkwAa', 'Ae3dKmkHWRe', 'WPtdISovW5ZdTq', 'WQlcIrW2WRS', 'aGNcQ2eAWPy5W5ugWP/cLSogW7i', 'WP/dNaOlcq', 'WRajxM7cKW', 'WRJdLI0h', 'h8kkjmk+FG', 'o8ooW6JdKCoE', 'WOddQtSrua', 'oa/dH8kMWRu', 'WR4zW6WKW7q', 'dKK3WQPV', 'jfKSWPn8', 'cmk1jCk+EW', 'ob3dVd7dMa', 'AGJdIW', 'WOmEW43cHIy', 'WPaAW5dcMt4', 'pvr1W6WQ', 'W7S2xSoixG', 'o8oFW6FdM8oI', 'W5T+WRK', 'W7VdGG8', 'wJutWRT4', 'WOK1W7yJW5e', 'WP5jW5j0yq', 'bSktWOzm', 'WRH0Da', '8yckS8o4W6mNWQ8', 'BmkBWRxcNSo5', 'aSkdkCkyW7m', 'WQeBW6WTW5q', 'xxpdGcbV', 'AGSKWPX5', 'WRXqW4zYFW', 'lq7dKCkHWRS', 'kCoaB8ohWOq', 'W5ZdQaRdUxW', 'W6dcO8kfWPTM', 'xgBcHSkTW7e', 'pmobASoqWQO', 'WO51WRFcVIi', 'WPn2WQVdQrC', 'WQfDjW', 'dblcTt5a', 'WQ/dKMtdVL8', 'WOiIw2lcSa', 'W5BdUsldS1W', 'WQKgxW56', 'xeRdJ8o2sa', 'WOywqmkaAq', 'WQ14WPBcVXy', 'BCoNW6xcIH4', 'e8krWQ/dKfa', 'WPuAqa', 'AmkAWQK', 'WQeejJHT', 'WRukW4pcPSok', 'tduMWRnr', 'W7pcRSkVWQXl', 'W7S1W5xdR8ol', 'WQ8rW69mgW', 'WQKMBeJcPa', '8ksALSkvhNna', 'ixpdSevu', 'jMyAWPbU', 'WQ3dLImz', 'WPxdUcyxBG', 'wComW6RcKWy', 'EHlcN8oxfG', 'WPTFW6D1Aa', 'WP0XWOe', 'W6hcRSkIWPXp', 'WPhdJCobW4RdOG', 'W6FcUCkG', 'W59uWPGTWPC', 'o8ozy8oZWOm', 'WPGCyr9O', 'WQ/dGreAdG', 'la3dSZ7dMa', 'W7jFWPOZWR8', 'ALvyWRm9', 'W7tdJuPoWQ4', 'WOW1vwVcLW', 'd8kWf8k4W7G', 'W7CSx8ozwq', 'veFdTa', 'W6uMqSoiuG', 'omo8D8ofWQa', 'ws0zWPD/', 'WO7dM8oDW5ZdTq', 'aCk0e8kVEq', 'W68Zb8o1WOe', 'weHDW6jQ', 'W5CUtmoqga', 'xgZcGCkmW7K', 'W4JdMdhcRG', 'WPqVW581W7u', 'WO/cGaS', 'kCk+WQFdK8o6', 'WPuLw3VcLW', 'aCkza8ksW4q', 'ycNcHSoZnq', 'o8oFW6FdM8o0', 'W6BcRSkHWQ9w', 'WR7dU8oXcH4', 'g8kVWQPkra', 'hCksWOv2jq', 'uKFdVSo2zG', 'WOrZWQ7cGXK', 'vHyRWRrD', 'WQJdV8oPbHG', 'WPOQW7CTW64', 'W4RdQs/dUW', 'cYNdK8kwWOa', 'W6xdHJFcICkH', 'DvddVYbS', 'WOK1r3ZcKW', 'eCkzWRD8oq', 'oCoDBmogWRe', 'W5ddUtVdOW', 'W5FdTIdcUCks', 'r0zqW78z', 'W43dSmo+W4BdQa', 'eSo1W5NdNCog', 'W4bcW6BcMJK', 'gxRdMhfH', 'WRCylcjU', 'WQa7W7TaoW', 'CSkrWRxcMCoa', 'oCkejmkDW7u', '8yU1I0uwsW8', 'WOuqrqLV', 'keC+WPv+', 'W7JdR8oXW6xdLW', 'WRypoW', 'kfK0WPvW', 'wuVdOCoGkG', 'WPdcGWuwaq', 'WOCYW49+pq', 'uCooW6ZcKWSKW57dMxtdNr0', 'WPFcPbyehq', 'cmkgWPjWgG', 'bg3dMmohWPO', 'WQesiZz6', 'lrVdSZRdIq', 'WPuEiZi', 'WPxdHCohW5xdOG', 'c28rWObr', 'n8k7WQ1/Da', 'WQemW5JcLJK', 'mW3dOs7dJq', 'c8kpWOi', 'WRywW5KoW6G', 'WOe4W58', 'DXJcTq', 'tHq0WR9t', 'W5auWOBcG2m', 'ivZdTq', 'WROsW58cW5y', 'WPX6WR3dUW', 'lCkBWQNdKvi', 'oaFdObJdJq', 'pSoEW7q', 'i8oAB8kyWOG', 'WOCbsGm', 'WPritGmH', 'maZdKmkUWPK', 'ju8S', 'W4FdQSo2W4ddMa', 'W747ta', 'BCojW6BcKaa', 'mmkUWRvNhW', '4Q694P2gWPHv', 'fSkpWOzGjW', 'W5vaWOWKWOu', 'd8kqWQK', 'WQj+W71eAG', 'F0zlWQSz', 'WPO2W4PXgq', 'W5JdVmoxW5JdIW', 'hCksWOu', 'r0HeW6rZ', 'WPFdUG0Tta', 'oXRdOdldNG', 'ESowW73cLXG', 'WO/dJCoAW5xdKG', 'W7BdIcu', '8kI5O8k+FCo/W78', 'WP05lJ5R', 'tbldUYLa', 'WRRdQmoG', 'WOeDW5hcLJG', 'WOuxWRXIBq', 'lsVdVtNdIq', 'AJaiWOvR', 'WRWfw8kByW', 'WPpcNqmtdq', 'W78XwmopvG', 'WPRdHxNdPw8', 'BmoEW6xcMWi', 'w1JdVJbi', 'WPqCsqHw', 'u0jBW45M', 'sbiPWRzG', 'WRC9sZny', 'lvxdNN9b', 'W59UW5CVW4a', 'av3dHKDw', 'WQJdLgO', 'jSo0W5NdKSoO', 'obRdVtddOq', 'xxhcKq', 'WO7cJqiudq', 'p8oBA8oh', 'WPuZE1xcGG', 'p8ktWO1lrG', 'WPuJW7vWdW', 'zJxcSmoWfW', 'sXq2WRa', 'W4JdLc7dKM4', 'gSkUWR16ca', 'WRb4WQZcQaC', 'od3dJCk1WPa', 'W6hcRSk/', 'W5SlW77dLmov', 'ie06', 'WQNdM05EWQK', 'EwvpWRGA', 'xw3cJmkSW7K', '8yMMRq9WWRJdUG', 'v1hdSZHA', 'tWCTWQLB', 'gSksimkLW5m', 'fvfdW6qF', 'WQVdOmoPaW', 'WR7dJf1sWQ8', 'e8kBWRtdHLy', 'WPGUW4G', 'uIitWPPc', 'WPWJW540', 'WQrThmkiatpcHuxdVxmHWQn8', 'WROhoZ5S', 'W7C6xW', 'lfhcTq', 'WQ0nxWL6', 'FqVdLCk0W7i', 'WR7dQcuydq', 'WP80W5y0W4C', 'W5P0WQ0uWPe', 'eeLFW7uE', 'a8o2W5hdKmo2', 'WRqXcs9l', 'W6hcO8kLWP52', 'WOldICoMW4NdOW', 'tu3dUSo2', 'FCkgW7pcH1y', 'WOKfW6eQW6y', 'W6ZdQSoSW7tdTa', 'otFcPmoQeq', 'BIxcNmoHaq', 'WQmsW5rbmG', 'l8oqEG', 'WOZdRXGWvW', 'e8kpWQPDxW', 'W5/dQcVcOCkB', 'WPFdGYOVuG', 'WPFdMqu3xG', 'WPiIgXHC', 'AmosW7a', 'mCk9WObHiW', 'WOvPWPhcPWu', 'WQJdUSoNbqK', 'W6hcKqbqWRG', 'WPDYWRhcPW', 'W51QWRNcUKm', 'WQ/dQSo9gW', 'WRyCx8ktyG', 'WQ8CBgdcOa', 'eSkZWR/dKua', 'W6ulW5/dRSon', 'WPmDW5FcLti', 'W6r2pCoXWP8', 'rL1fW6jZ', 'eCkvWOLGqq', 'WPe5FJL3', 'xLFdQCoSAa', 'EWDBWQzk', 'W53dLcxcOSkN', 'WPGKW44eW5i', 'YA3HTyhHTQdQNBFHTQi', 'wuJdRILC', 'c1hdKW', 'WOjiW78', 'eCkjWPHJkG', 'WO42W4X2fa', 'WPFdNruTvq', 'udBcOSoamq', 'W6WyDmookq', 'a8krWRtdHfO', 'WP43W64WW4O', 'WO3dVHGQwq', 'W4j6WOylWR8', 'W7uuv8oNkq', 'W53dJsJcQSk7', 'W55IWPeqWP4', 'W7ldPGBdN2O', 'W6OIdSosWOa', 'lCkQd8kpEa', 'hXe+WQ4s', 'WQVdLGbBWRq', 'WOldNa41rW', 'W6m3gmoDWPa', 'heZdGq', 'WQZdJezjWRG', 'WO4BstD+', 'W605gCovWPq', 'WRNdLqqGaa', 'W7hdLHxdS3S', 'l8kQWPJdRhe', 'WQJdM0fz', 'BdiEWOLN', 'W4NdPwzvra', 'WRiAkJbH', 'WPpcMH8D', 'W53dKJxcRSkS', 'WOq6W5LYgq', 'W4ODcSo5WPS', 'W4tcPd8Mwa', 'W7VcU8k4WPfT', 'pmoFW7hdIW', 'BgZcNCkSWQy', 'FK3dNSoevG', 'WPaLW58', 'lSonFq', 'EJ7cTG', 'f8k0WRn+uW', 'WOKgtXzU', 'WR/dGsOojW', 'WRFdNCoXW7ldGq', 'jmoFW73dMSoa', 'F8kkWRu', 'WRqEks4', 'WPtdRhDVWRa', 'lx9uW6CG', 'WP0NWPz7gq', 'lKC6W4eK', 'dmoFW7RdNmow', 'WPPFW6bJBq', 's3xdPCoNAG', 'WO3dJmo8ldW', 'WQ7dJKTCWQK', 'W7ldHXW', 'WQespZTI', 'w2tcGq', 'lL0wWR5p', 'WRBdRSoIcI0', 'ihNdMfvB', 'W6RdSrW9qW', 'qSk/mCkNW7i', 'WR7dT0fBWRi', 'WPX+WR3cObC', 'WOhcQZytmW', 'hSkzWPLFqG', 'jmojESoCWRm', 'W5jIWQ0gWPC', 'vfLbW6vM', 'tepdQSoG', 'cKhdSa', 'WOuUqbvS', 'tuFdVCoPzG', 'WRxdVmo1bH4', 'E8knWQFcNmoQ', 'WPRcQIOUWPC', 'W57cOumUuW', 'FHtdRN0', 'WP98WQVcRa', 'WPWwja9y', 'WPmBsG93', 'WRTskmouEa', 'W6q/uSofiG', 'iM7dOv17', 'g8kfWRHxvq', 'W7VdS8kL', 'W63dNSoXW7xdJa', 'W6pcGfq', 'dmkzWQrJlW', 'iv3dKv1w', 'hY8RW71L', 'WR0qW7T2la', 'WPFdQWiNuW', 'AICjWQVWNQkJ', 'WOCzCgRcMG', 'WQZdICohW5JdOW', 'xupdRSosuG', 'W7FdLSo+W7BdPa', 'xuxcJmkRW6G', 'W6vdamkMyW', 'guddQSk4BW', 'W4JdJbaNAW', 'W6tcHSkuWPby', 'A8ohW6pcIWi', 'WPPFWOVcNsC', 'wKtdRJXh', 'c8kCj8kzW7K', 'ySodW6G', 'nmkFWPjDDa', 'WPeDW5RcIZi', 'cSoUW4C', 'pSkiBmomW78', 'W5NdHsJcV8kT', 'W7RdIXuYtG', 'WQldLYeNdW', 'x1ldTa', 'B2ZcICk7W7m', 'W4v+WQKUWPq', 'W6VdHWqWva', 'WPlcQmoOtYi', 'wf5o', 'f8kYWPfXAW', 'W5JcSJ8tW4i', 'WO51WRhcRXC', 'WONcSdeuWOC', 'D8krWRRdKSoU', 'mqNdTG', 'bCkgWQ7dH0e', 'WOuNASk0rq', 'h13dM1bs', 'WPdcTs0mnq', 'WQNdMmotaZ8', 'WPHTWRtcSem', 'WQC5tSkaAW', 'WOKfD0VcSW', '4BE14BwpWPJkJog1SW', 'W7WsW4NdLCoA', 'ghVdMevs', 'WO3cUqCLcW', 'W5zHWQ5jWPm', 'WO4pW7tcLWu', 'W7GZga', 'W6DaWOW0WQq', 'WO94WQJcPrO', 'W7eBW4ddO8ox', 'lZJdOCkwWPa', 'w0FdQCoryG', 'n8kkf8kQFW', 'lCk/WOldVwa', 'cuRdTLve', 'W4hdRZddTN0', 'wLddMCoTCG', 'W6mHrmoiuG', 'oCkfWOfHlW', 'l2bKW4WT', 'WR/dIZeycq', 'WROZltvO', 'WOi5W51XnG', 'dmkfWR18pa', 'W5ClW5JcPSoQ', 'W4RdRYZcOSkh', 'WOymqCkr', 'WPtdQX4', 'bxjNW7yj', 'WP7cTZen', 'WQNcQaaMcW', 'FrRdM8kYWRW', 'W4yCzCo9BG', 'W5dcU8kGWPfm', 'tSkVWOBcRSoz', 'oXZdPJJdNG', 'wZtcPCoLfG', 'WOtdHcVdUNK', 'nCkpWOvYlW', 'W6dcPmk7WRfM', 'a8kFWQRdLLO', 'WRyvacHD', 'sgVcLCk9W6K', 'WRRcRsa3mq', 'BIxcMmoQfa', 'WPamW4KUW6a', 'kCkAWQpdK0y', 'iL3dOmo2WQe', 'xefmW5H+', 'W4xdQ8otW4tdHG', 'WRTHx8kKW4C', 'WOe7cILl', 'WRpdILTnW6C', 'W7CrW5JdMCon', 'h13dM1b6', 'ntVdPJZdMa', 'WR86acK', 'WQ/dTSo1cG', 'vKjeWQrr', 'WQ3dHxG', 'WOucW5y3W4C', 'W4BdSYFdRG', 'W5JdQqq6tG', 'gCk8WO9Byq', 'WRWHw8oyvG', 'W7JdQclcKSkN', 'WOqnW5hcQZi', 'W4ZdLdlcOW', 'W5FdMXVdUw0', 'WOyAW5RcKHO', 'WOaKW58', 'sgJcL8kSW7u', 'WO95WRhcPWq', 'ymoeW5/cLb4', 'WOuqW4hcMJK', 'WPFcQY0', 'W6eXrCoyuG', 'WPuKW58sW4C', 'W7KZcmoLWOC', 'WPL4WQVcQHe', 'WOuBxXT8', 'obJdNCkZWRC', 'W747cCo1WOC', 'jKFdPSo1WQ8', '8yURMw99r0y', 'wKSRWRHa', 'g8kcWPy', 'WRdcLmoVW73dTa', 'W5n0WQ0', 'e8kUWR7dL0u', 'oSkUbq', 'W53dLsa', 'AW02WRby', 'WQNdGCoWaG4', 'aCkom8kFzG', 'WONdM8oDaHG', 'mCkKWQ1qFW', 'WRtcHWuzaq', 'WQNdLNK', 'WPhcIGGgsG', 'WP7dNCotkr4', 'WQuhsSkuzq', 'd24tWQHX', 'WOSeW6jGbG', 'WR89fIHp', 'v33cISo1W4W', 'WRuywf/cPG', 'W6aCzSkeFa', 'W5RdRW4KCq', 'cG3dQINcLG', 'W5FdTcZdOfS', 'WRKnlXzP', 'W7ZdMHe2tG', 'W60yoG', 'W7GBW5/dTCoc', 'WOC+W5W', 'WQ/cR8oNfLy', 'vw7dOW5n', 'WOmbxbT1', 'W7VdM0uLqq', 'cmoMACo/WO0', 'W6vqW4ldO8ox', 'WPFcIHqb', 'gxaWWQDI', 'ju8SWPfP', 'xxVcPSk5W68', 'zYtcVSoWfW', 'WRZdLIShaW', 'W6u7W4/dP8o7', 'hCkzWOjYla', 'W53cMmkwWOPN', 'teFdO8oHsG', 'lq3dVdNdIq', 'rKHhW69k', 'ymovW5FcKr4', 'gHhdUWVdLa', 'fCkIbmklW6u', 'W6dcRSk/WP1S', 'WRZdPuXv8kArNW', 'W4FdSY3dO38', 'pvfYW4KN', 'yg7dKtr5', 'WOC4W5f7', 'WQFdLSo8W7VdPG', 'dmkBWRtdHuC', 'WP/cOcO', 'xe7dMZHb', 'W7tdHWSNsq', 'WQyfq8kBEa', '8yofKSkBc8ohuq', 'WPqrxb8', 'WRXiWOZcHJW', 'y25nWPOd', 'WPzEW4bbqG', 'W5FdNLPfv8kpdCk4W7HhA0XO', 'oConymorWQa', 'WOKBW7lcJtG', 'WOZcM0WMaq', 'WOmfW5hcTJm', 'dd7dLCoPWQu', 'WPWKfsvM', 'WQqHdSo8WPy', 'krxdGmkRWRC', 'WO3dTSoPhWi', 'e8knWRVdHvy', 'W5JcItSgWPy', 'W5L94QYF4P2giW', 'W7KZcSo0WRm', '8yABVHqLWRzz', 'WQLeWRNcKra', 'WOhdHauN', 'WRtdUunnWR4', 'W6eupSoBWOq', 'mNKMWPX4', 'AamZWR5D', 'WPmZmGP6', 'WOLUWO3cUqC', 'WQCopZi', 'W7ddJbe2uG', 'WR0NtSopra', 'WRZdKtCc', 'o8oXASomWOi', 'WPCXW6dcVHa', 'E2voW59I', 's03dGCoQCa', 'vK7dQmowCW', 'WPLBW78Wyq', 'ESkBWRJcMmo5', 'kuKmWPzO', 'WQ/dQCovlqO', 'WPmeW5ZcNdi', 'W7RdJWe', 'lgVdMSorWQO', 'WRytB3yI', 'BamSWQ5B', '8yolR8kBBmoMrW', 'FGRdQ2FcHG', 'WPa0cIbX', 'l8omz8obWQa', 'kfKaWPb0', 'WQhdGtCzcW', 'r2JdOSogCG', 'j8onFCogWQq', 'jItdGrpdGq', 'WOiqW5rLhW', 'W7eBW58', 'a8krWRtdLfy', 'W4akvuaX', 'W78rW4xdQa', 'WRhdIs00vq', 'q8oXW7/cRsK', 'WRmSaa', 'FCkgWQ3cVmox', 'kK3dO8oPWO8', 'dmknlCknxa', 'xf5MW7XP', 'z29iWPiC', 'WPWQW58VW5a', 'o8k1i8kQzG', 'W4aFW5tcJhC', 'bCkBfCkdW60', 'dSotW6xdMG', 'WPqAW4lcHZW', 'WOddMmos', 'WRJdPYKBdW', 'v8kUWPBcMmoI', 'W5NdLmoWW7xdOW', 'lCkyWQVdJgK', 'W5G5rSoAFW', 'nmk8WRxcMCkT', 'tfBdRmo3CW', 'WPvvW7DP', 'zSoqW4tcIaq', 'W5RcNCk4WQfk', 'WOqhwXr3', 'W5ZdRcZdVh4', 'WQNdQSoOabO', 'mbZdOxpdMq', 'W59LWQOxWOm', 'WPC0W5uLW5y', 'mfz+W4i6', 'W5pdHrBdLL0', 'W4r0WR0tWPK', 'WRZdJebiWQ0', 'k8osW6JdIW', 'WPTvW7q', 'WO0oxs9Z', 'WPdcNa0saq', 'kub1W5C', 'zSoxW7pcHHy', 'hSktWPbFuW', 'cmkWD8kRWQ8', 'cfH5W4GK', 'W5NdMtxcRSkM', 'W6WZgmk+WOa', 'WOddSeNdTMu', 'fdldLGVdVq', 'WQeufq9n', 'zmodW6lcJq0', 'WRzIW7rdEq', 'F0zlWQWv', 'aCkWmCk7W70', 'yftdQmkI', 'WRayitfQ', 'WOKUwHfz', 'W7imW4pdS8ot', 'wrqWWRa', 'pmkWeSkjBa', 'W43dLc7cV8kT', 'WP/dHYSydW', 'W7CGx8ozrq', 'WO94WRNcQHC', 'avRdKey', 'WO58WR/cRem', 'cZ3dLCoQWQZdT8kLWOHnCCk0CgO', 'bH7dLHxdIa', 'W67cHpcKLAewWRm', 'o8opW6VdLCob', 'cSk+WOHJlG', 'W5STW5ZdGSo7', 'nv91W7y3', 'l25xWRXE', 'W77dUtBcR8ka', 'j8okA8ohW7C', 'WO0nxWL6', 'WQlcHtSzmq', 'WRBdVHepaa', 'W5FdUs3dS1C', 'WQSoaG91', 'C1pdNmoixG', 'gSkGWQXSza', 'WOBcPGufdG', 'wWVcL8opia', 'WROFW7JcPGy', 'WRmhW4BcHtK', 'W6hcMSkDWRDd', 'W7tdV8ogW6BdLa', 'WPddQXq3', 'WQNdVmoKgWu', 'WR4pjrjg', 'WP7cSdadWPy', 'W6BdJ8osW7tdSG', 'oxP+W4mH', 'WPldJCouW5W', 'WO/cLYlcN8kCcJNdUa', 'WPXPWRdcPWi', '8kIAMddcJXRcLq', 'W4ddSZtdUxy', 'pmkTbSkCyW', 'W43dHX0NgG', 'hXVdUSkLWQm', 't8kBWQFcQCop', 'WQu8gmo/WPS', 'WPTYWRFcVqy', 'W74BW5u', 'thvQWRCO', 'ASo/t8kvWRm', 'WOddMmo+W4hdNq', 'WPmCW5tcIYi', 'k8kDWRhdL30', 'lCouW67dI8om', 'WPtcNZ03WPq', 'W4JdOIZcUSkT', 'vKH8W7TJ', 'WPXHW40NW4G', 'tMPwWRWb', 'p0D5W4OG', 'zttcV8oGpW', 'j8oby8oqWRe', 'bvNdUSoHWQy', 'WPhcMcGKaa', 'WRS3c3rn', 'j8oGW7STAW', 'BNpdLsfD', 'oSo0W7ZdKSog', 'WOWJW7vTjG', 'vvldTc9m', 'iSk0l8kT', 'WOvvW6rJ', 'FmowW7xcNXG', 'zmodW7xcLW0', 'W6yxW4ldOq', 'fCkyWRZdH0e', 'WO8gwb91', 'W7X3fJ5A', 'fH/dN8kYWPW', 'evzJW5yV', 'W5f+WQWIWPe', 'WOuSW5ONW64', 'WPWaz8kNDq', 'WPGJW5f5', 'WQKeW5GaW6O', 'iLGkWPzC', 'WRKbkGbK', 'W7FdTGaRva', 'iuxdSq', 'W6RdMSo8W7NdRa', 'W5CqW4b1yG', 'esBdJrtdQa', 'WRZdO8oSkZ0', 'W4RdLsC', 'WP3dPt8oWOy', 'ww7cGmkrW7G', 'WPvHW5GPW48', 'WRldOt8NDW', 'kNKRWPnV', 'omk+k8kLW7y', 'WPBcPdCmWRC', 'rgvtWQSb', 'cw3dH1G', 'n8kxbmkqFW', '8jYQIrNdTttcUa', 'WOuKW4mY', 'ufZdTIPm', 'pv51', 'h/cxUOhINQ0', 'WR7dJvXCWRO', 'WO0FW5dcVJG', 'vsSlWPDi', 'pCohw8o0WOC', '8k22UY7dUmkGWQu', 'W6RdKSoRW73dPa', 'WPGCW7JcMIq', 'i8oBtmoAWRe', 'WQ3dJ3ZdVwy', 'k8kuWRHzBa', 'jCovW6tdMSok', 'hmkdWPbspW', '772f77+N772JW6JcSq', 'WQrAWQNcNZm', 'W6a7xmop', 'jCktWPjBsa', 'WOdcSrmfWPe', 'WRJdOSoHjGG', 'FwTCW4rp', 'WPhcNa0bdq', 'W4ZdLdlcO8kM', 'zxVdMXrQ', 'zshcVCoTbG', 'WQJdN0HyW70', 'AWmNWQKi', 'h0VdLfns', 'tfRdJa4D', 'WPCOW5uI', '8ko5NCoEeNnl', 'W5mYWRtcOae', 'WPRcRqSRWPe', 'a8k0jG', 'W7mzwCouDq', 'WR/dHsmpsG', 'dSoeW7O', 'BgpdQSoRsG', 'W6NdNrVdIeK', 'W6tcOSkOWP1T', 'WQJdLKbkWPW', 'WPFcGtikWQ8', 'WOviqHvV', 'WRafW7RcIa0', 'W5hdPIFcVCkB', 'WRyysW', 'WOJdGmowW6RdSW', 'W7KjsSoyoW', 'WOiXW5CVW5y', 'WOSzCw7cVG', 'WORcOd8dWPy', 'W6ZdTSo6W6ldSG', 'WPBdQSo2ha0', 'cG/dKrZdUq', 'WPVcQJauWOC', 'eSkrWQ3dQ1C', 'WQDkW7Tavq', 'dmkBWORdI1a', 'WQ5mW6T0EG', 'obRdVtddRG', 'rv9gW79O', 'mmolASoLWO0', 'vwZcLSkRW70', 'WOFdOWGkuG', 'lCocW73dMSow', 'WOnsW6z9BG', 'W6qrhSo6WQu', 'W6CrW5VdTq', 'WRanw8kxyG', 'W6ZdNSo+W7xdJa', 'bvBdGvff', 'WRJdKuflWRG', 'WOuVEmkzEG', 'AZ8pWPr8', 'ECkHgmosiq', 'FSo/W6JcLqe', 'kSk2a8kcBG', 'lMddGLb/', 'qKjkWQWr', 'ugZcHmk8', 'WPxdICoaW40', 'i8oTAmoxWRy', 'uxRcQmk9', 'qmoEW7O', 'WR/dGsOodW', 'j8oBAq', 'WORdHJScFG', 'WOJdN8oWW5tdOW', 'WPejbZb8', 'WOSLW5D4', 'W6VdSXy2vq', 'kfTLW4GS', 'hSkWi8kSW5O', 'WOVcOdaeWQ8', 'WQyAu0VcOG', 'je3dUmoNWRO', 'W4/dHc/cR8kf', 'WQy9fI8', 'FCoFW6hcMW', 'zItcOSoS', 'WQu4W4SJ', 'WRCIW6tcHI8', 'BMBcTSk8W50', 'lCk2e8knxG', 'cmkWjSkCW7K', '8lArG2pdGxVdOq', 'm8kYWQ7dPfW', 'WRldKKPUWQq', 'DCklWR/cQmog', 'W7pcUCkRWOS', 'm1JdUmoRWRO', 'DctcPCoWhq', 'WQZdKKJdSNK', 'WPH8WQ5t', 'rhvBW5P3', 'WRmvmZr7', 'eCkzWPnvrG', 'WRK6gX15', 'dmk6WPr1jG', 'fgvKW7Wg', 'ghxdVNDd', '8kgzGCoror/dIG', 'uf5AW6PG', 'WPWKW50dW7a', 'W6yZgmoJWPq', 'WRtdRSoH', 'WRX5WRxcOa0', 'W6NdOcyuAa', 'wdtcKmoUmW', 'gmo1imkXWQy', 'W6yBW4ldOSoU', 'W7VdJqeQ', 'jxFdTKnX', 'W63cGGCQgG', 'WP7dMYiHEa', 'amkJWPrVrG', 'WORcGqSXWQa', 'W7K/bCo3', 'rGVcHSoVba', 'W6iMh8o5WPO', 'W5eJW4j8WOG', 'W7yXt8oOuG', 'h8kHBmkVW7u', 'W63dUdpdP0O', 'ASkBWQZcIq', 'hmo4W6hdTSob', 's2ZcI8k8W5e', 'eCkxWOPBtW', 'WQFdK27dNM8', 'WPD/WRetW5a', 'WPZdJ1ldTN4', 'WOtdHG0oga', 'WRJdQSoqhWG', 'uxJcRmkVW60', 'WOZcQbKFna', 'juZcTmkJW68', 'meNdT8oPWQ8', 'fmkHc8kMW7O', 'p1jGW5eN', 'DM3cT8k0W4u', 'WOJdOqS', 'ASohW6hcIGu', 'Dt7cV8oWfW', 'pvb1W4W6', 'BdapWPDW', 'jCk7WRhdRLi', 'ECkmWRNdM8kx', 'WOP/jComla', 'FKldGtJdGG', '8kI1U8kYemojW6m', 'WQi4W5uL', '8lkQUSo+tCkKAG', 'W6BdQ8kUWOe4', 'WPmXyx/cNG', 'ueyjWRXy', 'gf3dJua', 'WQ8KzqLp', 'WQxdHGS6bG', 'WRBdM1XoWRW', 'W7BdQ8oTW5KI', 'W5FcVfrXaa', 'WO0+rW', 'W7D0r8ozvG', 'kSk8lSkTW48', 'wIFcL8o0ja', 'W6GBW75h8yotQW', 'jmoTW4FdJ8ol', 'W5f4WRad', 'WO81tq', 'oYxdRCkmWPO', 'WO/dICoeW4RdQW', 'z39qW79O', 'WQeRbdXl', 'WQtdHxJdOgS', 'x/cqG5f5Aq', 'gCkqWRK', 'FqddImoN', 'dCkxWRFdH0C', 'WOuZqgBcHa', 'W7uMrmojrW', 'WO5GW5SKrq', 'WPqjfG', 'oZVdNJVdPG', 'WQxcHGaq', 'ue7dMsPG', 'WQ3dIse', 'WQpdKgq5hW', 'wb/cKmoqba', 'C8oNW5VcLb0', 'WP7cQJeuWOC', 'a8opymomWQ0', 'oslcTmo3aq', 'CfdcRmkIW7K', 'WP4YW5zXmq', 'WPdcVbuBbW', 'nJpcQmk+wa', 'W57dLdxcV8kN', 'sWldR8o8pq', 'WQpdPKldQuG', 'tbJcLq', 'WQtdRtiUlG', 'W5JdHcxcN8kT', 'WRRdHwxdT1O', 'W5xdKGpcPmk8', 'W47cG8ohW5ZdQW', 'v8khWOj0', 'WOmhqrD6', 'W7hcRSkzWOHM', 'WPBdQX8Mwa', 'zMFdJtjF', 'cv/dMuXM', 'W7FdMCoQW6xdQa', 'CalcI8oXca', 'lZddLCk1WRu', 'W5dcVbtdTMK', 'W4NdUdi4vG', 'zmo/W4tcQsC', 'DtdcOCoWgW', 'WR5mWRRcOJe', 'CrhcPSk6WQu/W7RcHCoCWQm', 'WQirrCk8sa', 'WP7cNaCRWQO', 'WQRdGvRdOMu', 'EN5ZW7LI', 'WO3dGcKdba', 'WOqnxGK6', 'y0PlWQya', 'WReXftPa', 'wMlcH8kcW5K', 'v1RdVW', 'WQOhW6P4fq', 'WQJdNCoPaG8', 'WQBcGYeHhq', 'W6hdRJhdUgG', 'DwZcLSkRW70', 'vfldRHDC', 'iCkKomkJW58', 'WOinfbSS', 'oSojFmobWQW', 'WPTeWOhcGIS', 'WPiGW4SYW4S', 'WQLuWO/cHYG', 'WR7dQ8kLtK0', 'kLhdMve', 'W5FcOZCmWOC', 'WPmUW58/', 'WPutW6j5oa', 'WPinWPxcTJe', 'WOruWPW', 'ymkIbmkvW6u', 'hLFdK11B', 'W7BcRSk/WPTW', 'WPGXW48VW40', 'W55/WR0lWOu', 'WPpcIW0bbq', 'WPnjWR3cSrC', 'E2pcVCkHW44', 'nu7dSSoNWRW', 'WPtcHJOhcW', 'uhHBW6C', 'EaWmWRLH', 'W5JdPx4', 'kfKyWOb0', 'WOqnW5NcMIm', 'jalcTa', 'c3VdSmogWRO', 'W5S3gCoKWPW', 'W5xdKMhcPSkT', 'WOBcIaGpnW', 'W7KZgmo1WPS', 'EmotW77cIGK', 'W5JcUx4', 'c13dGwTt', 'W5C7x8ogxW', 'WPxdRSoOcG', 'W7hcHCkpt0W', 'ASk9WRNcJmoO', 'omkEWRjZqq', 'cfzOW5f0', 'eW7dOZpdTG', 'WPFdGr8cqW', 'W5WAW5ZdTSoZ', 'gsFIRBNINPON', 'yKjxWQSz', 'oCkDWOVdJ0O', 'WQJdM0fzWOK', 'bSkFWOPuqG', 'WOyDW5VcNcm', 'WO84W4XBcq', 'WPH5W7JdQei', 'o8ksWO5iDW', 'kSk3cmklya', '8ksAK8kvhMnn', 'W4eezmo3FW', 'WQpdTmoeW53dJW', 'WO96WRFcOGO', 'h0rxW5in', 'WODEW7jKAq', 'W5pdJdlcRmkU', 'wvdcTs5E', 'W5ywC8oSpW', 'rfHgW79I', 'E8ovW7dcIGu', 'mtddNdJdVq', 'WRa1thVdIa', 'WQCqtSkrEa', '8jQ7V8oXWQ42lW', 'W4DDWRi1xa', 'cCkmWONdM10', 'WOVdLCosbbO', 'eGpdR8o4WRW', 'W7VcPCowcGi', 'E8oOW6tcKW4', 'WO7cVbW', 'uL9gW753', 'jXHNW4f9', 'WOxdVaSW', 'W47dRctcUmk7', 'WP0OW4GYW68', 'fmkTWQzRdG', 'cCkTk8k7W6G', 'ourJW4KR', 'WPOBmW5R', 'omoBW7VdNSoj', 'WPhcTsOjWO0', 'naFdUZm', 'WOeOuxVcLW', 'WR3dOmo3aG0', 'W7pcV8kP', 'W5DEW7z8Aq', 'ebNdGmkMWRy', 'WQJdMmoSgWq', 'W69AamkgAq', 'WR3dVCoQaIe', 'W5NdKJlcQSkV', 'mLK+WPv+', 'W6lcQCk8WP13', 'W7yXwa', 'xCkKWR3cLCoB', 'WO1srxVWLlkv', 'W7FcH8khWPDq', 'W6fEW47dV8kz', 'WO7dOmokW5RdIa', 'WRCQfZrC', 'jmoFW6FdMmoq', 'W5pdRdBcRmkH', 'W7SNc8oruG', 'WP4ZFCkNFq', 'smoKW5lcUIK', 'uNNcGSo+W7i', 'jw7dUmoTWRK', 'W4RcVmk6WQj6', 'jCk5j8kCW5a', 'o8osW6tdUSoM', 'WP8LW4G', 'WO9jWQhcUqy', 'WOGKW4T0gW', 'WQ3dP8obW57dJq', 'W4hdUgpcTJS', 'ts47WQPv', 'h1FdGezu', 'WQVdLx/dP2u', 'W6GqzSoAlq', 'p8kXdSkf', 'oCo/z8obWQ0', 'aSkHySkMW6K', 'jvVdP8oJWQK', 'WPZcRxtcRIK', 'umo2W5VcQWC', 'WOuyhdnc', 'WRRdI0TuWRi', 'mqBdOq', 'WR3dO2BdOM8', 'smktWPVcLSom', 'b8kxWRtdKrW', 'W6b0r8ovra', 'mCovW7ZcN8ot', 'WPBdQXWVtW', 'u0xdRJXh', 'dCoXW4/dKCob', 'WQ/cR8osdH8', 'W6/dLtCQEq', 'WQSGkZv0', 'lu3dP8oXWQ8', 'WPijW5VcMZG', 'WQxdHwxdTh4', 'xc81WRDH', 'auZdUCoRWQa', 'bmkxWQNdKL8', 'BmoiW6xcSWK', 'W5FdVstdSG', 'gCknWPrAlW', 'dSk6jSkX', 'hSktWOPDqW', 'lXNdH8kIWRW', 'fX7dVmkkWQa', 'WQxdGteOgG', 'WPinW5BcIIu', 'vmkBWPTvrq', 'yf/dTCoXW64', 'a8ktWR4', 'W7mDtW', 'W7exW43dH8ox', 'A8ojW6xcSbK', 'zSkiESoDWQq', 'WRuYW64iW6W', 'wKy+WRnw', 'W5pdQWRcVSkE', 'uw/dQmo2Da', 'xaCVWQLB', 'C0NcO8kXWQ8', 'W7qHx8ojrq', 'w2JcLCkSW7u', 'WOhdVceMrq', 'WR/dM1W', 'WRr5W5zNFG', 'l1T/W5ip', 'W7pdPJtdKMa', 'WPHZWQZcHay', 'WP8BW5LNgW', 'amk6WP9kqa', 'W6CFh8ovWOy', '8jI5Kmo0W5FdIsS', 'iuO/', 'W7/cRSk/WOTJ', 'WPJdJ8o8W47dOa', 'nCkUWQfxia', 'WOqKW6TrW4e1W7LJhColDwe', 'AM5xWRKF', 'W7BdJaS2qW', 'zdtcSmoNbG', 'hCovW5ddMSoq', 'lmobymor', 'W7xdHthcU8ky', 'kCojW4/dKmoJ', 'WP3dOseAaG', 'eCkeWPj/pG', 'hCkkaSkXza', 'W7hcVCkVWQPf', 'WPVcQJagWOS', 'laxcUSoOWR4', 'uLJdTJXD', 'sq87WRHD', 'W7L9rxCJ', 'WO94WRVcVbe', 'oSkAWOD2vW', 'D8krWRO', 'WQldObWBca', 'WPpcRMrk8kwYQq', 'W6qmW4FdPmoc', 'WOGNW5bWeq', 'teFdV8oZyG', 'mK8XWPzw', 'DYxcSa', 'WRWAqCoD', 'Ew3cImkXW7i', 'dmktWOf2', 'mb3dOde', 'W58xW4G', 'mMv7W7uH', 'hSonDSobW78', 'WR/dS0PoWQ4', 'wSkXWPFcMSoh', 'WQNdLgLrWRq', 'W4RdPZyaAq', 'W6pcK8k+WQLY', 'W6mEvCo4ma', 'WQNdNda', 'W4Gkx8oriq', 'WPVcMYuBaG', 'WPldMmoAW5RdRa', 'j08T', 'hYlcTmkI8yYYKa', 'uu/dTsXz', 'i0FdUmopWQS', 'F0RdGJva', 'l8oIxSosWR0', 'W7iOcs5j', 'l1j3W4bU', 'WRa/F8kvDa', 'bCoBW4pdPSoC', 'vKZdUCoGDq', 'WOldLZuiFG', 'l8oFW7O', 'a8kBmCkhW68', 'W6iLs8o9WPa', 'jSozvmorWQq', 'WO4CWPJcIY4', 'W5hdRdFdVNC', 'A2znWQSc', 'WPaIW48VW5q', 'WQxdIsundW', 'WRldTWaZwa', 'smozW5fFtG', 'W7/dJSo7W7JdRG', 'W6KJh8oKWPO', 'bSktWPnisW', 'cJ/dHq/dJW', 'WPFdRWSM', 'ivVdKSoTWOK', 'omoBW6RdLmok', 'W6CAW4xdQmoe', 'WRWgBSkwyq', 'WQe9W6hcSaG', 'tghcKmk1W74', 'WOa3W7esW7O', 'pKhdHerV', 'k8osW6JdI8kk', 'WP4YW5zXgq', 'W5FdNmoXW6JdQq', 'W7hdSvTvWRG', 'WONdPqGQra', 'ASoVW7VcLd8', 'W5e1W5rMW4S', 'WPD2WO/cQcG', 'hL3dM1bs', 'xeVdVCoKAq', 'WR3dSXiama', 'eCkzWRzHja', 'WOy/uhy', 'lZVdG8kwWOS', 'WReqq8kxEa', 'nSkedCkyAa', 'W64LgmoXWPi', 'Fr7dJCo9W7G', 'WOWKqh/cGq', 'mL88WPf+', 'o8oDyCobWQa', 'WRTUW513tW', 'EulcHmkXW7i', 'a8kWWPTVFG', 'W7GZbCo0WRG', 'WR7dGsOodW', 'WPCPcZHg', 'tMdcGCk9W7m', 'WOpdPWO6', 'WRtdIGOjCW', 'WPmnW5VcMXO', 'WOJdN8o0W4VdQa', 'pmkXlmknEa', 'cCktlSkNW6S', 'lu3dUSo2WQC', 'WQahW7DMlG', 'WOldJCodW43dRG', 'uLJdVG1m', 'W6dcR8kLWPLS', 'WQhdLh/dO3K', 'W6GorCoilG', 'W7JdJWa', 'WPqbW5RcKrO', 'm08YWP1V', 'tgZcNCkS', 'E1JdRJHn', 'cSkPjmk+Cq', 'WP50WQJcQa0', 'WOioW7VcRYq', 'kfKqWOv1', 'xLhdNmoMBW', 'WPldMmosW4VdSW', 'W5ueD8oy', 'WPhcTH8eWO8', 'h8ktWPPrrG', 'DeLeW6jP', 'WO/cLKW4aq', 'WR7dVmo2dGS', 'e8kAWPjxua', 'pCkfWOvPiW', 'W69rW43dTSok', 'WPFdVGaQqG', 'W7PAw8kxya', 'gSkfWPvQ', 'WOtdMmohW5ZdTq', 'nCkpWOjGkG', 'WRtdOCo2cIe', 'FhJcP8kCW40', 'WQldMwX1WRm', 'hW12', 'FefmW59l', 'W47dQCoAW5FdIa', 'W5ddLt0/sq', 'WQldOrGmEG', 'js0ZW79q', 'W7xdQ8o+W7/dQW', 'pqFdVdpdIq', 'W5FcNmoYWRhdJW', 'na/dU8kWWRW', 'ov1KW6GR', 'gvRdTtzn', 'W6qzj8kCAq', 'nWxdSZRdIq', 'WOZcJGGHcW', 'f8koWOO', 'uGq6WQ8', 'WOiGW5WJ', 'xKHq', 'WRJdGtWE', 'WQpdG3/dOMm', 'W6RdIcqzyW', 'WOWrW4hcMJK', 'eshdIHFdTa', 'tqmXWRLx', 'W5GtomodWRW', 'w8oRW7lcMdO', 'W48lW5RcKJO', 'W6pcV8kdWOPk', 'jwpdSCoPWRC', 'jfLxW784', 'iSorW7RdHCoJ', 'gCkYn8kYW48', 'W7JdQa/cJa', 'p1X+W5mR', 'o8oGW4JdHSo1', 'WP8TW6/dVK0', 'v31wWOOj', 'yv0+WOe7', 'amktWRXlpq', 'teHxWRev', 'omoBW73dI8ob', 'bmkBWRBdH0C', 'WRRcMIOyfG', 'WQT8omo1WPS', 'r1biWQ4c', 'W6BdJxVdTM0', 'W4n0WRPhW5e', 'paJdGCk0', 'W789rCoDwW', 'WO/dLCoSpsu', 'W5BdRIBcHSkp', 'zGFcVmolea', 'lLzXW4y6', 'W6SuDCoCzq', 'W6K5d8oP', 'W73IRARINOiWra', 'WOWnytv8', 'WPqbW4hcKZi', 'WPldQv5pWRu', 'WQNdKvHo', 'WOKBBXD/', 'WQixW7JdQFcNOkm', 'm08+WPzD', 'FMZcGmkUW7S', 'WRVdIwxdTci', 'W5qZW6FdJSof', 'mCkcWQ9qAW', 'WRCPwMW', 'WQJcNdObla', 'Fejk', 'WRe1aq', 'WQa3lsvS', 'E8odW7xcJui', 'ztdcTSoHuG', 'W5NdMtxcRSk6', 'W5hdHdlcUmkP', 'WROwW7nIoW', 'cSkpWOf/kG', 'W7RdNSoS', 'WRNdUSoXgWm', 'WOvEW7P+AW', 'fSkFjmkXW7C', 'WQyusmkx', 'FCodW6NcIG', 'luNdPa', 'WPihW4lcJa', 'WOvFW7jZEa', 'hConySowWQO', 'WOC4vxVdNa', 'W63dI8oZW7JdTq', 'dghdMSoj', 'WPq4W4BcNd8', 'W7VdNfyhW7C', '8yEBGWXqt2G', 'WPL4WQZcRaa', 'pVgaR4VdNCoBlW', 'WPmnW4FcIti', 'auhdGSoqWQO', 'WQiBW6SOW6u', 'W6Oop8ogWOa', 'v0NdUW', 'F1jkWRCE', 'iK3dP2zb', 'ASoeA8ouWQe', 'nmkJbSkaW7G', 'D8ktWRxcMSoO', 'WOxcNqmy', 'eCkBWPO', 'WR7cR8oPcG0', 'W7ddKsC8va', 'BCkoWRJcLmo5', 'W7BdKdddRuK', 'W6Lyyd9I', 'D8knW7tcKmoO', 'DeJdRNLG', 'WO0ksqGP', 'WRCGet5a', 'c0RdMKfh', 'af3dGvft', 'AM1qWRS', 'wWmZWRHg', 'lNZdSCo6WRO', 'W7tcPmk+WPvJ', 'W4pcKLrHeW', 'WOBdUXG3wq', 'iCouW7O', 'bHhdNqVdPa', 'gmkwl8k5W7K', 'W7FdVYZdPx8', 'WOWhW5i', 'WPGVW4G', 'W4JdHdNcVW', 'W787cSoXWRK', 'W4VcJmoS', 'WRNdQbmKW48', 'W5JcIJHaWQ4', 'WPKYmdLD', 'WP54WO3cUqC', 'W6yXu8oi', 'p8kpcCkjW54', 'B8oTW5xcUW4', 'WQC4sSkbFW', 'WQpdT0D0WRC', 'WPqnva4', 'WQVdRXmshG', 'u0xdSYPD', 'WPVcStCpWOW', 'WRxdIGe6Fq', 'W6ypAmoioa', 'cY7dTSkYWQe', 'WOnoW7zI', 'W4dcO8kkWQTo', 'WR3dSKRdTLG', 'DuVdNsXC', 'WR0zxxZcQa', 'WOuAW4FcKcu', 'WPRdI3LOWPC', 'r0JdTs1m', 'CZ/cPq', 'jXRdHmkrWQm', 'WRGNW50/W5e', 'fu8NWOzw', 'WRK8gcfc', 'W5FdRYldSh8', 'qL9aW79I', 'WRCMhc1Y', 'pSotW63dMSol', 'W6Gormoqla', 'rvHAW6nP', 's8oEW4eHE8kvDt5KWOm9W6KB', 'g8kzWPa', 'WRewpxPf', 'e8kuWPXutG', 'WPFcSZVWP6AsiG', 'd1b/W5CR', 'WOy/qfdcNa', 'W792cCoPW48', 'kG7dNCkZWRC', 'BCkBWRRcMCoa', 'W4j3WRGcWOi', 'W4JdKYJcPG', 'q1VdVdXB', 'cmkyWPr1iG', 'WRpcUY0ykG', 'WPxdSteSma', 'FfxdKbbz', 'WQhdHIOlaW', 'W6ZdNSo+W7xdHW', 'WQyusmkxla', 'WRyzes9C', 'W7hdPsO0sq', 'WPaVW580W40', 'W6BcOSk4WPrN', 'oubJW4qP', 'WPGqxmkbBq', 'svVdSCkK8koYOW', 'WRldJw5zWRa', 'WO1YW4DY', 'WOVcOdaeWOC', 'cqddNbRdQq', 'W55GWPCqWOe', 'W740W6ddV8ok', 't0BdRmoXyG', 'W4DWWQOp', 'W5z+WRGRWP0', 'WO7cMXufaq', 'uNldRY0', 'bmotW7RdIW', 'WRCsiZj3', 'BSk3WOZcN8o7', 'WQ8CF8k/qq', 'WQRdR31+WRe', 'l1Sz', 'WPaiW58', 'W47dHcdcQmk8', 'W7iWacLl', 'WOX9rwKJ', 'EL1XW4GR', 'le8SWOf6', 'W7VcUmklWOPT', 'wSo1W6BcNX0', 'p8ktWPbmtG', 'WQuaxmkAyG', 'xK7dPCoQDa', 'mvf1W5D8', 'emkmWR/dHfO', 'pmoFW6tdJ8oi', 'W6eBW5/dSG', 'WQKlxdDJ', 'W5H/WQ0', 'BmkWWQhcKmoV', 'h13dLLTz', 'W7FdLtybBa', 'WPqbwbz+', 'W7CCW4RcS8kt', 'WRxcOcObWOy', 'hL3dLfDd', 'WRSWadbQ', 'jCoyW6ZdJCkw', 'jKhdUmoNWOa', 'bCkSWR/dKum', 'WPpdU8oGkYG', 'WRJdK0S', 'WReyW6dcJYi', 'W7VcUCkTW5Hq', 'WQCsnYm', 'f8k0nCkAqa', 'W7VdNmoTW7dcRW', 'q1RdLf1B', 'WRuQcI5E', 'WPrvW71ZBq', 'uKtcSCksW6y', 'rfJdTd1m', 'WRWBtmkEEq', 'WPXFW6O', 'WPqawrG1', 'WRRdO8oSdH8', 'eSkrWQ3dKq', 'WRpdKxzNWQW', 'W5ZdQa7dSMK', 'le3dOmoNWQO', 'WR/dM0TPWRG', 'WROzldT2', 'd1NdHubE', 'W5fOWPyYWPO', 'jmodWQNdSSob', 'cKRdMLK', 'fSk7WPTlva', 't8obW6lcUI8', 'oXddPJJdGG', 'WRVdGwxdT2u', 'WPBcGr4', 'WRWzsSoDna', 'bCkqWR1YCa', 'WRhdVxLvWOK', 'WPKXW6HxgG', 'g8kyWP1uuG', 'W7ddHXarua', 'FSojW6pcMKW', 'kZRdIdldQG', 'lH3dOtu', 'W5RdSdy7Ea', 'AeyxWRek', 'WQ7cVdiqWOW', 'kuSSWR9+', 'WOJdR8o3W43dPG', 'WOtcUI8aha', 'WQPnWRVcHca', 'l0u7WPC2', 'WRRdQNJdVgq', 'WPtdNmoFhqK', 'wwtcGa', 'W6JdHdNcV8oY', 'WOOhrrq', 'WRGsnG', 'WOGJW4XWdG', 'bCkmfSk6W78', 'WPLXW6zXqq', 'nbldL8kRWQC', 'WO4+W57cRZG', 'WRinxWP0', 'xf5RW75H', 'wWmS', 'WPdcIGirkq', 'WOmhqGX+', 'aSkydCkTW58', 'W6eBW5tdSG', 'kXxdKmkIWR0', 'bvldNe5d', 'feZdVfPr', 'W7aSW4NdTCot', 'WPqLr2FcNa', 'WRK1W6WVW6m', 'WPFdUG0XqG', 'W7hcPmkIWO5N', 'WRpcQHm4WQq', 'WOldOr4gvW', 'DZxcV8oGea', 'C8kBWQFcJSoS', 'W7KBW4ldOCox', 'iLiMWRnb', 'WOxdICoa', 'xHisWQvO', 'WOFdOqi1uW', 'kfORWPT0', 'WPBdM0fjWRq', 'W6VcU8kP', 'lKG1WPD4', 'WOC9ueBcLG', 'W7WKaSoKWPa', 'WQqSW5tcNtq', 'vvldNCogxW', 'W6i4h8o1WOC', 'WP3cTYWpWPa', 'sqG8WQ5t', 'DM5SW7X1', 'o8okW6xdLSoq', 'qvxdRaLi', 'WQZcKujCWRq', 'WQa3eHjk', 'WPJdGSofW7pdVq', 'W6qjC8oyoG', 'AeFdR8o/ra', 'WR4EiJj3', 'WPiiW5eSW7e', '8yEPGuXFimot', 'tbu+WRPx', 'FWFcL8o3eq', 'WO8BW6L9ga', 'ycJcRCkL8j6GOG', 'WQiHDSkGvG', 'E0jbWQS', 'wLRdUCoGAq', 'BmkAWR3cK8oQ', 'WOxdJqGzyW', 'W4pcQUkTM+kEGIO', 'BLny', 'WOLxWQNcGqO', 'FCktWRa', 'WQuQW5ZcQdG', 'emkfWRrqjW', 'WONdQ0Wxwq', 'WPdcTtaLWPe', 'WQNdHNHLWR4', 'WOKYW5Xbgq', 'WOBcRqaAbW', 'W60sya', 'W7eiDmov', 'WOddNSoEWPxcPW', 'WOddQWGxuW', 'WOtdN8oaW5JdOa', 'FejxWRS9', 'y8oYW73cNsO', 'W4hcSCkvWQ/cOq', 'f8kbWO1uqG', 'ug7dGcXt', 'dSkFWRBdO1C', 'WPRdQ8oObGi', 'c8kMeCkeCG', 'WOCsnYm5', 'WOFdOqi3uW', 'wSoWW4hcTc4', 'eCk8WRDGka', 'WQ7dPmoDaYm', 'WOm2W4X8cG', 'WRtcGaeWWQ8', 'WOddNmodWPFdPa', 'W6y7bCoetG', '8yAyPuXPySkj', 'WOtdHxJdOgS', 'WPxdMmoCW5FdLq', 'emkSi8k9sa', 'jtJdRmkIWRy', 'WPpcJH4bdq', 'W5rWWQ4tWPK', 'n8kxWQP7tG', 'CSk5WOpcHCoi', 'WQSEA0BcTG', 's1VdVCoG', '8j2iJCkXW5q4gW', 'WQNdQSoKdbG', 'WQNdGc0EdW', 'WPHiWQRcPq', 'WPK9WR7cPHe', 'WPFcGcaAeW', 'x8kgWP9kuW', 'W7mrW57dG8oc', 'WOJdH0fE', 'nKiPWQj6', 'WPqRqqT+', 'WRmdE8k5ya', 'W7RcV8k4WOHX', 'eaVdNmkqWOO', 'WQJdQSoRcYe', 'dSkSWRjWkG', 'WPeBicXC', 'WOmXgMhcIa', 'gCkBW7RdOvS', 'oN/dRmo4WRW', 'nubpW4CH', 'W6RdTdNcK8kU', 'W6iMrmorxG', 'xu3dUColCG', 'W5tdHcdcR8kT', 'BJuxWRfA', 'hSkfWOnKkG', 'W6azkCoxoW', 'dCocxCorWPy', 'bCkMkCkVW7C', 'WPdcNWaCea', 'lHnYW4O6', 'W5pcGmknWQC', 'WOW6W50', 'DKRdSJbA', 'WQeihtHH', 'vK/dRmoIyG', 'mJJdV8kuWOG', 'nvbLW4Gn', 'sNRcHmkSW7u', 'W5xdKGFcPmk6', 'W7VdG8oRW7tdSW', 'WQhcOGCHWOu', 'xK/dQa', 'W4zKWRetWPu', 'mdNdO8kOWRO', 'rfJdUZ1V', 'W64Ys8kXW5q', 'WQOhkG', '8k24HI7cN8kbWRm', 'WOFdOqeUvW', 'WPhcQd8hWOC', '8kszU2ldOSoyWOu', 'wKBdPmoX', 'ufvaW7HZ', 'WR/dQSkWdf8', 'WPriW5FcHM0', 'qh3cQmk9W68', 're7dUY1a', 'WRJdKunWWRG', 'kbFdRmkRWP0', 'oXpdHSkcWRm', 'W4NdVgDxW5C', 'DmkpWPBcV8oy', 'tx3cG8oG', 'jqJdUCkIWQe', 'WOuQW5NcKdq', 'WPtcOa4jWOe', 'WP/dOuhdMLG', 'W6asyCoXjq', 'm24oWRXD', 'WRFdIby8tG', 'mcZdIIZdJG', 'WPbDW5LZxa', 'h1tdNfDs', 'Aejn', 'WOZdICoDW43dRG', 'W7/cQCkIWPLR', 'WQNdSfPqWR8', 'cCkXySoPWR0', 'a8k7j8kSW5y', 'oSovW77dTSoa', 'khvEW7ig', 'W5LrhKOQ', 'WO3dRwrqWO0', 'W43dUtpcMSk4', 'WR8+Btbs', 'WRmhqmkFtG', 'W7hcTcuDW70', 'CGmXWQLB', 'omonB8orWOm', 'z8oJW6xcRGS', 'mmorWRJcLmoV', 'W6e/gCoXW5G', 'WO3cIHSgca', 'WPjWW7P0', 'hmkNWPrGoa', '8kIgTokcN+kyNW', 'W53dJqpcNmkc', 'WO84W5XS', '8k2yLmkPWPxdOmoz', 'W6VdI8o7W7ddTq', 'WRWRcqrm', 'qMrVW4fm', 'W7zRWQCUWP4', 'lu84WOb6', 'nW/dM8kP', 'WPxcJmorW4dcVq', 'cxRdUhjd', 'WR/dQSo2', 'F0znWRC', 'WOOBqXq', 'WOeCW7JcHW0', 'EMNdI8oRyG', '8yMOOCkLrsHp', 'WRNdVCoFaIC', 'E8kMWOZcU8oO', 'WPW5cd4', 'xaKXWQLx', 'W5/dMcOrqq', 'W503aCo5WOC', 'gmkWoSk8', 'WR7WSAQt4P65', 'WPvYWOdcRJO', 'WRlcM8o2W6ldJq', 'ESovW7dcMqK', 'rmodW6lcJq0', 'WOldPCozW5pdLa', 'CJtcTCoqfW', 'Dd7cTCo9', 'W4tdUq0WfG', 'bv0fWOjj', 'xKrhW6WN', 'W5zNWR8oWPW', 'wwz7WPud', '8lcyIMhdOCkCbW', '8yQjUq7dKW', 'W7z+cW', 'eSkBWRVdHNu', 'WRRdHwxdT28', 'WRldHICqzq', 'FCopW6xcKGK', 'WO7cIH8gbq', 'WPjcW6D1FG', 'z8kRWRdcUCo9', 'W6BcRK5ksG', 'WOeLW6ZcUt0', 'WPa8drXi', 'W7ZcUmk8WPfW', 'W63dHGy', 'ufldTs1m', 'WRr1W51etq', 'W7yXwmoFrq', 'WOL4WQVcVq', 'W5asFmoLua', 'WPCZW5qRW7C', 'W64Uh8o1WPS', 'pmosW7ZdKSog', 'WORcIt8sWOu', 'WQZcNa4L', 'WRmXAaTY', 'lhmkWQvq', 'cmklWOnNiG', 'feZdUffe', 'W4OYbSo5WPS', 'fmkMcSkbW4K', 'mbtdKmkgWRS', 'WRldVmodab4', 'zJdcO8oWgW', 'WPO9hhCo', 'W5alq8oRoa', 'WOVcMXGffW', 'W7ddKs86tq', 'FJ4xWPfG', 'cmkqWP7dGei', 'W5/dJI/cV8kT', 'bmojy8oq', 'WPVdRwJdTvW', 'mbNdH8k0WRm', 'W7hcR8oA', 'bSobq8oqWQS', 's2ZcI8k8W7K', 'wuGu', 'WO/dKbucjG', 'W6tdVSo4W5BdKW', 'WRldOSoKcaK', 'vMvCW4Pj', 'WO0Ivs/cOa', 'orNdHW', 'W7dcPmk4WQDS', 'fCkUWRn3ba', 'W6WZo8oXWOC', 'WP4UiYT4', 'A05kWQ8C', 'WOr+WONcJZS', 'W6isACoBiq', 'W7JdMIqPBq', 'kfzOW5e', 'W6SoAmot', 'm1ZdVCoHWQu', 'WOyNW7GmW7u', 'faVdTXtdNW', 'bwBdKmowWOe', 'WR0nW69+cG', 'D8k2eCkmAG', 'yhNdSsbi', 'g8kBfSkmqW', 'W5FdUs3dS38', 'WOhdTHGTvW', 'vglIR4lINyZcJa', 'W6uXsq', 'WQddPWO5dG', 'W73dHWehrq', 'uuKVWRLu', 'dK3dGuby', 'm0NdS8oN', 'WQiuxCkwAq', '4Q604P2bfe8', 'W7/cOSkHWP12', 'WRiBE8kIEq', 'WR/dTrmmhG', 'W5FdQcldO28', 'yezD', 'W6dcRSkTWPT2', 'gqldMXxdJq', 'W73dK8o+W6u', 'WQhdN8kDW47dRW', 'nCkqWRrsdq', 'BKPC', 'WR7dMxJdSgq', 'WOSwExZcMG', 'A1NdS2ZdIq', 'W5ddJIy', 'WQasitno', 'jLhdKq', 'dLFdGxPc', 'W77dTYKyDq', 'W6O0zmoKha', 'WQv9EuVdJW', 'tfhdRmoIyG', 'W5LWWQOoWOy', 'j8ouW7O', 'WO0KuwVdKG', 'WOO8W4Haga', 'WRdcHGG1WQC', 'WQ4ZuuBcGq', 'neddOCoVWQW', 'hSkyWP5+', 'lXJdKCkJWPW', 'W6i5bq', 'W6KCDmoWlq', 'W6eXwa', 'WRNdKuTe', 'vKXzW79U', 'WPldN8osW57dOG', 'qf1fW6rM', 'oX3dMmk0WRC', 'W4n0WQyt', 'v0NdUW9m', 'W4ZcNa8hbq', 'D1n0WROd', 'WOVdPc0Ivq', 'lf9PWOu3', 'imohz8oB', 'W7/dJ8o+', 'h8oCW5hdVCoa', 'WPddVGeNBG', 'W5ddMSoYW7q', 'WOexuw7cVG', 'lmkXdq', 'WOu8wgdcKq', 'WQZcGqqzWPu', 'W6i8bmoAxG', 'WOKWW4fWla', 'rgT0WPe/', 'WPrkWPdcMda', 'kGhdPJhdIq', 'WO3dICohW5ZdOW', 'dSkdWPv2ja', 'W7uyF8oj', 'WPqMW4KNWOW', 'WQxdLIvhjW', 'r1BdGmoGDa', 'W4aHwfPx', 'WQi5fY9h', 'W4pdJ0W', 'WP4eW4f7hW', '8lAwJ2pdMN/dUa', 'hb3dHq', 'WOygyu3cOq', 'W5TlWRfMWOi', 'WOepW5a', 'wu3dV8oYzG', 'W73dNSoWW5ddUW', 'pSonDSob', 'zdNcMmoNfG', 'AaCuWOT7', 'WQinW7dcUa4', 'WP8+W5zY', 'CuFcOa', 'n0m7WPD0', 'W7uXDmoyvG', 'vZ/cHSoifW', 'du3dP8oXWQ8', 'pmotW73dK8ob', 'BuFdVCoPFG', 'ASkrW7tcISoL', 'WRldJxbFWRi', 'W7LvWPi9WPO', 'W7mZpSo6WO8', 'DCkBWQ0', 'vXiRWQ1b', 'lH3dK8kIW7i', 'l2C6WOfO', 'WQZdKhzrWRK', 'WPjcW6C', 'fmkBWQldLG', 'pSobESozWQa', 'WPXqWP7cIJi', 'WQeBxCkIvq', 'WOC4DNZcVq', 'oSkVdSkBBG', 'WRiZDSkdsq', 'WRy7W77cKGC', 'u07dQtHo', 'cchdUYVdQG', 'EstcPCo0bW', 'WOZdICoaW4RdPG', 'pmk7fq', 'F1jkWRC', 's2BcKmkQW78', 'WOJdG8oKW5ddIG', 'WQZdICoaW4RdPG', 'A13cRmkBW5C', 'WRJdJaClgG', 'WQyCwCkx', 'bCkAW7RcGXi', 'WPintXvP', 'lmoFW7O', 'WPVcVsCoWQm', 'k8kYWPFdRhW', 'BvldOSocrG', 'WPbtW7vP', 'WPtcOdahWPy', 'emkVbmk8rW', 'WP58WQJcVqO', 'EeHAW7HM', 'WRqww8kBEG', 'WR89rq9b', 'W5FdJrtdSw4', 'w1JdQsPi', '4P2ZaSkNW6bJ', 'f3RcGmkRW68', 'W4yZh8oXWPe', 'bCknWQNdG1q', 'svdcGmkQW6W', 'aCkHo8k4W7K', 's0pdRSoTAG', 'WRq4ECkDwq', 'WOT0WRZcRaW', 'DGeXWQrA', 'WRipjJHW', 'WPWKW4G1W4m', 'u2/dVYPz', 'oWZcSNZcJq', 'bLFdNfO', 'W5tdVthdO3m', 'jmoFxCoNWOK', 'WOL4WQdcVsO', 'l0n8W4W6', 'WRtdICoihaq', 'W5jPWRCuWOq', 'W5PWWROcW5a', 'oG3dOt7dNG', 'pXhdHJJdLa', 'WP0XnYTT', 'W7/dJGO8uG', 'WOCjW54CW60', 'oLX/W5eR', 'EZtcOSo3eW', 'FCodW7xcTWG', 'aSkEWPfmsa', 'uLJdQq', 'WPddMCoCW43dOG', 'W6xdTXtdHK4', 'WQhdP0tdTgm', 'WQ3cK1nJe8k7WQddQmk9q219W6a', 'WO/dJCoEW5W', 'WRJdT0vxWO4', 'WPxcPZSsW5a', 'WRZcRsa6jW', 'WO/dHgXiWOO', 'nM3dPCoUWP8', 'W7SNW4pdK8oK', 'pCkobmkBEa', 'lvZdMf1z', 'WO0nW4BcJdy', 'fvPiW7GN', 'o8kSfCkMFG', 'qKlcKSk1W4G', 'WO3WVlcNy3y', 'W7KPW6ldTSom', 'lSoiW6BdKG', 'W6imW4xdSSog', 'vHmsWOLX', 'W6OGzSozra', 'w0FdOCoGCW', 'gWjfW6jL', 'WQCAwmk7Aa', 'WR3dHxpdPW', '8kI7G8kYD8o4W7G', 'WOdcJHWbdq', 'WPddPXGVuW', 'W6eXrCoyEG', 'z2HOW48', 'WQ7dQmoWft8', 'W6GBW5rzW5a', 'BwrrWRKx', 'WPldICoDW53dIG', 'EbJcTq', 'WQNdMmowW73dGW', 'WQ3cNG0KhG', 'WPrZWQVdQFcNP4y', 'WR0NW58CW6e', 'W4r0WRadWR0', 'lHNdMSkJWP8', 'W4aSF8oVDa', 'WQPsWORcGJW', 'fE+8Go+8JCkRkG', 'nHZdPI3dNW', 'W6hdMZVdUuG', 'Fg/dQmo/xG', 'kfKDWP1V', 'WPb/WRBcQaO', 'WPldICoDW53dJG', 'W5vdWRqvWRy', 'WOKJuW', 'hCk/WOn/', 'chVdLKnz', 'WRidaI9z', 'W4aOu8oYfW', 'W6OZcmoeWRW', 'WOyhqW5+', 'W4JdIdVdKei', 'WRq3fYXp', 'W7iyACozga', 'jeDzW4SO', 'pmkBWRnxgG', 'W7JcMSkdWPjY', 'W6v0WQ4lWOK', 'FCodW7xdNUkDQq', 'WOeBddS7', 'h1hdG1e', 'xvVdQmk2oa', 'WPxcMd4mpq', 'WQi5wgO', 'WO42W4HHfq', 'ASkxWQdcKCoO', 'W57dLImbBG', 'k8kWamkCyG', 'WP4IW5P/gq', 'w07dVq', 'W4FdSY7dUNS', 'ofz0W7eR', 'WRm1aa', 'WPuKW5CJW5y', 'W5SrkSogWPW', 'WRyzW4WeW7i', 'W7xcKunuWR8', 'kN0+WObb', 'WPuKW4G', 'xgNdJbvD', 'ueFdSHn+', 'rv1mWOOk', 'ughdJmoZrG', 'iu1kWRaE', 'pCkQeSkyzW', 'WOqKWPH4gq', 'WOaKASk2yq', 'rL1mW51d', 'W5tcOSkGWP0', 'WOq7W51gbq', 'xxRcLSk5W7S', 'ESodW6pcIaK', 'a8k7mq', 'we9mW7K', 'W7ZdHM/cVSk7', 'zIlcTmo2bG', 'WQfkWP3cVSkqjSovsSo/DtFcJmo4', 'W6VcPmk5W5H1', 'WR4FmInR', 'W67dTrNcPSk8', 'W5JdV8owW4FdHW', 'W47dTHFcP8kB', 'cSk8WO/dQui', 'r0HiW69b', 'kCoyW6VdK8on', 'y8oRW4xcTby', 'WP0KW48JW4y', 'a1BdHG', 's0y9WQqi', 'WPmJr3xcVG', 'gcpcTSk9W7i', 'W4tcRKW', 'rvZdVtW', 'W7ddNZldN0K', 'WOyDqHLV', 'W7hcPSkOWRfM', 'WR4KBuBcMa', 'W6ivrCoobW', 'W714WRO', 'WOO5yXbR', 'pmkqlCkoqq', 'l8oqESoqWQS', 'WOy/W75Mla', 'W5VdKY7cVSk4', 'WRqbtG', 'luz/W5eR', 'WR7dHLTyWRm', 'W6mXj8oFWQa', 'AWOa', 'W7FdKmkXW7JdPq', 'rK/dVZ9a', '8lQfRCkmW4VdHMi', 'WPJdVI04iW', 'm8kKWQJdTuy', 'W6ajySoopa', 'WO94WRNcRsu', 'WOKcW5ZcHsm', 'C8kRWPZcVmoB', 'uremWO9+', 'uXZcGSodiq', 'WQfLe8koaq', 'WPGCzrr9', 'WOtdPCoDW5/dQa', 'WO9tW5HwqW', 'WPezxSkNsq', 'WRZdOZqYEq', 'i8kvWPXvza', 'W6yTw8oz', 'maNdVGNdGW', 'W5KjwCkHW4C', 'W5pdVthdS38', 'WQddGtapdG', 'W4r0WQWrWPu', 'W6OyFG', 'WOC/wNVcLW', 'omonySouWRW', 'rfJdVIOh', 'WQ3dNrapeG', 'mH3dKmk0W70', 'cSkpWPb3bG', 'WRRdLwJdSg8', 'WPldTwrlWRa', 'ffSzWOnS', 'W78/t8ovrq', 'W77dKaOMua', 'WOiaW6dcTcq', 'c8kpWOnLlG', 'W68Zga', 'WOFcVa0daq', 'o8kSbCkr', 'lHNdMmkIWRe', 'pCoiW6u', 'WPBdVq03xW', 'j03dP8kSWRS', '8lUWLmoSWQ5JmG', 'WRZcJa0HWQa', 'WO8gW4BcMHO', 'W7ZdMGWGva', 'WPZWT4UbW6S', 'WOZcRdeoWPe', 'W7hdLHeJuW', 'W7/dOcaRDq', 'W5LxW7y/nq', 'W5hdGY/cQSkH', 'W7BcI2SccW', 'gmonFSozWRW', 'WQZdRgldOh4', 'W4/dJsJcQmkT', 'W57dSIS+CG', 'WP3cVsOfWOW', 'AMTYWRaI', 'W5dcPmk4W5HH', 'WRldOmokpHu', 'W6VdTcBcGSkl', 'WOlcMWK', 'WRGvW6GPW5O', 'FHtcSG', 'W7VdN8k/WRdcOa', 'w1ZdVtW', 'WPhdJCobW43dRG', 'l292WPi1', 'lXpdG8k0', 'WOddRIVdLLG', 'W7ypBSojlq', 'WQZcVc4f', 'WRuBW4dcNJS', 'WRZdLgOedW', 'CcpcVSoPma', 'kG3dQIK', 'W7bLWRu9WQq', 'WOFdG8obW5tdPG', 'E8kgWQdcMmoJ', 'la7dN8kLWRm', 'W4JcJdxcOSkL', 'W6VdKqqNsq', 'tLJdQmoPCG', 'W74MpmoJWRO', 'FmkrWRdcHa', 'WQCqqCkwAq', 'W6ynW43dOCog', 'WOSXue7cNa', 'WOFcIH8', 'W73cPCk/', 'W4RdOCo2W4pdIa', 'o8kxWQm', 'bCkLnSkHW7m', 'W53dHXyWuG', 'gSkcWOPiva', 'WPmwmrjX', 'WQJdGsa+dW', 'W7VdLXeNtW', 'WPnFW7DeAq', 'WP7dGtqgeW', 'imkZWR13Dq', 'W5tdRmoXW4ldHa', 'WO7dLdeSmG', 'nKhdSCo1WOe', 'BfvZW55Q', 'keq8WP5U', 'vKjhW71I', 'WOZcLGCXfq', 'WRZdM1W', 'WQ1zWRFcKa0', 'b8oxW6/dQ8oX', 'W7xdHWS0va', 'kvZdSCoMW64', 'laNdM8kZWRC', 'W7GZgCoMWPa', 'dqZdUCkEWRG', 'W4NdKG0dEq', 'W7Cuy8oyjW', 'C2jMW59c', 'lq3dVdNdOq', 'WRFdQSoRcbG', 'W6RdIatdR30', 'amktWPnxuW', 'xvNcL8k3W7O', 'WRL04Q+84P6xWOm', 'W6RdMc3cU8kM', 'WOL4WQdcVq', 'WQe9cZ9J', 'WQ/cHbuxWQu', 'WRGqxmkbBq', 'd3VdJSoWWQS', 'W6HNwSkLWPe', 'WQqdbWv3', 'fCkIlSkv8y6aVW', 'W5r5WRClWPq', 'W7CNwmoDua', 'WRRcJI4MWOu', 'pSoAz8oy', 'WOmKW5OLW5y', 'WQOVW4lcNtW', 'W53cULT2dG', 'AvztWPCy', '8ykHKUkcNVcBKRFcH++9O+++Ho+9Lq', 'WPK9WRVcPG4', 'cCkqWQK', 'W7RdR8o1W5VdLG', 'W4FcVCkdWRrw', 'AfvwWQOa', 'W63dMSo4W7tcOq', 'WQ3dHxJdSa', 'lMpdJmoOWRG', 'FGtdTZZdIa', 'W4WOCmoXja', 'kq7dGCkI', 'FffPWP9K', 'W43cNWrAaG', 'cSkVk8kBAG', 'WQJdM0fzWRG', 'W7y4rSoVuG', 'FvldUmodxW', 'WOqQW6mQW60', 'W40yW541ma', 'sGlWQkUbhSoX', 'd8kYWQ/dM3K', 'WQJdN0Hy', 'ALvTWRCf', 'WQ/dPSoXaWK', 'WRldVmkLaGK', 'W7JdJGK8qW', 'WPWKW58VW4m', 'bmk0nSk7W70', 'WOJdN8ktW5tdOG', 'W7hdUtBcOCkf', 'tfhdTpc+TkldPW', 'FaKQWRng', 'nJ3dV8k2WOe', 'WR4qvG', 'hvD9W4WG', 'e8kBWRtdHN4', 'WOuHsSk7vq', 'D8kqWRFcKCo4', 'W63dLHuGgG', 'WP5vW70', 'mrNdGmkIWRy', 'W5bLaJJdIG', 'amkNfCkbW7a', 'W7BdLHiY', 'WPVcQdOPWOy', 'WOm2W5f5kq', 'FK1wWRqN', 'BvD4WPmb', 'W7P0WQ0uWPe', 'WRNdRu3dGg4', 'oSkucmkbW44', 'WR4CkZ5X', 'WOKByr8', 'W5NdIWtcMCk/', 'smonW4BcRZG', 'WOGAW51MdW', 'WQWZW5v8eG', 'yJJcPCoOfW', 'WRCIcJvl', 'WROyiq', 'fKhcUG', 'WRqficjZ', 'teFdO8oHyG', 'A0jkWRWc', 'WO5PWQRcOa0', 'jaZdKq', 'WOicmJby', 'hCoiW7pdKCo2', 'WQJcVrmuWPG', 'rKXoW64', 'WOeDnGHN', 'W5pdMGldN2O', 'WORcGq8zeq', 'kIVdVYZdIq', 'WOJdQXGMuG', 'vvldT3z/', 'kCkmW4lcMWi', 'W6DHWOSQWR4', 'W6NdKaO+sq', 'WQ7dKMtdPNO', 'WO3dOb8', 'gmoNxmoOW6u', 'WPf4WQZcRaC', 'hmkNlCkLW7u', 'WPX5WQJcOrK', 'WQBdMIiwza', 'WQVdPSoRaa', 'dmkpWOLN', 'lYddHYFdUW', 'm1ZdU8oWWQS', '8kgzHmoroq/dHW', 'WQq9ESkiwW', 'uGq6WQ8E', 'j8oxW6VdJCob', 'WRGqqCkgzq', 'k8opW5ZdRmo2', 'W78MW6xdR8oc', 'WQ/dSvVdO18', 'E8k0WR3cMq', 'vfHnW6jO', 'WQddGwTsca', 'g1NdH1bs', 'lKqS', 'WOeYW5zYca', 'eCkAWO/dGhe', 'WPKJW5D7lG', 'tfBdRmoXCG', 'WRagxmktAW', 'W4z1WQqtWRm', 'hCkGlCk8W7K', 'WO95WR3cRs0', 'nCkMfCknBW', 'WQ/cIGi7pq', 'W6uFxConDq', 'FerXW5zU', 'bSo5s8oLWP8', 'fqFdNWxdQG', '8ycbTEkdLFgnG5JdQU+/U++8JU+8Oq', 'xSoaW4FcIsC', 'W63dHX0N', 'W6pcVSkJWOXN', 'cmkWlSkTW6G', 'ASolW7u', 'WOCAW5RcIIC', 'n0NdPSoMWQS', 'WQNdUdqeya', 'W7CMAmoDra', 'W5VdOSomW6hdSW', 'WOhdPcKrqq', 'WOKywbn0', 'WPGYW7yJ', 'FmovW7tcJa', 'W6ehoSoKWPq', 'WP4KW5LYgq', 'BWFdUmoTWQ0', 'W5z8WRS', 'WQRdUSoQgWK', 'dCkBWQNdKvi', 'pXpdGmkjWQC', 'WP0UW5WHW4C', 'hmkYd8klyW', 'WOiKW5uIW68', 'WQxdLdadbq', 'W73dNeGaWRu', 'ALhdGCoQtG', 'W7ZdJSoRW6xdRG', 'WRFdLGOava', 'W7JdLmoTW5tdOa', 'W7RdNSoZW7tdTq', 'W4rWWRKc', 'FSouW7JcIGK', 't1FdVSoT', 'lef/W4GN', 'ygX/W73WK7c4', 'W43dOa0Arq', 'WOVcOd0uWOS', 'W5/dGdhcV8kH', 'WP8DnGHV', 'zqBcUmoWgG', 'WR7dT8oX', 'WQVcQrK6la', 'W53WMj+hW6K1WQS', 'W7KZg8o8WOW', 'W5SbhSojWRi', 'W6pdGtWdda', 'WPW9jdfV', 'i0xdSa', 'fmkfWPy', 'bSoMsCoAWRa', 'WOrFW710qq', 'WOHOvgKD', 'kZldJmkZWPa', 'WQ/cStGQWOC', 'zSoqW7O', 'gstdUrFdVG', 'W5GrzCooFq', 'FbmW', 'WPrxW7C', 'W6yXrCoi', 'FSoTW6lcRsu', 'CYNcPCoHaa', 'W7FcU8kKWP1V', 'yJtcQCoW', 'W6yKW63dV8oY', 'je/dRCoNWP4', 'nmkQdmknFW', 'W6fOWRixWP4', '8jYIUo+4TG', 'yghdOmkIWOi', 'W47dKIdcV8kH', 'lwZdMmofWR4', 'WRpcQWyLla', 'WQepdc9g', 'CJtcOG', 'gCkmWPJdTxC', 'W6iLkSo0WPG', 'WR0B8yI1HCoqua', 'ECk0amkBkW', 'wSoNW7BcKce', 'WPZdVc8Kba', 'W5GjjmoEWRK', 'nuaWW4GR', 'BgXEW5Ha', 'ofzJW4y8', 'WPhdPtqVEq', 'm3rLW48E', 'W7GCW4NdTa', 'WOtdUN3dVxW', 'W43dRWZdOhq', 'WR7dTMrpWRq', 'WO54WRBcRs4', 'WOKYW4T2dG', 'WRSRjd9d', 'f8kBWPnRmq', 'WPmnqH5w', 'kKJdSctcLG', 'xGiVWRvi', 'WQabw8kDyG', 'WRyXW4OCW4K', 'hSkbo8k4W7K', 'W6yFW4VdO8kd', 'WQRdJsGpjG', 'm8ksWPnrsq', 'W6BdRcdcRCkT', 'WPTFW713Ea', 'F0HlWQTq', 'ASojW7ZcKW0', '8jgAOSofW7ldImkO', 'W4iBECoO', 'W78tW67dJSot', 'WR3dPKxdHei', 'WRhcOW0ZeW', '8ksyS8kzfgrk', 'hYRdKSkrWRO', 'WRKPwYLC', 'E8kSWRhcJSo9', 'WQJdQSoRcWK', 'y0HE', 'i0hdPmoJWQa', 'WQGqW6hcVc0', 'WRjtWOFcGcC', 'qmouWONdH10', 'hmkfWPjM', 'W5j1W75gW5e', 'd8kyWPHNlG', 'lSonySoqWRe', 'g8oQW4BdTmoS', 'W41EiCkcfW', 'uqC2WRfN', 'WR5WWR3cScy', 'zN1YWRyY', 'jLGWWODR', 'ccRdO8kFWOS', 'WOKeW5dcRc4', 'W7z0Fmotrq', 'W4qNvxZdKG', 'WPZdTIuDbG', 'laZdTZNdOG', 'nmkBWRNdIHW', 'WRb4WQVcUGi', 'pSkXdSkDEW', 'WQSFbCoZW5S', 'WOisCxFcPW', 'kfL/WP9+', 'WOuBW4BcNJa', 'f2/cJmk0W7K', 'eCkhWPb0lG', 'WO5BW7HXia', 'WPmBW5tcMdi', 'xLJdUZ1m', 'WOndW6n1', 'WRv4cJuo', 'WRdcHd44bq', 'WOFdPG0XDW', 'EmkxWRRcMq', 'W4ehW5ZdOW', 'WR/dLYundW', 'WRlcTYG4WQW', 'WQaJfHrI', 'WRGXy8k1Fa', 'WQmLyxFcLa', 'uCkYWRVcI8oI', 'W7ylWOhdKSog', 'WQP1WRhcPqy', 'WOiYW5OHW4C', 'WORcNdmxcW', 'WR8Xcd5A', 'W6yMqSor', 'WQnFW6TKnG', 'kmkWWQz4pq', 'WPPFWRneyW', 'WOCnE8kHtW', 'na/cLmkQWRC', 'fSktWO0', 'WRXzW7HLqG', 'WOv+W4zbtG', '8yolQSkBBmo2sG', 'iuNdJ190', 'W4BcRSk0WOW4', 'fCkeWPfnvW', 'tgZcLSkS', 'W7dcVSk4WOXT', 'WPhdNSowW5/dRG', 'rJlcVXqx', 'C8kYWPxcK8oE', 'WR5RWP/cVby', 'WOGZW5fHgq', 'FCkFWQdcNSoL', 'W7NcRSk1', 'W77cRSkIWP92', 'WRJdHhhdP0K', 'p8osW6JdI8ox', 'WRtcSCkvWRhcOq', 'WPdcIGir', 'W5PZWRSvW4i', 'Fx3cV8k0W4y', 'WOm8W4S1ca', '8lUWVokaPVcWKOW', 'W7W2rmo1EG', 'ESohW7BcMW', 'WP5jW5f/Ea', 'pSoRy8oeWQa', 'WPqgxIPc', 'WPhcIWuBaW', 'WPdcGbKhbW', 'WPeDqW5+', 'WOmFlGze', 'BXtcOchcNa', 'W78oW4VcOmon', 'WPhcIGiraq', 'WOTtWRRcVbq', 'FuLcW7Lw', 'qmo1W5lcRWK', 'dvBdKq', 'W7f4WRic', 'zeja', 'ufvD', 'xe3dOmkQCq', 'WOegW4hdNZK', 'WQNdNdapba', 'WR00cq', 'W6ykW43dTmox', 'hSodW6xdJ8ok', 'WQekzSooAa', 'W5yrz8o5yW', 'e8kwWRxdLxi', 'k14DWQPn', 'WOZdPSo0cdy', 'Au5vWRO+', 'W4tdJYRcN8kN', 'W7ddKsiHtW', 'WQawkdi', 'A1NcQSktW5q', 'gCkhWPq', 'W6iWsSoiuG', 'WQ7dG8ofW4NdRG', 'W7FdLCoRW7tdSW', 'aZKWWOxWRlcu', 'WPzDW7zzAa', 'lCkQfCkeBG', 'eCkgWPramG', 'sK3cSmkjW54', 'ySkAW5y', 'aCkcWP9kuW', 'W5JcPYDAW4G', 'xaS7', 'WPbiW7XLFa', 'iea2WOb6', 'W7ddKuu+rq', 'WQfCyCkWW5u', 'WOi2W5W', 'WOihsam', 'pSoaE8oxW6S', 'WQxdIICghW', 'E05nWRmv', 'WR7dVmkLiWm', 'uNZdRI1B', 'jmoTW77cJqm', '8jcQJmkTWQ9dWQ4', 'DKziW4Ln', 'eINcUG', '8l+lKYFcLWXu', 'WPXWWR0', 'x1pdQq', 'tmk3o8oYWRy', 'DgvRW7TU', 'bSkrWQddSem', 'o8oFW6FdM8oP', 'WPBcOtSeWRy', 'W5hdSshdSMG', 'W6ipp8oIWPy', 'W5xdQsZdO38', 'W5z8WQ0TWOm', 'eKmXW5jv', 'mrJdTZm', 'fJ7dPGtdPa', 'pSkjWRxcJSkT', 'o8oFW7VdICob', 'jSkun8knW5G', 'W4rIWR8aWPu', 'mfRdSCoKWQC', 'WQhdHIeywa', 'WQWEW4FcLrO', 'aCkDWQ7dI0u', 'W5ejW7qlW6C', 'W6dcRSk8WPrJ', 'WPOKW4i', 'W7Lxea', 'WPRdSNH8WOq', 'WRRdK2RdTg8', 'W7VdG8oRW7tdRW', 'W6hcU8kGWPf2', 'u0xdRJDi', 'W6NdPEkSVokDPeq', 'ax3dGmonWPe', 'omoLA8ogWRy', 'W4m+WQSxWPW', 'jwuQWOy', 'D2nHWROu', 'WO7cJqKh', 'l2m7', 'paFdPHpdMq', 'WQJdMx/cOYu', 'B0hdSmoDWQO', 'ESopW6FcMW', 'bvBdLLHc', 'WOqjW5tdIZq', 'ASojW73cSWK', 'jmkwfmkDW5K', 'smoSW7/cTIq', 'WPihwZn/', 'ASohW7lcLGK', 'oCkzWRnGyq', 'WQ/dIsaJdG', 'WQq7W51bma', 'WQDcW55KDG', 'sWmYWQ1E', 'vfLm', 'W7GZb8o1WPy', 'WQe9cZ9l', 'WPddGcymEa', 'CZ/cPCojfW', 'h0ZdLfPn', 'lKNdOmoRWRG', 'n8kIdCkPBW', 'WRldO8oGpbu', 'WQJdPmoJWPvN', 'lCoVW7VdKW', 'WQT8WRlcObe', 'WQBcOtSheW', 'WRldKufWWRG', 'rKJdQte', 'WPpcNsqPWOS', 'WPpcRK5usG', 'W7tdTSolW5VdUW', 'rvJdTd1K', '8k+kGx/dMe8M', 'WPqhW7NcKca', 'xe9CW79U', 'FvFdJZTA', 'oCojACoq', 'buRdLbrv', 'aNBcVSo5W7i', 'wgVdOXji', 'cCkFWP5NlG', 'W5D4WPDYfq', 'tLFdOSoXyG', 'WQlcIWeCcG', 'gc/dMHtdPG', 'WOZcMaiqfG', 'W6qNqCoKza', 'WOZdN8oMiI8', 'WOunySkgDG', 'WPb4WQVcUGi', 'W7SNBmoowa', 'cSkNWOVdTgO', 'WQddVY4hzW', 'WPldNmoFW5ddSW', 'wCk7WOVcUmoj', 'WQWfsG', 'nfZdSCoWWOm', 'W6ZdKYuzsG', 'W75MWOylWPK', 'vGO6WOHa', 'lmoFW7/dLSoh', 'WP8MWPykW5C', 'WP55WRNcNIy', 'CJJcSmofbG', 'l1ZcTmorWQS', 'dv/dKh1t', 'WRVcHgz9fG', 'wCojW4hcVb4', 'FKZdMSojyG', 'W6WyC8oujq', 'W7ldJZRdKMG', 'xsOoWRvw', 'WPpdOaaSvW', 'cf3dHLDf', 'WP7cQIWnWOm', 'WPinxX91', 'lCojW7RdNSod', 'rvHAW6m', 'W4m/W6BdJ8oX', 'z8oIW4NcJW4', 'pLX0W5W', 'WPfuWQZcJba', 'oSksWPvkDG', 'WQ0nW5VcIZ4', 'WOlcLJGqha', 'xe3dOCoiyG', 'v2zSWQyi', 'WOL3WPK0xa', 'WQZcMstdOwS', 'W7GbaSoKWP0', 'W4D3W6C', 'WO3dOa8VqW', 'WOFdVs8SDW', 'W64jj8oUpq', 'WOhdTHG', 'W4a2EmoVBq', 'eCkfWP8', 'D3VcJmk/W7u', 'BmovW6lcNWS', 'WOmAW7fPnG', 'WRWwwSkFtW', 'W7xdNSoM', 'l8oFW4RdKmok', 'W4VdHty9ua', 'FIhdPN3dUW', 'W7KBdSoJWOy', 'ASkgiW', 'WPtdSaKRhq', '8kIlL8kuW63cHSk1', 'WOWhW57cLHO', 'W5W2W7BdPmoU', 'kCkyWRZdM0a', 'WOW5W4W1eG', 'WRJdRmoYnWO', 'W5eLBmoZjG', 'hXP/', 'fLNdLSojWOG', 'mmkUWOLCBW', 'WPlcTGmWeq', 'fmkFlCklW6K', 'WO0Jx2JcMq', 'fCkMWRDVuW', 'u0FcOSk9zq', 'ov4sWPDO', 'WQRdSMT/WRm', 'WQ7dPYWmdq', 'tqmVWRfl', 'phhcJG', 'kCkSdCke', 'W4RdPb8', 'WOhdQKWRuW', 'nWRdPYNdHq', 'hZ3dSCoY', 'WPZdVZ0oqa', 'WQ3dIcG', 'W7/dJ8o6W5pdTa', 'cJRdNJ/dLG', 'fCkA8yM6VH9O', 'bmkBWQZdI1a', 'WOlcMX8ufa', 'jmkHj8kmW5G', 'e8krWPS', 'pmk1WOzzzq', 'WPjEWRmXlq', 'nv1ZW4K7', 'hmk0mmk7W7K', 'mLOZWPTV', 'ESooW77cIs0', 'xg1WWO4H', 'tmo/eCkTW7i', 'W6O5qCoqcG', 'WOldG8oDW43dOG', 'W4v+WQKu', 'e8kfemkFsG', 'nmk0bmkPza', 'WQy/xmkDyG', 'xwPAWRKM', 'vLhcRCoOyG', 'x2tcVCkkW4O', 'W4iXbCoPWP0', 'kCk5kSkJCG', 'W6BdK27dP1u', 'W7ZdQWS1tW', 'WPqoeYfD', 'WOddItWpEa', 'WOeIrMdcGa', 'W5jJWQWiWOi', 'dLbMWP1C', 'W7FdMrddHfm', 'WPuUW4WOW44', '8lMiJev5zmoN', 'W7u4vSostG', '8yU7TKvXAHK', 'wbVcL8oCoG', 'W7iMdG', 'cJxdKCkRWQG', 'W6NdJHqgwG', 'WQZdMh8', '8jk0RSk6feZdKG', 'c8kBWQm', 'W7FcUmk/WPLL', 'WPVdTcCNkq', 'Eu9sWP4F', 'b8kmWRxdL0m', 'WO42W4X8eW', 'WR3dUYOUra', 'wSoRW5NcUY4', 'WRnQW5ffrG', 'vHuCWRbw', 'AsKwWP53', 'W4qEtColEW', 'h8kHi8kKW7a', 'WQuuxCktyq', 'imkFWOjFeW', 'EgJdLXTS', 'W7G7qSos', 'WQldHxi', 'tMBcKCk9W64', 's2JcGSk9WRW', 'yZZcS8oHaa', 'hc7dHqtdIW', 'W5tdKdhcN8k8', 'ueZdVSoGsG', 'hCkyWPTCBq', 'odBdNCkJ', 'rg5qWRCg', 'WQasitnM', 'aSkeWPfmsa', 'W5BdUcRdUx0', 'lc3dPSkeWR4', 'WOSzeGHP', 'WRxdRSoPlGG', 'WR3dIx/dV28', 'WRS2W5j8dG', 'WOxdMGKGxG', 'WP9FW7j0Aq', 'W74XrCoBqW', 'WRCspa', 'WRW/oYDT', 'W55HWQOoWP8', 'aN3dVCo6WPC', 'W6iCD8ojiq', 'ymovW5ZcMW', 'WPqCW5dcJrO', 'oCoCB8ohWRe', 'g8kyWO0', 'W4RcOqaQva', 'WOxcGb4Wbq', 'W7ZcQSkGWRLM', 'W51KaZ/dGW', 'oCoLsmozWQe', 'E8odW73cNXu', 'oGhdSXZdMa', 'W6RdQYFcVmke', 'WOhdU3D7WPS', 'u1pdRHrm', 'W6mZcSo0WPa', 'WOFdG8oCW43dOG', 'W7ZdHKvYaq', 'v0FdRmoHyG', 'pbVdKq', 'u8kAW7tcLmo+', 'WPtdRSoEW7ZdKq', 'WPldUmoDaWu', 'WOX9B3FWN6ok', 'WOmAW5dcMYq', 'WQtdHtCNdW', 'we9mW7K1', 'gCktWOC', 'WOiXqg7cNG', 'W4yUW4NdKSo0', 'WR02fG', 'WQ3dHw/dH28', 'x3VcISkTW6W', 'WQ7dH8oKodW', 'rmoTW5tcJW8', 'z8oWW6JcTq0', 'WRK1gHXY', 'iCk8WRLNdq', 'ruXBW79U', 'gghdL8o1WQy', 'aCkzWR8', 'W63dNSo8W6xdQa', 'W7iyACozbq', 'W7yFW73dT8om', 'we9hW6PU', 'WOyYW4e', 'wmo2W5/cVtq', 'WRWAqq', 'ferHW5q8', 'W4hdPdFdMN8', 'jCk/WRBdTN4', 'bSkpWO5D', 't8oWW6FcHb8', 'EmkQWRRcICoB', 'pmkVWR1whW', 'WO3cQt82ka', 'ne3dT8o2WQS', 'WOhdVr8Iuq', 'DSk2WPJcHmoU'];
-    _0x8de2 = function () {
-      return _0x4f2db8;
-    };
-    return _0x8de2();
-  }
-  function _0x4cafca(_0x47f660, _0x2fd999, _0x2f3813, _0x97a342, _0x1f0f0e) {
-    return _0x5e79(_0x2fd999 + 0x2ee, _0x2f3813);
-  }
-  var prefix = config.PREFIX;
-  var prefixRegex = config.prefix === "false" || config.prefix === "null" ? '^' : new RegExp('^[' + config.PREFIX + ']');
-  const util = require("util");
-  const {
-    smsg,
-    getBuffer,
-    getGroupAdmins,
-    getRandom,
-    h2k,
-    isUrl,
-    Json,
-    runtime,
-    sleep,
-    fetchJson,
-    fetchBuffer,
-    getFile
-  } = require("./lib/functions");
-  const { sms, downloadMediaMessage } = require("./lib/msg");
-  const axios = require("axios");
-  const { File } = require("megajs");
-  const path = require("path");
-  const fs = require("fs");
-  const NodeCache = require("node-cache");
-  const msgRetryCounterCache = new NodeCache();
-  const settings = require('../settings'); // Adjust the path to your settings.js
-  
-  // Function to decode Base64
-  function decodeBase64(base64Str) {
-    return Buffer.from(base64Str, 'base64').toString('utf-8');
-  }
-  
-  // Ensure the session directory exists
-  const sessionDir = path.join(__dirname, 'session');
-  if (!fs.existsSync(sessionDir)) {
-    fs.mkdirSync(sessionDir);
-  }
-  
-  // Function to save decoded session data
-  function saveDecodedSessionData(decodedData) {
-    const filePath = path.join(sessionDir, 'creds.json');
-    fs.writeFile(filePath, decodedData, (err) => {
-      if (err) {
-        console.error("Failed to save session data:", err.message);
-        return;
-      }
-      console.log("Session data saved successfully.");
-    });
-  }
-  
-  // Check if creds.json does not exist
-  if (!fs.existsSync(path.join(sessionDir, 'creds.json'))) {
-    if (settings.SESSION_ID) {
-      try {
-        // Decode the Base64 encoded session ID
-        const decodedSessionId = decodeBase64(settings.SESSION_ID.replace("Byte;;;", ''));
-        
-        // Log the decoded session ID for debugging
-        console.log("Decoded Session ID:", decodedSessionId);
-  
-        // Ensure the decodedSessionId contains the required hash part
-        if (!/^[-A-Za-z0-9_]+$/.test(decodedSessionId)) {
-          throw new Error("Invalid session ID format.");
-        }
-  
-        // Save the decoded session data to creds.json
-        saveDecodedSessionData(decodedSessionId);
-        
-      } catch (error) {
-        console.error("Failed to decode or save session ID:", error.message);
-      }
-    } else {
-      console.error("No SESSION_ID found in settings.");
+      return _0x1ccec0;
     }
-  } else {
-    console.log("Session already exists.");
-  }
-  
-  
-  const express = require("express");
-  const app = express();
-  const port = process.env.PORT || 8000;
-  async function connectToWA() {
-    const {
-      version: _0x3cfacf,
-      isLatest: _0x5ee9a6
-    } = await fetchLatestBaileysVersion();
-    console.log("using WA v" + _0x3cfacf.join('.') + ", isLatest: " + _0x5ee9a6);
-    const {
-      state: _0x2b2e08,
-      saveCreds: _0x3d4cac
-    } = await useMultiFileAuthState(__dirname + "/session/");
-    const _0x2c419a = makeWASocket({
-      'logger': P({
-        'level': "fatal"
-      }).child({
-        'level': "fatal"
-      }),
-      'printQRInTerminal': true,
-      'generateHighQualityLinkPreview': true,
-      'auth': _0x2b2e08,
-      'defaultQueryTimeoutMs': undefined,
-      'msgRetryCounterCache': msgRetryCounterCache
-    });
-    _0x2c419a.ev.on("connection.update", async _0x3817e4 => {
-      const {
-        connection: _0x24277b,
-        lastDisconnect: _0x38270d
-      } = _0x3817e4;
-      if (_0x24277b === "close") {
-        if (_0x38270d.error.output.statusCode !== DisconnectReason.loggedOut) {
-          connectToWA();
-        }
-      } else {
-        if (_0x24277b === "open") {
-          console.log("Installing plugins 🔌... ");
-          const _0x1508f2 = require("path");
-          fs.readdirSync("./plugins/").forEach(_0x115ac5 => {
-            if (_0x1508f2.extname(_0x115ac5).toLowerCase() == ".js") {
-              require("./plugins/" + _0x115ac5);
-            }
-          });
-          console.log("X-BYTE connected ✅");
-          console.log("Created by Hamza 🐼");
-          await _0x2c419a.sendMessage(ownerNumber + "@s.whatsapp.net", {
-            'text': "X-BYTE conneted"
-          });
-        }
-      }
-    });
-    _0x2c419a.ev.on("creds.update", _0x3d4cac);
-    _0x2c419a.ev.on("messages.upsert", async _0x5ec5ee => {
-      try {
-        _0x5ec5ee = _0x5ec5ee.messages[0];
-        if (!_0x5ec5ee.message) {
-          return;
-        }
-        var _0x16361b = require("./lib/id_db");
-        _0x5ec5ee.message = getContentType(_0x5ec5ee.message) === "ephemeralMessage" ? _0x5ec5ee.message.ephemeralMessage.message : _0x5ec5ee.message;
-        if (_0x5ec5ee.key && _0x5ec5ee.key.remoteJid === "status@broadcast") {
-          return;
-        }
-        const _0x1b19d1 = sms(_0x2c419a, _0x5ec5ee);
-        const _0x3d93a4 = getContentType(_0x5ec5ee.message);
-        const _0x43983b = _0x5ec5ee.key.remoteJid;
-        const _0x1a1e7c = _0x3d93a4 == "extendedTextMessage" && _0x5ec5ee.message.extendedTextMessage.contextInfo != null ? _0x5ec5ee.message.extendedTextMessage.contextInfo.quotedMessage || [] : [];
-        const _0x4cfd81 = _0x3d93a4 === "conversation" ? _0x5ec5ee.message.conversation : _0x3d93a4 === "extendedTextMessage" ? _0x5ec5ee.message.extendedTextMessage.text : _0x3d93a4 == "interactiveResponseMessage" ? _0x5ec5ee.message.interactiveResponseMessage && _0x5ec5ee.message.interactiveResponseMessage.nativeFlowResponseMessage && JSON.parse(_0x5ec5ee.message.interactiveResponseMessage.nativeFlowResponseMessage.paramsJson) && JSON.parse(_0x5ec5ee.message.interactiveResponseMessage.nativeFlowResponseMessage.paramsJson).id : _0x3d93a4 == "templateButtonReplyMessage" ? _0x5ec5ee.message.templateButtonReplyMessage && _0x5ec5ee.message.templateButtonReplyMessage.selectedId : _0x3d93a4 === "extendedTextMessage" ? _0x5ec5ee.message.extendedTextMessage.text : _0x3d93a4 == "imageMessage" && _0x5ec5ee.message.imageMessage.caption ? _0x5ec5ee.message.imageMessage.caption : _0x3d93a4 == "videoMessage" && _0x5ec5ee.message.videoMessage.caption ? _0x5ec5ee.message.videoMessage.caption : '';
-        if ((await isbtnID(_0x5ec5ee.message?.["extendedTextMessage"]?.["contextInfo"]?.["stanzaId"])) && getCmdForCmdId(await getCMDStore(_0x5ec5ee.message?.["extendedTextMessage"]?.["contextInfo"]?.["stanzaId"]), _0x5ec5ee?.["message"]?.["extendedTextMessage"]?.["text"])) {
-          getCmdForCmdId(await getCMDStore(_0x5ec5ee.message?.["extendedTextMessage"]?.["contextInfo"]?.["stanzaId"]), _0x5ec5ee?.["message"]?.["extendedTextMessage"]?.["text"]);
-        } else if (_0x3d93a4 === "extendedTextMessage") {
-          _0x5ec5ee.message.extendedTextMessage.text;
-        } else if (_0x3d93a4 == "imageMessage" && _0x5ec5ee.message.imageMessage.caption) {
-          _0x5ec5ee.message.imageMessage.caption;
-        } else if (_0x3d93a4 == "videoMessage" && _0x5ec5ee.message.videoMessage.caption) {
-          _0x5ec5ee.message.videoMessage.caption;
-        } else {
-          '';
-        }
-        var _0x24cb27 = await get_set("all");
-        config = await _0x16f193(config, _0x24cb27);
-        prefix = config.PREFIX;
-        var _0x12f7ef = _0x4cfd81.startsWith(prefix);
-        var _0x327fcf = _0x12f7ef ? _0x4cfd81.slice(prefix.length).trim().split(" ").shift().toLowerCase() : '';
-        var _0x453efa = _0x4cfd81.trim().split(/ +/).slice(1);
-        var _0x4824de = _0x453efa.join(" ");
-        if (_0x1b19d1.quoted && _0x1b19d1.quoted.fromMe && (await _0x16361b.check(_0x1b19d1.quoted.id))) {
-          if (_0x4cfd81.startsWith(prefix)) {
-            _0x4cfd81 = _0x4cfd81.replace(prefix, '');
-          }
-          var _0x25a9c6 = await _0x16361b.get_data(_0x1b19d1.quoted.id, _0x4cfd81);
-          if (_0x25a9c6.cmd) {
-            _0x12f7ef = true;
-            _0x327fcf = _0x25a9c6.cmd.startsWith(prefix) ? _0x25a9c6.cmd.slice(prefix.length).trim().split(" ").shift().toLowerCase() : '';
-            _0x453efa = _0x25a9c6.cmd.trim().split(/ +/).slice(1);
-            _0x4824de = _0x453efa.join(" ");
-          }
-        }
-        console.log(_0x327fcf);
-        const _0x57fc37 = _0x43983b.endsWith("@g.us");
-        const _0x495cf8 = _0x5ec5ee.key.fromMe ? _0x2c419a.user.id.split(':')[0] + "@s.whatsapp.net" || _0x2c419a.user.id : _0x5ec5ee.key.participant || _0x5ec5ee.key.remoteJid;
-        const _0x86bfc9 = _0x495cf8.split('@')[0];
-        const _0x534077 = _0x2c419a.user.id.split(':')[0];
-        const _0x2d0dec = _0x5ec5ee.pushName || "Sin Nombre";
-        const _0x30e051 = _0x534077.includes(_0x86bfc9);
-        const _0x5858ea = "923072380380".includes(_0x86bfc9);
-        const _0x5b62ca = _0x30e051 ? _0x30e051 : _0x5858ea;
-        const _0x3e636e = ownerNumber.includes(_0x86bfc9) || _0x5b62ca;
-        const _0x237e3b = await jidNormalizedUser(_0x2c419a.user.id);
-        const _0x397f5f = _0x57fc37 ? await _0x2c419a.groupMetadata(_0x43983b)["catch"](_0x41f384 => {}) : '';
-        const _0x3defe1 = _0x57fc37 ? _0x397f5f.subject : '';
-        const _0x19170e = _0x57fc37 ? await _0x397f5f.participants : '';
-        const _0x1a47c1 = _0x57fc37 ? await getGroupAdmins(_0x19170e) : '';
-        const _0x12dcb0 = _0x57fc37 ? _0x1a47c1.includes(_0x237e3b) : false;
-        const _0x12043f = _0x57fc37 ? _0x1a47c1.includes(_0x495cf8) : false;
-        autoreadsw = false;
-        const _0x181aa7 = _0x55fc42 => {
-          for (let _0xbc37f8 = 0; _0xbc37f8 < _0x55fc42.length; _0xbc37f8++) {
-            if (_0x55fc42[_0xbc37f8] === _0x43983b) {
-              return true;
-            }
-          }
-          return false;
-        };
-        const _0x39acac = _0x17f0e9 => {
-          const _0x57c632 = {
-            text: _0x17f0e9
-          };
-          return _0x2c419a.sendMessage(_0x43983b, _0x57c632);
-        };
-        _0x2c419a.storenumrepdata = async _0x394e02 => {
-          return await storenumrepdata(_0x394e02);
-        };
-        const _0x1f11fb = (await axios.get("https://raw.githubusercontent.com/HyHamza/HyHamza/main/files/XByte.json")).data;
-        config.LOGO = _0x1f11fb.imageurl;
-        config.BTN = _0x1f11fb.button;
-        config.CONTACT = _0x1f11fb.contact;
-        config.FOOTER = _0x1f11fb.footer;
-        config.BTNURL = _0x1f11fb.buttonurl;
-        _0x2c419a.edit = async (_0x32dcae, _0x5967be) => {
-          const _0x4f1e47 = {
-            conversation: _0x5967be
-          };
-          const _0x25b4f3 = {
-            key: _0x32dcae.key,
-            type: 0xe,
-            editedMessage: _0x4f1e47
-          };
-          const _0x565a13 = {
-            protocolMessage: _0x25b4f3
-          };
-          await _0x2c419a.relayMessage(_0x43983b, _0x565a13, {});
-        };
-        _0x2c419a.sendFileUrl = async (_0x50c64c, _0x325567, _0x1fdd72, _0x2d55ca, _0x17ee5e = {}) => {
-          let _0x5e2e3f = '';
-          let _0x5e855f = await axios.head(_0x325567);
-          _0x5e2e3f = _0x5e855f.headers["content-type"];
-          if (_0x5e2e3f.split('/')[1] === "gif") {
-            return _0x2c419a.sendMessage(_0x50c64c, {
-              'video': await getBuffer(_0x325567),
-              'caption': _0x1fdd72,
-              'gifPlayback': true,
-              ..._0x17ee5e
-            }, {
-              'quoted': _0x2d55ca,
-              ..._0x17ee5e
-            });
-          }
-          if (_0x5e2e3f === "application/pdf") {
-            return _0x2c419a.sendMessage(_0x50c64c, {
-              'document': await getBuffer(_0x325567),
-              'mimetype': "application/pdf",
-              'caption': _0x1fdd72,
-              ..._0x17ee5e
-            }, {
-              'quoted': _0x2d55ca,
-              ..._0x17ee5e
-            });
-          }
-          if (_0x5e2e3f.split('/')[0] === "image") {
-            return _0x2c419a.sendMessage(_0x50c64c, {
-              'image': await getBuffer(_0x325567),
-              'caption': _0x1fdd72,
-              ..._0x17ee5e
-            }, {
-              'quoted': _0x2d55ca,
-              ..._0x17ee5e
-            });
-          }
-          if (_0x5e2e3f.split('/')[0] === "video") {
-            return _0x2c419a.sendMessage(_0x50c64c, {
-              'video': await getBuffer(_0x325567),
-              'caption': _0x1fdd72,
-              'mimetype': "video/mp4",
-              ..._0x17ee5e
-            }, {
-              'quoted': _0x2d55ca,
-              ..._0x17ee5e
-            });
-          }
-          if (_0x5e2e3f.split('/')[0] === "audio") {
-            return _0x2c419a.sendMessage(_0x50c64c, {
-              'audio': await getBuffer(_0x325567),
-              'caption': _0x1fdd72,
-              'mimetype': "audio/mpeg",
-              ..._0x17ee5e
-            }, {
-              'quoted': _0x2d55ca,
-              ..._0x17ee5e
-            });
-          }
-        };
-        _0x2c419a.sendButtonMessage = async (_0x526bec, _0x2ed24e, _0x13ab45, _0x1524f3 = {}) => {
-          let _0x1018c6;
-          if (_0x1524f3?.["video"]) {
-            const _0x135d1a = {
-              url: _0x1524f3 && _0x1524f3.video ? _0x1524f3.video : ''
-            };
-            const _0x16f078 = {
-              video: _0x135d1a
-            };
-            const _0x423751 = {
-              upload: _0x2c419a.waUploadToServer
-            };
-            var _0x3e90c2 = await prepareWAMessageMedia(_0x16f078, _0x423751);
-            const _0x5327d6 = {
-              title: _0x1524f3 && _0x1524f3.header ? _0x1524f3.header : '',
-              hasMediaAttachment: true,
-              videoMessage: _0x3e90c2.videoMessage
-            };
-            _0x1018c6 = _0x5327d6;
+    const reportedMessages = {};
+    if (config.COMMAND_TYPE === "button") {
+      const _0x5b9ebd = {
+        pattern: "alive",
+        react: '👋🏻',
+        desc: "Check bot online or not.",
+        category: "main",
+        use: ".alive",
+        filename: __filename
+      };
+      cmd(_0x5b9ebd, async (_0x1c786e, _0xe50afd, _0x288bbd, {
+        from: _0x1b5590,
+        prefix: _0x43be50,
+        l: _0x7abd6d,
+        quoted: _0x25fbda,
+        body: _0x7af733,
+        isCmd: _0x2d96a3,
+        command: _0x96ce30,
+        args: _0x107e26,
+        q: _0x129ca8,
+        isGroup: _0xeb1c08,
+        sender: _0x514f73,
+        senderNumber: _0x1f851b,
+        botNumber2: _0x46921a,
+        botNumber: _0x5ed83e,
+        pushname: _0x35e518,
+        isMe: _0x5214a8,
+        isOwner: _0x48c06f,
+        groupMetadata: _0x3f0bf3,
+        groupName: _0x3554a6,
+        participants: _0x451883,
+        groupAdmins: _0x79a84e,
+        isBotAdmins: _0x3fa692,
+        isAdmins: _0x119dac,
+        reply: _0x24a39f
+      }) => {
+        try {
+          if (os.hostname().length == 12) {
+            hostname = "replit";
           } else {
-            if (_0x1524f3?.["image"]) {
-              const _0x3bdfa0 = {
-                url: _0x1524f3 && _0x1524f3.image ? _0x1524f3.image : ''
-              };
-              const _0x23c752 = {
-                image: _0x3bdfa0
-              };
-              const _0x4cabc4 = {
-                upload: _0x2c419a.waUploadToServer
-              };
-              var _0x3bf714 = await prepareWAMessageMedia(_0x23c752, _0x4cabc4);
-              const _0x1e16fd = {
-                title: _0x1524f3 && _0x1524f3.header ? _0x1524f3.header : '',
-                hasMediaAttachment: true,
-                imageMessage: _0x3bf714.imageMessage
-              };
-              _0x1018c6 = _0x1e16fd;
+            if (os.hostname().length == 36) {
+              hostname = "heroku";
             } else {
-              const _0x9b3a0c = {
-                title: _0x1524f3 && _0x1524f3.header ? _0x1524f3.header : '',
-                hasMediaAttachment: false
-              };
-              _0x1018c6 = _0x9b3a0c;
+              if (os.hostname().length == 8) {
+                hostname = "koyeb";
+              } else {
+                hostname = os.hostname();
+              }
             }
           }
-          const _0x1de6d2 = {
-            deviceListMetadata: {},
-            deviceListMetadataVersion: 0x2
+          const _0x2eae7c = "👋 Hello " + _0x35e518 + " I'm alive" + "\n*Im X-Byte*\n> *Version:* " + require("../package.json").version + "\n> *Memory:* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n> *Runtime:* " + runtime(process.uptime()) + "\n> *Platform:* " + hostname;
+          const _0x15cb75 = {
+            display_text: config.BTN,
+            url: config.BTNURL,
+            merchant_url: config.BTNURL
           };
-          const _0xb8dc82 = {
-            text: _0x1524f3 && _0x1524f3.body ? _0x1524f3.body : ''
+          let _0x9fd767 = [{
+            'name': "cta_url",
+            'buttonParamsJson': JSON.stringify(_0x15cb75)
+          }, {
+            'name': "quick_reply",
+            'buttonParamsJson': JSON.stringify({
+              'display_text': "Go Menu",
+              'id': ".menu"
+            })
+          }];
+          const _0x5a3846 = {
+            image: config.LOGO,
+            header: '',
+            footer: config.FOOTER,
+            body: _0x2eae7c
           };
-          const _0x40f677 = {
-            text: _0x1524f3 && _0x1524f3.footer ? _0x1524f3.footer : ''
-          };
-          const _0xdc9496 = {
-            buttons: _0x2ed24e,
-            messageParamsJson: ''
-          };
-          const _0x35a979 = {
-            body: _0xb8dc82,
-            footer: _0x40f677,
-            header: _0x1018c6,
-            nativeFlowMessage: _0xdc9496
-          };
-          const _0x350a8f = {
-            messageContextInfo: _0x1de6d2,
-            interactiveMessage: _0x35a979
-          };
-          const _0x195f78 = {
-            message: _0x350a8f
-          };
-          const _0x250f3c = {
-            viewOnceMessage: _0x195f78
-          };
-          const _0x4f07e8 = {
-            quoted: _0x13ab45
-          };
-          let _0x1e963f = generateWAMessageFromContent(_0x526bec, _0x250f3c, _0x4f07e8);
-          await _0x2c419a.sendPresenceUpdate("composing", _0x526bec);
-          await sleep(1000);
-          return await _0x2c419a.relayMessage(_0x526bec, _0x1e963f.message, {
-            'messageId': _0x1e963f.key.id
-          });
-        };
-        function _0x16f193(_0x5e21b0, _0x14f82e) {
-          for (var _0x15d4b2 in _0x14f82e) {
-            _0x5e21b0[_0x15d4b2] = _0x14f82e[_0x15d4b2];
-          }
-          return _0x5e21b0;
+          return await _0x1c786e.sendButtonMessage(_0x1b5590, _0x9fd767, _0x288bbd, _0x5a3846);
+        } catch (_0x4525f4) {
+          _0x24a39f("*Error !!*");
+          console.log(_0x4525f4);
         }
-        var _0x24cb27 = await get_set("all");
-        config = await _0x16f193(config, _0x24cb27);
-        _0x2c419a.replyad = async _0x5d6407 => {
-          const _0x5d2f91 = {
-            newsletterJid: "120363182681793169@newsletter",
-            serverMessageId: 0x7f
-          };
-          const _0x2b48f1 = {
-            title: "X - B Y T E",
-            body: "ᴀ ꜱɪᴍᴘʟᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ",
-            mediaType: 0x1,
-            sourceUrl: "https://wa.me/923072380380",
-            thumbnailUrl: "https://raw.githubusercontent.com/HyHamza/HyHamza/main/Images/XByte-logo.png",
-            renderLargerThumbnail: false,
-            showAdAttribution: true
-          };
-          const _0x53a431 = {
-            mentionedJid: [''],
-            groupMentions: [],
-            forwardingScore: 0x1,
-            isForwarded: true,
-            forwardedNewsletterMessageInfo: _0x5d2f91,
-            externalAdReply: _0x2b48f1
-          };
-          const _0xc4fb55 = {
-            text: _0x5d6407,
-            contextInfo: _0x53a431
-          };
-          const _0x284134 = {
-            quoted: _0x5ec5ee
-          };
-          return await _0x2c419a.sendMessage(_0x43983b, _0xc4fb55, _0x284134);
-        };
-        _0x2c419a.buttonMessage2 = async (_0x7571f, _0x4d8524, _0x454c56) => {
-          let _0x52f95f = '';
-          const _0x33b8ed = [];
-          _0x4d8524.buttons.forEach((_0x30d1ad, _0x2f7d1d) => {
-            const _0x521818 = '' + (_0x2f7d1d + 1);
-            _0x52f95f += "\n" + _0x521818 + " | " + _0x30d1ad.buttonText.displayText + "\n";
-            const _0x1ffb4b = {
-              cmdId: _0x521818,
-              cmd: _0x30d1ad.buttonId
-            };
-            _0x33b8ed.push(_0x1ffb4b);
-          });
-          if (_0x4d8524.headerType === 1) {
-            const _0x52afbe = _0x4d8524.text + "\n\n🔢 Reply you want number," + _0x52f95f + "\n" + _0x4d8524.footer;
-            const _0x4b921b = {
-              newsletterJid: "120363182681793169@newsletter",
-              serverMessageId: 0x7f
-            };
-            const _0x16a1cb = {
-              title: "X - B Y T E",
-              body: "ᴀ ꜱɪᴍᴘʟᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ",
-              mediaType: 0x1,
-              sourceUrl: "https://wa.me/923072380380",
-              thumbnailUrl: "https://raw.githubusercontent.com/HyHamza/HyHamza/main/Images/XByte-logo.png",
-              renderLargerThumbnail: false,
-              showAdAttribution: true
-            };
-            const _0x3a699f = {
-              mentionedJid: [''],
-              groupMentions: [],
-              forwardingScore: 0x1,
-              isForwarded: true,
-              forwardedNewsletterMessageInfo: _0x4b921b,
-              externalAdReply: _0x16a1cb
-            };
-            const _0x397c69 = {
-              text: _0x52afbe,
-              contextInfo: _0x3a699f
-            };
-            const _0x3a44cc = await _0x2c419a.sendMessage(_0x43983b, _0x397c69, {
-              'quoted': _0x454c56 || _0x5ec5ee
-            });
-            await updateCMDStore(_0x3a44cc.key.id, _0x33b8ed);
+      });
+      const _0x4448d4 = {
+        pattern: 'sc',
+        react: "🗃️",
+        alias: ["repo", "script", "status"],
+        desc: "Get bot's command list.",
+        category: "main",
+        use: ".sc",
+        filename: __filename
+      };
+      cmd(_0x4448d4, async (_0x5292d0, _0x1a80bd, _0x535317, {
+        from: _0x5493d6,
+        prefix: _0x2816c4,
+        l: _0x15fba3,
+        quoted: _0x218618,
+        body: _0x291730,
+        isCmd: _0x315b43,
+        command: _0x19e22c,
+        args: _0x5f266b,
+        q: _0x43ae30,
+        isGroup: _0x21d1e3,
+        sender: _0xc0e065,
+        senderNumber: _0x16e4fc,
+        botNumber2: _0x802717,
+        botNumber: _0x501655,
+        pushname: _0x4701d9,
+        isMe: _0x9821e,
+        isOwner: _0x29da2b,
+        groupMetadata: _0x199af7,
+        groupName: _0x4a3587,
+        participants: _0x3e2e9d,
+        groupAdmins: _0x3957a1,
+        isBotAdmins: _0x29a338,
+        isAdmins: _0xfc45f7,
+        reply: _0x147d28
+      }) => {
+        try {
+          if (os.hostname().length == 12) {
+            hostname = "replit";
           } else {
-            if (_0x4d8524.headerType === 4) {
-              const _0x2f2679 = _0x4d8524.caption + "\n\n🔢 Reply you want number," + _0x52f95f + "\n" + _0x4d8524.footer;
-              const _0x3394bd = {
-                newsletterJid: "120363182681793169@newsletter",
-                serverMessageId: 0x7f
-              };
-              const _0x5deb88 = {
-                title: "X - B Y T E",
-                body: "ᴀ ꜱɪᴍᴘʟᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ",
-                mediaType: 0x1,
-                sourceUrl: "https://wa.me/923072380380",
-                thumbnailUrl: "https://raw.githubusercontent.com/HyHamza/HyHamza/main/Images/XByte-logo.png",
-                renderLargerThumbnail: false,
-                showAdAttribution: true
-              };
-              const _0x1e5ebb = {
-                mentionedJid: [''],
-                groupMentions: [],
-                forwardingScore: 0x1,
-                isForwarded: true,
-                forwardedNewsletterMessageInfo: _0x3394bd,
-                externalAdReply: _0x5deb88
-              };
-              const _0x15ebfd = {
-                image: _0x4d8524.image,
-                caption: _0x2f2679,
-                contextInfo: _0x1e5ebb
-              };
-              const _0x4a0cf5 = await _0x2c419a.sendMessage(_0x7571f, _0x15ebfd, {
-                'quoted': _0x454c56 || _0x5ec5ee
-              });
-              await updateCMDStore(_0x4a0cf5.key.id, _0x33b8ed);
-            }
-          }
-        };
-        _0x2c419a.replyList = async (_0x392ce6, _0x4a570f, _0xeeaffc) => {
-          function _0x3b9f52(_0x19bb8f) {
-            let _0x11bb5d = '';
-            _0x19bb8f.forEach((_0x7daef2, _0x263e93) => {
-              _0x11bb5d += _0x7daef2.title ? _0x7daef2.title + "\n" : '';
-              _0x7daef2.rows.forEach((_0x5909c7, _0x548e99) => {
-                _0x11bb5d += _0x5909c7.title + " || " + _0x5909c7.description;
-                _0x11bb5d += _0x548e99 === _0x7daef2.rows.length - 1 ? '' : "\n";
-              });
-              _0x11bb5d += _0x263e93 === _0x19bb8f.length - 1 ? '' : "\n\n";
-            });
-            return _0x11bb5d;
-          }
-          if (!_0x4a570f.sections) {
-            return false;
-          }
-          _0x4a570f[_0x4a570f.caption ? "caption" : "text"] = (_0x4a570f.title ? _0x4a570f.title + "\n\n" : '') + (_0x4a570f.caption ? _0x4a570f.caption : _0x4a570f.text) + "\n\n" + _0x4a570f.buttonText + "\n\n" + (await _0x3b9f52(_0x4a570f.sections)) + "\n\n" + _0x4a570f.footer;
-          const _0x49735b = {
-            ..._0x4a570f
-          };
-          delete _0x4a570f.sections;
-          delete _0x4a570f.footer;
-          delete _0x4a570f.buttonText;
-          delete _0x4a570f.title;
-          const _0x29612c = await _0x2c419a.sendMessage(_0x392ce6, _0x4a570f, _0xeeaffc);
-          const _0x3da8c9 = [];
-          _0x49735b.sections.forEach(_0x37f5ad => {
-            _0x37f5ad.rows.forEach(_0x3fe69f => {
-              const _0x1a847e = {
-                rowId: _0x3fe69f.rowId,
-                title: _0x3fe69f.title
-              };
-              _0x3da8c9.push(_0x1a847e);
-            });
-          });
-          for (let _0x212ac0 = 0; _0x212ac0 < _0x3da8c9.length; _0x212ac0++) {
-            await _0x16361b.input_data(_0x3da8c9[_0x212ac0].rowId, _0x3da8c9[_0x212ac0].title, _0x29612c.key.id);
-          }
-        };
-        _0x2c419a.buttonMessage = async (_0x12803e, _0xca9e91, _0x747765) => {
-          let _0x1054e7 = '';
-          const _0x8f849c = [];
-          _0xca9e91.buttons.forEach((_0x32e852, _0x5dc532) => {
-            const _0x18b99f = '' + (_0x5dc532 + 1);
-            _0x1054e7 += "\n" + _0x18b99f + " | " + _0x32e852.buttonText.displayText + "\n";
-            const _0x1cdeec = {
-              cmdId: _0x18b99f,
-              cmd: _0x32e852.buttonId
-            };
-            _0x8f849c.push(_0x1cdeec);
-          });
-          if (_0xca9e91.headerType === 1) {
-            const _0xfb2614 = (_0xca9e91.text || _0xca9e91.caption) + "\n🔢 Reply you want number," + _0x1054e7 + "\n\n" + _0xca9e91.footer;
-            const _0x52cb28 = {
-              newsletterJid: "120363182681793169@newsletter",
-              serverMessageId: 0x7f
-            };
-            const _0x17dd6e = {
-              title: "X - B Y T E",
-              body: "ᴀ ꜱɪᴍᴘʟᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ",
-              mediaType: 0x1,
-              sourceUrl: "https://wa.me/923072380380",
-              thumbnailUrl: "https://raw.githubusercontent.com/HyHamza/HyHamza/main/Images/XByte-logo.png",
-              renderLargerThumbnail: false,
-              showAdAttribution: true
-            };
-            const _0x11bd69 = {
-              mentionedJid: [''],
-              groupMentions: [],
-              forwardingScore: 0x1,
-              isForwarded: true,
-              forwardedNewsletterMessageInfo: _0x52cb28,
-              externalAdReply: _0x17dd6e
-            };
-            const _0x25fedc = {
-              text: _0xfb2614,
-              contextInfo: _0x11bd69
-            };
-            const _0x16a37b = await _0x2c419a.sendMessage(_0x43983b, _0x25fedc, {
-              'quoted': _0x747765 || _0x5ec5ee
-            });
-            await updateCMDStore(_0x16a37b.key.id, _0x8f849c);
-          } else {
-            if (_0xca9e91.headerType === 4) {
-              const _0x12647d = _0xca9e91.caption + "\n\n🔢 Reply you want number," + _0x1054e7 + "\n" + _0xca9e91.footer;
-              const _0x525586 = {
-                newsletterJid: "120363182681793169@newsletter",
-                serverMessageId: 0x7f
-              };
-              const _0x3e6996 = {
-                title: "X - B Y T E",
-                body: "ᴀ ꜱɪᴍᴘʟᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ",
-                mediaType: 0x1,
-                sourceUrl: "https://wa.me/923072380380",
-                thumbnailUrl: "https://raw.githubusercontent.com/HyHamza/HyHamza/main/Images/XByte-logo.png",
-                renderLargerThumbnail: false,
-                showAdAttribution: true
-              };
-              const _0x22c7fc = {
-                mentionedJid: [''],
-                groupMentions: [],
-                forwardingScore: 0x1,
-                isForwarded: true,
-                forwardedNewsletterMessageInfo: _0x525586,
-                externalAdReply: _0x3e6996
-              };
-              const _0x53a15f = {
-                image: _0xca9e91.image,
-                caption: _0x12647d,
-                contextInfo: _0x22c7fc
-              };
-              const _0xe5f343 = await _0x2c419a.sendMessage(_0x12803e, _0x53a15f, {
-                'quoted': _0x747765 || _0x5ec5ee
-              });
-              await updateCMDStore(_0xe5f343.key.id, _0x8f849c);
-            }
-          }
-        };
-        _0x2c419a.listMessage2 = async (_0x1e97a8, _0x49ef8e, _0x500aaf) => {
-          let _0x597ccb = '';
-          const _0x3235b5 = [];
-          _0x49ef8e.sections.forEach((_0x12ab72, _0x52db95) => {
-            const _0x3e1a53 = '' + (_0x52db95 + 1);
-            _0x597ccb += "\n[" + _0x3e1a53 + "] " + _0x12ab72.title + "\n";
-            _0x12ab72.rows.forEach((_0xbb6c02, _0x3fb488) => {
-              const _0x3b302d = _0x3e1a53 + '.' + (_0x3fb488 + 1);
-              const _0x13cc84 = "   " + _0x3b302d + " | " + _0xbb6c02.title;
-              _0x597ccb += _0x13cc84 + "\n";
-              if (_0xbb6c02.description) {
-                _0x597ccb += "   " + _0xbb6c02.description + "\n\n";
-              }
-              const _0xcbf0d1 = {
-                cmdId: _0x3b302d,
-                cmd: _0xbb6c02.rowId
-              };
-              _0x3235b5.push(_0xcbf0d1);
-            });
-          });
-          const _0x12f8ea = _0x49ef8e.text + "\n\n" + _0x49ef8e.buttonText + ',' + _0x597ccb + "\n" + _0x49ef8e.footer;
-          const _0x403725 = {
-            newsletterJid: "120363182681793169@newsletter",
-            serverMessageId: 0x7f
-          };
-          const _0x9ec309 = {
-            title: "X - B Y T E",
-            body: "ᴀ ꜱɪᴍᴘʟᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ",
-            mediaType: 0x1,
-            sourceUrl: "https://wa.me/923072380380",
-            thumbnailUrl: "https://raw.githubusercontent.com/HyHamza/HyHamza/main/Images/XByte-logo.png",
-            renderLargerThumbnail: false,
-            showAdAttribution: true
-          };
-          const _0x320f65 = {
-            mentionedJid: [''],
-            groupMentions: [],
-            forwardingScore: 0x1,
-            isForwarded: true,
-            forwardedNewsletterMessageInfo: _0x403725,
-            externalAdReply: _0x9ec309
-          };
-          const _0x1fb618 = {
-            text: _0x12f8ea,
-            contextInfo: _0x320f65
-          };
-          const _0x307d74 = await _0x2c419a.sendMessage(_0x43983b, _0x1fb618, {
-            'quoted': _0x500aaf || _0x5ec5ee
-          });
-          await updateCMDStore(_0x307d74.key.id, _0x3235b5);
-        };
-        _0x2c419a.listMessage = async (_0x1ea0d8, _0x361b38, _0x3c80cb) => {
-          let _0x510892 = '';
-          const _0x375102 = [];
-          _0x361b38.sections.forEach((_0x24c216, _0x4a5e2f) => {
-            const _0x5d16d6 = '' + (_0x4a5e2f + 1);
-            _0x510892 += "\n[" + _0x5d16d6 + "] " + _0x24c216.title + "\n";
-            _0x24c216.rows.forEach((_0x5f1cba, _0x588a31) => {
-              const _0x5459c8 = _0x5d16d6 + '.' + (_0x588a31 + 1);
-              const _0x3c11c2 = "   " + _0x5459c8 + " | " + _0x5f1cba.title;
-              _0x510892 += _0x3c11c2 + "\n";
-              if (_0x5f1cba.description) {
-                _0x510892 += "   " + _0x5f1cba.description + "\n\n";
-              }
-              const _0x293dcb = {
-                cmdId: _0x5459c8,
-                cmd: _0x5f1cba.rowId
-              };
-              _0x375102.push(_0x293dcb);
-            });
-          });
-          const _0x96b5fb = _0x361b38.text + "\n\n" + _0x361b38.buttonText + ',' + _0x510892 + "\n" + _0x361b38.footer;
-          const _0x1f9418 = {
-            newsletterJid: "120363182681793169@newsletter",
-            serverMessageId: 0x7f
-          };
-          const _0x3d35ca = {
-            title: "X - B Y T E",
-            body: "ᴀ ꜱɪᴍᴘʟᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ",
-            mediaType: 0x1,
-            sourceUrl: "https://wa.me/923072380380",
-            thumbnailUrl: "https://raw.githubusercontent.com/HyHamza/HyHamza/main/Images/XByte-logo.png",
-            renderLargerThumbnail: false,
-            showAdAttribution: true
-          };
-          const _0x2fef0f = {
-            mentionedJid: [''],
-            groupMentions: [],
-            forwardingScore: 0x1,
-            isForwarded: true,
-            forwardedNewsletterMessageInfo: _0x1f9418,
-            externalAdReply: _0x3d35ca
-          };
-          const _0x3562ce = {
-            text: _0x96b5fb,
-            contextInfo: _0x2fef0f
-          };
-          const _0x4335fb = await _0x2c419a.sendMessage(_0x43983b, _0x3562ce, {
-            'quoted': _0x3c80cb || _0x5ec5ee
-          });
-          await updateCMDStore(_0x4335fb.key.id, _0x375102);
-        };
-        _0x2c419a.edite = async (_0x429a1d, _0x205c4c) => {
-          const _0x59ee3c = {
-            conversation: _0x205c4c
-          };
-          const _0x3d15b5 = {
-            key: _0x429a1d.key,
-            type: 0xe,
-            editedMessage: _0x59ee3c
-          };
-          const _0xeed2b6 = {
-            protocolMessage: _0x3d15b5
-          };
-          await _0x2c419a.relayMessage(_0x43983b, _0xeed2b6, {});
-        };
-        async function _0x485a59(_0x5bd93f) {
-          if (store) {
-            const _0x63871 = await store.loadMessage(_0x5bd93f.remoteJid, _0x5bd93f.id);
-            return _0x63871?.["message"];
-          }
-          const _0x20c792 = {
-            conversation: "Hai im vajira botwa"
-          };
-          return _0x20c792;
-        }
-        _0x2c419a.ev.on("messages.update", async _0x4cde04 => {
-          for (const {
-            key: _0x5b05d7,
-            update: _0x11ecf8
-          } of _0x4cde04) {
-            if (_0x11ecf8.pollUpdates && _0x5b05d7.fromMe) {
-              const _0x4f998f = await _0x485a59(_0x5b05d7);
-              if (_0x4f998f) {
-                const _0xd6e07 = {
-                  message: _0x4f998f,
-                  pollUpdates: _0x11ecf8.pollUpdates
-                };
-                const _0x191572 = await getAggregateVotesInPollMessage(_0xd6e07);
-                var _0x2e1a23 = _0x191572.filter(_0x51eb7a => _0x51eb7a.voters.length !== 0)[0]?.["name"];
-                if (_0x2e1a23 == undefined) {
-                  return;
-                }
-                var _0x316b7b = prefix + _0x2e1a23;
-                try {
-                  setTimeout(async () => {
-                    await _0x2c419a.sendMessage(_0x5b05d7.remoteJid, {
-                      'delete': _0x5b05d7
-                    });
-                  }, 10000);
-                } catch (_0x55cd4d) {
-                  console.error("Error deleting message:", _0x55cd4d);
-                }
-                _0x2c419a.appenTextMessage(_0x316b7b, _0x4cde04);
-              }
-            }
-          }
-        });
-        if (!_0x3e636e) {
-          if (config.ANTI_DELETE === "true") {
-            if (!_0x1b19d1.id.startsWith("BAE5")) {
-              if (!fs.existsSync("message_data")) {
-                fs.mkdirSync("message_data");
-              }
-              function _0x11a210(_0x4b3d77, _0x5ed068) {
-                const _0x49a867 = path.join("message_data", _0x4b3d77, _0x5ed068 + ".json");
-                try {
-                  const _0x4f5876 = fs.readFileSync(_0x49a867, "utf8");
-                  return JSON.parse(_0x4f5876) || [];
-                } catch (_0x3eaf55) {
-                  return [];
-                }
-              }
-              function _0xa8ab13(_0x16f995, _0x37de16, _0x12d8a7) {
-                const _0x41e565 = path.join("message_data", _0x16f995);
-                if (!fs.existsSync(_0x41e565)) {
-                  const _0x4979e4 = {
-                    recursive: true
-                  };
-                  fs.mkdirSync(_0x41e565, _0x4979e4);
-                }
-                const _0x30e554 = path.join(_0x41e565, _0x37de16 + ".json");
-                try {
-                  fs.writeFileSync(_0x30e554, JSON.stringify(_0x12d8a7, null, 2));
-                } catch (_0x2f9c47) {
-                  console.error("Error saving chat data:", _0x2f9c47);
-                }
-              }
-              function _0x5be84c(_0xd6aaab) {
-                const _0x3f1c5e = _0xd6aaab.key.id;
-                const _0x5740d1 = _0x11a210(_0x43983b, _0x3f1c5e);
-                _0x5740d1.push(_0xd6aaab);
-                _0xa8ab13(_0x43983b, _0x3f1c5e, _0x5740d1);
-              }
-              const _0x4bdc7f = config.DELETEMSGSENDTO !== '' ? config.DELETEMSGSENDTO + "@s.whatsapp.net" : _0x43983b;
-              function _0xa32ccc(_0x32c662) {
-                const _0x3ec8e6 = _0x32c662.msg.key.id;
-                const _0x46ab6e = _0x11a210(_0x43983b, _0x3ec8e6);
-                const _0x32d70b = _0x46ab6e[0];
-                if (_0x32d70b) {
-                  const _0x3055a7 = _0x32c662.sender.split('@')[0];
-                  const _0x23eddc = _0x32d70b.key.participant ?? _0x32c662.sender;
-                  const _0x5dd837 = _0x23eddc.split('@')[0];
-                  if (_0x3055a7.includes(_0x534077) || _0x5dd837.includes(_0x534077)) {
-                    return;
-                  }
-                  if (_0x32d70b.message && _0x32d70b.message.conversation && _0x32d70b.message.conversation !== '') {
-                    const _0x392910 = _0x32d70b.message.conversation;
-                    if (_0x57fc37 && _0x392910.includes("chat.whatsapp.com")) {
-                      return;
-                    }
-                    var _0x483f1c = "```";
-                    const _0x1100cc = {
-                      text: "🚫 *This message was deleted !!*\n\n  🚮 *Deleted by:* _" + _0x3055a7 + "_\n  📩 *Sent by:* _" + _0x5dd837 + "_\n\n> 🔓 Message Text: " + _0x483f1c + _0x392910 + _0x483f1c
-                    };
-                    _0x2c419a.sendMessage(_0x4bdc7f, _0x1100cc);
-                  } else {
-                    if (_0x32d70b.msg.type === "MESSAGE_EDIT") {
-                      const _0x2a046b = {
-                        text: "❌ *edited message detected* " + _0x32d70b.message.editedMessage.message.protocolMessage.editedMessage.conversation
-                      };
-                      const _0x44f4a6 = {
-                        quoted: _0x5ec5ee
-                      };
-                      _0x2c419a.sendMessage(_0x4bdc7f, _0x2a046b, _0x44f4a6);
-                    } else {
-                      if (_0x32d70b.message && _0x32d70b.message.exetendedTextMessage && _0x32d70b.msg.text) {
-                        const _0x4f50be = _0x32d70b.msg.text;
-                        if (_0x57fc37 && _0x4f50be.includes("chat.whatsapp.com")) {
-                          return;
-                        }
-                        var _0x483f1c = "```";
-                        const _0x612f95 = {
-                          text: "🚫 *This message was deleted !!*\n\n  🚮 *Deleted by:* _" + _0x3055a7 + "_\n  📩 *Sent by:* _" + _0x5dd837 + "_\n\n> 🔓 Message Text: " + _0x483f1c + _0x4f50be + _0x483f1c
-                        };
-                        _0x2c419a.sendMessage(_0x4bdc7f, _0x612f95);
-                      } else {
-                        if (_0x32d70b.message && _0x32d70b.message.exetendedTextMessage) {
-                          if (_0x57fc37 && messageText.includes("chat.whatsapp.com")) {
-                            return;
-                          }
-                          var _0x483f1c = "```";
-                          const _0x442f64 = {
-                            text: "🚫 *This message was deleted !!*\n\n  🚮 *Deleted by:* _" + _0x3055a7 + "_\n  📩 *Sent by:* _" + _0x5dd837 + "_\n\n> 🔓 Message Text: " + _0x483f1c + _0x32d70b.body + _0x483f1c
-                          };
-                          _0x2c419a.sendMessage(_0x4bdc7f, _0x442f64);
-                        } else {
-                          if (_0x32d70b.type === "extendedTextMessage") {
-                            async function _0x15bb92() {
-                              if (_0x32d70b.message.extendedTextMessage) {
-                                if (_0x57fc37 && messageText.includes("chat.whatsapp.com")) {
-                                  return;
-                                }
-                                const _0x1882c5 = {
-                                  text: "🚫 *This message was deleted !!*\n\n  🚮 *Deleted by:* _" + _0x3055a7 + "_\n  📩 *Sent by:* _" + _0x5dd837 + "_\n\n> 🔓 Message Text: " + "```" + _0x32d70b.message.extendedTextMessage.text + "```"
-                                };
-                                _0x2c419a.sendMessage(_0x4bdc7f, _0x1882c5);
-                              } else {
-                                if (_0x57fc37 && messageText.includes("chat.whatsapp.com")) {
-                                  return;
-                                }
-                                const _0x15b178 = {
-                                  text: "🚫 *This message was deleted !!*\n\n  🚮 *Deleted by:* _" + _0x3055a7 + "_\n  📩 *Sent by:* _" + _0x5dd837 + "_\n\n> 🔓 Message Text: " + "```" + _0x32d70b.message.extendedTextMessage.text + "```"
-                                };
-                                _0x2c419a.sendMessage(_0x4bdc7f, _0x15b178);
-                              }
-                            }
-                            _0x15bb92();
-                          } else {
-                            if (_0x32d70b.type === "imageMessage") {
-                              async function _0x132b3b() {
-                                var _0x1d5659 = getRandom('');
-                                const _0x11fd6a = sms(_0x2c419a, _0x32d70b);
-                                let _0x12f082 = await _0x11fd6a.download(_0x1d5659);
-                                let _0x6382ef = require("file-type");
-                                let _0x47e680 = _0x6382ef.fromBuffer(_0x12f082);
-                                await fs.promises.writeFile('./' + _0x47e680.ext, _0x12f082);
-                                if (_0x32d70b.message.imageMessage.caption) {
-                                  const _0x42d56c = _0x32d70b.message.imageMessage.caption;
-                                  if (_0x57fc37 && _0x42d56c.includes("chat.whatsapp.com")) {
-                                    return;
-                                  }
-                                  await _0x2c419a.sendMessage(_0x4bdc7f, {
-                                    'image': fs.readFileSync('./' + _0x47e680.ext),
-                                    'caption': "🚫 *This message was deleted !!*\n\n  🚮 *Deleted by:* _" + _0x3055a7 + "_\n  📩 *Sent by:* _" + _0x5dd837 + "_\n\n> 🔓 Message Text: " + _0x32d70b.message.imageMessage.caption
-                                  });
-                                } else {
-                                  await _0x2c419a.sendMessage(_0x4bdc7f, {
-                                    'image': fs.readFileSync('./' + _0x47e680.ext),
-                                    'caption': "🚫 *This message was deleted !!*\n\n  🚮 *Deleted by:* _" + _0x3055a7 + "_\n  📩 *Sent by:* _" + _0x5dd837 + '_'
-                                  });
-                                }
-                              }
-                              _0x132b3b();
-                            } else {
-                              if (_0x32d70b.type === "videoMessage") {
-                                async function _0xc588d3() {
-                                  var _0xdcdc4 = getRandom('');
-                                  const _0xede813 = sms(_0x2c419a, _0x32d70b);
-                                  const _0x33e654 = _0x32d70b.message.videoMessage.fileLength;
-                                  const _0x460d98 = _0x32d70b.message.videoMessage.seconds;
-                                  const _0x3f7563 = config.MAX_SIZE;
-                                  const _0x380aa7 = _0x33e654 / 1048576;
-                                  if (_0x32d70b.message.videoMessage.caption) {
-                                    if (_0x380aa7 < _0x3f7563 && _0x460d98 < 1800) {
-                                      let _0x12ea36 = await _0xede813.download(_0xdcdc4);
-                                      let _0x5a8fc5 = require("file-type");
-                                      let _0x4db94e = _0x5a8fc5.fromBuffer(_0x12ea36);
-                                      await fs.promises.writeFile('./' + _0x4db94e.ext, _0x12ea36);
-                                      const _0x532775 = _0x32d70b.message.videoMessage.caption;
-                                      if (_0x57fc37 && _0x532775.includes("chat.whatsapp.com")) {
-                                        return;
-                                      }
-                                      await _0x2c419a.sendMessage(_0x4bdc7f, {
-                                        'video': fs.readFileSync('./' + _0x4db94e.ext),
-                                        'caption': "🚫 *This message was deleted !!*\n\n  🚮 *Deleted by:* _" + _0x3055a7 + "_\n  📩 *Sent by:* _" + _0x5dd837 + "_\n\n> 🔓 Message Text: " + _0x32d70b.message.videoMessage.caption
-                                      });
-                                    }
-                                  } else {
-                                    let _0x45cf95 = await _0xede813.download(_0xdcdc4);
-                                    let _0x29e081 = require("file-type");
-                                    let _0x5cfff2 = _0x29e081.fromBuffer(_0x45cf95);
-                                    await fs.promises.writeFile('./' + _0x5cfff2.ext, _0x45cf95);
-                                    const _0x390959 = _0x32d70b.message.videoMessage.fileLength;
-                                    const _0x248a1b = _0x32d70b.message.videoMessage.seconds;
-                                    const _0x3dc547 = config.MAX_SIZE;
-                                    const _0x8721df = _0x390959 / 1048576;
-                                    if (_0x8721df < _0x3dc547 && _0x248a1b < 1800) {
-                                      await _0x2c419a.sendMessage(_0x4bdc7f, {
-                                        'video': fs.readFileSync('./' + _0x5cfff2.ext),
-                                        'caption': "🚫 *This message was deleted !!*\n\n  🚮 *Deleted by:* _" + _0x3055a7 + "_\n  📩 *Sent by:* _" + _0x5dd837 + '_'
-                                      });
-                                    }
-                                  }
-                                }
-                                _0xc588d3();
-                              } else {
-                                if (_0x32d70b.type === "documentMessage") {
-                                  async function _0x40a8d8() {
-                                    var _0x129b55 = getRandom('');
-                                    const _0x3083ff = sms(_0x2c419a, _0x32d70b);
-                                    let _0x5b078a = await _0x3083ff.download(_0x129b55);
-                                    let _0x5dd37b = require("file-type");
-                                    let _0x5b0666 = _0x5dd37b.fromBuffer(_0x5b078a);
-                                    await fs.promises.writeFile('./' + _0x5b0666.ext, _0x5b078a);
-                                    if (_0x32d70b.message.documentWithCaptionMessage) {
-                                      await _0x2c419a.sendMessage(_0x4bdc7f, {
-                                        'document': fs.readFileSync('./' + _0x5b0666.ext),
-                                        'mimetype': _0x32d70b.message.documentMessage.mimetype,
-                                        'fileName': _0x32d70b.message.documentMessage.fileName,
-                                        'caption': "🚫 *This message was deleted !!*\n\n  🚮 *Deleted by:* _" + _0x3055a7 + "_\n  📩 *Sent by:* _" + _0x5dd837 + "_\n"
-                                      });
-                                    } else {
-                                      await _0x2c419a.sendMessage(_0x4bdc7f, {
-                                        'document': fs.readFileSync('./' + _0x5b0666.ext),
-                                        'mimetype': _0x32d70b.message.documentMessage.mimetype,
-                                        'fileName': _0x32d70b.message.documentMessage.fileName,
-                                        'caption': "🚫 *This message was deleted !!*\n\n  🚮 *Deleted by:* _" + _0x3055a7 + "_\n  📩 *Sent by:* _" + _0x5dd837 + "_\n"
-                                      });
-                                    }
-                                  }
-                                  _0x40a8d8();
-                                } else {
-                                  if (_0x32d70b.type === "audioMessage") {
-                                    async function _0x4b585d() {
-                                      var _0x4cd1d0 = getRandom('');
-                                      const _0x59c48e = sms(_0x2c419a, _0x32d70b);
-                                      let _0x443762 = await _0x59c48e.download(_0x4cd1d0);
-                                      let _0x176c23 = require("file-type");
-                                      let _0x5b5554 = _0x176c23.fromBuffer(_0x443762);
-                                      await fs.promises.writeFile('./' + _0x5b5554.ext, _0x443762);
-                                      if (_0x32d70b.message.audioMessage) {
-                                        const _0x248706 = await _0x2c419a.sendMessage(_0x4bdc7f, {
-                                          'audio': fs.readFileSync('./' + _0x5b5554.ext),
-                                          'mimetype': _0x32d70b.message.audioMessage.mimetype,
-                                          'fileName': _0x1b19d1.id + ".mp3"
-                                        });
-                                        const _0x98d506 = {
-                                          text: "🚫 *This message was deleted !!*\n\n  🚮 *Deleted by:* _" + _0x3055a7 + "_\n  📩 *Sent by:* _" + _0x5dd837 + "_\n"
-                                        };
-                                        const _0x19403c = {
-                                          quoted: _0x248706
-                                        };
-                                        return await _0x2c419a.sendMessage(_0x4bdc7f, _0x98d506, _0x19403c);
-                                      } else {
-                                        if (_0x32d70b.message.audioMessage.ptt === "true") {
-                                          const _0x54a7e0 = await _0x2c419a.sendMessage(_0x4bdc7f, {
-                                            'audio': fs.readFileSync('./' + _0x5b5554.ext),
-                                            'mimetype': _0x32d70b.message.audioMessage.mimetype,
-                                            'ptt': "true",
-                                            'fileName': _0x1b19d1.id + ".mp3"
-                                          });
-                                          const _0x10d41d = {
-                                            text: "🚫 *This message was deleted !!*\n\n  🚮 *Deleted by:* _" + _0x3055a7 + "_\n  📩 *Sent by:* _" + _0x5dd837 + "_\n"
-                                          };
-                                          const _0x490179 = {
-                                            quoted: _0x54a7e0
-                                          };
-                                          return await _0x2c419a.sendMessage(_0x4bdc7f, _0x10d41d, _0x490179);
-                                        }
-                                      }
-                                    }
-                                    _0x4b585d();
-                                  } else {
-                                    if (_0x32d70b.type === "stickerMessage") {
-                                      async function _0x2be175() {
-                                        var _0x2a8945 = getRandom('');
-                                        const _0x2e2690 = sms(_0x2c419a, _0x32d70b);
-                                        let _0x4bc382 = await _0x2e2690.download(_0x2a8945);
-                                        let _0x571075 = require("file-type");
-                                        let _0x30185a = _0x571075.fromBuffer(_0x4bc382);
-                                        await fs.promises.writeFile('./' + _0x30185a.ext, _0x4bc382);
-                                        if (_0x32d70b.message.stickerMessage) {
-                                          const _0x28b49b = await _0x2c419a.sendMessage(_0x4bdc7f, {
-                                            'sticker': fs.readFileSync('./' + _0x30185a.ext),
-                                            'package': "XByte 🌟"
-                                          });
-                                          const _0x55d1d7 = {
-                                            text: "🚫 *This message was deleted !!*\n\n  🚮 *Deleted by:* _" + _0x3055a7 + "_\n  📩 *Sent by:* _" + _0x5dd837 + "_\n"
-                                          };
-                                          const _0x973184 = {
-                                            quoted: _0x28b49b
-                                          };
-                                          return await _0x2c419a.sendMessage(_0x4bdc7f, _0x55d1d7, _0x973184);
-                                        } else {
-                                          const _0x47d3eb = await _0x2c419a.sendMessage(_0x4bdc7f, {
-                                            'sticker': fs.readFileSync('./' + _0x30185a.ext),
-                                            'package': "XByte 🌟"
-                                          });
-                                          const _0x27ca99 = {
-                                            text: "🚫 *This message was deleted !!*\n\n  🚮 *Deleted by:* _" + _0x3055a7 + "_\n  📩 *Sent by:* _" + _0x5dd837 + "_\n"
-                                          };
-                                          const _0x20e341 = {
-                                            quoted: _0x47d3eb
-                                          };
-                                          return await _0x2c419a.sendMessage(_0x4bdc7f, _0x27ca99, _0x20e341);
-                                        }
-                                      }
-                                      _0x2be175();
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                } else {
-                  console.log("Original message not found for revocation.");
-                }
-              }
-              if (!_0x57fc37) {
-                if (_0x5ec5ee.msg && _0x5ec5ee.msg.type === 0) {
-                  _0xa32ccc(_0x5ec5ee);
-                } else {
-                  _0x5be84c(_0x5ec5ee);
-                }
-              }
-            }
-          }
-        }
-        const _0x4d34c6 = require("./lib/command");
-        const _0x4af6d2 = _0x12f7ef ? _0x327fcf : false;
-        if (_0x12f7ef) {
-          const _0x108cf3 = _0x4d34c6.commands.find(_0xf02bcb => _0xf02bcb.pattern === _0x4af6d2) || _0x4d34c6.commands.find(_0x55be33 => _0x55be33.alias && _0x55be33.alias.includes(_0x4af6d2));
-          if (_0x108cf3) {
-            if (_0x108cf3.react) {
-              _0x2c419a.sendMessage(_0x43983b, {
-                'react': {
-                  'text': _0x108cf3.react,
-                  'key': _0x5ec5ee.key
-                }
-              });
-            }
-            try {
-              const _0xa37941 = {
-                from: _0x43983b,
-                prefix: prefix,
-                l: l,
-                quoted: _0x1a1e7c,
-                body: _0x4cfd81,
-                isCmd: _0x12f7ef,
-                command: _0x327fcf,
-                args: _0x453efa,
-                q: _0x4824de,
-                isGroup: _0x57fc37,
-                sender: _0x495cf8,
-                senderNumber: _0x86bfc9,
-                botNumber2: _0x237e3b,
-                botNumber: _0x534077,
-                pushname: _0x2d0dec,
-                isMe: _0x5b62ca,
-                isOwner: _0x3e636e,
-                groupMetadata: _0x397f5f,
-                groupName: _0x3defe1,
-                participants: _0x19170e,
-                groupAdmins: _0x1a47c1,
-                isBotAdmins: _0x12dcb0,
-                isAdmins: _0x12043f,
-                reply: _0x39acac,
-                config: config
-              };
-              _0x108cf3["function"](_0x2c419a, _0x5ec5ee, _0x1b19d1, _0xa37941);
-            } catch (_0x109548) {
-              console.error("[PLUGIN ERROR] ", _0x109548);
-            }
-          }
-        }
-        _0x4d34c6.commands.map(async _0x59b084 => {
-          if (_0x4cfd81 && _0x59b084.on === "body") {
-            _0x59b084["function"](_0x2c419a, _0x5ec5ee, _0x1b19d1, {
-              'from': _0x43983b,
-              'prefix': prefix,
-              'l': l,
-              'quoted': _0x1a1e7c,
-              'body': _0x4cfd81,
-              'isCmd': _0x12f7ef,
-              'command': _0x59b084,
-              'args': _0x453efa,
-              'q': _0x4824de,
-              'isGroup': _0x57fc37,
-              'sender': _0x495cf8,
-              'senderNumber': _0x86bfc9,
-              'botNumber2': _0x237e3b,
-              'botNumber': _0x534077,
-              'pushname': _0x2d0dec,
-              'isMe': _0x5b62ca,
-              'isOwner': _0x3e636e,
-              'groupMetadata': _0x397f5f,
-              'groupName': _0x3defe1,
-              'participants': _0x19170e,
-              'groupAdmins': _0x1a47c1,
-              'isBotAdmins': _0x12dcb0,
-              'isAdmins': _0x12043f,
-              'reply': _0x39acac,
-              'config': config
-            });
-          } else {
-            if (_0x5ec5ee.q && _0x59b084.on === "text") {
-              _0x59b084["function"](_0x2c419a, _0x5ec5ee, _0x1b19d1, {
-                'from': _0x43983b,
-                'l': l,
-                'quoted': _0x1a1e7c,
-                'body': _0x4cfd81,
-                'isCmd': _0x12f7ef,
-                'command': _0x59b084,
-                'args': _0x453efa,
-                'q': _0x4824de,
-                'isGroup': _0x57fc37,
-                'sender': _0x495cf8,
-                'senderNumber': _0x86bfc9,
-                'botNumber2': _0x237e3b,
-                'botNumber': _0x534077,
-                'pushname': _0x2d0dec,
-                'isMe': _0x5b62ca,
-                'isOwner': _0x3e636e,
-                'groupMetadata': _0x397f5f,
-                'groupName': _0x3defe1,
-                'participants': _0x19170e,
-                'groupAdmins': _0x1a47c1,
-                'isBotAdmins': _0x12dcb0,
-                'isAdmins': _0x12043f,
-                'reply': _0x39acac,
-                'config': config
-              });
+            if (os.hostname().length == 36) {
+              hostname = "heroku";
             } else {
-              if ((_0x59b084.on === "image" || _0x59b084.on === "photo") && _0x5ec5ee.type === "imageMessage") {
-                _0x59b084["function"](_0x2c419a, _0x5ec5ee, _0x1b19d1, {
-                  'from': _0x43983b,
-                  'prefix': prefix,
-                  'l': l,
-                  'quoted': _0x1a1e7c,
-                  'body': _0x4cfd81,
-                  'isCmd': _0x12f7ef,
-                  'command': _0x59b084,
-                  'args': _0x453efa,
-                  'q': _0x4824de,
-                  'isGroup': _0x57fc37,
-                  'sender': _0x495cf8,
-                  'senderNumber': _0x86bfc9,
-                  'botNumber2': _0x237e3b,
-                  'botNumber': _0x534077,
-                  'pushname': _0x2d0dec,
-                  'isMe': _0x5b62ca,
-                  'isOwner': _0x3e636e,
-                  'groupMetadata': _0x397f5f,
-                  'groupName': _0x3defe1,
-                  'participants': _0x19170e,
-                  'groupAdmins': _0x1a47c1,
-                  'isBotAdmins': _0x12dcb0,
-                  'isAdmins': _0x12043f,
-                  'reply': _0x39acac,
-                  'config': config
-                });
-              } else if (_0x59b084.on === "sticker" && _0x5ec5ee.type === "stickerMessage") {
-                _0x59b084["function"](_0x2c419a, _0x5ec5ee, _0x1b19d1, {
-                  'from': _0x43983b,
-                  'prefix': prefix,
-                  'l': l,
-                  'quoted': _0x1a1e7c,
-                  'body': _0x4cfd81,
-                  'isCmd': _0x12f7ef,
-                  'command': _0x59b084,
-                  'args': _0x453efa,
-                  'q': _0x4824de,
-                  'isGroup': _0x57fc37,
-                  'sender': _0x495cf8,
-                  'senderNumber': _0x86bfc9,
-                  'botNumber2': _0x237e3b,
-                  'botNumber': _0x534077,
-                  'pushname': _0x2d0dec,
-                  'isMe': _0x5b62ca,
-                  'isOwner': _0x3e636e,
-                  'groupMetadata': _0x397f5f,
-                  'groupName': _0x3defe1,
-                  'participants': _0x19170e,
-                  'groupAdmins': _0x1a47c1,
-                  'isBotAdmins': _0x12dcb0,
-                  'isAdmins': _0x12043f,
-                  'reply': _0x39acac,
-                  'config': config
-                });
+              if (os.hostname().length == 8) {
+                hostname = "koyeb";
+              } else {
+                hostname = os.hostname();
               }
             }
           }
-        });
-        _0x2c419a.ev.on("messages.upsert", async _0x138ea0 => {
-          if (config.AUTO_STATUS_READ === "true") {
-            _0x5ec5ee = _0x138ea0.messages[0];
-            if (_0x5ec5ee.key && _0x5ec5ee.key.remoteJid === "status@broadcast") {
-              await _0x2c419a.readMessages([_0x5ec5ee.key]);
-            }
-          }
-        });
-        if (!_0x5b62ca && config.DISABLE_PM === "true" && _0x12f7ef && !_0x57fc37) {
-          return;
-        }
-        if (!_0x5b62ca && config.WORK_TYPE === "private") {
-          return;
-        }
-        if (_0x181aa7(config.ANTI_LINK === "true") && _0x12dcb0) {
-          if (!_0x12043f) {
-            if (!_0x5b62ca) {
-              if (_0x4cfd81.match("chat.whatsapp.com")) {
-                const _0x3f277f = {
-                  "delete": _0x5ec5ee.key
-                };
-                await _0x2c419a.sendMessage(_0x43983b, _0x3f277f);
-              }
-            }
-          }
-        }
-        var _0x483f8f = await fetchJson("https://github.com/vihangayt0/server-/raw/main/xeonsl_bad.json");
-        if (_0x181aa7(config.ANTI_BAD === "true") && _0x12dcb0) {
-          if (!_0x12043f) {
-            for (any in _0x483f8f) {
-              if (_0x4cfd81.toLowerCase().includes(_0x483f8f[any])) {
-                if (!_0x4cfd81.includes("tent")) {
-                  if (!_0x4cfd81.includes("docu")) {
-                    if (!_0x4cfd81.includes("http")) {
-                      if (_0x1a47c1.includes(_0x495cf8)) {
-                        return;
-                      }
-                      if (_0x5ec5ee.key.fromMe) {
-                        return;
-                      }
-                      const _0xdf95f = {
-                        "delete": _0x5ec5ee.key
-                      };
-                      await _0x2c419a.sendMessage(_0x43983b, _0xdf95f);
-                      const _0x45d5e7 = {
-                        text: "*Bad word detected !*"
-                      };
-                      await _0x2c419a.sendMessage(_0x43983b, _0x45d5e7);
-                      await _0x2c419a.groupParticipantsUpdate(_0x43983b, [_0x495cf8], "remove");
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-        if (config.AUTO_VOICE === "true") {
-          let {
-            data: _0x2cdcc6
-          } = await axios.get("https://gist.github.com/VajiraTech/32826daa4c68497b1545c7c19160d3e9/raw");
-          for (vr in _0x2cdcc6) {
-            const _0x29c93c = {
-              quoted: _0x5ec5ee
-            };
-            if (new RegExp("\\b" + vr + "\\b", 'gi').test(_0x4cfd81)) {
-              _0x2c419a.sendMessage(_0x43983b, {
-                'audio': {
-                  'url': _0x2cdcc6[vr]
-                },
-                'mimetype': "audio/mpeg",
-                'ptt': true
-              }, _0x29c93c);
-            }
-          }
-        }
-        if (config.AUTO_STICKER === "true") {
-          let {
-            data: _0x53ee6c
-          } = await axios.get('');
-          for (vr in _0x53ee6c) {
-            const _0x1bcc04 = {
-              quoted: _0x5ec5ee
-            };
-            if (new RegExp("\\b" + vr + "\\b", 'gi').test(_0x4cfd81)) {
-              _0x2c419a.sendMessage(_0x43983b, {
-                'sticker': {
-                  'url': _0x53ee6c[vr]
-                },
-                'package': "made by Hamza"
-              }, _0x1bcc04);
-            }
-          }
-        }
-        if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
-          const _0x52a81c = {
-            text: "💟️",
-            key: mem.key
+          const _0x2cfda9 = "👋 Hello " + _0x4701d9 + "\n*X-Byte*\n  \n> *Version:* " + require("../package.json").version + "\n> *Memory:* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n> *Runtime:* " + runtime(process.uptime()) + "\n> *Platform:* " + hostname;
+          let _0x5a5ac0 = [{
+            'name': "cta_url",
+            'buttonParamsJson': JSON.stringify({
+              'display_text': "YT CHANNEL",
+              'url': "https://youtube.com/@TalkDrove",
+              'merchant_url': "https://youtube.com/@TalkDrove"
+            })
+          }, {
+            'name': "cta_url",
+            'buttonParamsJson': JSON.stringify({
+              'display_text': "FB Profile",
+              'url': "https://www.facebook.com/talkdrove",
+              'merchant_url': "https://www.facebook.com/talkdrove"
+            })
+          }, {
+            'name': "cta_url",
+            'buttonParamsJson': JSON.stringify({
+              'display_text': "Whatsapp number",
+              'url': "https://wa.me/923072380380",
+              'merchant_url': "https://wa.me/923072380380"
+            })
+          }, {
+            'name': "cta_url",
+            'buttonParamsJson': JSON.stringify({
+              'display_text': "MY WA CHANNEL",
+              'url': "https://whatsapp.com/channel/0029VaNRcHSJP2199iMQ4W0l",
+              'merchant_url': "https://whatsapp.com/channel/0029VaNRcHSJP2199iMQ4W0l"
+            })
+          }, {
+            'name': "cta_url",
+            'buttonParamsJson': JSON.stringify({
+              'display_text': "MY REPO",
+              'url': "https://github.com/HyHamza/X-Byte",
+              'merchant_url': "https://github.com/HyHamza/X-Byte"
+            })
+          }, {
+            'name': "quick_reply",
+            'buttonParamsJson': JSON.stringify({
+              'display_text': "Menu",
+              'id': ".menu"
+            })
+          }];
+          const _0x4ac44e = {
+            image: config.LOGO,
+            header: '',
+            footer: config.FOOTER,
+            body: _0x2cfda9
           };
-          const _0x48e6c8 = {
-            react: _0x52a81c
-          };
-          await _0x2c419a.sendMessage(_0x43983b, _0x48e6c8);
+          return await _0x5292d0.sendButtonMessage(_0x5493d6, _0x5a5ac0, _0x535317, _0x4ac44e);
+        } catch (_0x3c7661) {
+          _0x147d28("*Error !!*");
+          console.log(_0x3c7661);
         }
-        if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
-          const _0x25841b = {
-            text: '🖤',
-            key: _0x5ec5ee.key
-          };
-          const _0x52fa07 = {
-            react: _0x25841b
-          };
-          await _0x2c419a.sendMessage(_0x43983b, _0x52fa07);
-        }
-        if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
-          const _0x472ce0 = {
-            text: '🤍',
-            key: _0x5ec5ee.key
-          };
-          const _0x5eb446 = {
-            react: _0x472ce0
-          };
-          await _0x2c419a.sendMessage(_0x43983b, _0x5eb446);
-        }
-        if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
-          const _0x25db97 = {
-            text: '⚕️',
-            key: _0x5ec5ee.key
-          };
-          const _0x5258e8 = {
-            react: _0x25db97
-          };
-          await _0x2c419a.sendMessage(_0x43983b, _0x5258e8);
-        }
-        if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
-          const _0x2f267d = {
-            text: '🐋',
-            key: _0x5ec5ee.key
-          };
-          const _0x17a6b1 = {
-            react: _0x2f267d
-          };
-          await _0x2c419a.sendMessage(_0x43983b, _0x17a6b1);
-        }
-        if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
-          const _0x421543 = {
-            text: "🧜‍♂",
-            key: _0x5ec5ee.key
-          };
-          const _0x5b47ab = {
-            react: _0x421543
-          };
-          await _0x2c419a.sendMessage(_0x43983b, _0x5b47ab);
-        }
-        if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
-          const _0x5d9d82 = {
-            text: '⚜️',
-            key: _0x5ec5ee.key
-          };
-          const _0x368593 = {
-            react: _0x5d9d82
-          };
-          await _0x2c419a.sendMessage(_0x43983b, _0x368593);
-        }
-        if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
-          const _0x5f21c8 = {
-            text: "👨‍💻",
-            key: _0x5ec5ee.key
-          };
-          const _0x2b7ade = {
-            react: _0x5f21c8
-          };
-          await _0x2c419a.sendMessage(_0x43983b, _0x2b7ade);
-        }
-        if (config.WELCOME === "true") {
-          _0x2c419a.ev.on("group-participants.update", async _0x4d7dcb => {
-            console.log(_0x4d7dcb);
-            try {
-              let _0x223527 = await _0x2c419a.groupMetadata(_0x4d7dcb.id);
-              let _0xa21bd4 = _0x4d7dcb.participants;
-              for (let _0x4c2616 of _0xa21bd4) {
-                try {
-                  ppuser = await _0x2c419a.profilePictureUrl(_0x4c2616, "image");
-                } catch {
-                  ppuser = "https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg";
-                }
-                try {
-                  ppgroup = await _0x2c419a.profilePictureUrl(_0x4d7dcb.id, "image");
-                } catch {
-                  ppgroup = "https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg";
-                }
-                memb = _0x223527.participants.length;
-                Kon = await getBuffer("https://hardianto.xyz/api/welcome3?profile=" + encodeURIComponent(ppuser) + "&name=" + encodeURIComponent(_0x4c2616) + "&bg=https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg&namegb=" + encodeURIComponent(_0x223527.subject) + "&member=" + encodeURIComponent(memb));
-                Tol = await getBuffer("https://hardianto.xyz/api/goodbye3?profile=" + encodeURIComponent(ppuser) + "&name=" + encodeURIComponent(_0x4c2616) + "&bg=https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg&namegb=" + encodeURIComponent(_0x223527.subject) + "&member=" + encodeURIComponent(memb));
-                if (_0x4d7dcb.action == "add") {
-                  const _0x200bdf = {
-                    mentionedJid: [_0x4c2616]
-                  };
-                  _0x2c419a.sendMessage(_0x4d7dcb.id, {
-                    'image': Kon,
-                    'contextInfo': _0x200bdf,
-                    'caption': "\n⭐✑ Hi👋 @" + _0x4c2616.split('@')[0] + ",\n⭐✑ Welcome To " + _0x223527.subject + "\n\n⭐✑ Description: " + _0x223527.desc + "\n\n⭐✑ Welcome To My Bot Section😋, Sometimes Loud😜, Usually Messy🤥, Full Of Love🥰, HOME😌!!"
-                  });
-                } else {
-                  if (_0x4d7dcb.action == "remove") {
-                    const _0x1b39b8 = {
-                      mentionedJid: [_0x4c2616]
-                    };
-                    _0x2c419a.sendMessage(_0x4d7dcb.id, {
-                      'image': Tol,
-                      'contextInfo': _0x1b39b8,
-                      'caption': "⭐✑ @" + _0x4c2616.split('@')[0] + " Left " + _0x223527.subject + "\n\n⭐✑ I'm Not Sure If It Was A Goodbye Charm, But It Was Fun While It Lasted 😌✨"
-                    });
-                  }
-                }
-              }
-            } catch (_0x2ccd89) {
-              console.log(_0x2ccd89);
-            }
-          });
-        }
-        if (config.AUTO_READ === "true") {
-          _0x2c419a.readMessages([_0x5ec5ee.key]);
-        }
-        if (config.AUTO_TYPING === "true") {
-          _0x2c419a.sendPresenceUpdate("composing", _0x43983b);
-        }
-        if (config.AUTO_RECORDING === "true") {
-          _0x2c419a.sendPresenceUpdate("recording", _0x43983b);
-        }
-        if (config.AUTO_BIO === "true") {
-          _0x2c419a.updateProfileStatus("Hey, future leaders... XByte is here to inspire and lead, thanks to Hamza" + runtime(process.uptime()) + " ")["catch"](_0x36979a => _0x36979a);
-        }
-        if (config.ALWAYS_ONLINE === "false") {
-          _0x2c419a.sendPresenceUpdate("available", _0x5ec5ee.chat);
-        }
-        if (_0x1b19d1.sender.startsWith("212") && config.NUMBER_212_BLOCK === "true") {
-          return _0x2c419a.updateBlockStatus(_0x1b19d1.sender, "block");
-        }
-        _0x2c419a.sendImage = async (_0x7f032f, _0xeb2fa3, _0x46f96c = '', _0x400528 = '', _0x18ccfb) => {
-          let _0x2f1536 = Buffer.isBuffer(_0xeb2fa3) ? _0xeb2fa3 : /^data:.*?\/.*?;base64,/i.test(_0xeb2fa3) ? Buffer.from(_0xeb2fa3.split`,`[1], "base64") : /^https?:\/\//.test(_0xeb2fa3) ? await await getBuffer(_0xeb2fa3) : fs.existsSync(_0xeb2fa3) ? fs.readFileSync(_0xeb2fa3) : Buffer.alloc(0);
-          const _0x2c78e1 = {
-            'image': _0x2f1536,
-            'caption': _0x46f96c,
-            ..._0x18ccfb
-          };
-          const _0x3f3a65 = {
-            quoted: _0x400528
-          };
-          return await _0x2c419a.sendMessage(_0x7f032f, _0x2c78e1, _0x3f3a65);
-        };
-        _0x2c419a.sendPoll = (_0x3d3c11, _0x5b74ca = '', _0x2be95d = [], _0x261439 = 1) => {
-          const _0x1404ef = {
-            name: _0x5b74ca,
-            values: _0x2be95d,
-            selectableCount: _0x261439
-          };
-          const _0x5768f8 = {
-            poll: _0x1404ef
-          };
-          return _0x2c419a.sendMessage(_0x3d3c11, _0x5768f8);
-        };
-        _0x2c419a.sendText = (_0x393ba9, _0x55890b, _0xf73683 = '', _0x150a70) => _0x2c419a.sendMessage(_0x393ba9, {
-          'text': _0x55890b,
-          ..._0x150a70
-        }, {
-          'quoted': _0xf73683
-        });
-        _0x2c419a.sendImageAsSticker = async (_0x1cfd7b, _0x42981b, _0x457b2d, _0x461f95 = {}) => {
-          let _0x555b5f = Buffer.isBuffer(_0x42981b) ? _0x42981b : /^data:.*?\/.*?;base64,/i.test(_0x42981b) ? Buffer.from(_0x42981b.split`,`[1], "base64") : /^https?:\/\//.test(_0x42981b) ? await await getBuffer(_0x42981b) : fs.existsSync(_0x42981b) ? fs.readFileSync(_0x42981b) : Buffer.alloc(0);
-          let _0x3a5143;
-          if (_0x461f95 && (_0x461f95.packname || _0x461f95.author)) {
-            _0x3a5143 = await writeExifImg(_0x555b5f, _0x461f95);
+      });
+      const _0x542b06 = {
+        pattern: "menu2",
+        react: "2️⃣ ", 
+        alias: ["bmenu", "newmenu", "help"],
+        desc: "Get bot's command list.",
+        category: "main",
+        use: `${xprefix}menu`,
+        filename: __filename
+      };
+      cmd(_0x542b06, async (_0x3a3ae0, _0x5d149b, _0x3b8a7f, {
+        from: _0x5dacad,
+        prefix: _0xc543ce,
+        l: _0x4e3d14,
+        quoted: _0x2ad67d,
+        body: _0x4a273d,
+        isCmd: _0x58ff10,
+        command: _0xb57a1c,
+        args: _0x3f9f32,
+        q: _0xe6c526,
+        isGroup: _0x512021,
+        sender: _0x13861b,
+        senderNumber: _0x2351ba,
+        botNumber2: _0x504e4b,
+        botNumber: _0x1f3279,
+        pushname: _0x457280,
+        isMe: _0x2fe93b,
+        isOwner: _0x39abc8,
+        groupMetadata: _0x592529,
+        groupName: _0xefee68,
+        participants: _0x4ed2b6,
+        groupAdmins: _0x5e156c,
+        isBotAdmins: _0x447245,
+        isAdmins: _0x40584b,
+        reply: _0x34b7e1
+      }) => {
+        try {
+          if (os.hostname().length == 12) {
+            hostname = "replit";
           } else {
-            _0x3a5143 = await imageToWebp(_0x555b5f);
-          }
-          const _0x233886 = {
-            url: _0x3a5143
-          };
-          const _0x1b6b9c = {
-            'sticker': _0x233886,
-            ..._0x461f95
-          };
-          const _0x4bcdbb = {
-            quoted: _0x457b2d
-          };
-          await _0x2c419a.sendMessage(_0x1cfd7b, _0x1b6b9c, _0x4bcdbb);
-          return _0x3a5143;
-        };
-        _0x2c419a.downloadAndSaveMediaMessage = async (_0x18a44b, _0x430ed7, _0x423346 = true) => {
-          let _0x2a5daf = _0x18a44b.msg ? _0x18a44b.msg : _0x18a44b;
-          let _0x2da2f2 = (_0x18a44b.msg || _0x18a44b).mimetype || '';
-          let _0x4b5b3a = _0x18a44b.mtype ? _0x18a44b.mtype.replace(/Message/gi, '') : _0x2da2f2.split('/')[0];
-          const _0x165cd3 = await downloadContentFromMessage(_0x2a5daf, _0x4b5b3a);
-          let _0x4b7ef9 = Buffer.from([]);
-          for await (const _0x3eb4b2 of _0x165cd3) {
-            _0x4b7ef9 = Buffer.concat([_0x4b7ef9, _0x3eb4b2]);
-          }
-          let _0x47a39a = await FileType.fromBuffer(_0x4b7ef9);
-          trueFileName = _0x423346 ? _0x430ed7 + '.' + _0x47a39a.ext : _0x430ed7;
-          await fs.writeFileSync(trueFileName, _0x4b7ef9);
-          return trueFileName;
-        };
-        var _0x29ac3d = _0x198a09 => {
-          var _0xdfc59c = {
-            'is_bot': false,
-            'device': _0x198a09.length > 21 ? "android" : _0x198a09.substring(0, 2) === '3A' ? "ios" : "web"
-          };
-          if (_0x198a09.startsWith("BAE5")) {
-            _0xdfc59c.is_bot = true;
-            _0xdfc59c.bot_name = "bailyes";
-          }
-          if (/amdi|queen|black|amda|achiya|achintha/gi.test(_0x198a09)) {
-            _0xdfc59c.is_bot = true;
-            _0xdfc59c.bot_name = "XByte";
-          }
-          return _0xdfc59c;
-        };
-        async function _0x3ab35e(_0x23774a, _0x418e0d) {
-          if (_0x181aa7(config.ANTI_BOT)) {
-            return;
-          }
-          if (_0x12043f) {
-            return;
-          }
-          if (!_0x12dcb0) {
-            return;
-          }
-          if (_0x3e636e) {
-            return;
-          }
-          if (_0x57fc37) {
-            var _0x3eef67 = _0x29ac3d(_0x5ec5ee.key.id);
-            if (_0x3eef67.is_bot) {
-              try {
-                const _0x45fd74 = {
-                  text: "*Other bots are not allowed here !!*"
-                };
-                await _0x2c419a.sendMessage(_0x43983b, _0x45fd74);
-                return await _0x2c419a.groupParticipantsUpdate(_0x43983b, [_0x495cf8], "remove");
-              } catch {}
+            if (os.hostname().length == 36) {
+              hostname = "heroku";
+            } else {
+              if (os.hostname().length == 8) {
+                hostname = "koyeb";
+              } else {
+                hostname = os.hostname();
+              }
             }
           }
+          const _0x32d4b0 = "*╭────    〖 X-BYTE 〗────╮*\n| *Prefix* -"+"[ "+ xprefix +" ]" +  "\n| *Memory:* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n| *Runtime:* " + runtime(process.uptime());
+          const _0x463791 = [];
+          const _0x181fa0 = new Map();
+          for (let _0x37434c = 0; _0x37434c < 1; _0x37434c++) {
+            const _0x57d5c5 = commands[_0x37434c];
+            if (!_0x57d5c5.dontAddCommandList && _0x57d5c5.pattern !== undefined) {
+              const _0x1c783d = _0x57d5c5.category.toUpperCase();
+              if (!_0x181fa0.has(_0x1c783d)) {
+                _0x463791.push(_0x1c783d);
+                _0x181fa0.set(_0x1c783d, []);
+              }
+              _0x181fa0.get(_0x1c783d).push(_0x57d5c5.pattern);
+            }
+          }
+          const _0x10cdf6 = [];
+          for (const _0x7dca68 of _0x463791) {
+            const _0x5a637b = {
+              header: 'Select menu type',
+              title: "MAIN MENU",
+              description: "Main commands",
+              id: ".mainmenu"
+            };
+            const _0x41d75d = {
+              header: '',
+              title: "DOWNLOAD MENU",
+              description: "Download commands",
+              id: `.downmenu`
+            };
+            const _0x48e60c = {
+              header: '',
+              title: "SEARCH MENU",
+              description: "Search commands",
+              id: ".searchmenu"
+            };
+            const _0x55776a = {
+              header: '',
+              title: "CONVERT MENU",
+              description: "Convert commands",
+              id: ".convertmenu"
+            };
+            const _0x24709f = {
+              header: '',
+              title: "GROUP MENU",
+              description: "Group commands",
+              id: ".groupmenu"
+            };
+            const _0x4c56eb = {
+              header: '',
+              title: "LOGO MENU",
+              description: "Logo commands",
+              id: ".logomenu"
+            };
+            const _0x82d34a = {
+              header: '',
+              title: "BUG MENU",
+              description: "Bug commands",
+              id: ".bugmenu"
+            };
+            const _0x305f13 = {
+              header: '',
+              title: "OTHER MENU",
+              description: "Other commands",
+              id: ".othermenu"
+            };
+            _0x10cdf6.push(_0x41d75d);
+            _0x10cdf6.push(_0x48e60c);
+            _0x10cdf6.push(_0x55776a);
+            _0x10cdf6.push(_0x5a637b);
+            _0x10cdf6.push(_0x24709f);
+            _0x10cdf6.push(_0x4c56eb);
+            _0x10cdf6.push(_0x82d34a);
+            _0x10cdf6.push(_0x305f13);
+          }
+          const _0x5dce00 = {
+            display_text: config.BTN,
+            url: config.BTNURL,
+            merchant_url: config.BTNURL
+          };
+          let _0x22d798 = [{
+            'name': "cta_url",
+            'buttonParamsJson': JSON.stringify(_0x5dce00)
+          }, {
+            'name': "single_select",
+            'buttonParamsJson': JSON.stringify({
+              'title': "Tab Here!",
+              'sections': [{
+                'title': "Please select a category",
+                'highlight_label': "TalkDrove",
+                'rows': _0x10cdf6
+              }]
+            })
+          }];
+          const _0x54ced1 = {
+            image: config.LOGO,
+            header: '',
+            footer: config.FOOTER,
+            body: _0x32d4b0
+          };
+          return await _0x3a3ae0.sendButtonMessage(_0x5dacad, _0x22d798, _0x3b8a7f, _0x54ced1);
+        } catch (_0x104d7e) {
+          _0x34b7e1("*Error !!*");
+          console.log(_0x104d7e);
+        }
+      });
+      const _0x57e463 = {
+        pattern: "menu",
+        react: '✅',
+        alias: ["list", "oyemenu", "commands"],
+        desc: "Get bot's command list.",
+        category: "main",
+        use: ".menu",
+        filename: __filename
+      };
+      cmd(_0x57e463, async (_0x188b80, _0x2d3e0, _0x12fbc5, {
+        from: _0x7e5aba,
+        prefix: _0x378838,
+        l: _0x401553,
+        quoted: _0x3353d0,
+        body: _0x44ec1e,
+        isCmd: _0x3902fa,
+        command: _0x52549a,
+        args: _0x338f52,
+        q: _0x147fc6,
+        isGroup: _0x2f113e,
+        sender: _0x5b6283,
+        senderNumber: _0x1b6926,
+        botNumber2: _0x495a08,
+        botNumber: _0x3d623e,
+        pushname: _0x2f5e9b,
+        isMe: _0x343431,
+        isOwner: _0x8e106d,
+        groupMetadata: _0x14bb61,
+        groupName: _0x154222,
+        participants: _0x2d17e7,
+        groupAdmins: _0xdaeb7,
+        isBotAdmins: _0x3d6b7c,
+        isAdmins: _0x16161e,
+        reply: _0x4e92c9
+      }) => {
+        function _0x30f1f6(_0x5532b3, _0x229f15, _0x1cd964, _0x5511af, _0x4dbd19) {
+          return _0x10cc(_0x1cd964 - 0x106 - 0x1d1, _0x229f15);
+        }
+        function _0x31f976(_0x3ebd78, _0x537f39, _0x243812, _0x4b5197, _0x2932d8) {
+          return _0x10cc(_0x2932d8 + 0x2bb - 0xf5, _0x537f39);
+        }
+        function _0x2c7558(_0x16e686, _0x4d6f7d, _0x34d490, _0x5037a8, _0x2c67f9) {
+          return _0x10cc(_0x5037a8 + 0x15e - 0x1a5, _0x2c67f9);
+        }
+        const _0x3ba94a = {
+          'rtWFy': function (_0x1b0b38, _0x4f03e9) {
+            return _0x1b0b38(_0x4f03e9);
+          },
+          'TSZkj': "*Error !!*",
+          'KqrYi': function (_0x49cb0e, _0x70df92) {
+            return _0x49cb0e(_0x70df92);
+          },
+          'OlaMR': function (_0x37d031, _0x51e412) {
+            return _0x37d031 === _0x51e412;
+          },
+          'QSItU': "true",
+          'XjqrT': function (_0x21c49e, _0x199562) {
+            return _0x21c49e * _0x199562;
+          },
+          'XmOtR': function (_0x4dcae7, _0x21e4df) {
+            return _0x4dcae7 === _0x21e4df;
+          },
+          'MuEyF': "other",
+          'ASeEQ': "This report has already been forwarded to the owner. Please wait for a response.",
+          'VvraX': function (_0x4b1dfd, _0x463877) {
+            return _0x4b1dfd === _0x463877;
+          },
+          'foRlu': "search",
+          'GykYw': function (_0x53aa37, _0x33172c) {
+            return _0x53aa37 === _0x33172c;
+          },
+          'IqKIM': "download",
+          'FbQNX': "bug",
+          'qlnQg': function (_0x3ec6a6, _0x1da814) {
+            return _0x3ec6a6 + _0x1da814;
+          },
+          'gbZGX': function (_0x1a090b, _0x23ca53) {
+            return _0x1a090b + _0x23ca53;
+          },
+          'AJwmI': "*This is an owner command...*",
+          'kYcHo': function (_0x3f6fa6, _0x3aad89) {
+            return _0x3f6fa6(_0x3aad89);
+          },
+          'vOTlI': "Unable to scan directory: ",
+          'TvjWp': function (_0x2e87b1, _0x4df13e) {
+            return _0x2e87b1(_0x4df13e);
+          },
+          'aglls': function (_0x713b6b, _0x1ef19f) {
+            return _0x713b6b + _0x1ef19f;
+          },
+          'roZuX': function (_0x5cdf71, _0x24f204) {
+            return _0x5cdf71 !== _0x24f204;
+          },
+          'UYroQ': "iVDGt",
+          'OBKOX': "ffpKQ",
+          'VzSgi': function (_0x6567ac, _0xf63a5) {
+            return _0x6567ac < _0xf63a5;
+          },
+          'vmYfW': function (_0x564215, _0x440bb7) {
+            return _0x564215 === _0x440bb7;
+          },
+          'vaPyM': "SxLIj",
+          'QksJZ': function (_0xaa9b44, _0x31e1fa) {
+            return _0xaa9b44 === _0x31e1fa;
+          },
+          'eZRON': "maGME",
+          'DctUD': "Gzqma",
+          'euBCW': "WQPwy",
+          'inKkC': function (_0x22f690, _0x2eb299) {
+            return _0x22f690 < _0x2eb299;
+          },
+          'NaPVn': "bNBLZ",
+          'DJsuv': function (_0x37d876, _0x5561a0) {
+            return _0x37d876 === _0x5561a0;
+          },
+          'ApWsB': function (_0x434a2c, _0x3eb780) {
+            return _0x434a2c === _0x3eb780;
+          },
+          'wtqJq': "jtYMz",
+          'RXRRe': function (_0x260d4f, _0x566f5a) {
+            return _0x260d4f === _0x566f5a;
+          },
+          'DoGej': "NaoMo",
+          'DEPrg': "kYUkr",
+          'aQBiT': function (_0x193ed7, _0x176448) {
+            return _0x193ed7 < _0x176448;
+          },
+          'SHCiK': "mqmCj",
+          'mblCS': function (_0x3834d3, _0x328ac3) {
+            return _0x3834d3 === _0x328ac3;
+          },
+          'XEiIl': "convert",
+          'YuzMN': "YqyfR",
+          'pbZyv': "LGrfs",
+          'JvkZH': "LrLMa",
+          'GTYyO': function (_0x8e2db1, _0x16a7b0) {
+            return _0x8e2db1 < _0x16a7b0;
+          },
+          'kKdIC': function (_0x1cf794, _0x329242) {
+            return _0x1cf794 === _0x329242;
+          },
+          'KHdga': "lslde",
+          'MYgFR': "logo",
+          'YTBYv': "khgPf",
+          'aPsVW': function (_0x2887b1, _0x28650b) {
+            return _0x2887b1 !== _0x28650b;
+          },
+          'fXnPY': "EhWLz",
+          'xYBpZ': "BpGiR",
+          'oDsiC': function (_0x3dc5f9, _0x4f680f) {
+            return _0x3dc5f9 < _0x4f680f;
+          },
+          'uqfia': function (_0x5aead8, _0x4cd19e) {
+            return _0x5aead8 === _0x4cd19e;
+          },
+          'HlHCs': "ytuZs",
+          'IxHGr': "main",
+          'LEQaz': "jSsEJ",
+          'UmpBc': function (_0x389b9a, _0x583dc6) {
+            return _0x389b9a !== _0x583dc6;
+          },
+          'wCUjL': "USdAx",
+          'yOqLX': "bgimP",
+          'wCgWB': "HCbav",
+          'slkfm': "group",
+          'pYDNc': "Qlypl",
+          'PkGCj': "FuIAN",
+          'hpkJD': function (_0x32299f, _0x173103) {
+            return _0x32299f < _0x173103;
+          },
+          'BsZNH': function (_0x217ad3, _0x5f2c85) {
+            return _0x217ad3 !== _0x5f2c85;
+          },
+          'GylEu': "CHLOv",
+          'BqQLT': "ABSfS",
+          'sGkMZ': function (_0x2f0865, _0x203345) {
+            return _0x2f0865 === _0x203345;
+          },
+          'MnUXt': "eNwkH",
+          'nFnac': "UgntN",
+          'hQntz': "vHypg",
+          'vXCyj': function (_0x211178, _0x5228e1) {
+            return _0x211178 === _0x5228e1;
+          },
+          'qIjsI': "yVnhh",
+          'KsbZO': "JTCYp",
+          'xTeYF': function (_0x374cd9, _0x2f9d34) {
+            return _0x374cd9 === _0x2f9d34;
+          },
+          'jlInS': "JZjPL",
+          'ETFiN': function (_0x366048, _0x2e8218) {
+            return _0x366048 !== _0x2e8218;
+          },
+          'RNvko': "zxFdt",
+          'Itujr': "vMJeU",
+          'HkgOp': function (_0x4e58e7, _0x690ddd) {
+            return _0x4e58e7(_0x690ddd);
+          },
+          'EAtVV': function (_0x1410ee, _0x1154d3) {
+            return _0x1410ee / _0x1154d3;
+          },
+          'dzDww': function (_0x3328cf, _0x24b54c) {
+            return _0x3328cf / _0x24b54c;
+          },
+          'dnRwo': function (_0x469876) {
+            return _0x469876();
+          },
+          'chsKP': "latkk",
+          'IrnPm': function (_0x15393d, _0x3db7f9) {
+            return _0x15393d(_0x3db7f9);
+          },
+          'iUqHh': function (_0x5d4619, _0x3bb4fa) {
+            return _0x5d4619(_0x3bb4fa);
+          }
+        };
+        function _0x2df827(_0x4e28a4, _0x31b85d, _0x2a1c13, _0x481d34, _0xabfa0c) {
+          return _0x10cc(_0x2a1c13 + 0x60d - 0x24d, _0x4e28a4);
+        }
+        function _0x17dd40(_0xd894e7, _0x593aa2, _0xdbb2f0, _0x72fa01, _0x5627eb) {
+          return _0x10cc(_0x593aa2 + 0x2ca - 0xf5, _0x72fa01);
         }
         try {
-          await _0x3ab35e(_0x2c419a, _0x5ec5ee);
-        } catch {}
-        switch (_0x327fcf) {
-          case "jid":
-            _0x39acac(_0x43983b);
-            break;
-          default:
-            if ((_0x3e636e || _0x5b62ca) && _0x4cfd81.startsWith('>')) {
-              let _0x357e4b = _0x4cfd81.split('>')[1];
-              let _0x5454e6 = _0x357e4b.replace('°', ".toString()");
-              try {
-                let _0x49af3c = await eval(_0x5454e6);
-                if (typeof _0x49af3c === "object") {
-                  _0x39acac(util.format(_0x49af3c));
-                } else {
-                  _0x39acac(util.format(_0x49af3c));
-                }
-              } catch (_0xf4819e) {
-                _0x39acac(util.format(_0xf4819e));
+          let _0x1f9061 = '';
+          for (let _0x4fa158 = 0; _0x4fa158 < commands.length; _0x4fa158++) {
+            if (commands[_0x4fa158].category === "download") {
+              if (!commands[_0x4fa158].dontAddCommandList) {
+                _0x1f9061 += `${xprefix}` + commands[_0x4fa158].pattern + "\n";
               }
             }
+          }
+          ;
+          let _0x3ea1e0 = '';
+          for (let _0xc0ad7 = 0; _0xc0ad7 < commands.length; _0xc0ad7++) {
+            if (commands[_0xc0ad7].category === "search") {
+              if (!commands[_0xc0ad7].dontAddCommandList) {
+                _0x3ea1e0 += `${xprefix}` + commands[_0xc0ad7].pattern + "\n";
+              }
+            }
+          }
+          ;
+          let _0x2ace9b = '';
+          for (let _0x617090 = 0; _0x617090 < commands.length; _0x617090++) {
+            if (commands[_0x617090].category === "convert") {
+              if (!commands[_0x617090].dontAddCommandList) {
+                _0x2ace9b += `${xprefix}` + commands[_0x617090].pattern + "\n";
+              }
+            }
+          }
+          ;
+          let _0x4046ab = '';
+          for (let _0x2a82bd = 0; _0x2a82bd < commands.length; _0x2a82bd++) {
+            if (commands[_0x2a82bd].category === "logo") {
+              if (!commands[_0x2a82bd].dontAddCommandList) {
+                _0x4046ab += `${xprefix}` + commands[_0x2a82bd].pattern + "\n";
+              }
+            }
+          }
+          ;
+          let _0x9abccf = '';
+          for (let _0x5ebe59 = 0; _0x5ebe59 < commands.length; _0x5ebe59++) {
+            if (commands[_0x5ebe59].category === "main") {
+              if (!commands[_0x5ebe59].dontAddCommandList) {
+                _0x9abccf += `${xprefix}` + commands[_0x5ebe59].pattern + "\n";
+              }
+            }
+          }
+          ;
+          let _0x8d8eb5 = '';
+          for (let _0x224fb4 = 0; _0x224fb4 < commands.length; _0x224fb4++) {
+            if (commands[_0x224fb4].category === "group") {
+              if (!commands[_0x224fb4].dontAddCommandList) {
+                _0x8d8eb5 += `${xprefix}` + commands[_0x224fb4].pattern + "\n";
+              }
+            }
+          }
+          ;
+          let _0x253600 = '';
+          for (let _0x40ac3a = 0; _0x40ac3a < commands.length; _0x40ac3a++) {
+            if (commands[_0x40ac3a].category === "bug") {
+              if (!commands[_0x40ac3a].dontAddCommandList) {
+                _0x253600 += `${xprefix}` + commands[_0x40ac3a].pattern + "\n";
+              }
+            }
+          }
+          ;
+          let _0x5829ec = '';
+          for (let _0x180506 = 0; _0x180506 < commands.length; _0x180506++) {
+            if (commands[_0x180506].category === "other") {
+              if (!commands[_0x180506].dontAddCommandList) {
+                _0x5829ec += `${xprefix}` + commands[_0x180506].pattern + "\n";
+              }
+            }
+          }
+          ;
+          let _0x8e9c18 = "*╭────    〖 X-BYTE 〗────╮*\n*│o: Prefix:* "+"[ "+ xprefix +" ]"+ "\n*│o:Run Time:* " + runtime(process.uptime()) + " \n*│o:Ram usage:* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n*╰──────────●●►*\n\n\n*X-BYTE COMMANDS*\n> *╭──────────●●►*\n\n\n\n> *│ DOWNLOAD COMMANDS*\n> *│   ───────*\n" + _0x1f9061 + "*╰───────────●●►*\n> *╭──────────●●►*\n> *│ SEARCH COMMANDS*\n> *│   ───────*\n" + _0x3ea1e0 + "*╰───────────●●►*\n> *╭──────────●●►*\n> *│ CONVERT COMMANDS*\n> *│   ───────*\n" + _0x2ace9b + "*╰───────────●●►*\n> *╭──────────●●►*\n> *│ LOGO COMMANDS*\n> *│   ───────*\n" + _0x4046ab + "*╰───────────●●►*\n> *╭──────────●●►*\n> *│ MAIN COMMANDS*\n> *│   ───────*\n" + _0x9abccf + "*╰───────────●●►*\n> *╭──────────●●►*\n> *│ GROUP COMMANDS*\n> *│   ───────*\n" + _0x8d8eb5 + "*╰───────────●●►*\n> *╭──────────●●►*\n> *│ BUG COMMANDS*\n> *│   ───────*\n" + _0x253600 + "*╰───────────●●►*\n> *╭──────────●●►*\n> *│ OTHER COMMANDS*\n> *│   ───────*\n" + _0x5829ec + "*╰───────────●●►*\t\n *POWERED BY TALKDROVE:)*";
+          const _0x1150b3 = {
+            url: config.LOGO
+          };
+          const _0x557193 = {
+            image: _0x1150b3,
+            caption: _0x8e9c18
+          };
+          await _0x188b80.sendMessage(_0x7e5aba, _0x557193, {
+            'quoted': _0x2d3e0,
+            'messageId': genMsgId()
+          });
+        } catch (_0x192cbd) {
+          _0x4e92c9("*Error !!*");
+          _0x401553(_0x192cbd);
         }
-      } catch (_0x94a0af) {
-        const _0x1771da = String(_0x94a0af);
-        console.log(_0x1771da);
+      });
+      const _0x2e9e6e = {
+        pattern: "downmenu",
+        react: '⏬',
+        desc: "Get bot's command list.",
+        category: '',
+        use: ".menu",
+        filename: __filename
+      };
+      cmd(_0x2e9e6e, async (_0x419772, _0x2cd43b, _0x599e20, {
+        from: _0x452de4,
+        prefix: _0x3946e9,
+        l: _0x45ff22,
+        quoted: _0x23ee2d,
+        body: _0x47ebd5,
+        isCmd: _0x11ccda,
+        command: _0x2dbe14,
+        args: _0x23dc4a,
+        q: _0x4d53f2,
+        isGroup: _0x42fbd7,
+        sender: _0x2dd361,
+        senderNumber: _0x139bc1,
+        botNumber2: _0x2ffc56,
+        botNumber: _0x1aa2c2,
+        pushname: _0x3c48eb,
+        isMe: _0xf0f5b1,
+        isOwner: _0x17c3e1,
+        groupMetadata: _0x15c771,
+        groupName: _0x455891,
+        participants: _0x10f926,
+        groupAdmins: _0x3d5c7e,
+        isBotAdmins: _0x1a8a32,
+        isAdmins: _0x3790c5,
+        reply: _0x49ca47
+      }) => {
+        function _0xd0128a(_0x2c63e0, _0x55ccbc, _0x140411, _0x49230b, _0x2a6c34) {
+          return _0x10cc(_0x49230b - 0x13c - 0x10d, _0x2a6c34);
+        }
+        function _0x4e4fb1(_0x40e57e, _0x330727, _0x1c4c62, _0x13e913, _0x16c243) {
+          return _0x10cc(_0x330727 + 0x362 - 0x24d, _0x40e57e);
+        }
+        const _0x4ddcd8 = {
+          'kCskw': function (_0x5c7e30, _0x458744) {
+            return _0x5c7e30 === _0x458744;
+          },
+          'lFItK': "search",
+          'XxgfM': function (_0x1797db, _0x565b40) {
+            return _0x1797db === _0x565b40;
+          },
+          'fzNtu': "logo",
+          'xJMRO': function (_0x5415fc, _0x44e62d) {
+            return _0x5415fc(_0x44e62d);
+          },
+          'lFpbp': "*Error !!*",
+          'ZNVnM': function (_0x1933bc, _0x3d85e0) {
+            return _0x1933bc(_0x3d85e0);
+          },
+          'plmxm': function (_0x495360, _0x437412) {
+            return _0x495360 * _0x437412;
+          },
+          'pLmHg': "JwXoR",
+          'lmxIM': function (_0xebfd7f, _0x5bb636) {
+            return _0xebfd7f < _0x5bb636;
+          },
+          'bXokZ': function (_0xaa7c4b, _0x996d97) {
+            return _0xaa7c4b === _0x996d97;
+          },
+          'McNZG': "QODtj",
+          'MjJhY': function (_0x1ab3fe, _0x14e909) {
+            return _0x1ab3fe === _0x14e909;
+          },
+          'STFom': "download",
+          'WeJHk': function (_0x19e37d, _0x3635f7) {
+            return _0x19e37d !== _0x3635f7;
+          },
+          'oobhr': "NoEjk",
+          'fbMHC': "KpNeR",
+          'KjUZm': "QAoZM",
+          'jYSCA': "hykxh",
+          'deRap': function (_0x28cda6) {
+            return _0x28cda6();
+          },
+          'MdTMN': "fumfo",
+          'cEnnA': function (_0x44297c, _0x3f5561) {
+            return _0x44297c(_0x3f5561);
+          },
+          'SzwbS': function (_0x40fbde, _0x4b632d) {
+            return _0x40fbde(_0x4b632d);
+          }
+        };
+        function _0x1f1d77(_0x1f4461, _0x22f42f, _0x2cf675, _0x4e2a95, _0x4ba3b2) {
+          return _0x10cc(_0x4e2a95 + 0x53e - 0x24d, _0x2cf675);
+        }
+        function _0x2bbcbf(_0x59de5b, _0x29262d, _0x266638, _0x3ad21e, _0x3a1e47) {
+          return _0x10cc(_0x3ad21e + 0x2c3 - 0x10d, _0x29262d);
+        }
+        function _0x277978(_0x50eb43, _0x5530b8, _0x2052d7, _0x55ee39, _0x475ac8) {
+          return _0x10cc(_0x2052d7 - 0xae - 0x24d, _0x5530b8);
+        }
+        try {
+          let _0x2abda3 = '';
+          for (let _0x5f2522 = 0; _0x5f2522 < commands.length; _0x5f2522++) {
+            if (commands[_0x5f2522].category === "download") {
+              if (!commands[_0x5f2522].dontAddCommandList) {
+                _0x2abda3 += "*Command :* " + commands[_0x5f2522].pattern + "\n*Desc :* " + commands[_0x5f2522].desc + "\n*Use:* " + commands[_0x5f2522].use + "\n\n";
+              }
+            }
+          }
+          ;
+          let _0xbb4f82 = "\n> *╭──────────●●►*\n> *│ DOWNLOAD COMMANDS*\n> *│   ───────*\n" + _0x2abda3 + "*╰───────────●●►*\nPowered by TalkDrove";
+          const _0x454809 = {
+            url: config.LOGO
+          };
+          const _0x12aaa2 = {
+            image: _0x454809,
+            caption: _0xbb4f82
+          };
+          await _0x419772.sendMessage(_0x452de4, _0x12aaa2, {
+            'quoted': _0x2cd43b,
+            'messageId': genMsgId()
+          });
+        } catch (_0x46868f) {
+          _0x49ca47("*Error !!*");
+          _0x45ff22(_0x46868f);
+        }
+      });
+      const _0x3a6eab = {
+        pattern: "searchmenu",
+        react: '🔎',
+        desc: "Get bot's command list.",
+        category: '',
+        use: ".menu",
+        filename: __filename
+      };
+      cmd(_0x3a6eab, async (_0x1f9090, _0x2ce969, _0x236e76, {
+        from: _0x5cf376,
+        prefix: _0x44fa53,
+        l: _0x549473,
+        quoted: _0x3dfcbd,
+        body: _0x5ae803,
+        isCmd: _0x24bfa9,
+        command: _0x1770bc,
+        args: _0x117056,
+        q: _0x4da5f3,
+        isGroup: _0x141307,
+        sender: _0x20dee0,
+        senderNumber: _0x27cb52,
+        botNumber2: _0x1bc052,
+        botNumber: _0x129ecf,
+        pushname: _0xa2807,
+        isMe: _0x1551e6,
+        isOwner: _0x61e1d1,
+        groupMetadata: _0x247261,
+        groupName: _0x42da7b,
+        participants: _0x3630c2,
+        groupAdmins: _0xf82548,
+        isBotAdmins: _0x2256a7,
+        isAdmins: _0x4da708,
+        reply: _0x3488eb
+      }) => {
+        function _0x21de39(_0x5593ed, _0x2b0a2d, _0x5717d1, _0x388b20, _0x2aeba4) {
+          return _0x10cc(_0x5717d1 + 0x3e - 0x1a5, _0x2b0a2d);
+        }
+        const _0x2e3b97 = {
+          'vFEmE': function (_0x4ce01c, _0x1f9eea) {
+            return _0x4ce01c(_0x1f9eea);
+          },
+          'APJGy': "This is an owner command...",
+          'EkAir': function (_0x5bc1e4, _0x1523e0) {
+            return _0x5bc1e4(_0x1523e0);
+          },
+          'VMqyU': function (_0x668885, _0x50bcec) {
+            return _0x668885 === _0x50bcec;
+          },
+          'JlvIa': "group",
+          'AmtNK': function (_0x4f9fbb, _0x8ae453) {
+            return _0x4f9fbb(_0x8ae453);
+          },
+          'MhaEW': "*Error !!*",
+          'MGYEb': function (_0x2e3055, _0x53d49c) {
+            return _0x2e3055(_0x53d49c);
+          },
+          'DvGdX': function (_0x5883ce, _0x27cd7a) {
+            return _0x5883ce(_0x27cd7a);
+          },
+          'PqvaZ': "*This is an owner command...*",
+          'QhCxE': function (_0x4dcb50, _0x126d06) {
+            return _0x4dcb50(_0x126d06);
+          },
+          'kmJEf': function (_0x45aa23, _0x489c5d) {
+            return _0x45aa23 !== _0x489c5d;
+          },
+          'RvhUv': "zHpYg",
+          'HyUdI': "IgWNZ",
+          'rXdPA': function (_0x4b44b5, _0x5740fd) {
+            return _0x4b44b5 < _0x5740fd;
+          },
+          'eZfQx': "JagmL",
+          'jUZTz': "search",
+          'hmgQS': function (_0xeb8f7f, _0x430bd1) {
+            return _0xeb8f7f !== _0x430bd1;
+          },
+          'BbVIX': "aRScu",
+          'XZqoa': "EHdQP",
+          'Vdaah': "YGxJX",
+          'Skshu': function (_0x125b55) {
+            return _0x125b55();
+          },
+          'nvevx': "vqOBC",
+          'aFaJK': "CxBry",
+          'aGkfD': function (_0x4c030e, _0x692555) {
+            return _0x4c030e(_0x692555);
+          }
+        };
+        function _0x2faea0(_0x260223, _0x201a1e, _0x97532b, _0x1bdc7f, _0x5aa553) {
+          return _0x10cc(_0x97532b - 0x14f - 0x24d, _0x260223);
+        }
+        function _0x41c756(_0x22929f, _0x4dda37, _0x111de6, _0x3557fa, _0x5bc54c) {
+          return _0x10cc(_0x111de6 - 0xe9 - 0x10d, _0x4dda37);
+        }
+        function _0x5696d4(_0x15bf15, _0x1b42c9, _0xcc1cd5, _0x56b6b3, _0x11eaac) {
+          return _0x10cc(_0x15bf15 - 0xc9 - 0x1a5, _0x1b42c9);
+        }
+        function _0x338d2a(_0x3ab0c7, _0xf7432c, _0x41e012, _0x4f3b81, _0x1655f2) {
+          return _0x10cc(_0xf7432c - 0x1ae - 0x1d1, _0x4f3b81);
+        }
+        try {
+          let _0x12ed53 = '';
+          for (let _0x1169d8 = 0; _0x1169d8 < commands.length; _0x1169d8++) {
+            if (commands[_0x1169d8].category === "search") {
+              if (!commands[_0x1169d8].dontAddCommandList) {
+                _0x12ed53 += "*Command :* " + commands[_0x1169d8].pattern + "\n*Desc :* " + commands[_0x1169d8].desc + "\n*Use:* " + commands[_0x1169d8].use + "\n\n";
+              }
+            }
+          }
+          ;
+          let _0x45eb07 = "\n> *╭──────────●●►*\n> *│ SEARCH COMMANDS*\n> *│   ───────*\n" + _0x12ed53 + "*╰───────────●●►*\nPowered by TalkDrove";
+          const _0x41011a = {
+            url: config.LOGO
+          };
+          const _0x4d334e = {
+            image: _0x41011a,
+            caption: _0x45eb07
+          };
+          await _0x1f9090.sendMessage(_0x5cf376, _0x4d334e, {
+            'quoted': _0x2ce969,
+            'messageId': genMsgId()
+          });
+        } catch (_0x1d8112) {
+          _0x3488eb("*Error !!*");
+          _0x549473(_0x1d8112);
+        }
+      });
+      const _0x38fa9b = {
+        pattern: "convertmenu",
+        react: '🔭',
+        desc: "Get bot's command list.",
+        category: '',
+        use: ".menu",
+        filename: __filename
+      };
+      cmd(_0x38fa9b, async (_0x246517, _0x21dd7c, _0x21a369, {
+        from: _0x40dc93,
+        prefix: _0x3e351c,
+        l: _0x27b897,
+        quoted: _0x4348e4,
+        body: _0xb4a1f8,
+        isCmd: _0x433ff3,
+        command: _0x44951e,
+        args: _0xd8697,
+        q: _0x48dbf4,
+        isGroup: _0x2e933f,
+        sender: _0x1467a3,
+        senderNumber: _0x5b9500,
+        botNumber2: _0x576d86,
+        botNumber: _0x23d35f,
+        pushname: _0x50c76a,
+        isMe: _0x30ee42,
+        isOwner: _0x402df9,
+        groupMetadata: _0x25a82d,
+        groupName: _0x16ae24,
+        participants: _0x1e18da,
+        groupAdmins: _0xbb47dd,
+        isBotAdmins: _0x1f6caf,
+        isAdmins: _0x128aa5,
+        reply: _0x1574e8
+      }) => {
+        function _0x24c780(_0x50bec9, _0x55f29d, _0x1c18f3, _0x522699, _0x4eeff8) {
+          return _0x10cc(_0x55f29d + 0x1b6 - 0x24d, _0x50bec9);
+        }
+        function _0x26bdf6(_0x569170, _0x5486be, _0x5ba84c, _0xa8861b, _0x4219e3) {
+          return _0x10cc(_0x4219e3 - 0x83 - 0x10d, _0x569170);
+        }
+        const _0x361347 = {
+          'qKoqA': function (_0x4ef26a, _0x15b124) {
+            return _0x4ef26a(_0x15b124);
+          },
+          'qqnDA': "*Error !!*",
+          'aeCAu': function (_0x11d0fd, _0x26f8de) {
+            return _0x11d0fd !== _0x26f8de;
+          },
+          'gLRvc': "HxRtn",
+          'IXBoA': "MQXTI",
+          'PPNJt': function (_0x4ec43f, _0x239569) {
+            return _0x4ec43f < _0x239569;
+          },
+          'tDcpy': function (_0x24cda1, _0x5b80d3) {
+            return _0x24cda1 !== _0x5b80d3;
+          },
+          'BamDn': "GInUQ",
+          'tJEip': "EyPyb",
+          'lJSMy': function (_0x240187, _0x5b5ea0) {
+            return _0x240187 === _0x5b5ea0;
+          },
+          'OYhwC': "convert",
+          'Svwtk': function (_0x1dc909, _0x4441a1) {
+            return _0x1dc909 === _0x4441a1;
+          },
+          'PeWDS': "iIKHt",
+          'ETjey': function (_0x2f29b8, _0x299b51) {
+            return _0x2f29b8 === _0x299b51;
+          },
+          'fvlKB': "ydbXF",
+          'WUpZm': "tMSXv",
+          'kberS': function (_0x2dbedf) {
+            return _0x2dbedf();
+          },
+          'fMgbj': "hpYQV",
+          'sCGIu': function (_0x4d90f4, _0xc36cca) {
+            return _0x4d90f4(_0xc36cca);
+          },
+          'qNFMH': function (_0x3eb300, _0x27e9f8) {
+            return _0x3eb300(_0x27e9f8);
+          }
+        };
+        function _0x5a1977(_0x233387, _0x19e8d3, _0x733298, _0x187350, _0x3b39b3) {
+          return _0x10cc(_0x187350 + 0x37b - 0x1a5, _0x233387);
+        }
+        function _0x485d72(_0x62df98, _0x57f9cb, _0x7af271, _0x4a926f, _0x568849) {
+          return _0x10cc(_0x568849 + 0x301 - 0x10d, _0x4a926f);
+        }
+        function _0x4d1720(_0x1b3c58, _0x1d8a5d, _0x421d01, _0x393861, _0x46829d) {
+          return _0x10cc(_0x393861 - 0x6c - 0x10d, _0x1d8a5d);
+        }
+        try {
+          let _0x4b2f8d = '';
+          for (let _0x21bbc8 = 0; _0x21bbc8 < commands.length; _0x21bbc8++) {
+            if (commands[_0x21bbc8].category === "convert") {
+              if (!commands[_0x21bbc8].dontAddCommandList) {
+                _0x4b2f8d += "*Command :* " + commands[_0x21bbc8].pattern + "\n*Desc :* " + commands[_0x21bbc8].desc + "\n*Use:* " + commands[_0x21bbc8].use + "\n\n";
+              }
+            }
+          }
+          ;
+          let _0x269b93 = "\n> *╭──────────●●►*\n> *│ CONVERT COMMANDS*\n> *│   ───────*\n" + _0x4b2f8d + "*╰───────────●●►*\nPowered by TalkDrove";
+          const _0x2dfe0a = {
+            url: config.LOGO
+          };
+          const _0xf05028 = {
+            image: _0x2dfe0a,
+            caption: _0x269b93
+          };
+          await _0x246517.sendMessage(_0x40dc93, _0xf05028, {
+            'quoted': _0x21dd7c,
+            'messageId': genMsgId()
+          });
+        } catch (_0x5a2373) {
+          _0x1574e8("*Error !!*");
+          _0x27b897(_0x5a2373);
+        }
+      });
+      const _0x1f6074 = {
+        pattern: "logomenu",
+        react: '🏝️',
+        desc: "Get bot's command list.",
+        category: '',
+        use: ".menu",
+        filename: __filename
+      };
+      cmd(_0x1f6074, async (_0x2a2297, _0x4e885, _0x31c159, {
+        from: _0x4bb3cc,
+        prefix: _0x1d6188,
+        l: _0x32857d,
+        quoted: _0x271a35,
+        body: _0x57fa5f,
+        isCmd: _0x4f3d9b,
+        command: _0x311dcc,
+        args: _0x2919f4,
+        q: _0x1369ce,
+        isGroup: _0x40bc0f,
+        sender: _0x50ac9a,
+        senderNumber: _0x3a3587,
+        botNumber2: _0x460793,
+        botNumber: _0x279395,
+        pushname: _0x384973,
+        isMe: _0x19165e,
+        isOwner: _0x239917,
+        groupMetadata: _0x331d46,
+        groupName: _0x2b70f8,
+        participants: _0x4f38ca,
+        groupAdmins: _0x2309fc,
+        isBotAdmins: _0x29773a,
+        isAdmins: _0x24839d,
+        reply: _0x573e4d
+      }) => {
+        function _0x3c317c(_0x56c25d, _0x53db69, _0x100c38, _0x450db0, _0x5eeee3) {
+          return _0x10cc(_0x100c38 + 0x94 - 0x1a5, _0x5eeee3);
+        }
+        function _0x2ced17(_0x52e644, _0x118d5f, _0x577545, _0x54ba94, _0x28504a) {
+          return _0x10cc(_0x118d5f + 0x1d0 - 0x10d, _0x28504a);
+        }
+        function _0x5b2568(_0x1d3617, _0x27361d, _0x1b4769, _0xa9d25a, _0x28d1c1) {
+          return _0x10cc(_0x27361d - 0x1b1 - 0x1d1, _0x1b4769);
+        }
+        const _0x45f65e = {
+          'YjPPg': function (_0x5ead50, _0x40a5db) {
+            return _0x5ead50 === _0x40a5db;
+          },
+          'QdLqy': "main",
+          'kfLse': function (_0x4074b3, _0x1c46bd) {
+            return _0x4074b3 === _0x1c46bd;
+          },
+          'XZFmh': "convert",
+          'Adtoo': function (_0x2af474, _0x1b9b84) {
+            return _0x2af474(_0x1b9b84);
+          },
+          'PQFmp': "*Error !!*",
+          'agHbD': function (_0x1a8e17, _0x247417) {
+            return _0x1a8e17(_0x247417);
+          },
+          'lhkAX': function (_0x2c989a, _0x238f21) {
+            return _0x2c989a(_0x238f21);
+          },
+          'hBeJI': function (_0x15c7bd, _0xb76f80) {
+            return _0x15c7bd(_0xb76f80);
+          },
+          'TViwb': function (_0x337961, _0x1d49f0) {
+            return _0x337961 !== _0x1d49f0;
+          },
+          'KWdCg': "QubeX",
+          'wGIYk': "aapkJ",
+          'idTEE': function (_0x3e2b3d, _0x2353a5) {
+            return _0x3e2b3d < _0x2353a5;
+          },
+          'fdQKA': "GWTGy",
+          'BRAgh': "CebYv",
+          'spUnw': "logo",
+          'IalXT': function (_0x975793, _0x71aa96) {
+            return _0x975793 === _0x71aa96;
+          },
+          'MPYnt': "XHYrV",
+          'gLCLG': "ozYEg",
+          'LotKu': "NFCKV",
+          'fLvgJ': function (_0xb12e0e) {
+            return _0xb12e0e();
+          },
+          'pnpks': function (_0x446a91, _0xbff1fa) {
+            return _0x446a91 === _0xbff1fa;
+          },
+          'JfaPs': "vFHbN"
+        };
+        function _0x2ce368(_0x5f15d9, _0x37c335, _0x50903b, _0x420b0e, _0x49e216) {
+          return _0x10cc(_0x420b0e + 0xcf - 0xf5, _0x37c335);
+        }
+        function _0x1e1f92(_0x2a008d, _0x3833ff, _0x52519c, _0x2fccdd, _0x4d5700) {
+          return _0x10cc(_0x52519c + 0x116 - 0x1a5, _0x4d5700);
+        }
+        try {
+          let _0x36dfbb = '';
+          for (let _0x281d5c = 0; _0x281d5c < commands.length; _0x281d5c++) {
+            if (commands[_0x281d5c].category === "logo") {
+              if (!commands[_0x281d5c].dontAddCommandList) {
+                _0x36dfbb += "*Command :* " + commands[_0x281d5c].pattern + "\n*Desc :* " + commands[_0x281d5c].desc + "\n*Use:* " + commands[_0x281d5c].use + "\n\n";
+              }
+            }
+          }
+          ;
+          let _0x1725f5 = "\n> *╭──────────●●►*\n> *│ LOGO COMMANDS*\n> *│   ───────*\n" + _0x36dfbb + "*╰───────────●●►*\nPowered by TalkDrove";
+          const _0x472cb0 = {
+            url: config.LOGO
+          };
+          const _0x36719c = {
+            image: _0x472cb0,
+            caption: _0x1725f5
+          };
+          await _0x2a2297.sendMessage(_0x4bb3cc, _0x36719c, {
+            'quoted': _0x4e885,
+            'messageId': genMsgId()
+          });
+        } catch (_0x4561b3) {
+          _0x573e4d("*Error !!*");
+          _0x32857d(_0x4561b3);
+        }
+      });
+      const _0x55cd9f = {
+        pattern: "mainmenu",
+        react: '🆗',
+        desc: "Get bot's command list.",
+        category: '',
+        use: ".main",
+        filename: __filename
+      };
+      cmd(_0x55cd9f, async (_0x19c6d7, _0x268e08, _0x451792, {
+        from: _0x2223b,
+        prefix: _0x131747,
+        l: _0x34582f,
+        quoted: _0x1f0201,
+        body: _0xe89a22,
+        isCmd: _0x476461,
+        command: _0x31021b,
+        args: _0x55acf2,
+        q: _0x1fc184,
+        isGroup: _0x1266fe,
+        sender: _0x1f54f5,
+        senderNumber: _0x23dee8,
+        botNumber2: _0x3a28b8,
+        botNumber: _0x2494cb,
+        pushname: _0x3dab72,
+        isMe: _0x290284,
+        isOwner: _0x40427b,
+        groupMetadata: _0x1d204d,
+        groupName: _0x4f4c92,
+        participants: _0x571a7d,
+        groupAdmins: _0x46205b,
+        isBotAdmins: _0x19c4c2,
+        isAdmins: _0x1320af,
+        reply: _0x8ba8aa
+      }) => {
+        function _0x576672(_0x106185, _0x180e77, _0x581651, _0x1b45b6, _0x5076de) {
+          return _0x10cc(_0x1b45b6 + 0x388 - 0xf5, _0x180e77);
+        }
+        function _0x564da2(_0x3fa0d9, _0x1b3f0d, _0x215883, _0x323ccf, _0x27969f) {
+          return _0x10cc(_0x1b3f0d - 0x205 - 0x10d, _0x215883);
+        }
+        function _0x44e981(_0x341f4e, _0x6e4402, _0x3d4fb6, _0x27c2ad, _0x25ff38) {
+          return _0x10cc(_0x25ff38 + 0x1b2 - 0x1a5, _0x3d4fb6);
+        }
+        const _0x529837 = {
+          'TdCYN': function (_0x530ecb, _0x159782) {
+            return _0x530ecb === _0x159782;
+          },
+          'TXcgY': "bug",
+          'wNsmQ': "logo",
+          'WLUMJ': function (_0x41c6c5, _0x2cd492) {
+            return _0x41c6c5 !== _0x2cd492;
+          },
+          'mPULA': "EYWCd",
+          'DLGtA': "XkeYm",
+          'uQnxN': function (_0x504ac9, _0x358e6b) {
+            return _0x504ac9 < _0x358e6b;
+          },
+          'lcPIz': function (_0x37897b, _0x372616) {
+            return _0x37897b !== _0x372616;
+          },
+          'htPdM': "QxLiN",
+          'nUSxW': "main",
+          'bAfAI': "JibEl",
+          'dSpVa': "IqOjA",
+          'qVOoZ': function (_0x17ff5f, _0x1871de) {
+            return _0x17ff5f !== _0x1871de;
+          },
+          'wDUxa': "wbGrS",
+          'urHYM': function (_0x15f8f5) {
+            return _0x15f8f5();
+          },
+          'ZNcTm': function (_0xb12daf, _0x13d602) {
+            return _0xb12daf === _0x13d602;
+          },
+          'QQpbh': "GWyZP",
+          'Yjhza': "yGiGH",
+          'RDdwb': function (_0x1e04aa, _0x29779a) {
+            return _0x1e04aa(_0x29779a);
+          },
+          'KvzCO': "*Error !!*",
+          'oIRFI': function (_0x2f69f0, _0x4e90f6) {
+            return _0x2f69f0(_0x4e90f6);
+          }
+        };
+        function _0x26294e(_0x11c138, _0x325730, _0x16a02e, _0x3ba0c7, _0x39bdfc) {
+          return _0x10cc(_0x11c138 + 0x23d - 0x10d, _0x39bdfc);
+        }
+        function _0x4e3cf3(_0x19bb52, _0x7041d4, _0x5b3e53, _0x2543ab, _0x4e6b4e) {
+          return _0x10cc(_0x19bb52 + 0x3a2 - 0x1a5, _0x4e6b4e);
+        }
+        try {
+          let _0x5be7de = '';
+          for (let _0x2a7fb3 = 0; _0x2a7fb3 < commands.length; _0x2a7fb3++) {
+            if (commands[_0x2a7fb3].category === "main") {
+              if (!commands[_0x2a7fb3].dontAddCommandList) {
+                _0x5be7de += "*Command :* " + commands[_0x2a7fb3].pattern + "\n*Desc :* " + commands[_0x2a7fb3].desc + "\n*Use:* " + commands[_0x2a7fb3].use + "\n\n";
+              }
+            }
+          }
+          ;
+          let _0x3e8641 = "\n> *╭──────────●●►*\n> *│ MAIN COMMANDS*\n> *│   ───────*\n" + _0x5be7de + "*╰───────────●●►*\nPowered by TalkDrove";
+          const _0x5592c1 = {
+            url: config.LOGO
+          };
+          const _0x430391 = {
+            image: _0x5592c1,
+            caption: _0x3e8641
+          };
+          await _0x19c6d7.sendMessage(_0x2223b, _0x430391, {
+            'quoted': _0x268e08,
+            'messageId': genMsgId()
+          });
+        } catch (_0x3c3b33) {
+          _0x8ba8aa("*Error !!*");
+          _0x34582f(_0x3c3b33);
+        }
+      });
+      const _0x50ce04 = {
+        pattern: "groupmenu",
+        react: '💹',
+        desc: "Get bot's command list.",
+        category: '',
+        use: ".menu",
+        filename: __filename
+      };
+      cmd(_0x50ce04, async (_0x1616e8, _0x12f103, _0x43a469, {
+        from: _0x35312c,
+        pushname: _0x56420a,
+        reply: _0x95e2be
+      }) => {
+        function _0x1a276c(_0x3b550b, _0x26741c, _0x5d49c3, _0x3ec3ab, _0x393f18) {
+          return _0x10cc(_0x5d49c3 - 0x185 - 0x10d, _0x3ec3ab);
+        }
+        function _0x20d38b(_0x22505e, _0x197bb9, _0x34506a, _0x586dc3, _0x20a45c) {
+          return _0x10cc(_0x197bb9 - 0x230 - 0xf5, _0x586dc3);
+        }
+        function _0x368331(_0x1ade5f, _0x203b20, _0x5079e8, _0x3ed03b, _0xe004ba) {
+          return _0x10cc(_0x3ed03b - 0x19f - 0xf5, _0x1ade5f);
+        }
+        function _0x3ba397(_0x2f4719, _0x45be18, _0x54d065, _0x5c0999, _0x44a453) {
+          return _0x10cc(_0x45be18 - 0x4b - 0x10d, _0x2f4719);
+        }
+        function _0x387c5d(_0x2012f8, _0x32e628, _0x5a67bd, _0x2c1f5a, _0x2b4180) {
+          return _0x10cc(_0x32e628 + 0x1c3 - 0x1d1, _0x5a67bd);
+        }
+        const _0x29718b = {
+          'EfuGV': function (_0x531296, _0xd9b685) {
+            return _0x531296 === _0xd9b685;
+          },
+          'rahTH': "download",
+          'nHtDt': function (_0x4d02db, _0x266490) {
+            return _0x4d02db(_0x266490);
+          },
+          'JGXIU': "*Error !!*",
+          'tjrFG': function (_0x3aa95e, _0x256235) {
+            return _0x3aa95e(_0x256235);
+          },
+          'aYCIv': function (_0x16aa6e, _0x2c5b7e) {
+            return _0x16aa6e !== _0x2c5b7e;
+          },
+          'gKmUw': "HSUpk",
+          'HzhrF': "WRVMW",
+          'fHByz': function (_0x6a0020, _0x57dfc0) {
+            return _0x6a0020 < _0x57dfc0;
+          },
+          'BWolC': function (_0x3d2806, _0x560625) {
+            return _0x3d2806 !== _0x560625;
+          },
+          'LrlSK': "DwHip",
+          'tvpjx': "VZnyi",
+          'QelES': function (_0x33f1bd, _0x29057c) {
+            return _0x33f1bd === _0x29057c;
+          },
+          'JvGHu': "group",
+          'RDGcr': "hKubt",
+          'wMhmm': "HpNZW",
+          'vxAiy': function (_0x184872, _0x3ec132) {
+            return _0x184872 === _0x3ec132;
+          },
+          'ebdAa': "juyTm",
+          'rvvlG': function (_0xdb5211) {
+            return _0xdb5211();
+          },
+          'WmuJq': "HUouY",
+          'pLpoc': "DSOxG",
+          'fCujD': function (_0x43b608, _0x283489) {
+            return _0x43b608(_0x283489);
+          },
+          'RrfUo': function (_0x3d000a, _0x41da86) {
+            return _0x3d000a(_0x41da86);
+          }
+        };
+        try {
+          let _0x4568fa = '';
+          for (let _0x2903a7 = 0; _0x2903a7 < commands.length; _0x2903a7++) {
+            if (commands[_0x2903a7].category === "group") {
+              if (!commands[_0x2903a7].dontAddCommandList) {
+                _0x4568fa += "*Command :* " + commands[_0x2903a7].pattern + "\n*Desc :* " + commands[_0x2903a7].desc + "\n*Use:* " + commands[_0x2903a7].use + "\n\n";
+              }
+            }
+          }
+          ;
+          let _0x56515f = "\n> *╭──────────●●►*\n> *│ GROUP COMMANDS*\n> *│   ───────*\n" + _0x4568fa + "*╰───────────●●►*\nPowered by TalkDrove";
+          const _0x2e55e9 = {
+            url: config.LOGO
+          };
+          const _0x35ab1c = {
+            image: _0x2e55e9,
+            caption: _0x56515f
+          };
+          await _0x1616e8.sendMessage(_0x35312c, _0x35ab1c, {
+            'quoted': _0x12f103,
+            'messageId': genMsgId()
+          });
+        } catch (_0x212b7d) {
+          _0x95e2be("*Error !!*");
+          l(_0x212b7d);
+        }
+      });
+      const _0x359d4d = {
+        pattern: "bugmenu",
+        react: '🪲',
+        desc: "Get bot's command list.",
+        category: '',
+        use: ".menu",
+        filename: __filename
+      };
+      cmd(_0x359d4d, async (_0x86f32b, _0x357a74, _0x1ca05b, {
+        from: _0x1fa58a,
+        prefix: _0x2b9166,
+        l: _0x56cb92,
+        quoted: _0x248a1f,
+        body: _0x214bd5,
+        isCmd: _0x16956e,
+        command: _0x34e32e,
+        args: _0xf3de8b,
+        q: _0x1933b1,
+        isGroup: _0x5697dc,
+        sender: _0x37f597,
+        senderNumber: _0x44c64f,
+        botNumber2: _0xf15255,
+        botNumber: _0x512135,
+        pushname: _0x17f550,
+        isMe: _0x1dec3a,
+        isOwner: _0x493c64,
+        groupMetadata: _0x54e8b3,
+        groupName: _0x301d4e,
+        participants: _0x608427,
+        groupAdmins: _0x35f960,
+        isBotAdmins: _0x43b473,
+        isAdmins: _0xd12d8e,
+        reply: _0x117446
+      }) => {
+        const _0x394480 = {
+          'LJnXB': function (_0x47983e, _0x5eb60f) {
+            return _0x47983e(_0x5eb60f);
+          },
+          'kwasg': "*Error !!*",
+          'MgehX': function (_0x202ac6, _0x186eb0) {
+            return _0x202ac6 !== _0x186eb0;
+          },
+          'OMtaC': "ZFLOO",
+          'YdxhD': function (_0x128763, _0x297a25) {
+            return _0x128763 < _0x297a25;
+          },
+          'jNOPY': function (_0xb80a71, _0xb6f906) {
+            return _0xb80a71 === _0xb6f906;
+          },
+          'HzDwT': "jPxRD",
+          'UwNfa': "JPtTk",
+          'taJxd': "bug",
+          'zuNbZ': function (_0x145f70, _0x3da373) {
+            return _0x145f70 !== _0x3da373;
+          },
+          'SsDFB': "RIVrd",
+          'bFTiw': function (_0x248ba6, _0x1eac36) {
+            return _0x248ba6 === _0x1eac36;
+          },
+          'wTVhe': "Bvlge",
+          'bnozW': "wCzHh",
+          'jUHtJ': function (_0x3f1ee7) {
+            return _0x3f1ee7();
+          },
+          'oFEvx': "ociIS",
+          'fJkyV': function (_0xb7f0b7, _0x543ffb) {
+            return _0xb7f0b7(_0x543ffb);
+          }
+        };
+        function _0x37fb54(_0x2b5ad3, _0x18e9f0, _0xbf55ed, _0x267231, _0x292d84) {
+          return _0x10cc(_0x18e9f0 + 0x451 - 0x1d1, _0x267231);
+        }
+        function _0x24c830(_0x123d38, _0x301248, _0x3e21bf, _0x506a77, _0x26bbc1) {
+          return _0x10cc(_0x506a77 + 0x95 - 0xf5, _0x3e21bf);
+        }
+        function _0x26945d(_0x406871, _0x4bffec, _0xadbf33, _0x271a46, _0x11251a) {
+          return _0x10cc(_0xadbf33 + 0x4ad - 0x1d1, _0x11251a);
+        }
+        function _0x48ac43(_0x1090fb, _0x2a97dc, _0x464f9b, _0x1f1fa4, _0x17d49b) {
+          return _0x10cc(_0x2a97dc + 0x190 - 0xf5, _0x1f1fa4);
+        }
+        function _0x3ee1e2(_0x4e112f, _0x1c4feb, _0xfddb37, _0x23b827, _0xcbeca) {
+          return _0x10cc(_0xcbeca + 0x319 - 0x24d, _0xfddb37);
+        }
+        try {
+          let _0x3a953e = '';
+          for (let _0x2d3841 = 0; _0x2d3841 < commands.length; _0x2d3841++) {
+            if (commands[_0x2d3841].category === "bug") {
+              if (!commands[_0x2d3841].dontAddCommandList) {
+                _0x3a953e += "*Command :* " + commands[_0x2d3841].pattern + "\n*Desc :* " + commands[_0x2d3841].desc + "\n*Use:* " + commands[_0x2d3841].use + "\n\n";
+              }
+            }
+          }
+          ;
+          let _0x175040 = "\n> *╭──────────●●►*\n> *│ BUG COMMANDS*\n> *│   ───────*\n" + _0x3a953e + "*╰───────────●●►*\nPowered by TalkDrove";
+          const _0x46bb9f = {
+            url: config.LOGO
+          };
+          const _0x3ece47 = {
+            image: _0x46bb9f,
+            caption: _0x175040
+          };
+          await _0x86f32b.sendMessage(_0x1fa58a, _0x3ece47, {
+            'quoted': _0x357a74,
+            'messageId': genMsgId()
+          });
+        } catch (_0x2eef1a) {
+          _0x117446("*Error !!*");
+          _0x56cb92(_0x2eef1a);
+        }
+      });
+      const _0x187858 = {
+        pattern: "othermenu",
+        react: '🤦🏻‍♂️',
+        desc: "Get bot's command list.",
+        category: '',
+        use: ".menu",
+        filename: __filename
+      };
+      cmd(_0x187858, async (_0x2dfccc, _0x2b111b, _0x1c593e, {
+        from: _0x1b6135,
+        prefix: _0x3c0bfa,
+        l: _0x4f6ab3,
+        quoted: _0x41072b,
+        body: _0x4f2f09,
+        isCmd: _0x2eb757,
+        command: _0xd1d770,
+        args: _0x6be56,
+        q: _0x125b65,
+        isGroup: _0x47000a,
+        sender: _0x3a6fe2,
+        senderNumber: _0xc518d3,
+        botNumber2: _0x47eb27,
+        botNumber: _0xeeca1,
+        pushname: _0x7a0c9e,
+        isMe: _0x373d40,
+        isOwner: _0x109724,
+        groupMetadata: _0x3f834f,
+        groupName: _0x65fb78,
+        participants: _0x53c308,
+        groupAdmins: _0x1579cb,
+        isBotAdmins: _0x324e5b,
+        isAdmins: _0x480219,
+        reply: _0x1251ba
+      }) => {
+        function _0x51715a(_0x4a308a, _0x2da20e, _0x419a2f, _0x4a501b, _0x4a0edb) {
+          return _0x10cc(_0x2da20e - 0x240 - 0x1a5, _0x419a2f);
+        }
+        function _0x2dac97(_0x54d95a, _0x4357d4, _0x1b356c, _0x54f982, _0x5004ee) {
+          return _0x10cc(_0x5004ee + 0x153 - 0x24d, _0x54d95a);
+        }
+        function _0x9aac4(_0xe89778, _0x11e766, _0x209e73, _0x317aa0, _0x26d712) {
+          return _0x10cc(_0x11e766 + 0x2df - 0x24d, _0x209e73);
+        }
+        function _0x1afa75(_0x121c85, _0x4477a4, _0x44307c, _0x3b1165, _0x15ab6f) {
+          return _0x10cc(_0x4477a4 + 0x207 - 0x1a5, _0x3b1165);
+        }
+        const _0x38fe8f = {
+          'NanXO': function (_0xa0149e, _0x11eb3b) {
+            return _0xa0149e(_0x11eb3b);
+          },
+          'idOJg': "*Error !!*",
+          'RBuRL': function (_0x249935, _0x58ec47) {
+            return _0x249935(_0x58ec47);
+          },
+          'MvWgQ': function (_0x597599, _0x3ecf02) {
+            return _0x597599(_0x3ecf02);
+          },
+          'tguRC': "*This is an owner command...*",
+          'IGqtL': function (_0x3cb1b1, _0x176010) {
+            return _0x3cb1b1(_0x176010);
+          },
+          'GkxHW': function (_0x4352c9, _0x704a72) {
+            return _0x4352c9(_0x704a72);
+          },
+          'RsBgl': function (_0x871b5f, _0x46ab09) {
+            return _0x871b5f(_0x46ab09);
+          },
+          'Arxic': function (_0x45c83f, _0x59a429) {
+            return _0x45c83f !== _0x59a429;
+          },
+          'yHUtV': "TYPQG",
+          'KevkH': function (_0x558b66, _0x55d6b5) {
+            return _0x558b66 < _0x55d6b5;
+          },
+          'eYIYX': function (_0x11fcbc, _0x4362f5) {
+            return _0x11fcbc === _0x4362f5;
+          },
+          'kuGmk': "tQwal",
+          'CMMUh': function (_0x385883, _0x185057) {
+            return _0x385883 === _0x185057;
+          },
+          'uCwns': "other",
+          'SGGWs': "wmwcw",
+          'xKmrY': "BqAWu",
+          'qOuHB': "ZZktm",
+          'MrTmH': "uIRVc",
+          'IPJpe': function (_0x2a15a4) {
+            return _0x2a15a4();
+          },
+          'LYBhL': "XammJ",
+          'CwrUs': function (_0x24eee3, _0x39b5c7) {
+            return _0x24eee3(_0x39b5c7);
+          },
+          'aoyzN': function (_0x1000ab, _0x53fe96) {
+            return _0x1000ab(_0x53fe96);
+          }
+        };
+        function _0x2731e2(_0x552aef, _0x4870c0, _0xeb65e, _0x13f638, _0x5ebdc6) {
+          return _0x10cc(_0x4870c0 - 0xf6 - 0x10d, _0x13f638);
+        }
+        try {
+          let _0x31621a = '';
+          for (let _0x2b13c2 = 0; _0x2b13c2 < commands.length; _0x2b13c2++) {
+            if (commands[_0x2b13c2].category === "other") {
+              if (!commands[_0x2b13c2].dontAddCommandList) {
+                _0x31621a += "*Command :* " + commands[_0x2b13c2].pattern + "\n*Desc :* " + commands[_0x2b13c2].desc + "\n*Use:* " + commands[_0x2b13c2].use + "\n\n";
+              }
+            }
+          }
+          ;
+          let _0x537d3b = "\n> *╭──────────●●►*\n> *│ OTHER COMMANDS*\n> *│   ───────*\n" + _0x31621a + "*╰───────────●●►*\nPowered by TalkDrove";
+          const _0x3031c7 = {
+            url: config.LOGO
+          };
+          const _0x58002c = {
+            image: _0x3031c7,
+            caption: _0x537d3b
+          };
+          await _0x2dfccc.sendMessage(_0x1b6135, _0x58002c, {
+            'quoted': _0x2b111b,
+            'messageId': genMsgId()
+          });
+        } catch (_0x4945d0) {
+          _0x1251ba("*Error !!*");
+          _0x4f6ab3(_0x4945d0);
+        }
+      });
+    }
+    const _0x265674 = {
+      pattern: "ping",
+      react: '⚡',
+      alias: ["speed"],
+      desc: "Check bot's ping",
+      category: "main",
+      use: ".ping",
+      filename: __filename
+    };
+    cmd(_0x265674, async (_0x251c06, _0x5101d1, _0x5cefc0, {
+      from: _0x40306f,
+      prefix: _0x3d91f5,
+      l: _0x3d466d,
+      quoted: _0xe50f9a,
+      body: _0x1e3a49,
+      isCmd: _0x58a189,
+      command: _0x222654,
+      args: _0x1de9d8,
+      q: _0xfcee71,
+      isGroup: _0x41474e,
+      sender: _0x444002,
+      senderNumber: _0x2bcea3,
+      botNumber2: _0x584dde,
+      botNumber: _0x2eeb9b,
+      pushname: _0x20c447,
+      isMe: _0x4c4a9e,
+      isOwner: _0x56426d,
+      groupMetadata: _0x582fae,
+      groupName: _0x2c535f,
+      participants: _0x41f0a3,
+      groupAdmins: _0x3f7dab,
+      isBotAdmins: _0x5bee4d,
+      isAdmins: _0x59741d,
+      reply: _0x6221bb
+    }) => {
+      const _0x46cbdb = {
+        'rPqjt': function (_0x212fd7, _0x539cff) {
+          return _0x212fd7 === _0x539cff;
+        },
+        'AmIYf': "tpHZG",
+        'QmHcg': "BbpTB",
+        'PsAXG': "```Just a second please!```",
+        'BayKq': function (_0x7c839, _0x3b1617) {
+          return _0x7c839 + _0x3b1617;
+        },
+        'XWWHU': "*X-Byte ping is**",
+        'IwSli': function (_0x36498b, _0x518fe2) {
+          return _0x36498b - _0x518fe2;
+        },
+        'gRlpD': " ms 🐼* ",
+        'OsClh': function (_0x265055, _0x3ed593) {
+          return _0x265055 === _0x3ed593;
+        },
+        'EMzzO': "rzwPE",
+        'qQqCz': function (_0x22ebae, _0x59676d) {
+          return _0x22ebae(_0x59676d);
+        },
+        'OYKci': "*Error !!*"
+      };
+      function _0x2fb9a2(_0x1d69e3, _0x253ce, _0x176949, _0x76b6cd, _0x9020c6) {
+        return _0x10cc(_0x9020c6 + 0x1f2 - 0x10d, _0x1d69e3);
+      }
+      function _0x908b19(_0x1eb6c1, _0x2ac4bf, _0x598bad, _0x4a7298, _0x93229e) {
+        return _0x10cc(_0x93229e + 0x250 - 0x10d, _0x4a7298);
+      }
+      function _0x23dce5(_0x134fcc, _0x1022f3, _0x557d2f, _0x41d8d4, _0x18cd9d) {
+        return _0x10cc(_0x134fcc + 0x1bc - 0x1d1, _0x41d8d4);
+      }
+      function _0x54766f(_0x5c14af, _0x466077, _0x41fd13, _0x310099, _0x2d6dda) {
+        return _0x10cc(_0x5c14af - 0x1a9 - 0x1d1, _0x41fd13);
+      }
+      function _0x39a375(_0x5db6cd, _0xa46e5a, _0x44a120, _0x20dbfc, _0x543114) {
+        return _0x10cc(_0x543114 - 0x2b4 - 0xf5, _0x5db6cd);
+      }
+      try {
+        let _0x252f3b = new Date().getTime();
+        const _0x1bfdef = {
+          text: "```Just a second please!```"
+        };
+        const _0x5e139b = {
+          quoted: _0x5101d1
+        };
+        let _0xe4a7bf = await _0x251c06.sendMessage(_0x40306f, _0x1bfdef, _0x5e139b);
+        let _0x1aeb08 = new Date().getTime();
+        return await _0x251c06.edit(_0xe4a7bf, "*X-Byte ping is* *" + (_0x1aeb08 - _0x252f3b) + " ms 🐼* ");
+      } catch (_0x54b7fb) {
+        _0x6221bb("*Error !!*");
+        console.log(_0x54b7fb);
       }
     });
-  }
-  app.get('/', (_0x35f19f, _0x58057f) => {
-    _0x58057f.send("XByte Working successfully!");
-  });
-  app.listen(port, () => console.log("TalkDrove Server listening on port http://localhost:" + port));
-  setTimeout(() => {
-    connectToWA();
-  }, 3000);
+    const _0x4bb169 = {
+      pattern: "cmdfile",
+      react: '🔖',
+      desc: "To command file",
+      category: "main",
+      use: ".cmdfile",
+      filename: __filename
+    };
+    cmd(_0x4bb169, async (_0x29e6a2, _0x4bb616, _0xdbfaad, {
+      from: _0x2b10db,
+      prefix: _0x3369ba,
+      l: _0x1b606a,
+      quoted: _0x24619d,
+      body: _0x8f4b68,
+      isCmd: _0x2e579b,
+      command: _0x1179f2,
+      args: _0x1d6966,
+      q: _0x2e03ab,
+      isGroup: _0x19fab8,
+      sender: _0x36fb45,
+      senderNumber: _0x7d1914,
+      botNumber2: _0xb592a5,
+      botNumber: _0x3c102a,
+      pushname: _0x4832a9,
+      isMe: _0xe51916,
+      isOwner: _0x548e7b,
+      groupMetadata: _0x20527a,
+      groupName: _0x2a4d2a,
+      participants: _0x414f02,
+      groupAdmins: _0x19a05a,
+      isBotAdmins: _0x20111a,
+      isAdmins: _0x8be153,
+      reply: _0x33345a
+    }) => {
+      const _0x465373 = {
+        'aEsEl': "Select menu type",
+        'hrcuJ': "Download commands",
+        'QpLDq': "Search commands",
+        'Dmnxs': "Convert commands",
+        'EgbmM': "Main commands",
+        'iPSal': "Group commands",
+        'HDFop': "Logo commands",
+        'cFXPC': "Bug commands",
+        'BMmrM': "Other commands",
+        'gJzfT': function (_0x128d18, _0x4d0836) {
+          return _0x128d18 !== _0x4d0836;
+        },
+        'szNQe': "gQqWl",
+        'wvrwL': function (_0x110259, _0x13863d) {
+          return _0x110259(_0x13863d);
+        },
+        'YdOHC': "*❌No Such commands.*",
+        'lzDuz': function (_0x37dc67, _0x493f8d) {
+          return _0x37dc67 === _0x493f8d;
+        },
+        'nCoDP': "PrGyd",
+        'jiGkf': "nrKZK",
+        'YtQlZ': function (_0x2f41db, _0x28977f) {
+          return _0x2f41db(_0x28977f);
+        },
+        'dcwIJ': "*Error !!*"
+      };
+      function _0x44dfa3(_0x15debb, _0x383e17, _0x57abb5, _0x278e0a, _0x56dd5b) {
+        return _0x10cc(_0x383e17 + 0x25b - 0x10d, _0x15debb);
+      }
+      function _0x4f6c86(_0x5d0813, _0x3587ce, _0x1592a6, _0xf68f63, _0x579b65) {
+        return _0x10cc(_0x5d0813 + 0x14c - 0x1d1, _0x579b65);
+      }
+      function _0x27f0ea(_0x19e0b6, _0x5380b8, _0x35c81c, _0x5aa433, _0x4dcd98) {
+        return _0x10cc(_0x19e0b6 - 0x166 - 0xf5, _0x5380b8);
+      }
+      function _0x3ca5ba(_0x45fdaf, _0x1234b0, _0x32559d, _0x48f672, _0x3a735b) {
+        return _0x10cc(_0x48f672 - 0x24e - 0xf5, _0x32559d);
+      }
+      function _0x512aea(_0x3e29d1, _0x34f062, _0x212cef, _0xca5251, _0x36f025) {
+        return _0x10cc(_0x36f025 + 0x2d7 - 0x1d1, _0xca5251);
+      }
+      try {
+        let _0x1a6e19 = [];
+        const _0x5585b2 = commands.find(_0xb7989 => _0xb7989.pattern === _0x2e03ab.split(" ")[0].toLowerCase());
+        if (!_0x5585b2) {
+          return await _0x33345a("*❌No Such commands.*");
+        } else {
+          _0x1a6e19.push("*🍁Command:* " + _0x5585b2.pattern);
+        }
+        if (_0x5585b2.category) {
+          _0x1a6e19.push("*🧩Type:* " + _0x5585b2.category);
+        }
+        if (_0x5585b2.filename) {
+          _0x1a6e19.push("✨FileName: " + _0x5585b2.filename);
+        }
+        return _0x33345a(_0x1a6e19.join("\n"));
+        const _0x7ac8a1 = {
+          text: '✅',
+          key: _0x4bb616.key
+        };
+        const _0x5027f3 = {
+          react: _0x7ac8a1
+        };
+        await _0x29e6a2.sendMessage(_0x2b10db, _0x5027f3);
+      } catch (_0xbe9541) {
+        _0x33345a("*Error !!*");
+        _0x1b606a(_0xbe9541);
+      }
+    });
+    const _0x4ce065 = {
+      pattern: "owner",
+      react: '🔖',
+      desc: "To take owner number",
+      category: "main",
+      use: ".owner",
+      filename: __filename
+    };
+    cmd(_0x4ce065, async (_0x3a0a4c, _0x5b3580, _0x482d13, {
+      from: _0x5ce467,
+      prefix: _0x2ab6f6,
+      l: _0x1e2f18,
+      quoted: _0x114770,
+      body: _0x349e6d,
+      isCmd: _0x2f5fd3,
+      command: _0x3f6652,
+      args: _0x5c44c1,
+      q: _0x380b1b,
+      isGroup: _0x5938b2,
+      sender: _0x4466a9,
+      senderNumber: _0x10152c,
+      botNumber2: _0x1e8813,
+      botNumber: _0x5487d9,
+      pushname: _0x957510,
+      isMe: _0x1150b2,
+      isOwner: _0x334144,
+      groupMetadata: _0x3f0235,
+      groupName: _0x2d75c2,
+      participants: _0x49bb32,
+      groupAdmins: _0x37b344,
+      isBotAdmins: _0x559778,
+      isAdmins: _0x2ca350,
+      reply: _0x117ed3
+    }) => {
+      function _0x188cd8(_0x57c553, _0x1fa3d6, _0x157255, _0xf813a8, _0x60ab62) {
+        return _0x10cc(_0x57c553 - 0x210 - 0xf5, _0xf813a8);
+      }
+      const _0x35ae3f = {
+        'ovloU': function (_0x3b8c4d, _0x5a9a69) {
+          return _0x3b8c4d(_0x5a9a69);
+        },
+        'mNppz': "*Error !!*",
+        'AOBsN': function (_0x9aa28a, _0x389540) {
+          return _0x9aa28a === _0x389540;
+        },
+        'nAtgA': "vyNxB",
+        'wkows': "EnMJY",
+        'KlLuO': function (_0x4a9394, _0x44aacd) {
+          return _0x4a9394(_0x44aacd);
+        },
+        'EQlGC': "../settings",
+        'FdHjS': function (_0xbad7bf, _0x3626ef) {
+          return _0xbad7bf + _0x3626ef;
+        },
+        'eFmLA': function (_0x4ec39c, _0x434b66) {
+          return _0x4ec39c + _0x434b66;
+        },
+        'fVTYk': function (_0x6cf4de, _0x503a0a) {
+          return _0x6cf4de + _0x503a0a;
+        },
+        'nNqvL': function (_0x56ba, _0x3ba623) {
+          return _0x56ba + _0x3ba623;
+        },
+        'KWqaU': function (_0x3070e2, _0x68c6ba) {
+          return _0x3070e2 + _0x68c6ba;
+        },
+        'CoeIc': function (_0x325f28, _0x3feb6e) {
+          return _0x325f28 + _0x3feb6e;
+        },
+        'gAVzA': "BEGIN:VCARD\n",
+        'jwfhn': "VERSION:3.0\n",
+        'qNoCB': "FN:",
+        'AzCmm': "ORG:;\n",
+        'RPwWT': "TEL;type=CELL;type=VOICE;waid=",
+        'iWXhT': "END:VCARD",
+        'jHwQk': "Touch here.",
+        'HQzJx': function (_0x19b0ec, _0x3cd7ad) {
+          return _0x19b0ec + _0x3cd7ad;
+        },
+        'uokWu': function (_0x179363, _0x2e30de) {
+          return _0x179363 + _0x2e30de;
+        },
+        'ApLiQ': function (_0x1c4fd6, _0x4becab) {
+          return _0x1c4fd6 + _0x4becab;
+        },
+        'wcHWh': "?text=Hii Hamza, I am ",
+        'BAXUS': "cta_url",
+        'MSBXa': "Bot Owner",
+        'ejYcH': "address_message",
+        'UBUgK': "Send address to bot owner",
+        'JwgTh': "cta_call",
+        'MCdhr': "Call to the owner",
+        'BVrTl': "send_location",
+        'qWeeK': "Send Location for owner",
+        'KvoEl': "> You can contact the bot owner from this section",
+        'dCKtm': function (_0x59a88a, _0x50b818) {
+          return _0x59a88a === _0x50b818;
+        },
+        'KiRuN': "SrXbZ",
+        'uggeX': "DoQtu",
+        'AXcLa': function (_0x5ac7de, _0x2b075e) {
+          return _0x5ac7de(_0x2b075e);
+        }
+      };
+      function _0x59068e(_0x18c49d, _0x54b7b1, _0x15ad08, _0x11f7ba, _0x36606b) {
+        return _0x10cc(_0x36606b + 0x49 - 0xf5, _0x11f7ba);
+      }
+      function _0x56ace4(_0x3ac12d, _0x4ee6ea, _0x598b3c, _0x12caea, _0x317d35) {
+        return _0x10cc(_0x598b3c + 0x1bd - 0x1a5, _0x317d35);
+      }
+      function _0x6da3ce(_0x140d35, _0x3ff96d, _0x37a4a9, _0x133155, _0x22fd89) {
+        return _0x10cc(_0x133155 + 0x455 - 0x10d, _0x3ff96d);
+      }
+      function _0x359d97(_0x515aa7, _0x452009, _0x4ed429, _0x575190, _0x12431a) {
+        return _0x10cc(_0x12431a + 0x455 - 0xf5, _0x4ed429);
+      }
+      try {
+        const _0x167448 = require("../settings");
+        const _0x1a0507 = "BEGIN:VCARD\nVERSION:3.0\nFN:" + _0x167448.OWNER_NAME + "\n" + "ORG:;\n" + "TEL;type=CELL;type=VOICE;waid=" + owner[0] + ':+' + owner[0] + "\n" + "END:VCARD";
+        const _0x2dab3a = {
+          vcard: _0x1a0507
+        };
+        const _0x17136f = {
+          displayName: _0x167448.OWNER_NAME,
+          contacts: [_0x2dab3a]
+        };
+        let _0x349ec5 = {
+          'contacts': _0x17136f,
+          'contextInfo': {
+            'externalAdReply': {
+              'title': _0x167448.OWNER_NAME,
+              'body': "Touch here.",
+              'renderLargerThumbnail': true,
+              'thumbnailUrl': '',
+              'thumbnail': "https://raw.githubusercontent.com/HyHamza/HyHamza/main/Images/XByte-logo.png",
+              'mediaType': 0x2,
+              'mediaUrl': '',
+              'sourceUrl': "https://wa.me/+" + owner[0] + "?text=Hii bro,I am " + _0x5b3580.pushName
+            }
+          }
+        };
+        let _0x25733b = [{
+          'name': "cta_url",
+          'buttonParamsJson': JSON.stringify({
+            'display_text': "Bot Owner",
+            'url': _0x167448.CONTACT,
+            'merchant_url': _0x167448.CONTACT
+          })
+        }, {
+          'name': "address_message",
+          'buttonParamsJson': JSON.stringify({
+            'display_text': "Send address to bot owner",
+            'url': _0x167448.BTNURL,
+            'merchant_url': _0x167448.BTNURL
+          })
+        }, {
+          'name': "cta_call",
+          'buttonParamsJson': JSON.stringify({
+            'display_text': "Call to the owner",
+            'url': _0x167448.OWNER_NUMBER,
+            'merchant_url': _0x167448.OWNER_NUMBER
+          })
+        }, {
+          'name': "send_location",
+          'buttonParamsJson': JSON.stringify({
+            'display_text': "Send Location for owner",
+            'url': _0x167448.BTNURL,
+            'merchant_url': _0x167448.BTNURL
+          })
+        }];
+        const _0x4b1b1f = {
+          image: '',
+          header: '',
+          footer: _0x167448.FOOTER,
+          body: "> You can contact the bot owner from this section"
+        };
+        return await _0x3a0a4c.sendButtonMessage(_0x5ce467, _0x25733b, _0x482d13, _0x4b1b1f);
+        const _0x242179 = {
+          quoted: _0x5b3580
+        };
+        return await _0x3a0a4c.sendMessage(_0x5ce467, _0x349ec5, _0x242179);
+        const _0x42bbbe = {
+          text: '✅',
+          key: _0x5b3580.key
+        };
+        const _0x2bf6ea = {
+          react: _0x42bbbe
+        };
+        await _0x3a0a4c.sendMessage(_0x5ce467, _0x2bf6ea);
+      } catch (_0x1b2f74) {
+        _0x117ed3("*Error !!*");
+        _0x1e2f18(_0x1b2f74);
+      }
+    });
+    const _0x30a481 = {
+      pattern: "request"
+    };
+    function _0x11392f(_0xb5e636, _0x37f1cc, _0x555fb9, _0x306259, _0x16380e) {
+      return _0x10cc(_0x306259 - 0x10d, _0x555fb9);
+    }
+    function _0x10cc(_0x5baa90, _0x5774a9) {
+      const _0x6f226f = _0x138f();
+      _0x10cc = function (_0x348b9d, _0x2dd28b) {
+        _0x348b9d = _0x348b9d - 339;
+        let _0x2e0152 = _0x6f226f[_0x348b9d];
+        if (_0x10cc.GXsoVC === undefined) {
+          var _0x556bcf = function (_0x8b7e73) {
+            let _0x4d55dc = '';
+            let _0x581e13 = '';
+            let _0x1f8478 = 0;
+            let _0x53a56a;
+            let _0x2b5b88;
+            for (let _0x4ca048 = 0; _0x2b5b88 = _0x8b7e73.charAt(_0x4ca048++); ~_0x2b5b88 && (_0x53a56a = _0x1f8478 % 4 ? _0x53a56a * 64 + _0x2b5b88 : _0x2b5b88, _0x1f8478++ % 4) ? _0x4d55dc += String.fromCharCode(255 & _0x53a56a >> (-2 * _0x1f8478 & 6)) : 0) {
+              _0x2b5b88 = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/='.indexOf(_0x2b5b88);
+            }
+            let _0xaf39ad = 0;
+            for (let _0x5ace63 = _0x4d55dc.length; _0xaf39ad < _0x5ace63; _0xaf39ad++) {
+              _0x581e13 += '%' + ('00' + _0x4d55dc.charCodeAt(_0xaf39ad).toString(16)).slice(-2);
+            }
+            return decodeURIComponent(_0x581e13);
+          };
+          const _0x56830f = function (_0x4241c7, _0x6293dc) {
+            let _0x5ccfe0 = [];
+            let _0x2a9cde = 0;
+            let _0xde2c81;
+            let _0x3109b9 = '';
+            _0x4241c7 = _0x556bcf(_0x4241c7);
+            let _0x83173c;
+            for (_0x83173c = 0; _0x83173c < 256; _0x83173c++) {
+              _0x5ccfe0[_0x83173c] = _0x83173c;
+            }
+            for (_0x83173c = 0; _0x83173c < 256; _0x83173c++) {
+              _0x2a9cde = (_0x2a9cde + _0x5ccfe0[_0x83173c] + _0x6293dc.charCodeAt(_0x83173c % _0x6293dc.length)) % 256;
+              _0xde2c81 = _0x5ccfe0[_0x83173c];
+              _0x5ccfe0[_0x83173c] = _0x5ccfe0[_0x2a9cde];
+              _0x5ccfe0[_0x2a9cde] = _0xde2c81;
+            }
+            _0x83173c = 0;
+            _0x2a9cde = 0;
+            for (let _0x23389d = 0; _0x23389d < _0x4241c7.length; _0x23389d++) {
+              _0x83173c = (_0x83173c + 1) % 256;
+              _0x2a9cde = (_0x2a9cde + _0x5ccfe0[_0x83173c]) % 256;
+              _0xde2c81 = _0x5ccfe0[_0x83173c];
+              _0x5ccfe0[_0x83173c] = _0x5ccfe0[_0x2a9cde];
+              _0x5ccfe0[_0x2a9cde] = _0xde2c81;
+              _0x3109b9 += String.fromCharCode(_0x4241c7.charCodeAt(_0x23389d) ^ _0x5ccfe0[(_0x5ccfe0[_0x83173c] + _0x5ccfe0[_0x2a9cde]) % 256]);
+            }
+            return _0x3109b9;
+          };
+          _0x10cc.JNHAFv = _0x56830f;
+          _0x5baa90 = arguments;
+          _0x10cc.GXsoVC = true;
+        }
+        const _0x11eb2a = _0x6f226f[0];
+        const _0x3ad4bd = _0x348b9d + _0x11eb2a;
+        const _0x3e5735 = _0x5baa90[_0x3ad4bd];
+        if (!_0x3e5735) {
+          if (_0x10cc.TqZvVN === undefined) {
+            _0x10cc.TqZvVN = true;
+          }
+          _0x2e0152 = _0x10cc.JNHAFv(_0x2e0152, _0x2dd28b);
+          _0x5baa90[_0x3ad4bd] = _0x2e0152;
+        } else {
+          _0x2e0152 = _0x3e5735;
+        }
+        return _0x2e0152;
+      };
+      return _0x10cc(_0x5baa90, _0x5774a9);
+    }
+    function _0x138f() {
+      const _0x4e279a = ['WRL5W4ZdOCkk', 'maFcKSkIW7q', '8jkdPokdQpgfG4q', 'vCkse8kYwW', 'WPVcV8oAvSkN', 'WRXOkCogya', 'WPnTCG', 'W4FcICoqta', 'nUkxLN7cPra', 'WRdcT8oTDmk2', 'W5iAamkpFa', 'hCkof8k5', 'wef6WQRdQW', 'zSkfk8ovrG', 'o8kYWQ3cLh4', 'dCkwWRFcPMu', 'W7KYDG/cUq', 'Du3cQ8kvW7q', 'hmkgdCkJnG', 'hZzyWQVdMa', 'WRhcSSkWugW', 'hCkxW55RW4C', 'WR3cSSoQ', '4BECY7lcMUg2JmUy', 'WP/cO8k8BYK', 'WPxcUW/dVuS', 'rSoIeWddKa', 'sCo6rCkJxa', 'dqe/W4nu', 'W4qprJpcRa', 'fxVdPCoyFG', 'rmogha', 'kh7dUW', 'WOFcRCk7BYi', 'W4vzFW', 'WPBcL8k7EIS', 'gmkuW59YW5a', 'W48tW7K', 'bWRWSigBnuq', 'rCoTWPhcNrO', '4BseY7Oj4BwsYzS', 'W5FcH8k6fG', 'sr/cUCkOW74', 'm8kvCmkGfq', 'CSoEWQRcVc8', 'frHkWOBdLW', 'oWNcLmk4', 'W4L+ydHG', '4PEy4Psb4PwA4PA24Psm', '4PEj4PAF4PsD4PsD4PAC', 'jX3cLmk1W7O', 'WOVdImoovmkn', 'hwNcJSkbW4K', 'W6FdV1riWPW', 'W6/cOLvBFW', 'ju8GfIu', 'WRVcQfPb', 'WPxcMCowrCku', 'sI0yvmkx', 'vCkIW6rpzG', 'daarW7LM', 'nXZcJSkxW6e', 'CGlWNycNW5VcTW', 'ASosWOZcMG8', 'W7BdPg9IWRe', 'WO3cRINdGhG', 'hCkdcSoTiW', 'xmo/W4xcGaW', 'WR4cW47cQdK', 'W6ddOwHuWQu', 'FCk0W4ddT2q', 'EutdS8ohsG', 'a0JdImogqa', 'mYvAEmkJ', 'jCk2WQ3cLbm', 'C8kTW4HloG', 'WRWlW7emWO4', 'kc4jW6zk', 'WPi7W6P1Da', 'ib0oW4PJ', 'W5hdK8k2uCoU', 'W5fkyZjn', 'ACkBtSoshW', 'pCkKWQy', 'emkCW4m9W48', 'WR7dH8oywSk9', 'WPVcR8omDCky', 'WRThaSoMtW', 'AmkYW45/yW', 'WRfYESoFFW', 'WRSgycRdOa', 'WPfOcCoowW', 'sSk/v8oVpa', 'bCkoaCkQiW', 'eGzk', 'WO4txIddQa', '4Bsa4BAx4BsUYQ7kUq', 'WOFcHCodESk7', 'Dmos8losSmoMW5a', 'W4KnBr3cUa', 'xSkzW549W40', 'vpgbPzLjW5VdHq', 'cWS0W6Lf', 'WPDX8j6yRFgjRQ7IGz/IMBdVUQtcOSkL', 'fe3cS1C2', 'WR05AX7dUG', 'W4BdLSkjdW', 'tSkxyCodW7C', 'eSoy8lslVpcwN4JIGzxIMR7VUldcVYu', 'ntbUWQVdTG', 'iutcOh8r', 'WQ4ZFrVdJa', 'AmoWkWNdHq', 'WPXpWQiieq', 'W7m/DW', 'WOLKsafz', 'WQiHW7KPW5W', 'BYldVmoQFq', 'qw/dUSk5', 'WOKabImy', 'AmkLWQBcG0m', 'AeldSW', 'l8kjpSkddW', 'kar9WQhdGW', 'WRSyv8k3wa', 'ngfNW5ddNG', 'WPlcLCkjxfm', 'k0jAW7pdRG', 'jcHOh8kA', 'WRvypSoZqa', 'sW4TW5XV', 'eCk8hmo6dW', 'E8oIW7tdHGD+c8k6WO0iWQldNXa', 'WRaiW53dUJy', 'WQTfatGC', 'W7hcOmkngSoh', 'nVgkMO/cPwtdNa', 'qSoIWOdcM18', 'WOqPqGxdOq', 'W7efW4C3gW', 'rqtdTW8xW4PDW4jhWOy', '6P+r4BwaYiSN4Bsa', 'W6VdQ2FcHYW', 'vfr7', 'WQqMW7aRW5W', 'W5iR8kM7SFcCJ4hIG5JIMlBVUPZdI0q', 'Dg/dJmk6kq', 'aqaDW5XS', 'zqjGmSkX', 'W74IW7GWfa', 'hYWUW6PM', 'CCkJwmo0W4O', 'W4hcO8kKCJO', 'WPVcOGjgCG', 'tSojduBdPW', 'WQWHW55FDa', 'WOLUyZvy', 'WPhcQJxdLgK', 'zqxcVw5t', 'jXDT', 'zLFdPXy', 'f8o3uCo+tG', 'y13cUmkSW7G', 'W73dUCo1EmkZ', 'ua1ajCo0', 'uSkfsq', 'cXPiWOC', 'qZDMa8ke', 'AvKFtmob', 'W7FdSEkwSEkuTEkuGG', 'zvxdQ0ldLa', 'WQOMW6qRW5i', 'BsiGtSo+', 'W4xdGuHqWRq', 'jrZdKW', 'bCkeWOhcQfi', 'wCoHWP3cOdi', 'btn7WOhdLq', 's2xdGSoQFW', 't8kPtCoCW4S', 'r0NdLmo2tG', 'yvNdObZdNG', 'WQNcPe5qDa', 'W5vXEcPv', 'ECk4W4mscq', 't8k+W7JdTM8', 'W4pdQSk5jCo7', 'yeJcQW', 'W6FdTx9iWQe', 'lEkuOokwVEkxTUkvSq', 'W40DxZ/dRa', 'xHifcCox', 'BrzD', 'W4ZcG8kJgmoc', 'W69CWONcV2FcG8klhx/cLdTuFW', 'WPZcP8kMFWe', 'Yz3HTyNQNz0x4BEN', 'W7VdVYa', 'WRNdN8owr8kn', 'fe1NW63dQW', 'xIijrCoF', 'WRtdHCoBBCk6', 'FbKecCob', 'qt8DC8kC', 'WROb8jUONVcEVQpIG6tIM7xVUO5+CG', 'g8kxu8k8gG', 'W6RcPmkznmo/', 'WPNcI1VdVSom', 'W6q/W5RcV8ob', 'jCkoWQFcTx8', 'DmkxW4pdNfe', 'W78HW4ddVmks', 'hSk8xCoRna', 'W4VWRkMAj1rP', 'lgZdOCoRlG', 'WRn2o8ofAW', 'WPjif2SF', 'x3hdLSo2yW', 'WPvyqYze', 'tSkeuq', 'WQdcS8o3DCk0', 'WPeub8kvCa', 't8oMgbddIa', 'W7lWN4cY8lkVSokaT/gkI7tdKmoXwG', 'aseMW75q', 'AmkKWQBcG0a', 'WR04BaVcTa', 'j2zCW4FdNq', 'W4ZdL8ouqSkJ', 'WQRdGCo5wmkT', 'dmkfg8oHDW', 'BudcOhXf', '4PEt4PEw4PAz4Psr4PEr', 'WOirxIZdPW', 'WOTfhd8u', 'W43dGCkd', 'WRRcPCoT', 'kmkmjSkhnG', 'WP8tAtJdKq', 'W6eLW5pdOxC', 'wSkzvSo0mW', 'WO0PW6eRW5W', 'WOJILRhXGyA14Oka4PIL77UlAmkb', 'ALhdObW', 'DfBcQW', 'cSkyWPFcVMy', 'fZqVW5L1', 'z0ZcON5F', 'fquQW4DK', 'kKtdRSodvW', 'DSk7Fmosmq', 'WQpcT8oTzCk0', 'W53dSFgiKPHgdW', 'WQ7cOu4', 'A8k1ESodW58', 'ySkYxmoWW5e', 'W7JdTwbi', 'uSkqdCkVoG', 'De/cPf1I', '4Bs1YjpdHEg3RCUW', 't8kjFSoy', 'yqDgoCk/', 'W40pvJ7dUG', 'qSojgrldRq', 'u8obtW', 'FokuMokxVEkxLUkwKq', 'jmkUW4GxhG', 'WPCQbmkeDq', '8k+APmoJ8ygASpcUUy3dTa', 'BSk4W54v', '4BEV4BEn4BsOYz/kMG', 'FmkDW4pdJ2q', '4PAI4PAZ4PE64PwS4PAn', 'DSk1xa', 'cCoS8jglKpcWRjJIGOJIMlpVUilcH8kA', '4PE7j8kf8lYHPUkdVFcSS71k', 'gSkDW4n+', 'WOpcP8kMFdG', 'jmUQ4BsM4BwkW7q', '4PsB4PEx4PAG4PsB4PsU', 'CriqtCoq', 'WQRdTWGv', 'trisqCkA', 'YyhHTiBlMUQEHYW', 'YR7kSmoT4BEB4BAC', 'W5zh8lg7J/cQVy7IGRtIMkBVUkRcGIC', 'ecFcSSkcW5q', 'WRa8W6mHWPi', 'd1JcPL0T', 'CSkKWObYxq', 'o8k0W492qW', 'qglcT8oiuq', 'WOWsrXldVa', 'u1dcOLaS', 'dFcqOQxXJ42N4Oc28k64GLJdRrq', '8ygJOSkAAmknhG', 'z0BdR8okgG', 'W51kFt09', 'WP9evb9Y', 'yeVdOHZcMW', 'p0JcV8k5W6u', '4PsiW73cJvBILAW', 'kWuoW6vV', 'W645WPFcPCog', 'WPvSFW', 'WRnZfGOf', 'W6FdTw9EWRa', 'lCkZWQRcHa', 'faXzWQ3dOW', 'W4RdNmkjgmoJ', '4PEx4PEB4PEC4PE64PEn', 'W6/ILlJILPFILy7IL7W', 'cHrOWQxdPW', 'aHTA', 'lu/dM8owbq', 'W43cNSkWimo+', 'rvdcQCk5', 'WONcVZpdL38', 'lmkSWPbqW6C', 'WQ5aW5hdRs4', 'WOJIL4pIL7RILAZILO0', 'pq4VW4fv', 'WRlcTCkP', 'qSo98y+HNxCR', 'W7RcI1FcVCor', 'YkdjRblHT4xHTR0', 'F8o6WO7cSZC', 'i11r', 'WRbKESoHza', 'gqBdNCkzW6q', 'WPRdJCoEuSkn', 'ohhcQfOr', '4PwU4PAO4PE64PEd4PE1', 'WOKUW7LJia', 'cIv6WQtdOW', 'ECknf8oCAa', 'WPKUW6z3Ba', 'WO53CJXz', 'jq3cNmkKW7i', 'W4ZWL5QJAYLD', 'z8k8W4msta', 'B8ktW4tdJWu', 'C8k6mSoSxG', 'WQBcPtKlW7dcS8ovW6NdRwJdVZHE', 'CvdcVxm', 'EI0PtSkS', 'WQ3cLSkgtH4', 'sSkBW4ddV0K', '4PEFtLtcJse', 'WO9tbG', 'umkdEmofW70', 'cgrKW4ldUa', 'WPpXH6UJW77dRSo6', 'WOLscW', 'WQ7cOqjwyW', 'rCoKv8kLxG', 'umkvW5vZW5C', 'W6xdVmoOmEkuOq', 'WR7dP8oVsCk5', 'qdWyxSkq', 'W4eQW7Czja', 'i8klFmozW6S', 'W6NcIhxcNCoq', 'F8kWW48ydq', 'jCkKkmkcDW', 'AuJdRmodwW', 'WOldKSkutmoI', 'W5vfzG', '8lgAQpczQk7WNkISW4NWSkU/', 'zSkYW4Oz', 'kwJdRSoRAW', 'zSk6WQBcNKy', 'D8kfW4pdNLC', 'WOZcMmoyxmku', 'W6/dQSkDkSoF', 'iMldOSkGwa', 'BabimSkX', 'vCkshCoWha', 'WOTbhc8X', 'WQfXpW', 'AutdVSkzha', 'W5JcJLC', 'daK7WOKR', 'WRrui8ogEG', 'tCo2sSkGDq', 'yUkwP+kxG+kxSokuSW', 'WQtcVmowyCkb', 'pCkqvCockq', 'WQTHpa8U', 'W4RcHLZcUSoF', 'W4FdGmkjdCoQ', 'WRPUlSkwFW', 'WQ5nWPVcQx0', 'xKJcOCoAwW', 'k8kwsuZILOy', 'uSo4uCkQxq', 'WRHHoG', 'umkdW6NdRLu', 'p8kgW4/cVaW', 'DbbApSkA', 'W55MW7ddQmks', 'WRKiW5tcQde', 'BCkbW4G', 'igJdJmooEW', 'W4mtW74EfW', '4PEf4Pwi4PAxzmo2', 'wNxdJCkSha', 'wJ8ZwSkA', 'WQpcUHBdQ1G', 'gvNcHfe0', 'lmkYWRdcK0e', 'jqjGoZK', 'W6S4zrJcVG', 'W4W8WRBcV8oJ', 'guvS', 'zmoYu8kpFW', 'WRFcR8khBX4', 'jexdOmoa', 'WQtcVSkO', 'W7hdTeHyWQK', 'W4OfW6myba', 'Y6hHTk/kIEQEU8k/', 'jCk2WQ3cLh8', 'z8kPv8oJW78', 'v8k4W4n6wG', 'W5nCgEkvJ8kP', 'bxRdH8oMFG', 'z13dTW', 'WO7cV8ktFue', 'rComkGNdQq', '4BA94BwN4BAjY6piHa', '4Pw68jwNKokcH+kBNE+7NCk6dh8', 'WQn7lUkvQmo6', 'o8o3WOdILjVILk4', 'W6KpWRhcOSoF', 'g8k1CSoroa', 'W68dydRcMW', 'WP/dRmkMFJG', 'qCoKWOdcHW', 'u8ogWO7cKcK', 'vSktu8oOha', 'fCopWQ3cQde', 'b2VcOSoGW7i', 'WPD/AdqC', 'FmoCWOpcLq', 'W53cHL7cRCoF', 'WRCyW73dPtW', 'ANtdUb/cTa', 'WOJcHeXGsW', '44oRB+kuG+kwJ+kwIa', 'WRSFW5xdVsC', 'xSktu8k8eW', 'rmoBgGFdOW', '4PsX4PwR4PA64Pww4PsY', 'W4hcL8kuhSoa', 'WPSgv8kiAG', 'W5xdICkTnSoF', 'mbHAWQldKW', 'W5tcHwhcT8o9', 'yH91oZG', 'j+kvJEkwVEkxTUkvSq', 'zetcO2Gr', 'dK7cOuS1', 'omk2WRFcHfy', 'vmkGW45+xa', 'mUkwGUkwREkwU+kuPq', 'WPf7FW', 'WR8WoCk0', 'yVgkQjldKgCM', 'WPruuIKs', 'C2/dLmoABa', 'oSkwFCoFqq', 'Au/dK8kcma', 'e0DWW6/dVq', 's8kxsCoOea', 'ySkFW7vVEa', 'rCkqW5KxlW', 'cXT1WQBdPa', 'lqhdRCoQW5y', 'xJ9ciSk5', 'WONdK8onCmkT', 'B8k+W5r3sW', 'fCk2uCo2aa', 'jh/dU8oIAW', 't8omsqRdRq', 'W7hcG/cXSO3cRbC', 'D8kVtCo7W5S', 'WPZcP8kMFYK', 'W5qbW6mBhW', 'W4JcKSk5fCkn', 'mtrLWQhdSa', 'WP8zuI7dVq', 'WP/cUVcCSPdcGmoM', 'bmknW75/W7G', 'W5FdGCkw', 'W5ifW7ul', 'WQXk8lYdKJtdGa', 'ib00', 'fGeWW5Dd', 'EvpcRW', 'Fr82xmkv', 'FmkYW5q', 'f19NW6/dRq', 'WOyHW4ddIZy', 'WPvmgs0q', 'Y6/jLHZHTOdHTAy', 'ktTohr4', 'W5ZcKvFcUmov', 'tr8ucCoy', 'tLlcRmkNW74', 'xmkwW6WacW', 'gCkkg8k5mG', 'W5W8WRBcKSod', 'itD0WRK/', 'WQlcPfyvDq', 'W4RdLSkBcmoO', 'WQBcJmk5ueK', 'sZpcR8kL4PwJ', 'W6i+WOm', '44corEkwOEkxNUkvNa', 'mZlcR8kzW58', '8jMsUCknW7naxW', 'WOhcPSoODYu', '4Pww4PwO4PE94Psz4PwE', 'xSkzW7u', 'W4tcN8k+emoE', 'W78PWPVcTCog', 'WPjXDsrs', 'W7a08j6ZVxJdTq', 'AK3cQuTx', 'W7iPFq', 'WOPzcmoKAq', '8j6kPVcYIOVWOyMv8lo6O00', 'm1ldL8o2', 'eCkWwSoI', 'AXDq', 'nd1SWOhdQq', 'jXNcK8ksW5a', 'qsKnu8kA', 'W4RdK8kJgCoi', 'WQq0W7JdUa0', 'WQ7cPYBdQL4', 'W6CJqG7cRG', 'W4FWOjUIBCoDmq', 'fvuoW4NcIa', 'EHyftmos', 'WRdcOSo4tSkY', 'mbxdTYj6W53dGCkaBvW', 'hCkqW4nwW7i', 'W6FdO8kVjSoP', 'WPNcJv3cQq', 'EmovWPpcIJq', 'CmkLgCkTWPq', 'ESkTW4SFcW', 'sSoXpa3dTG', 'tSkhCmozWP4', 'C0dcR3Hf', 'WRX2briU', 'WRVcUuTBFq', 'E1GsrSoy', 'FWdcNmoxwW', 'BKJdNmkema', 'dCkDW555W4C', 'ja3cNmk1W6u', 'mYX/WRNdPq', 'WOxcNvzHCq', 'A8kJwmoZW5S', 'W68+DaBcSW', 'WOKzqc4', 'oxPkW4lcVW', 'EHGCrmou', 'umknhmoTFa', 'nubOW4/dIa', 'D8k4W4LmDa', '8yQBRSkA8l+BLFcWI43WPjMy', 'WR/dLxXpWQS', 'WOKzv23dVq', 'umoTWPBcJf8', 'CCo8v8koyW', 'vmoBda', 'yuvAm8kN', 'WPLremoXDq', 'WReTW686', 'dK3cQ1CT', 'DudcTM8', '4BwiW7FHT47HT7ut', '4Bw4YRCP4BAoYja', 'WOyjW4uk', '8y6hRE+6MgddKMC', 'q8o2umkHxG', 's1dcPmkxW4e', 'yCkxW5uGbG', 'cv7dMSo/zq', 'W4NdLSkOpmoS', 'pHDNjZO', 'tmkpESosWOu', 'aqeTW5a', '4PsJ8lwMSokbQ+kBHU+6HJRcTIC', 't3FdGcZcVW', 'hSk2t8oVdW', 'BSkMW4zYtW', 'WRvmqwOh', 'W6K+Fb4', 'iCk5WOJcM3a', 'WPhcQJpdK2K', 'vIbOfCka', '4BwMW4VHTBtjKEg1Ka', 'dCkmWP4', 'vmkera', 'qcP+gmky', 'fCkDW4K', 'W54ussFcMW', 'WOPRDtG', 'B0NdTa', 'W7XHFqff', 'FCoiWOFcMW', 'fsFcSmkBW5a', 'W6FcSc8CW64', 'c/c1MRHgW5ddOq', 'AXGer8or', '4BsjYRZlICQC4Bw1', 'WO3cN2nsCG', 'WRn0DW/cQq', '4PET4Pw84PsZz8kd', 'WO3cPca', 'DCkxW4pdJG', 'y8kYW4nwcG', 'W6FcPSkquCoG', 'g0DKW6FdVG', 'rmkzW6fwAW', 'WOyzsG', 'DSkYW410xa', 'W5BdGCkpcq', 'WPWhpmk7uG', 'WRBcPCoQCmk2', 'ySk0wSo/WP4', 'FKxdMq', 'BgtdTmoeFG', 'bCkPumoYfq', 'WQ07W7xdPW0', 'yehdK8kspq', 'W4NcJLFcSmop', 'YPJHTkljJUQCQHe', 'ge/dRqr5', 'rf7cVCk0W7i', 'W7zSwXbn', 'amo38lsdMYJdHG', 'iCkCn8kVBG', 'WRtdVCoYzCk6', 'bdLXbrq', 'zJDMidK', 'k8kc8kwiOFc+JBlIGjFIMQFVUA1rWOy', 'emkWumo+dW', 'tConbWhdSa', 'gaDsodC', 'W6/cJM14vW', 'yw7dOmoIyW', 'WQWyW4NdOa', 'u8oYsSkGEW', 'W7BWPios8l2oQ+kcUpcXI6rMWRG5', 'W4VdG8kobCoI', 'WP8ugCkfoq', 'YAfHWQTxYP8', 'W6aTWPtcSSo+', 'BWbq', '4PsP4Pwm4PwS4PE44PsW', 'WOFcQJBdHxS', 'W6mGWPhcMSoQ', 'FricsG', 'WO4IW4iuWPe', '4PYIyCoOW4jF', 'WOS2wdtdNW', '4PEC4PwT4PA64PAi4Pwx', 'WRxdTSo6y8k0', 'B1NdVGZcLW', 'pdn4oGu', 'yKtcUN5w', 'WP3cO8kGtWq', 'oSk6W7NdMHm', 'W48AWOJcGSoE', 'mCksW5jPqq', 'zw7dIJ/cIG', 'sSkvfmomyG', 'WODefJKy', '4Pse4PwL4PsP4Pww4PEu', 'mFgkO4JWMB+s4Okt8lg6U1pdJMC', 'W5BcG8k/aSop', 'EfpdLSoOqW', 'ELldSSog', 'B250W7TO', 'jmoYW54thW', 'kYanWPKl', 'WOhcPSoMnwi', 'td8FvSky', 'qSk2W4O5ha', 'W73cR3xcQSo7', 'q1dcO8k0W5O', 'qCo6qq', 'W4ifW74C', 'WPCEW5JdKHG', 'W7tcSSk4k8oG', 'gCkEhmkL', 'nX0crSoB', 'jrDFWRZdOa', 'EmonySkPuq', 'WRNcQ8kX', 'WPXkDarg', 'b1NcQmkHW68', 'zvxdICkshG', 'zSkYW4O', 'sL7cO8kKW5C', 'WQxcO8kVDGa', 'W4RcKblcT8ou', 'bCkTtSoYdW', 'WO0GWQS', 'bGuQW5zM', 'hSkPBSoSla', 'WOlcNSoHymkh', 'WRZcVSkL', 'W7VdH8kRamox', 'p8kDhCkSdW', 'yfxcVNDy', '4PA7d8oe8jMHMEkcVVc/KA4v', 'WRSHW6JdVJq', 'WO7cVZtcH34', 't8kzE8o1dq', 'W4xXJ7kWo/cUMOBWNyQq', 'nCkZW49Sqa', 'qCksD8ocW6W', 'WOebwq', 'vu3cU15g', 'YAlHTQ7iUUQCKCoi', 'g8oyW4D8W4S', 'W4VcHKlcSSoB', 'ECkIC8ojjW', 'CutcUM9u', 'WRtcTmodvSkj', 'hmkBg8kKoG', 'jrXZCJW', 'wSkXvSo6mq', 'W4tdPmkdbCoJ', 'ESkWd8ooCq', '4PsU4PEO4Psf4PE344g7', 'cGO7W5Dl', 'rSobdX8', 'DComkJ/dIG', 'WQVdJmoTzmk7', 'WQD1jGqI', 'xSkfsmoWaq', 'oab9pW', 'WOdcSmkX', 'umorkHFdSa', 'WPJdM8oFrmkB', 'Dmk6W416qa', 'Y7/HTPtHTi7kOSoK', 's0ZdVtVdJW', 'v8kzwG', 'W5lcP8kbgCoi', 'bmkcaSkOiW', 'W5hcVSkekCoB', '4BsBYyJcGog0N8QH', '4PEt4PEw4PAz4PsrW7S', '8ksjIxtcUt/cPG', 'nWquxCox', 'W43dH8oDh8kT', 'e8kzW555WOi', 'W7xcN8kYemoE', 'W5ePAdNcKq', 'WP5byZ4', 'WOygW6qtfq', 'rCoLqCkIvG', 'CcCIsmoz', 'zSo8e8k3', 'sSkbW6/dNeK', 'qcaj', 's2XFW4ddPSkMW5q', '44cjW6BILRhILixILkW', 'WOjemsqq', 'W6hdQfzfWOa', 'W5ddLSkBd8o5', 'nXOqqmoB', 'W5xcKSkJbCoi', 'WOZcO8k8FIS', 'e01W', 'WPe6W7HV', 'WQGeW47dPdi', '4Pw44PsOi8kaWPu', 'WQhcS8oPFG', 'WP4zuJ/dQG', 'WO8jvcddRa', 'tmk5W6uCpW', 'pbnGjJm', 'WRqiW5VdRdi', 'W7hcHxNcQmod', 'tSkwW4ZdMK0', 'ebC7', 'W78UyW', 'WRdcOSk5zCk5', '8lslR/giQyxWTOI/j10', 'W7ldGMjnWOa', 'W4SbW6qrhq', 'WO0KW58nWO8', 'i1HEtSoC', 'W7xdPWi', 'zCkRW4ezoq', 'W4ddICo9uq', 'jX3cKSkIW7q', 'hvT6W6VdUa', 'lXnKjJ8', '8ksPRpcwQ57WTBUPWOxWNOIH', 'lCo3WRFcNXm', 'FW0MFSkT', 'oCoOWP9fxmkqwCk7W6D6W5pcSee', 'W5bBDcjt', 'WQNcOK1bFW', 'zSk4WRFcMfy', 'WPntfW', 'jmkMlSkdeW', 'BCoVgWddTW', 'WOWQW6zOCG', 'y8kUWO0FhW', 'WPSgaW', 'WOu2emk2wW', 'vSogdbtcPa', 'jGNcICkIW7q', 'F1lcGSk0W4K', 'oqfX', '4PA7W4msW77ILRO', 'WPqCg8keDW', 'WPlcPSooySkt', 'WO/dI8oRvSkh', 'WODofJG', '8kElGFcMQ6pWQkQUnSkh', '4BwmYyVkT8QA4Bs3', 'W5hdH8kibCoJ', 'mM7cR8k1ja', 'AfBdRNjc', 'ACkNoW', 'nqNcICkZW7y', 'C8o/mdhdOW', 'w8okWOVcIbW', 'AaatDG', 'wSo7WOVcJa0', 'tsKFvmkn', 'pXDG', 'xepdI8oHDG', 'W5XAbmkeAG', 'g8klW4n8W4u', 'WPXKnSotEa', 'W4eIW65QyG', 'WPGLFaFdHG', 'yehdK8ksuq', 'W4NcLSk5fSoz', 'W4ZcGmkJ', 'nsepWQxdPW', 'kSkgiCkRaq', 'WOxcSCoPoM0', 'WRzLDmkyiG', 'smowvmoVvq', 'WRFcSSoAFSk8', 'uSklW4VdOxy', 'ySkTW78biq', 'cqvcW4JdKG', 'pXVcIq', 'WQtcUmo8y8oX', 'c8kSW4/IL6VWOjsP4OgG4PIt77I5', 'rJ4v', 'lCk5WRBdKeC', 'Be7dRColva', 'z8kIESo4W5m', 'Fq7dNSkzha', 'DSkewSo9W70', 'eGO7W4e', 'WOH7DJXf', 'i8kphSo6WP4', 'W5FcNmkIh8oj', 'aKldGCoBtW', 'uSonbWldIq', 'WQuKj8kwya', 'WQJcMFgbUkVWVj6C4Ooj4PIk77UdwW8', '4PwP4PER4PwV4PEn4Pwx', 'WPTYBZfp', 'vCoLsa', 'k8kLWQBcLea', 'kKBcOCodxW', 'BIaMwCo/', 'WQ1ZeSoVqq', 'W40/xcddPa', 'W4joCJPZ', 'iqxdRJSr', 'fqDUhXG', 'ivhcPN4r', 'zfpdIq', 'dCowWPbjW4O', 'WRjpFbPe', 'DL07jJm', 'CSkZW7rEAW', 'lgZdOCoRqG', 'WRrmhJSP', 'heXkW6xdSG', 'deCPW77dTW', 'BfNdOSkcfa', 'WONdGmoDsmkC', 'WRFcRmoDzSkM', 't0ddO8odDW', 'heD+W6tdSW', 'B1xcOCopva', 'WPi7W7LUBG', 'W740AqFcUW', 'rCongGxdTG', 'cW/XJlMC8joDIokcJEkAL++4UNZcIW', 'W55JzX1Z', 'EKBdTCoAxW', 'evH9W6pdSa', 'WPZcMSkLxXG', '4BsN4BAqYzddPoQCIq', 'W5JcMNZcV8ox', 'fNFcQxOi', 'fsFcS8kaW5q', 'ASkxW4ZdMfe', 'AgeHC8oF', 'W7hdV2bjWOu', 'uCk+W4jEqG', 'WQ4QW7i8WQ8', 'WQTSpvlcTXm+y8oaWQi', 'WOiua8kvFa', 'WQhcS8o4CSkL', 'WOJcUZpdJMm', 'ESk4mCoQqG', 'WOVcPSklDce', 'lXLNWQVdKq', 'W7a6AG7dUG', 'kwVcRKK7', 'W6/cMuPqoG', 'eFgcSzxWUi6j4OcY8lIyItFdVWy', 'vSkonmovFa', 'W4BcKSkJfmok', 'W7VcGwtcL8oI', 'gSkBa8kKiW', 'oWrMjrO', 'W54qvW', 'W4hcG8kA', 'WQxcTmoEFCk4', 'zMVdVt3cTa', 'W7egxH0', 'zuVdUG', 'YRdHTyVlRoQCHSoF', 'WRNcVSkUfwe', 'WPD/AdrW', 'lLJcPKW6', 'W5ZcKxhcV8oj', 'h8ojWPFcMXa', 'aWytW7Tc', 'W6VdOFcUOiPiWP8', 'F8kBW4VdGG', 'jbDMpt0', 'r2ZdQrVcIW', 'W4eUW6yN', '8yEaP+kcHVcEORS', 'lKxcI3CZ', 'W5tcHLZcQSot', 'WReJW4RdUc0', 'B8o5WO41ba', '4Pw24PEz4Ps84PAB4PwH', 'jmkddSkiaa', 'cCkBW7HkW4O', 'fuLGW6q', 'xSkzm8o3Fq', 'mmkdEW', 'vXG0q8oE', 'WQBcNeTZBq', '4Psk4PED4PAT4Pw24PwS', 'bGWWW5PI', 'abNcOCkeDW', 'WQhdTSk4mmo7', 'WQ7cOuTuAq', 'WO4eW5OaWRm', 'CWramSoP', 'WObpicCi', 'WQBcQ8kIEdG', 'W6/cPMdcJCoZ', 'F8k7mmoZvq', 'WP4Zb8kdAq', 'WRdcUCo0FmkW', 'W6KtW44tga', 'W5nFmY1O', 'rJWjf8kq', 'WPbcomoxEG', 'DSkaASo7ja', '4Psb4PsL4PEo4PEu4PE+', 'DXFdOwHu', 'cHyQWPKl', 'BN7dMHhcIq', 'sL7cPmkU', 'W7BcRN/cN8o0', 'BvxdQW', 'WR7cUe1bFW', 'WPyqbmkc', 'WQWLW7yPWPK', '4PEYW73dICooeW', 'W7j/xqXv', 'sZKyq8kq', 'eSkDW556W5y', 'qmo/WOa', 'W6xXJigk8jkFPUkcNpcOUylcQCktBW', 'i8kGWQlcG1q', 'mqT+W5bU', 'tCo2sSkGgq', 'Et4RtSkB', '8yAXIokbV/cTO4y', 'W6SQW6iPWPe', 'W5hcK8kkbCoJ', 'WPtcUci', 'dK/WLyo7WPaf', 'WQu+FYZdVG', 'WOZcQI7dIq', 'WRrKnmorEa', 'gSkWuSoWeG', '4PEFtLtWS6gP4Okl8yoITem', 'W5dILA7ILiBILzdILlW', 'jqfG', 'oW/dRG', 'zCkVW4zwcq', 'zG4NEmkN', 'WQmqg8kKsG', 'hrxdRq', 'mCoC8jclM/cIN4tIGPhIM4VVUBVdHrG', 'CGr5l8kz', 'DSonC8kZFa', 'WPO4zJxdQa', 'u8oYsSkGDa', 'r8kjBSozW7i', 'WPnUxd5w', '8yUIVUkcLpcBGAO', 'EuVdQW', 'W7BdSxPyWQm', 'eCoPWOaX4Pwd', 'u8k6W4NdNeq', 'gSkoaCkPgG', 'zCofCmoKEG', 'W7FdVqC', 'A/cCG6FWVl+Y4Oo98kY7HINcHSoG', 'W57cR3hcKSo9', 'W5ldHSkjba', 'WRuPW6m6WPK', 'zSkZfSoNDa', 'DCkNkG', 'dvTS', 'b8kFWRhcS3q', 'WRxcUSkoFIC', 'W40DxsNcQq', '8jUQPmka8jUQRFc6U4qB', 'fGD+WOKR', 'ySoNjcVdHq', 'W4VdH8kjtmo6', 'vSowsCo0ha', 'lZFcPCkV', 'WP8LW7BdHYe', 'AmkvW7PFzq', 'aqSPW51S', 'WO7dMSoF', '4Pw44PsO4Psj4Pwf4Pwq', 'WQVcQffw', 'C8ooW4xcUt4', 'DuNcPCkvW60', 'eCo98lEzNpcuRAxIGRFIMBNVUj/dThK', 'iICpWQRdRq', 'W5tdVmkUamoe', 'mCoC8jcaStfA', 'WORcPSkHBW', 'W6WIWP7cPq', 'W6tcNSkE', 'W5rpudzQ', 'WPP0pCkwBW', 'ySkRW6pcONy', 'WR7cT8o3DCoX', '4BwbYPlcR+g2I8Qb', 'W5ZdG1xcT8om', 'YyxHTARiUUQEUxC', 'W7JdS0LpWPu', 'yKFcRmkTW6S', 'WRZcVGjbDq', 'v8oTC8kEAW', 'ArJdVr3cKG', 'WQ0cWQ/cM8oW', 'WOeLW7K2WO8', 'zWPhimkX', 'WQtcTmkNxIa', 'WO85W65XEa', 'mYCEr8os', 'c0fNW63dSW', 'jH3cJSk+', 'W6lcLSkJuCop', 'rqHDgmkF', 'WRhcSSkWqwC', 'WPtcGSo2q8k6', 'e8kzW555W64', 'WOxcRWtdIge', 'dLSjFmkc', 'WPKiwIpdRG', 'WQyyW7jDua', 'W4idW7O2oG', 'amkgdSkQmG', 'WRVcSq3dKhG', 'd0zSW7JcVW', '4BwX4BEzt+g2Nee', 'W4hcNCkfbSoc', 'Emk4W4r+dG', 'zeJcOwLi', '4BEM4Bwx4BAeYOFHTjS', 'W7RcVc5jWQW', 'W7HF8kkHJf14', 'x8kttSo/', 'WQmRW6j1Eq', 'WRvGnmosFW', 'WOZdGmksgCo5', '4PEx4PEB4PEC4Ps14Psc', 'E8kXkSo2vq', 'wmoTWOVcJv8', 'F8kDW47dSN0', 'EeldT8o2WRe', 'WQ5dWPRdMdS', 'WOWrvG', 'hZL/mX0', 'oLTtW4tdLW', '4Pww4PwO4PE94PEw4PAr', 'j8kLWRO', 'cHyN', 'W6Wk8koZPJLq', '4Psd4PEg4Ps54Pwy4PwX', 'ESk5W4n+xq', 'WP4ihq', 'WPOqfSkfFa', 'DbiCrSoh', 'WOVdRmoOscm', 'WOm6W6W', '4PEf4Pwi4PAx4PAb4PsZ', 'WR7cTSk9uMC', 'eLpcOLOt', 'jdFcPCkV', '6P6S4BwCYBdHTA/kSa', 'lmo5W63dNG', 'zSk1sSo2W5K', 'WOezxsRdVq', 'EhhdK8kopW', 'BmktW6FdG0e', 'WOaOW4nLra', 'wwWnr8kp', 'W4HFvW', 'FmkRW4hdTMO', 'E8ktW5NdNKi', 'AuVdVrhcKq', 'CmobWP/cKZa', 'WRXKkCov', 'W6GRCapcTW', 'oCkyEmk7la', 'Faqcsmos', 'W7lcSfXyWRq', 'WOBcOIhdNG', '4PsCsSkh8kcGMokcQpc8GQeN', 'Dmos8lozMVc3Ry7IG6JIMidVUkTUza', 'DMBcTfnz', 'gfdcQeWG', 'W4pdNSkF', 'A8kBW41tsq', 'DSkGb8oisG', 'DCktW4tdLq', 'W64ZCr7cVG', 'W5y3sb/cLq', 'WO3cSmkNnWu', 'WQ5XjInz', 'W5BcKuxcV8oi', 'zbJdRrFcKW', 'W7JdSwbzW6q', 'WOKFjgG+', 'W4tdNmkvgmoO', 'W7ONWPxcOCob', 'CSkWlq', 'W5VdG8optSkd', 'y0RcQMi', 'W50AamkpFa', 'AIayxCoD', 's8kIzmoDiG', 'dGzB', 'kKjdgSkfxCkBoXjEmZpdJa', 'W4ZcKfC', 'xv8p', 'AudcR39u', 'lVcMGyhWQQYO4OgT8l2iSSkuWPTw', 'WQZcRfzqFq', 'WPVcPSoxs8kg', '4PszxxSJ', 'WPGpvG', 'WQXQW64qhq', 'ovNdQSowsa', 'sfFdHSohAa', 'W43dNCkFcmoh', 'W5OpxrpcLq', 'hLZcS1S+', 'sCkMkSkdaG', 'tCk4W5LwdG', 'oW3cKa', 'hKfLW6/dSq', 'W5ZcKey', 'W5hWTyos8jEmLokbV/gcUjhdVmovWQu', 'B27WQlkpvCoU', 'eriUW5L5', 'lCk2WQ7cGXm', 'EmkXoSkLra', 'lr1TkbG', 'he1BW6VdRW', 'd8o0tmkLvW', 'W4FdVx1ZWQ4', 'tmo0hCokFq', 's8khW47dKWu', 'uLRcVSk0WRS', 'z8kPtSo5W5i', 'tZjnfCkZ', 'oshcUCkxW74', 'W4hdKSkocCoQ', 'v8ktu8o7aq', 'FrfCdmkN', 'kqfNmZe', 'wmk4W45TsW', 'W5FdTgDpWR0', 'WOddQYRdIge', 'WQ0TW7yQWPK', 'whFdTSo5BG', 'WQeTW6qT', 'W4VcHKhcQ8ow', 't0tcO34l', 'DmkJWODOdG', 'WOqpeYtdUG', 'BmkJW5RdMKK', 'WOOQW7i', 'W4hcQmk7Dci', 'zSkKWO0scq', 'WOGcW4/dQZ8', 'W43cNmkKbCod', 'l8kTW7voW7y', 'l0pdVSo5qG', 'BIKyf8kD', 'WRBcR8kVvhi', 'B8o3W499dG', 'DmoZz8kDDW', 'WPjQCIbp', 'vSkBxmoYeq', 'W6BdO29AWQe', 'r8kjgSkQoG', 'ACk+W4DZwG', 'BqHimCkX', '6P+EW6lXJzgZ4Ogb8lMIUG', 'Fe1Bcq', 'dSkzamk4jW', 'W53cHKhcVq', '4BscYztdJUg3Sv8', 'rXFdPW', 'tSoFbWpdTG', '4PEp4PEn4PsI4Ps14PsA', 'l8kKimkzeG', 'FCoLWOlcUXi', 'rX3cQu40', 'W4WcW48NDW', 'WRpcVSkVvG', 'W4/cO8kSBs0', 'qmkuW78Klq', 'w8kwxq', 'F8k1kSoGvW', '4PADfCoh8y+tS+kaTVcUSlK7', 'W48mW6GScq', 'WR3cNSoTvCkL', 'dtXqaxW', 'WPXYAt9o', 'AayBwSk2', 'W4ZdL8oAamoK', 'iSoyWO0', 'WQtcLCk5EHK', 'Cmk8D8ogW5S', 't/cMJj/dSg7dQW', 'DXFXJQkthCon', 'tuRcQxqr', '4PEM4PsG4PwY4Pwl4Pw9', 'qSo2WRlcSY0', 'vCohhqFdQa', 'W4zVjGm4', 'kSk2W5LFW4q', 'W7K/rWxcTW', 'fbbbWOZdRW', 'wSkAhCo/da', 'CHii', '4PA54PEJ4PsY4PEE4PA6', 'nuFcR0WF', 'dXboWPJdTW', 'Cmk7n8osAG', 'W47cNSkDnmol', 'sdGFvSkp', 'fhRdGCoPBW', 'WOGpqcZdRG', 'W6KOWRNcUCoF', 'W5VdISkTfmoA', 'W51oFsW', '4PwbWOpcSb7dIa', 'WQdcV1S', 'n8k/W4fPW64', 'WQ8UW6rkBW', 'FgldG8o2WRS', 'W7dcQIqD', 'iXJcMCk3W6u', 'W5Heyc1P', 'W7K0AH7cMW', 'WOlcK8oAtmkT', '4PsyWPNdSgBcSW', 'nCkZW4v3xq', 'B0tcO34', 'WRLZoCoEmW', 'W7pcTCoXCmk/', 'YOhHT7xiREQEIGu', 'scej', 'C8kYW4f/sW', 'W6zhWPO', 'WOyua8ke', 'k8k2WRFcLvq', 'F0ZcOa', 'W5ldV8kka8oU', 'WO49W7i', 'vSkyuSo/qq', 'WRJcQCkL', '4BwfYPhlU8UL4Bsk', 'z8ofWRpcMXS', 'W6ufW5iaWQK', 'tSkcsCoZgW', 'WQRcUmkSxHK', 'Emk4W412tW', 'WQKFrXJdJq', 'mNNdVCoMya', 'Baqu', 'WOP/CIrz', 'zmo8aWpdVq', 'D8ksCCoBgW', 'eeL9W7NdVG', 'dGvBWOhdJq', 'WOlcO8kHDq', 'WOGOW7BcSYm', 'WPlcMmoxvmkD', 'WQBcPmo1', 'a8kLimkDdG', 'YkliISotW7JcVW', 'EeBdR8okvq', 'DCkioYpdLa', 'W6q8WO7cV8oD', 'WPuzW5eJWOW', 'xSkuW6zqra', 'euvOW63dUG', 'WQ5lqXHT', 'xCoJWPBcNre', 'WPdcHdldR04', 'W5iAqeRcLW', 'ruVdOmoJAa', 'u8oJvSkTvW', 'cVc6OyZXJO+f4Och8k+PJ1TpzW', 'igldS8oCvq', '4PA3cSk3W7Xp', 'W7ervYFcOW', 'q/gfOiFXJj6R4Okf8jQ4QSkLW73cJG', 'oIZcR8kmW6i', 'dvZcS0O8', 'WRXOW7qNWO4', 'W7NXIRoX8jUCREkcLFc9QkNdLaWi', 'WO/dJmoBtCoi', 'WR0kW5NdScq', 'WP0hdG', 'WOvbbI4A', 'z0BdR8okDG', 'WPxcRJ/dKW', 'sI0yuSky', 'WPlcLCkj', 'WOiDvW', 'bba8W5X1', 'tsKFva', 'W70TWO7cOSox', 'WPnqfIOj', 'F8kUW4G', '4Pw+4PE44PAW4PsD4PAI', 'WOxcTerVsq', 'gCkBqCkJmG', 'A8krWO3cGq8', 'WPJcLCoMbIW', 'Yl/lR8kT4BwK4Bw3', 'YAliPSkA4Bs74BEV', 'WOajW6PnsW', 'gCkRrq', 'ySkYW54caG', 'dc7cSCkzW54', 'WPZcK8oq4PwU8lY2VUkdIEkyIU+7GW', 'WPtcICoxwCoi', 'WRlcUCk4Dgm', 'eX1kW4JdGa', 'AaddN8kzbq', 'WOZWP5oL8kc+JokcQpc8IPPef2u', 'r8khamkQoa', 'WO5bac9D', 'mCoihCk24Psy', 'bmk8tmo0eW', 'DSk2W45/dG', 'WOaIW64', 'WQZcRCkMBY0', 'cSk2WRRcU0i', 'sImcq8kE', 'bCk6hmkHsW', 'W5RWMk2REG', '4PAL4PEZ4PEx4PA+4PwI', 'WQpcSSkOwwC', 'W7ilzmkwjG', 'WPNdSCovs8kY', 'BmkDW5/dGH8', '8kkiRpgmQk7WQ4QX8jUkJZe', 'WR3lM+g0GXNHT4i', 'WR0ZyrNcQq', 'W5qfWQfFcq', 'WO8sxdFdNG', 'BmkYhSoKWP4', 'mwZdU8o7AW', '8y6aG8k3bSkzjq', 'h8kZhCk/mq', 'W7pdUwjyWQO', 'WQDUnHHx', 'WRBcTSk5', 'WPFcJLFdSCkr', 'WPWIW780WP0', 'ACkhW4tdMe4', 'DSkYtCo4W5a', 'FXJdVr3cNq', '4BELY5plV8MT4Bse', 'i0pdKSkybW', 'WPRcVSkVrMm', 'wmkzumoXfa', 'iokvL+kwGEkwRUkuUG', 'W5nkCtnU', 'cqeQW5zL', 'aCkGgSkViW', 'WR/cQCk/qeG', 'WOq9W4HMCW', 'W7RdTSktjCoH', 'b8kpt8kHpG', 'xmkRW58xna', 'latcV8k1W7q', 'WOyQW78', 'WRFcUCo3zCkq', 'WOXjnsaB', 'cHb5W4aH', 'W5BcSmkqomoy', 'q3BdMd3cRa', 'thzgfW', 'DWXgoa', 'WPeSW5qxWRi', 'ofj8mYu', 'tfRcTa', 'CryccCox', 'FNFdLmkcgq', 'WPTQCYm', 'WOObmW', 'YkVkJEg2J8kV4Bsd', 'dSkzW4rPW4C', 'WQi/g8kZsq', 'BKJdR8oAEW', 'BfJILBNILzlILzy', 'xrFILQRILl7ILzK', 'WPhcGSox', 'WQm4ygFcGW', 'tXrBd8k9', 'WOqrvNFcOW', 'sd8fuSkn', 'qSk8W7VdLwG', '8lAcM+kdMVcJGjy', 'hbq7WO5c', 'smkceW', 'W5uuW6Wnba', 'W7ipWQ0khG', 'W4ieW44qhq', 'WP8ugCkfvq', 'EmkhtCoTea', 'WOiUW79IzW', 'W4lcMSkXca', 'WRpcTmkYqum', 'd8knW59PW4C', 'W4VcM8kdDSkj', 'WOlcOYBdLu0', 'ECoGbcddQW', 'A1LrECoz', 'ECkFW4G', 'W7NdUx1j', 'aCoCca3dOq', 'xSoPWPW', 'W5xdQmoO', 'WO/IL7hXIPAO4OkG4PMB77IiumoK', 'zuRcQSoGW7G', 'W5ZcJuy', 'tKZcUq', 'bGSZW55G', 'cXbbWO/dLG', 'W67cGLVcQSkA', 'WQeTW6qTWO4', 'WPqzgmkoAW', 'xSkVDmoflq', 'zCkPW4uthG', 'rur+WPmH', 'A8kxW4pdN2G', 'WQxcHCkquHK', 'sSosW67dTgG', 'WQdcPSo1EmkL', 'amkBnCkJpq', 'Dd3cQG', 'WOVdNCo4aSoi', 'WP/dU8krCeW', 'WRJdNSoiDCkB', 'CSkHB8oGW4q', 'WQu4W4NdQta', 'W7VdK2f5WPq', 'nwOPWQxcVW', 'WOPpfq', 'W6FcPmk4hCoU', 'iIX4WQVdHG', 'y1VdPvJcNW', 'ffpdP0OX', 'W6LAAJ9v', 'WOlcJKzDAa', 'oSkYWQlcK0C', 'WRRcUSkYuu4', 'y8o4sSkWwa', 'WPyAgCkvwa', 'eSo4WOFWSAgBeW', 'xCo1WO7cKrC', 'uCoJWOVcNt4', 'cHrgWOy', 'aK8fW4G', 'EeBdKSk6W7G', '4PE74PAP4PA64PsG4PEO', 'vSkxu8o4vq', '4PAV4PA34Pwf4Pwi4Psj', 'qh3dNXNcHa', 't3FdKSkAmG', 'W4RcHSkLuCoz', 'YzBjGGlHTk7HTj0', 'wJGExSkr', 'WQ1MpCotva', 'WRtcR8o8qw0', 'rfdcQCkLWRS', '4PEe4PE64PAC4PEA4PEE', 'mG3cJSk1', 'Emk2W5bVrW', 'sCoKua', 'WPmIW65PDq', 'WRuEW44', 'WQpcUGBdShK', 'WQGPW7KQWRa', '4PE74Pw54PE94PwF44gC', 'evT9', 'kGzgo8o7', 'feDGW53dHq', 'WQSUW6/dOHS', 'zmk5W54', 'W7aGjNPX', 'lSkog8oTnq', 'eKO4W5jI', 'WQDZfW4S', 'W7BdV2nqWQu', 'uLldMmkghq', 'caDw', 'WRHksavU', 'btZcU8k5W7W', 'Dmk7sCo9nG', 'WP0DrZNdRa', 'W5tcHLZcQW', '4Psx4PEo4PEGWPWg', 'v17cUCk0W74', 'WRK3W5ZdMs8', 'yH9XFw8', 'ASkIW49VsW', 'e1DrcCkv', 'W5LlaNtcUa', 'dCkmW4j0W4W', 'j/cxK5xXGQ6n4OcS8lg6OI7cJSoO', 'hCkGfCkypa', 'kYnLbtO', 'bCk8sa', 'ouBdOSo9vW', 'C8kMkCoKqG', 'W5tcGLZcUSkA', 'CSkivSouW7W', 'WPyHWQTHzq', 'zKJdPG', 'W5hdLSkucmop', 'WO/cTSkLa8oc', 'pXD6nHS', 'DXFIL4xWKlsS77QN4Ocu4PUf77IEW4q', 'EwddQSoJya', 'yfCsqmoh', 'WQxcLhf2wW', '4PA3cSk38ykWMEkaRpcXSPLn', 'ySk8W54', 'W4a0jG', 'amk0zCo9nG', 'WR/cLgz7Eq', 'W6RdVSk9gSok', 'rSkvW6SxoW', '8lE1So+7Tq', 'm8kFW5v1W7O', 'y8kYW4m', '44cab+kuIEkuVokwQa', 'amo1s8kWgq', 'i2BWPjMW8yc9JokcSokyKo+5U8kiWQa', 'tCkNW5WBdq', 'CZ1od8kf', 'CmkxW4ZdN0a', 'W7JdSwbzWOG', 'g8ocWPO9', 'oSkwE8ou', '8k2iO/c+QQhWNRUs8k65QpcNU4W', 'b8kmcSk6pG', 'wCkdW6rEzq', 'oCoSgq', 'WOZcQINdGYW', 'efX9W7RdRa', 'w8oeWPhcRqS', 'W7iVBa/cQa', 'W5ZcRuxcTCoY', 'W6aPWPC', 'WOLQka', 'mVgdS4xWSB+z4Oc+8kMzVhZcHtS', 'yeldMmke', 'esa9W4n4', 'qd8y', 'pCk4WQJcP0y', 'W5BcPmk+bCof', 'W4VcPSkecCo6', 'yafQoCk5', 'e0Lra8oJ', 'W7XUut1f', 'W7pdTN52WPu', '4PwkW7FdO8oq4PsZ', 'wI9mdCov', 'B8kXoG', 'r8oebGNdTG', 'W6KPWONcTCoa', '8j24JmkniGtdIG', 'z8kpW4OMkW', 'h/c8KO3XHz6d4Oo98kslKxvSEG', 'W7zZp8ohEq', '4Pwb4Psn4PAp4PAp4Pso', '4PEDxYxXHzok4Ool8lAcTHO', 'W6K5Bqu', 'W5BdMSkvaG', 'W4hcQc/dHMi', 'lCkSsSo4W5a', 'e8kdwSokgq', 'WPFcJGxdQf4', 'jwNdJmoGyW', 'rf7cUCkLW7W', 'zvxdUa', 'W7vLrG', 'aGzCWONdHq', 'WOChgW', 'AmkJqa', 'zIbHpci', 'qglcT8oC4Psb', 'F0mNzwBdHmk7W5tcJCoYySklW4C', 'chZdHmogqW', 'CmkYW5K', 'WRtdVSo0zCk6', 'W5b9WRi2meZdMSkxWPRdSmkt', 'WRvNnrWo', 'W5BcLSk2a8oo', '8lgcI+kaV/giSie', '4BEB4BAP4BAWYyRjQa', 'W4OPWO7dTSoq', 'uSoYvmkOua', 'j3FdGCo7EW', 'wSkMtSokiG', 'WPXXvdXj', 'EYFcRW', '8lA3HE+6GLfEWOS', 'bSk4smoVba', 'W7HmhSkwwW', '4PAD4PwB4Pse4PAL4Psv', 'rmoYv8kNsW', 'tSoAea', 'dCkBWPaNWOG', 'W6/dGCkUaCof', 'WRFWQAgS8kwSPUkbMpcRURldQmkyWRS', 'aqrJjbC', 'WOJdTSkihSoI', 'WPy7W7PnCq', 'WPJcTCo8ENC', 'W6BcNmkYomoo', 'BarDjCk1', 'W4mrvIpdVa', 'W6pdRvTABW', 'mmk6dCoRWO8', 'WRBdRmkZmq', '4PA5W6WZWP3cGa', 'WRJcO0DhoG', 'aWKErCkq', 'D8k7W7/dVwW', 'W5BcKuS', '44clbEkvHUkwK+kwUq', 'efZcQvOv', 'WRCSW7tdJtO', '4PEA4Pwf4Pwr4PwI44c4', 'qfFcTNjs', 'BNBdLmoOCW', 'WPXUlCoyya', 'C8kNtCoJW5S', 'a8k3umoYdW', 'oSk1WPNcVLO', 'o8k7Dmo/cG', 'wcqNw8oK', 'WPpXH6gA8yITHUkcN/cYQ7ddNmocW6m', 'umkFW5vPW5e', 'WRtcTmkXwgm', 'WPOjW4VdSrS', 'W44fW78qgW', 'W4SkW7L1BW', 'ESkqv8o/W5y', 'CSkNW5rYqq', 'W5RcGKBcU8oD', 'W5xcHSkKgq', 'W6yPWOm', 'de1XW74', 'yVgkOQVXG4+p4Ogd8joPLmkTimko', 'B8kGlmoSxG', 'WPxcOJpdI2K', 'W5naCJ5I', 'tWelvCkv', 'ibD6nsi', 'vc5rFSo0', 'W53dQfXjWQO', '4Psd4PEg4Ps54PAx4PA+', 'W5roydO', 'leZdPHhcJq', 'W4XvxEkxO/czT4tIG4JIMyBVUBe', 'iCo9WOa', 'CCk7W6BdS1e', 'WOtcMmovxSkq', 'B8oXtCkLDa', 'nLtcLuSx', 'uSolsvZcRG', 't8kAW4JdIua', 'W4hdNmkxaCoS', 'W5XeDa', 'n8kts8o2ka', 'WPdcQCkZqhi', 'sH8+ESkL', '4PEEtCkAWQJILzC', 'FrivcCob', 'eSk8t8o4', 'WOSfeG', 'ndXGWQBcIa', 'WP/cO8kRCc0', 'WRvGnmosqa', 'uCoUetBdOW', 'veVcV8kPW7u', 'WPupW7hdIr0', 'W6yFWOpcUmor', 'evSPW6pdRa', 'WOVcRCkMBW0', 'WOlcQJpdGMS', 'a8kQwq', 'WRukEhvD', '4BsFYyVlLmMX4BsQ', 'W4/dLSkugq', 'cvlcS181', 'W6uPWOJcPCks', 'Br4frCoq', 'DXmccCoy', 'f8kGy8oVba', 'svVcVG', 'uay6ymo4', 'yCoTz8kPva', 'xNhdQmozwa', 'W5W/CaxcTq', 'WRmypSk4FW', 'WRGiW4NdQW', 'WOJdNCku', 'CCkYgCo0W5e', 'fWeTW4DG', '4PwwqSo3W5W', 'WPyqbmkcAW', 'waGPWQRcVW', 'nY3cJSktW70', 'W73dKCoIfsG', 'WP13ycK', 'lKzzW5ZdKa', 'WQ3cHaddQa', 'DbyAtmkv', 'W43cLSk2aCo4', 'YPJkQSoU4Bsa4Bs2', 'WR7cT8o3DCkD', 'W5JdKub5WPC', 'CSo9W6m', 'ECkJESk8oa', 'BfJdRG', 'W6Dw8joOIVc9NQlIGl/IMOVVUObDka', 'W4RcNCkYfCoN', 'g8oJfSk7fG', 'A8kgW5/dKKS', 'WP4zqd7dOa', 'W5jF4PsA4PEH4Psz', 'oX7cUmkzdW', 'zmosDmk2xG', 'W6xdSxPjWQe', 'eCoPWOaX4PsS', 'W7RdONC', 'Fu3dOqZcMW', 'e8k6smk7aa', 'WQ4iWPBcQc4', 'gfpcSG', 'W5NdMwbNWOu', 'W6GOyq', 'W6hcNCkAimo/', 'cLePWRdcTG', 'mSkWWQdcLwC', 'zqLan8kN', 'Bv/WLkQV8lESVEkcQokzJ++4TxhcLq', 'W5jv4Pw34PEH4Psz', 'DCktW4pdN2K', 'WRlcSCorC8kv', '4BwmuUg0MEg1L3y', 'BCkbW6zpDa', 'BCk4W5KIbq', 'fXRcHCk/W7i', 's8kdtSo0', 'W5hcSe1YWOK', 'W5WiuHJcIW', 'xokxMXZcU0e', 'e8kRsmo2ba', 'mJD6WO/dQq', 'qvBcOCkLW7u', 'uIi3WQRcTq', 'AmkKW4L0qa', 'WRDroKRdSa', 'WRVcI8kQwxi', 'sConcaldOq', '8ysaLokaVVcSGli', 'WQxcVSkSwxS', 'WPSzw8kdEa', 'DLG0', 'WQfsht4n', 'WRJcS8oG', '4Psk4PEDWOD8', 'W5NdNmkZ8jUcR8k4', '4Psy4PEY4PAT4PA74PsL', 'C0dcVNDi', 'yaPhiSkv', 'W73cU8o8F8kK', 'WPVcH8odvmk4', 'WRtcUSkOugu', 'sCkbyCoEW6S', 'dWfBWPJdKq', 'iXRdNCk0W74', 'WOaDxsNcQq', '4PwT4Pw84PwarSkh', 'l8oKEW', 'A8kGl8opqq', 'WPz2BrfK', 'WRu9W6qM', 'WOihW4eBWO0', 'DbbApG', 'WObpht8y', 'x8kLW7NdVfW', 'jq3cK8kYW5W', 'WPHYDmobza', 'ipcwO6NWTk+g4OcG8kMOUhJdLSoR', 'WOHOCdX7', 'W7dcNSkNm8oo', '8jURG/c1Ml4o8lQ6SpctQka', 'A8kgWP8', 'yf3dOb/cIG', 'zeJdPtlcUG', 'yLFdPclcUG', 'WQy9W7O9WOG', 'W4/cHKdcRCot', 'EqFdR8obtG', 'WQGPW7KQW5W', 'WRnyoCo+yW', 'cLlcTvv5', 'kdqhW511', 'vpgbK5JWMj2E4Ok48yAlGMDuEG', 'WQVcQffwAa', '4PsC4Psz4PsJo8oB', 'W4zzht4p', 'f1XHW6/dRq', 'WQxcVSkSwNa', 'nbbbWOZcGG', 'WQC4EZ/dMG', 'y8kUW5K', 'FbKeb8kB', 'WR3cV1SuoW', 'xCkwhCobDq', 'W7iaW5/dPIi', 'FxpdVH3cRq', 'ke5tW4xdHG', 'WQO5e3pcQq', 'WQLPnfNdRdO+rmo4WQFcVW', 'yLldHa', 'yKpdLmk/iG', 'xSk2cmomAa', 'W48GW79Vzq', 'WR0dWPRdPYa', 'hvPkW6VdRa', 'omkoWOFcVLa', 'kbzxptS', 'WRLvmmoKrW', 'k/cwGQBWMB+n4Ok+8l+zLxzgWPu', 'WOaqfSkfxW', 'BKhdICktfG', 'i8kuWRdcM0q', 'WPalm3KN', 'WOdcU8ojySkZ', 'WOuQW7HK', 'Bbn6CJK', 'oSkJlmkKha', 'eEkwHUkuVEkwNokvTq', 'ALFdVfJcNW', 'eeldI8o7za', '4Psz4Pw34PwX4PEM4Pw6', 'W5vzmZHP', 'W7iUjalcUW', 'ACk8W5KtcW', 'W5hcM8kYuCop', 'W4VILklILOVILiFILia', 'ywZdOCkVyq', 'W53cJfZcQSo7', 'vdyIESo0', 'cmkfc8k+DW', 'wc8szCou', 'iMZdU8oQAq', 'WPqmW7XPCW', 'iWr4pqm', 'sLRdO/gpKB0', 'z8ouWRFcUXO', 'nuFcG0Kn', 'WPFdHSoD', 'WRRcHhbJEq', 'W4ipW6mlmq', 'WQlcReXroG', 'jVcrK6BWOyYc4Oog8lAzG1hdQuy', 'W7NdV2K', 'bmkkaCkPDW', 'WOSAW4nZsG', 'wSo4WO3cJa0', 'baK7', 'DKuiD8o+', 'W6iREG', 'WOldM8ojtmkU', '4PEeW5lcUIpcGG', 'cZnFWORdKG', 'WR02D0ddUG', 'bSkFsmk+DW', 'rSoPWOe', 'DrGwrG', 'seJdQSk6cW', 'daG7W6b1', 'W5rWDJ0', 'WOlcO8kMFWa', 't8oLxq', '44c/WQZILA3ILAhIL7C', 'kCobWP7cJu55dSkgtCky', 'ktf8W4lcQa', 'm+kuH+kvSEkuQEkwTq', 'vmk3rSkRtq', 'WQKtyJNdVa', 'WRyTW7KQWRe', 'CmkWW4JdSwW', 'DfhcQNrg', 'WPNdGZJdOmkA', 'WOSPW7KwWRm', 'W7NdUHSnD8oxmSktWOhcQq', 'W48zCtJcLG', 'oSo3W6ldKrK', 'WRJcQmkfyXO', 'WQ5ji8ogAW', '44k6c+kwM+kxKEkwJW', 'luzOW6JdSW', 'W6BdTwbzWOK', 'cSosvSk2vG', 'C8k4W5nVqa', 'W7r4xcfa', 'W59zAG', 'WO9tuIio', 'WQdcN8k6qfG', 'W6KJWPtcOSoZ', 'W4SfW6a', 'WRxcGWldTsW', 'WQZcQaNdVuS', 'frbFWOtdMW', 'BsmRuSkv', 'g8kog8k/pG', 'gvlcSfa1', 'W7JcMCkjCIi', 'dCkDW555W68', 'WOVcT8kHuqO', 'WPBcL8oTr8kh', '4PAm4PE34PA74PEe4Pwg', 'y8oYrSkDtW', 'W4hdH8kBm8o4', 'Dmk5W5n+aa', 'eCkOW6jNW4O', 'cau3W50', '4BE44Bsb4BwqY5ZkJa', 't2tdH8oLua', 'W686AG7cTq', 'WQXk8lYiUpcJJz7IGOdIMzJVUiGTEW', '4PEH4Pwp4PAl4PEi4PEp', 'AfFdOaZcVW', 'WO4txtVdRa', 'oqa0mdK', 'jSo+FG', 'WQVcQwfADW', 's8kVW5uFdW', 'g8kpWOxcKvu', 'f8klW4q', '4PsN4Ps/4PEn4PEa4PAB', 'WQxcUSkYuw0', 'AXflp8k7', '4Bw8YQFkKog2JCIF', 'oWRcKCkvW4i', 'W4Drranv', 'qNFdS8kZiW', 'BSkNumo5', 'd8oBcG', 'W4VXJAcV8lA/SokdT/geM6OzW7pdIG', 'WPJcJc7dOeq', 'e1NdQrb3', 'W53cH3hcSCox', 'WPuahd4q', 'AL7cPmkUWRS', 'yvNdObZcSG', 'lCkKWRdcKvq', 'WO45xspdIa', 'W7FdU+kxNokuTEkuGG', 'WR/cTCojwmkR', 'vKvKh8kh', 'c8o6haJdSa', 'f0q4W4fU', 'WP3cMSkVw24', 'DKvRoCkG', 'WO4DrYJdRG', 'v8kWDmoOpG', 'W54+WQlcTmoO', 'wSoTWOhdIrW', 'aqSWW4Da', 'v2/cSLaT', 'WQKTW7KPWOG', 'jq3cIq', 'WQ4wW4bKAq', 'WRlcU8o8', 'WPpcOd3dJ2K', 'Ef3dTGW', '4PwCcNTbDW', 'W6aHWPVcUmow', 'xSoyWPa9WOi', 'W4VdL8k1jSoQ', '4Pw24PEz4Ps84Pwu4PAU', 'zvtdQWVdKa', 'u1dcPLC3', 'srjDWOFdLW', 'AvhcUMTc', 'sCkqW6aJba', 'lCkRxmo5W4S', 'rCo5uCoQfW', 'EXGvua', 'WQBcQw1/Fq', 'qCoictBdRq', 'uCkfW77dL0W', 'eCkNhCo9CMqcWPPavq', 'ng1yW6VdPq', 'WQNcHwbmya', 'fmk2wmoI', '4Bwwsog3Sog3K8kX', 'lXL1ntm', 'BxJcLCkjW44', 'kGLgmCk7', 'WQBcKSkcAYK', 'WPBdI8owy8k7', 'zWrDm8kZ', 'h8kvW5u', 'qIKv', 'frr+W5fU', 'W5ilCokxM+kuJa', 'W4ZWL5cA8k2+GEkaUpcFUQRdJSkYWRq', 'EmoJWQVcGt4', 'bGBcRLlILPm', 'B2/dO8oGBq', 'owjaW5JdNG', 'WQBcPCo8', 'WRTUusn+', 'Y7VHTBvCW4JiUW', 'BrGKwCof', 'nXqErmkA', 'WQJdMSo+zSkQ', 'WOpcRJxdLcW', 'B1/dQmoA', 'x05+', 'WPzbbJ8y', 'dSkkW5uWW4K', 'hYXKWQxdSG', 'm/cIOjNWLz2j4OgJ8lwRGXX8mW', 'ECk0W4iyqW', 'yLW7pJ8', 'WOuBeSktoq', 'W57dSSo4pG', 'WR/cRfzbFW', 'h8kQsa', 'BetcOh8r', 'W4O1WPhcJ8of', 'vCk+W4npBa', 'W7hdTx1E', 'yvNdPXy', 'juxdHmomwW', 'WQXUfSozEW', 'Caqf', 'WPNcP8oODsm', 'cbrl', 's8kuuSoyW5e', 'AmkwWQ3cLbm', 'uSkMW67dOLu', 'mN7dPSoGya', 'eKNdOe15', 'cSogga', 'nHFcOrNcJG', 'C8kZsSo/', 'lLJcQvP5', 'W5hcHLpcUSoF', 'mrRcKSkJW6e', 'ySkOxCk3W5e', 'vITFpCk7', 'B8kGp8o3ra', 'WPiSWQS9kG', 'rCo2v8kHgq', 'W4tdMSkwcCoJ', 'DKJIL73IL5BILPe', '4PwG4PEN4PEL4PwZ44cs', '4Bw9hEg3IUg0U3K', 'E1NdPWZdNG', 'vGXeeSk4', 'DexcUSkIW4G', '8jAKRSoTWPpdVLC', 'WR7cQmkO', 'WRhcOSklCMS', 'mZidw8oA', 'WPpcTmkRw24', 'ACk6mSoSxG', 'rSkTEmo+W4W', 'n1VcPM4Q', 'W6mgW7G4jG', 'WOvbbIGv', 'W7mVzq3cVW', 'WOpdNCkfkSkT', 'W4/dOUkxIokuM+kvJa', 'WR0zus3dUG', 'W4OpW6O', '8jEzHGtcKffJ', 'W6GRyaVcRG', 'WR/cISkYqxG', '4PEp4PEn4PsI4PE64PEv', 'zuRcOg9W', 'zt4GESkE', 'FmkwW7zHBW', 'nVgkKlBWVP+m4Ok58lUOP8kjkCke', 'ifbUW6ZdKG', 'WPbiEZHP', 'WPrfeYGj', 'tSkdb8osvW', 'tmoWC8k9va', 'WO7cUt4', 'WOqHWRCnWPq', 'DWyjBmo+', 't3FdGZxcVW', 'W4xdP/cxUBlWMA2Q4Ogt4PQa77ULWQLX', 'W5P9At1r', 'AuxdJSkv', 'WRVcT8koCs0', 'DmkSgCo2CW', 'y8k2W41RqG', 'oSk2w8o0qq', 'W5CADWtcTG', 'WRKuwJ7cQq', 'BYe3FCoV', 'W6TfWQffDq', 'WPvSCtfo', 'mHumW4fn', 'WOKQWPRdIXG', 'W6SLWPBcS8oC', '4BEMaog1V+g1JL0', '4BwNY6Op4BESYk0', 'oXNcKmkvW7S', 'A07dR8kouG', 'nWBdNCk5W6y', 'WOBcPdxdNG', 'dX3dPH9Z', 'lmkYWRdcKW', 'D8kJwmo6WP4', 'W5dcGCo3bCoi', 'wCkUW6KWlG', 'tSoSgG/dHW', 'Bmk0qa', 'WOhcUmkOzgW', 'WOewv8oBmW', 'Eba5s8oX', 'fCoyeSoSfa', 'yehcTZTt', 'emkEbCkvja', 'W4ZcICoqta', 'FHJcR1NdLa', 'f8k1vCoTba', 'w8oOW4VdH1e', 'lMldRCoNFa', 'WQVcOKXbwW', 'WQHruWaC', 'W6pcK8k0bCoU', 'rquWWPnU', 'D8kdb8oxvG', 'WR45CH/dIG', 'DvBcOmkeW7C', 'DZFdRFcqSkFcIa', 'uCoDgG4', 'WQn7xqxcRW', 'W7pdIgbTWP0', 'WOWUW6vJia', '4Ps74PE24PEY4Pwt4PEp', 'sLlcRmkUW78', 'kdjGW4JdOq', 'qCkVW6z+rq', 'Fu7dJCkDaG', 'W7JcG8olxSk+', 'W4/cN8kEh8o+', 'kxNdU8o/Fq', 'B8kXmmoHFq', 'cauWW5Dn', '4BE54BsbYldHTQ0S', '4BsX4BAd4BEO4BEK4Bw/', 'WP0RW7hdHq0', 'WOySEMe', 'tMZdIJ3cTq', '4PAj4PAT4Pwg4PAt4PA5', 'AGbBDSk6', 'AXGIySkT', 'W4hcRtldI2a', 'W7ZdVqC', 'AvVdULJcKW', '4PwBW6fnWPKS', 'WQmzdSkrDq', 'BvCer8or', 'g8kodSkUiW', 'W7JILihILzRILRBILiW', 'umk2W4/dIq', 'W4jezJDJ', 'WPOsvJ/cQq', 'WRqrp8klsG', 'W4RcHSo3gCom', 'W6NdVmk5', 'xSkftSo9eG', '4BsEW7FiUCQudG', '44gcW7FILyVILBJILRS', '4Psd4PEg4Ps5WR3cTa', 'W4FINlb9iSkP', 'uVcvKAhWVA2J4OoF8lM7IhpcGCoO', 'cg5XW5RdUa', 'yt08E8o6', 'd0NcQLS3', 'WQa7W6qVWPS', 'W5vTycT/', 'nh3dU8oMyW', 'WQCxoCkuCG', 'rYHmw8kw', '4BwYYR3HT6BHTl7lMq', 'W5VdI8ovvmoi', 'iSoDWOldJe0', 'm3NcLbrt', 'W606Cb7cVW', 'W64TWO7cS8ov', 'lCoOfSoKW5S', 'jh7dVmoMyq', 'w1ldGWdcQa', 'W68+zqNcRG', 'aXfSWOFdJW', 'g8k4uSo/lq', 'FIRcTW', 'Bames8oq', 'aCkc4PwRrSkK', 'WP53Dsbq', 'WQaDwcJdUW', 'lUkvP/cvTO/IG5NIMklVUOBcKSkB', 'W6TL8l2PGpcFJ7RIGQxIMRRVU5ldV8kV', 'BmkBW5NdL0a', 'sCkHW6tdJ3a', 'zuhcJxrC', 'WOhcPSklxaa', 'vhRdUZFcMG', 'WQFcQenrFW', 'BqLm', 'kJbHWR0', 'WQffbMSF', 'W63cJblcUCoF', 'cCk1W5HWW48', 'baG3W4vK', 'mgtdP3Ww', 'WOCPArNdSW', 'WOSvxYJdPW', 'sCktxmo4eq', 'F8kZW6n0qW', 'W7HF8kkQPVczN6BIG4JIMyBVUBhdM8kc', 'WOJcQfyvEa', 'cCkDEW', '8yMxGU+5Lq', 'tsmcq8k+', 'vSktW4pdO2O', 'BLlcOa', 'AeRcOdTx', 'F8k8p8oX', 'AelcJgHd', 'W57dH39CWPe', 'cHrbWOZdRG', 'WQyPW6mRWPS', 'e2zm', 'fWeUW59G', 'kSkxWPb/W44', 'W4ejW6Sg', 'cqeWW5r1', 'g8k4uSo/qq', 'CLlcVCkcW7G', 'W5xcH8kvumkj', 'Br8urW', 'WRX8W4RdSW', 'WPD3qbnK', 'WOXMrZLf', 'WOBcLCkqCXG', 'W5afW78mgq', '4Pwb4Psn4PAp4Pwa4PEb', 'tmoZha', 'EIKnrCkC', '4Psk4PsN4PAb4PAU4Ps6', '8yoRL/cZUQhXH5UXW5BJGP4', 'CCk1mmoHFa', 'WP0PW7OJWRy', 'nh7dQG', 'ssjWe8k2', 'F13dObZcSW', 'lXnGnZe', 'W5hcOvFcLmoZ', 'pgxcPhi4', 'W4BdIuP0WOm', 'WO7cRSkMEeW', 'W6BcSgDoW6q', 'W4hcLSkKeG', 'WQ0TWPtdTSoD', 'v/cqGQ/WKk6L4OkL8jMiH1lcI8oX', 'WONcVXFdG0e', 'WOutqdNdPW', 'WQuOW5ZdJt4', 'WOH7zZni', 'qGiP', '4Pww4PwO4PE94PEwWRS', 'lSoNWOu', 'W6xdQpgnKRyiW74', '4Pwm4PwY4Psu4Pws4Pww', 'DXfBp8k6', 'WQdcUvevAa', 'xSo8nW', 'WOmAwgS', 'zuRdRmopva', 'WOLWiGyR', 'ucGoB8k5', '4Bsb4BAO4BwJYiZiHa', 'lmkLoG', 'aCk+W5xdMKNcNWeNzvn+', 'WRxdS29tW6q', 'W50PWQ3cKSoH', 'Y4/HTA/jVEQFP8kX', 'WPZcOSoXDmkJ', 'EbRcJSkNW6q', 'WOlcJgXXsq', 'W7FcSSkMqg8', 'W4q+lokvKVcqPyNIGzxIMz7VUOS', 'Cmk7oCoQ', 'zqfqDSk2', 'FrmYrSoy', 'WORcUSkHBW', 'yNldHmkSbW', 'WP7dH8op', 'WOFdRw9Wva', 'CaXDoSkX', 'pK8j', 'zUkvSpcAPOVIGzVIMRdVUOBcJCkv', '4PApWQBdR8oJqq', 'cvtcS1i8', 'hSkLhmkGbG', 'WOqZp8kdvW', 'W4/dNM1PWQK', 'W5ToAG', 'ACk0W6aNpG', 'WO4jW45XEa', 'WPSfFtxdIW', 'sCklW73dQKm', 'DWpdPXqj', 'smktwq', 'cK1OW67dMq', 'u8oAWRhcSbq', 'nCkjW4jeW4S', 'wmkbWOpdJe0', 'WQVcJW/dLv8', 'W6pdSCkPcSoE', 'W5imsI/cIa', 'e8kRt8oYdG', 'W5pcLKVcISox', '4BwJY6NjM8Qc4BAM', 'WR3dO0HgDq', 'ESk6W4u', 'hSkAWRlcIwy', 'AmktW5NdJ0a', 'W5JdUKrvWP0', 'WOzvmCktDG', 'E8oiWRRcVsy', 'j8k6WQ7cKv0', '4PAn4Pwm4PE64PEw4PAY', 'W5nFCGzY', 'WPjjbICy', 'WOldOmk/lCoF', 'b8kxESowkq', 'WP0cgCkeAW', 'W5xdG8ojt8kg', 'faFcICo2W6i', 'WQGPW5NdUc4', '4PwL4PwK4PwE4PAZ4Psb', 'tSogra', 'vCkrrmoOqW', 'W69OWR84', 'FSoTWOO7', 'BSkJva', 'e13WO4keW7el', 'W4qlFd8N', 'xKJcOConuG', 'W748WQ/cUmof', 'wmoUWONcQIW', 'W5dcK8oBtCkN', 'WOuGW7XP', 'zSk4W4mrga', 'WPNdNXlcH8o1', 'vmk9W4jVW40', 'oWNcK8kYWRe', 'lN/dTG', '4Psn4PsG4PA94Ps54PA+', 'WR49W653Ba', 'kh3dU8oMyq', 'WR5OnSotyG', 'gmk9hmo3ca', 'W5BdN0nWWOu', 'W4ddN8kvd8oM', 'BZGLrCo8', 'W5fbEITM', 'hfSPW4VdSq', 'YBdiHWD4W7O', 'dmolk8kSlG', 'W67cHCkTmSoI', 'FvpdLHhcQW', 'W68+DX7cUW', '4Pwn4PEa4PsF4PEg44o3', 'eEkxTpcqTyxIGBJIMB3VUPpcQtC', 'W5errI5e', 'x8kzu8oOna', '4PsC4PEu4PwE4PAf4PsW', 'r8kSWQFcHGS', 'WPzvasm', 'W4SdWRxcGSo3', 'B1FdOa7cMW', 'b17cOCkSWRS', 'tGCbySki', '8kslPFcQU4FWNyU58ygPSFcLQBi', 'mmo3WO0', 'WPH5BZ1S', 'WQtcR8k9r3y', 'W58qW704hG', 'WRGiW4NdQYu', 'fvJcTu15', 'FG7dLmkzxG', 'a37dLCobrG', '4BskW73HTQdHTBnm', 'W7ZdO3O', 'WQ5nW4JdRsy', 'se3cTa', 'W6K5vrZcTq', 'xmoIWOi', 'AHiFtCo4', 'WOTbhc9D', 'cmkgcG', 'W7e+AG3cRG', 'q2/dGd3cRa', 'A1VdQSo9Fq', 'WPuzW4/dOIu', 'WO7cVpcUO58MW5O', 'WP8Klha', 'WQqMW7qRWO8', 'lmkClSkBlG', 'WOyMW61+', 'W5ipW4Swca', 'AryfxCoq', 'WQJcV01aAG', 'rXrbWOZcGG', 'WQn0nciZ', 'F8kgW7vDzW', 'EuxdMCow', 'WPRcSCkT', 'tmoYsSkJtq', 'jb1NjJG', 'BKJdKmkthW', 'heDNW77dNG', 'i3jmhCkV', 'Amk7c8o1qa', 'W7tcI8kBgmoJ', 'rLhcQCkZ', 'WPr6jJXv', 'WRiQW5a8WQ8', 'W43cHKRcQG', 'aCoChq', '4BsHYlDj4BwIYiS', 'WRzhtbv/', 'wIKcu8kA', 'b8oebCk+oa', 'WRZcOCo3ySoX', 'WPO/zIFdHq', '4PsG4PAx4PsK4PEe4Ps5', 'omk+WQ3cLW', 'luZcSv8d', 'vq5Ahmko', 'WQaXe8kwEW', 'F0xdNmkvbq', 'WRddImkx', 'DarDiSkX', 'WOHXxcvK', 'AKdcTW', 'fCkfW4xdIv8', 'Amk2d8oZxW', 'WPrbasnD', 'W5FcNSoTw8kn', 'WQSVESoIza', 'uCkADmoYjG', 'W51kyW', 'lmk4WQ3cHhi', 'rSo+smkHvW', 'WP/cT8k7CW', 'W4NdLSkd', 'WPKAdSkeEW', 'leJdOHNcHW', 'b8kpqCoJEq', 'WQ8oWPRcSN0', 'W7ldTs5CWQO', 'WPpcImo2pZW', 'imkJWRFcGea', 'WOJdISkAgSoc', 'rSksW6O5', 'W5ufW6mBpq', 'W4SwDrpcJW', 'W4ZcJvdcSSov', 'WRNcV8oYgYW', 'hCkzW4r4W4u', 'WO8RWQuPlG', 'WRdcSSk6ta', 'WRj1nWmS', 'WRDMW5O', '4BExW7VHT5hHTlaI', 'BSkNv8oZWP4', 'eSk9F8o0da', 'WOuGW6vZqq', 'WReFW4vnDa', 'W7FcUSkYfw0', 'W5mtW6G', 'xt0cxmod', 'iX7cUSkpW5W', 'W4tcVCkNkCoz', 'WPJcJ8kuCfa', 'W5P7AWTd', '4Pw2W7m2', 'dXboWOZdHW', 'EZyxAmo8', 'WPbrpqK+', 'fGrbWQZdOW', 'qKNcOKyT', 'WPjnkaK5', 'ECkwWQZcIuqLya', 'gSk8uSo8fq', 'bmkyWOtcVXm', 'WRlcQCkVxg0', 'e8k6smk7da', 'W5XoFt5Z', 'ngddRCoQFa', 's13dULJcSW', 'WRZcRGipma', 'rJHlrmoF', 'AaiExCoq', 'W47dNmoA', 'WPi/W6DUDa', 'WPCqgCobFW', 'WRaudSkQAa', 'W4GoW6Gnua', 'W6WIWO7cICoh', 'omk+W6ldVgO', 'W4bkzY1I', 'aq0SW5zI', 'emkAufFcTmoeAmkkjv7cUG', 'W7NdV2LsWQK', 'iwlcNfrK', 'WPz/CJzt', '8ys5LLlWR6U88jcjTVcxU7i', '4PsyWPNdSflcRq', 'F1tdPa', 'WOJcOL3cP8onW7NdPa', 'FSkKW5n6sq', 'FKNdKSkyxG', '4PAh4Psy4Pw5W5O5', '4Ps04PEY4PsF4PET44g7', 'W4BdL8k5a8oG', 'yuvDoCo0', 'WQhcQfa', 'WPnjjWi6', 'W4xXJ7kG8jM+SokcLVcFIjJcU8k3aW', 'W78TWPtcSSoD', 'wmk6u8o1fW', '4BsS4Bs44BAeYjljVG', 'W4VILRVILyFILQFILiW', 'DbyFtCkv', 'C8kRW47dS0O', 'W6TL8l2IQKrK', 'smoYbmkWxa', 'g8owhEkwNokvTq', 'W79NWRG3WPm', 'WPhcNmkuFeG', 'WQm+WP/cPCog', 'B07WQlcErCoJ', 'WRVcPcS', 'W63dTSkZ4Pst8yU1GEkcHUkBQ++6Ma', 'hCkWWQ3cHh0', 'WOaqb8knya', '4PEu4Psy4PsAmsq', 'bSkkcW', 'W7vQzW9r', 'dmkyhmkSma', 'W412gFcSN6r5', 'W4CliMKN', 'W4nim2mT', 'EmkWhCoQxq', 'lmkZWOdcN14', '8ysIQUkdHFczO7FcU+g0OEg2Mog3SG', 'kK7dVmoKEq', '4PwTW7hdLJ88', 'WQGiW4ldVa', 'wCoJWOi', 'WO5nfYui', 'F8kxW5NdR0W', 'ee1OW67dUG', 'cauWW5CH', 'W6/cR01bpq', 'dHLkW4FdGa', 'igddQG', '4BAP4Bw8Yi1FY7a', 'aXPbWPZdOW', 'FL3dRXVcIG', 'wSk+WObyrG', 'WRdcVCo4DSk0', 'WO4uxIJdPW', 'i8kXWO/cG1y', 'rmoevmkswa', 'amkBg8kKoa', 'i8kfvSo6W5m', 'W7WRDeFcQq', 'q8oYbmkWvG', 'WQGPW6C', 'W7/cH3RcTmoP', 'C8oIr8kNxa', 'W47dLSkocCkT', 'gg3cTve/', 'WOxcPcNdK00', 'WO8KxcBdKW', 'CHyPWQdIL7i', 'WPL/CJvB', '6PYY4BEbYy3HTPllLa', 'BvBdQGS', 'EmkHn8opDG', 'W5LymY1O', 'o+kxL+kwOokuM+kuRG', 'pmkxW4q9W60', 'rfdcOmkTW7O', 'W4JcKSk5fCoH', 'aSkZtSoDjG', 'BaHob8kh', 'itSv', 'omk2W6ldRgS', 'WQRcRmkfuru', 'W64mBr7cSG', 'i8kGumo7W5S', 'dmkmW6DBW5S', 'ECodWQlcPG', 'Dmo7WObVrG', '4Pw94Ps94PEh4PEX4PAw', 'WRRcVSkXwNa', 'WQWwWQTqqq', 'W53dSFgiMBlWN66r4OgL4PUI77Q5wcy', 'W6OLWPZcRW', 'WOaDxsNdUG', 'vf1NWOq0', 'fXrBWPZdHW', '4PEC4PwT4PA64Pwh4PAy', 'W6S2xqZcJq', 'WORdOSkLFMW', 'a1vdWOFdHq', 'lgtcOu4t', '8ywjJFcSQ5RWNPQo8yABQ3O', 'Eamyr8os', 'fuLNW67dKW', 'W4/dPwJdL20', 'sCkjamk5', 'ASkgW7RdVvW', 'WOlcPcRdIM0', 'CmkYwmoJW4S', 'A8kdcCo1EG', 'mWVcIq', 'u8oeqmk6nG', 'WPFcG8ktwSoQ', 'khLpW6FdRW', 'WO5aemo/xG', 'WOTjbMSs', '4PAY4Psf4PA24Pww4PAR', 'WPxdISoRDCks', 'iGFcICk3W70', 'W4mpvIZdUW', 'FCkWW5OvgW', 'yqDnf8k1', 'Amk0WOaHba', 'WR8mW47dRta', 'cSkkg8kOma', 'WOyCa8knFa', 'W4/dKCkwl8oE', 'lCoTW6NdKa', 'CCo5lWVdTa', '4Psn4PsG4PA94PE24PwX', 'oW3cJ8k1W7K', 'WQtcKCoqsmk6', 'WPldMCoosCkh', 'kJmNy8omgSoL', 'Emk4W54daa', 'BKJdNmkc', 'W7L7DX/cUa', 'qSojhqpdOW', 'amket8kImq', 'gSk9ba', 'WPBcQvPDxG', 'jb1kWOVdIq', 'WOpcO8k8Fsm', 'WPG+WPdcGMK', 'WO3dJmkAtSkh', 'W5dWMlgU8kUpGokcNFcPMPZdH8o5Ca', '8kEjQVcMQRNWQkU38jI7LpgeUjm', 'W5FcNmk/kmoK', 'W7WpW5xdVha', 'zGeHDSkX', 'WOShW7XwAW', 'huXGW74', 'tsGVwmks', 'F8k7m8oOuq', 'bmkohCkUpW', 'W5lcHKS', 'umo2umkWxa', 'WR/cVSkWrq', 'WQO6W64', 'y8kDwmofga', '44caW73ILkxIL77IL6q', 'WQyNW7OJWP0', 'WQBcQKPbAq', 'sL7cO8kKWRS', 'FmoZ8jcBNpcNNk7IGiVIMzdVURddJL0', 'dgNdM8ocqa', 'ewBdImomza', 'nWiFs8oz', 'u8ongHldPq', 'WR7cT8oWFW', 'WQeEbmkjBa', 'W5BdU8o/lNS', 'W4ifW74CaG', 'ECk+WO1mrG', 'WOG1W5NdRW4', 'W5RcJf/cS8oB', 'WPVcNs/dHv8', 'BdfBhaa', '4PsX4PwR4PA64Pww4PsO', 'W5uroxK', 'ECkHW7tdKv8', 'WOFcKCkkuMy', 's8kKW6fdAq', 'W67cGwBcTCoO', 'smkvhCkMxW', '4PEtW7ZcKW', 'WQFcTSk5w3C', 'bHlWVlI/8ycSSokcQEkAGE+4NCotwa', 'W7pdHSkycCov', 'W4VdGXpdV8kq', 'rCoTWOVcJbm', '8ywjIgFWTkQo8yo6MpcNUkC', 'af50WPm', 'cbze', 'WO3dR8o/tCkT', 'v8kxsCo6gG', 'W4/cSmkTAdW', 'WP7cLmktl8oX', 'vSktu8oP', 'sILmq8kq', 'xSoFWPZcHXW', 'fWe/W5b1', 'BJuaCSkk', '4PEQ4PA64PAB4Psy44ku', 'bIXSWQhdLa', 'cr3cSLa9', 'FfNdUGZcMW', 'W4aoW5RdUCks', 'BSk4W54vhG', 'lrLzWQhdGW', 'WPyrnmkoDa', 'B0ZdVq', 'FmkfW64pbG', 'WPKLW57dMqC', 'W6VdTwFcJEkvOq', 'cXDGCJq', '4BAq4BsR4BszYlpkHW', 'duzRW6BdSa', 'ESk9mSoGxG', 'A0/dKCksfa', 'WQHGlSocAq', 'WOStqqJdQa', 'zqKUu8k9', 'W6NcVmkqpG', 'usa4smoa', 'WPjykJm5', 'WP/cN8kAwNi', 'W5TLWQS', 'BhldRSkvba', '4Pw94Ps94PEh4Ps+CW', 'F8k7mmoXuq', 'WOuGW6HYBq', 'WRTUn8oBBq', 'tFcIGyFXHy2E4Ool8lAkJxLlWOS', 'nM1f', 'v+kvJEkxH+kuVUkvMq', 'ESkZu8opW40', 'CmkcW7tdQNm', 'W6aPWPtcOW', 'WPvduNfx', 'EuldR8okDW', 'WPtdM8od', 'CWxdRZOB', 'AHqqr8kv', 'WP4zxsNdLG', 'pKJcNSk5W7W', 'WP3dGmowrCkg', 'j8k9CmoQga', 'W77dTxC', 'rvpcRmkUW7a', 'pmkYWRVcHa', '4PsB4PEx4PwV4PEu4PAu', 'WP7dM8o5qCkB', 'WR1YkCoxAW', 'WOBcVg1FwW', 'bduCW5Pv', 'WR17jeRdUG', 'WOJdImoZt8kT', 'WOxcOJtdL2a', 'ceL9W77dUG', 'qCoKWPdcI1e', 'sCkidSk5mG', 'W6e1BCkhnq', 'lebfemkavSkFdt5WlchdUa', 'W63dSCo8', 'WOiTW6nUWRe', 'ESkxW5/dIau', 'o8k4W5D1sW', 'W4CQWPVcHSob', 't2RdU8ouDq', 'D8kFW4ddMKS', 'WRLSpW', 'bmk8xCo4fq', 'WPRcSmkK', 'tmojaaG', 'WPuvW7ldJYu', 'W49oW6mphq', 'DfRcOCkLW7G', 'DVcNM6RXIlQZ8y+4SpcsUyy', 'WPjCyXP1', 'W5ytya3cUW', 'ESk0W4T6sq', 'yd0GymkL', 'WRjUm8oy', 'ihTgW7NdNa', 'rc0fwq', 'v8MA4Bs5Y6pHTRu', 'uCojhrldOq', 'wvhdTSoAuq', 'cwXgEmkQ', 'WQWmW47dVdi', 'W5JWOOcF8yEFPEkaKpgoIOq9W6hcNa', '4PEY4Pw14Pw34PEH4Psz', 'sZXbiCkx', 'W4myxdRdPW', 'AuVdUKO', 'W5qfW7Wkfq', 'xfBdNCo8W4e', 'W6FcP8kzjmo/', 'W6L7BaVcQq', '44g3hEkvJ+kwTUkxKq', '4PESqSo3W5ZcRW', 'WRZcPmoG', 'WQW7W6m', 'Bmk4W6JdKLu', 'WQBcVLy', 'WPJdImoorCkp', 'f8kuW5voW5S', 'xSowuSoUvq', 'WQ8OFq', 'WPSAgCoBmW', 'k0pdHSoAAW', 'kKBdRCoCxW', 'WOL7AdrX', 'wSksgCouW7y', 'AfBcUG', 'FSkBW4hdNKS', 'W7HJm8oz', 'tf/dRXxcLW', 'WPiQW6vJtq', 'y0NcISkKW4m', 'WRBdISo0ESkV', 'WQlcQCo8qwC', 'se7dLmo5sW', 'WQRdUmokqSka', 'W6DjrZjv', 'WPxdJmowd8oy', 'A8kxW4ZdIuy', '4PAW4PsR4Pst4Pwz4Psh', 'DWXgomo7', 'dKujFmkc', 'kau1W5zZ', 'eSk2uSoVia', 'WQmEW4mxWPC', 'B8kYW5HV', 'kSo94PAT4Pw24PwS', 'WPejW67dHrK', 'cSogdCk8nG', 'ySkSumoLW58', 'WO4DqZNdOa', 'y1FdTCohvq', 'pqD7jJm', 'BSkeW4e7iW', 'W53cSCkWhmoj', 'ECkPW58FaG', 'eXbxWPW', 'wmoPWOVcNa', 'xCkFuCo5gW', 'WOijqw3dVq', 'WO9TyW', 'Bmk8ymosW5K', 'CCkbW5K', 's1dcQG', 'pWxcNmkXW7q', 'WOFdGXJIL5ZcMG', 'WPDpxCob', 'W5GEW5RcHmo3', 'Y6hkPYNHTPhHTPG', 'WROHgFcPGlT4', 'DSogWORcUdK', 'Aqraoa', 'xdGywmkr', 'W5ZdMrJdVG', '4PwP4Pwd4PEv4Ps144ch', 'W4xdP/cxSPHEW7q', 'l2NcR8oJzW', 'W78PWORcUSol', 'WOKyCcldPa', 'FuhdICkcfa', 'fGe9W5XV', 'AmoppIJdNG', 'WPaMW7ySWPa', 'kK15W6xdRq', 'WRyTW7KQWR4', 'ad/cUW', 'k23cQ3DD', 'pb55kJS', 'arP1fWe', 'wCkdwG', 'WRJcSmovySk0', 'xLhdOZZcKG', 't1xdMSoCsW', 'lauYW6Tv', 'W4pdGCko', 'j2hdOmoGFa', 'DbyFtCo5', 'WQFcUComyCkH', 'sfFcOeTC', 'zCkVW5q', 'xd4a', 'wglcTLfP', '4BAz4BEJ4Bs4YRtiUG', 'WOZcRe5zoG', '4PsI4PAZ4PAjz8kd', 'WRmFW4m', 'B1NdUHhcKq', 'Be7dRColDa', 'WOFcO8k7', 'W5HFqZ1k', 'WQWzW74iWOS', 'WP/dHSouvmkP', 'W4CYxg3dMW', 'bSkzfG', 'W6aTWPtcSSks', 'Brijxq', 'WQKAW6rYwq', 'fvJcTveY', 'rSobWOaSW6ZdL8kHb3jz', 'z8k4W4mcbq', 'rCohbXldHq', '4Pw94Ps94PEh4Ps+4Pwz', 'gvJcTf0R', 'nHlcRG', 'kHvaomkZ', 'kSodWPVcHfy', 'zhFdRCkdW5q', 'W7G/WP8', 'WP3cKmoAwSkh', 'hbq7', '4Psb4PsL4PEo4PsB4PsX', 'W6KuW6uAaG', 'ogZcQ3KA', 'sXq2WPXN', '4BsS4Bwl4BwPf+g3Pa', 'WOqqhY/dQa', 'irn6nHO', 'W5hdLSkucmoa', 'WPRWLAg78kMFU+kbLFgfIlFdGKrS', 'bHlWVlovWRRcRG', 'paDNoG', 'dv9zfNy', 'AuVdVrNcMq', 'WP4qgCkgBq', 'W5azjexdUG', 'WRBdRmk5', 'iHRcM8kVW6a', 'w8k9W6ddTMq', 'WOyxW7ddVYm', 'aqndWQpdOa', 'orRdNCk5W6y', 'EmkXlCoM', 'WRr7hSodDG', 'W6i7WPtcPCks', 'WO7cR8kT', 'qmoyWPRILj/WT4wS4OoO4PIa77IR', 'zqHm', 'W4ZcNSk2fSoi', 'iHJdH+g1O8oE', 'W49I8lQOIFgaJRlIG5/IMkNVUAZcTSox', 'WQ/cUI4', 'W5FdGmkF', 'WRlcSCo1FCkI', 'dHz9ic8', 'xmothmkX', 'B8kUW54xcW', 'WOqIW6r1Eq', 'WQhcUu5moG', 'W54LW4OyaG', 'jW3dTGXQ', 'rCongGu', 'vVglIkxWU6Md8yIiQdi', 'W6pdTxXoWQ0', 'a/cSKitWKRYd4Ok68lclKJFcSSk+', 'qfddPSo6uG', 'W4C5qt/dPG', 'dmkzhCkIjq', '4PA54PEJ4PsY4Psr4Pw1', 'dq9iWQBdSq', 'W4/dLSkugCk/', 'hriJWQO', 'WORcPMnCAa', 'AeVdRSonuq', 'CICLwmoZ', 'm8k7gSk9hq', 'WPi7WQu', 'WPhcQr3dNNO', 'FKJdS8oxaa', 'AuBdTColxq', 'bmkkaCkP', 'W51kFt0N', 'g1tcQ1S3', 'imkFW5Grta', 'WQ4zW63dJI4', 'WOS2wH/dMG', 'W74OW5qnjG', 'W5BcMCoWtmkT', '8jMIV+kcRFczOPu', 'tmo2umkVuG', 'bmkckCkodW', 'zKldR8ojtG', 'WQa+oxpcQq', 'vr/dRmoHWRe', 'WOdcTSoVAgW', 'a1NdGCoAxa', 'WRzWuH4U', 'W6D28joHSCoDmq', 'B8ksFSofoW', 'WRGcW5tdVby', 'WQ7cRSk2Bxe', '4BsCYQdHTzNiMHO', 'W5BcLSk5fCoG', 'CSk4nCojAa', 'svVcVSoUWRe', 'kbDNmq', 'fcvdgGm', 'u1dcI8kPW6m', 'e8kzW5LZ', 'WPmyeG', 'W73cQCkMhSom', 'iqbMWQNdRa', 's8khBCoeW78', 'WPXkWQ0', 'WOpdIri', 'WRnRuIvY', 'AfpdJSkxfG', 'WP17CG', 'fr5vWOddHW', 'WQCnpW8', 'W7BILj3ILRRILOJILzC', 'sKdcUhb5', 'WOfvgmoVEG', 'mCkcWRdcKvq', 'u8o0bmo+eW', 'FSknW7uGgW', 'W6O1yrJdUG', 'ySk4W4Wscq', 'W6ddO2S', 'WORcQmkrEaq', 'obDSjG', 'W6H2W5ddTG', 'WQlcQmk5', 'WRy8W6uNWPi', 'CKdcUNLE', 'W6SfW74meq', 'svVcQmk4WRu', 'AmoDW6NIL7lWK6s777I84Ooz4PQS77Ma', 'sCowhmk9xW', 'ma3cOq', 'dbbw', 'WQRcJ05AEq', 'rX4Mq8k0', 'j8k0Dmo4bG', 'W63dTmoZqNu', 'nWRcNq', 'nmkoW7DvW5C', 'hb5XmYu', 'ymktW6iMnq', 'jSosWOFILRKf', 'ata0Fxy', 'gvJcTf0', 'jaDgiSo0', 'v8kyW6Du', 'W5BcH8kLgmod', 'bCk2WQRcNHm', 'DCk6fCoUCW', 'W4rpW6SkhG', 'WQ/cRui', 'Bmk1kSoXvq', 'Emo9WOXxrG', 'W4CnW6G', 'ECkwmSoQuW', 'tfdcI2j3', 'WROeW5BdRtK', 'WQZcOK9yEW', 'nGnnzSoJ', 'E8kAW57dShu', 'WO7dMCoosCkf', 'W7tdPh1CWRq', 'fX9IWQRdSG', 'a8k8t8oVtG', 'wSkBwa', 'W7jkFH1P', 'WPldHmoBr8kn', 'yLpdTCoEsq', 'ov3ILBmjWPu', 'haVdVGK6', 'W4FWOjgB8kYDTEkbLpctUyNdJgC2', 'WR17CNbE', 'vmkcgSoVvq', 'WOyhaSke', 'WRRcU8o4DSk0', 'rsiXW4zV', 'tCk0WRRcOa0', 'cSkeaSkGnG', 'Ee7dLSowfW', 'WPVdPWlWKOkXWPS', 'WOiGW6zQyq', '4PsH4PAO4PwP4PwM4PAe', 'jwJdVmoS', 'WPBdImourmoi', '4PwF4Pwt4Pwo4PAN44cj', 'WOHggw0', 'd8kuW55mW4u', 'hmk2W7jrW7G', 'WORcO1zqAa', 'WO8yW5NdQZi', 'W5JILixILBFIL6hILjK', 'BICuF8kO', 'f1WUW7NcVW', 'fwz5W7RdPq', 'W7lcGSkfa8oH', 'WRemW5tdRhC', 'A8k2W5rVsW', 'waCdrSk+', 'AGjaomkZ', 'WONcICkBaCoc', 'WQHbiH0t', 'WOi0g8kjsG', 'WPKammkmCG', 'W6/dNSkzl8ov', 'lavHWO3dSa', 'mXOpWOZdHW', 'W4hcVY/dGIW', 'qCoIWRBcMH4', 'WRC7m8oBtW', 'h8k+vmoVeG', 'zuJdUHhcKq', 'WPRdH8oEu8oi', 'WOtcVs7dIwS', '4PAj4Pwf4PsY4PAj4PA8', 'EuFdImkKmG', 'ECkHhmogzW', 'WPm+W6uVWQq', 'cHrbWOZcGG', 'BuSpW4lIL48', 'iNJdVCo9AW', 'wCk7W6pcM2y', 'sXqdxmkL', 'cvJcV8kVW64', 'WOpdU8kFEK8', 'W4hdOmkOiCox', 'xSkEW5v8W5y', 'W5FdPwKDWOe', 'bGW/W4fa', 'WOuzuINdRa', 'BmkHlCoT', 'WQxcVSk9vNy', 'mdH9WRZdPW', 'ACkYW4f4wG', 'W7hdTx1EWRy', 'jmkQiCkjba', 'AWnrsSoA', 'ACkYW5b3rW', 'BbPXidm', 'DSkZC8oj', 'FhhdJmk1cW', 'F8o0rCkN', 'W74PWPtcSSo/', 'W5qfW6WCba', 'F8kYW5n4', 'WO5qgqe5', 'etnQWOxdPW', 'cSkrW4rXW4C', 'vSkwW6LvdG', 'WOiabmkj', '6PYP4Bw4Y7ejYlO', 'W5BcMSk4h8kn', 'WRRcLmkFqXu', 'Bbb7jNy', 'WQOLW7OVWPi', 'F8kxWO3dLuq', 'rCo5WPBcGq', 'W5RdNun8WOO', 'iMddQ8oPzW', 'sYFWVkcIsSkv', 'WQPpvanO', 'W6m8WPC', 'ymkYumo4W5a', '4Pwi4PEx4PEd4PEW4PsZ', 'WOpcKSk+DZW', 'nSkrW4ddN0m', 'WOldVSk/iSoy', 'B8k3FSk/gG', 'abXjWPe', 'wvuf4PEQ8lEeN+kcQokzJ++4Tq', 'WRzLESoAzq', 'f8k3wmk7dG', 'g8k8uSoU', 'umoXittdKG', 'pqVcVu7cLCkbW7lcUwddTa', 'hSkDhCk6gW', 'WPCgbmkaFG', 'CSkXlmkLuW', 'q1VcJSkVW7y', 'W6hdI8k4hSo0', 'Eu/dU8kFcq', 'gu/cGheE', 'W7jQyqXU', 'A8kWW4G', 'AvpcK8oyxW', 'WOaugCkfDG', 'mcD5WQxdTq', 'WQOfwbtdVG', 'WQxcTCkqDb4', 'W5ijW7Ktfq', 'WObpagSC', 'WRemW5tdRbS', 'WOFcR8kVsH8', 'zmkZW4Geta', 'BmktW7vJtW', 'xSomf8k8', '4PwIk1dcIcW', 'WQdcTCo4F8oX', 'FokvQVgaTi/IGPZIMOJVUjaElW', 'W47cNmkUfmop', 'WOtdSw3cHW', 'W4GHW6KugW', 'CmkeW5r6wG', 'CmkYWOb0wq', 'gSoyW5XYW4u', 'tmkmASogjW', 'WP4Fe3FcOW', 'ySksWRhcGLW', 'WOjfasGp', 'W6qOWRxcNmov', 'fbypW5lcIa', 'WR3cL8oTDSkq', 'BKldSSon', 'hmkycG', 'yKtcVM9y', 'ESkOW54E', 'W5iwgmkmDa', 'W5epW78uua', 'WP8izaVdSa', 'W6OTDH3cLG', 'i2hdOmoSzq', 'FSo3W49Sqa', 'W7ZdV2a', 'qxRdIYO', 'W6b6qqPt', 'BCkSu8oLha', 'EseCF8kv', 'wSkSACohW5K', 'W5erAJlcMa', 'W4FcNmkZca', 'eYKuW5zu', 'k8kcoWpdTq', 'WRnXdKRdUG', 'eL9VW6ldSq', 'WQ7cUubABG', 'orRcHa', 'WRa6W7S', 'W5JJGBTx8ywjQpcAIye', 'xH9JiCkG', 'B1FdOXxcNW', 'aW0YW5zV', 'e0NdImoSFa', 'WPeDgCkiEG', 'WQT1Da', 'cqS9W5j1', 'xCoTWPy', 'W5/cRLxcVmoq', 'WRLaamoIDG', 'WPeUW79Zzq', 'W64+AG7cLW', 'WPygv8kGDW', 'F8ozzCkjFa', 'jN3dVaRcKq', 'W79IWRC', 'vWKCWPtcLG', 'gX3cUmkVW5C', 'W4CuW74Eaa', 'WQ8iW5tdRbO', 'W717sJDZ', 'amkygW', 'WOaHW68NAq', 'W6acW5WXka', 'lEg0R+g2NmQc4Bw2', 'WQPKo8ovEa', 'DSk0vq', 'W7ddO31CWQm', 'W41w4PwE4Pwn4PAj', 'uSkgq2ZcRG', 'W6K0CaVcTG', 'WOJcOmksxbq', 'WQeSW5qHWPe', 'FbBdOb3cIG', 'jSosWOFILRNWLREQ4Ogv4PQ+77IW', '4PAz4PAN4PwhW7ZcMW', 'kSk98jArQx1V', 'cSkkh8k5pG', 'W6/cRKPuDa', 'i8kYWRO', 'W59CqG9m', 'WRldGmoPwmk/', 'W77dVur4WQi', 'ctSdrCku', '4PEp4PEn4PsI4Ps1ma', 'yGaHECkW', 'vmkRW6/dK2K', 'wCkwW7HoFq', 'Bmoyy8kl', 'ECoUDmkL', 'W5ybW7Klfq', 'DGbinCkG', 'xelXGig7W5xcRW', '8yo1PfFcSNXX', 'WRC+W47dQsm', '4Ps74PE24Ps94PAC4Pw1', 'k8kHW4jYW7m', '4PAHW73cQVczOyBIGPpWSBkama', 'WORcGcpdRK8', 'W57cHKy', 'DSk2W45/yG', 'mCoDWP47ba', 'WP0IW7JdUXK', 'twRcIvq', 'W4JcI8kVpCoR', 'WOiUW6LTAq', 'WPRdHmoF', 'WRH7W47dR8khrmoqgColxxFcK8o5', 'vmo+umkOxa', 'k8kVWOtcPeu', 'BfldRmoivq', 'oSkYWRpcNeO', 'sCoNumkTvG', 'WOdcPIi', 'tKldTColwq', '4BAzY4FjSmIa4BEE'];
+      _0x138f = function () {
+        return _0x4e279a;
+      };
+      return _0x138f();
+    }
+    _0x30a481.react = '🔖';
+    _0x30a481.desc = "Contact to bot owner";
+    _0x30a481.category = "main";
+    _0x30a481.use = ".rsquest2";
+    _0x30a481.filename = __filename;
+    cmd(_0x30a481, async (_0x1983fe, _0x567a62, _0x423dcd, {
+      from: _0x84830c,
+      prefix: _0x48f329,
+      l: _0x4fa716,
+      quoted: _0x907b87,
+      body: _0x380ad0,
+      isCmd: _0x3f4223,
+      command: _0x1edb41,
+      args: _0x18c1cc,
+      q: _0x53c719,
+      isGroup: _0xd3d485,
+      sender: _0x10b0e3,
+      senderNumber: _0x22fb03,
+      botNumber2: _0x8f9242,
+      botNumber: _0x6ff619,
+      pushname: _0x276117,
+      isMe: _0x3c1b25,
+      isOwner: _0x37f9c3,
+      groupMetadata: _0x11e3bf,
+      groupName: _0x2a4c70,
+      participants: _0x26523d,
+      groupAdmins: _0x28ca1e,
+      isBotAdmins: _0x2cf817,
+      isAdmins: _0x5eb645,
+      reply: _0x3d6345
+    }) => {
+      function _0x277546(_0x31b4ce, _0x333e16, _0x528604, _0x52d2a8, _0x281ef2) {
+        return _0x10cc(_0x281ef2 + 0x44a - 0x1d1, _0x528604);
+      }
+      function _0x28b404(_0x2f193b, _0x2ecd5a, _0x3231fe, _0x1b78af, _0x15f22f) {
+        return _0x10cc(_0x2f193b + 0xae - 0x1d1, _0x1b78af);
+      }
+      function _0x3a82cf(_0x3b1b89, _0x25ae95, _0x2ab902, _0x31e73e, _0x1b150) {
+        return _0x10cc(_0x1b150 - 0x216 - 0x1a5, _0x25ae95);
+      }
+      const _0x43d8ab = {
+        'ECFKj': function (_0x73897, _0xc6625b) {
+          return _0x73897 === _0xc6625b;
+        },
+        'agIde': "main",
+        'eZksR': function (_0x2cdd52, _0x5cb5ec) {
+          return _0x2cdd52 + _0x5cb5ec;
+        },
+        'rbZNi': "《 █▒▒▒▒▒▒▒▒▒▒▒》10%",
+        'OfiaM': "《 ████▒▒▒▒▒▒▒▒》30%",
+        'VKAvg': "《 ███████▒▒▒▒▒》50%",
+        'BArUi': "《 ██████████▒▒》80%",
+        'igBsr': "《 ████████████》100%",
+        'VdJOL': "𝚁𝙴𝙿𝙾𝚁𝚃 𝚂𝙴𝙽𝙳 𝚃𝙾 𝚃𝙷𝙴 𝙾𝚆𝙽𝙴𝚁...",
+        'BiUWq': "ꜱᴇɴᴅɪɴɢ...",
+        'saIoE': function (_0x5c91d5, _0x135e3d) {
+          return _0x5c91d5 < _0x135e3d;
+        },
+        'JAsnl': "yppGn",
+        'ThuEw': "This report has already been forwarded to the owner. Please wait for a response.",
+        'IqLWZ': function (_0x174797, _0x165fd3) {
+          return _0x174797 + _0x165fd3;
+        },
+        'qkXiU': "@s.whatsapp.net",
+        'zgceT': function (_0xc70001, _0x10d64d) {
+          return _0xc70001 + _0x10d64d;
+        },
+        'aNpXt': "Tʜᴀɴᴋ ʏᴏᴜ ꜰᴏʀ ʏᴏᴜʀ ʀᴇᴘᴏʀᴛ. Iᴛ ʜᴀs ʙᴇᴇɴ ꜰᴏʀᴡᴀʀᴅᴇᴅ ᴛᴏ ᴛʜᴇ ᴏᴡɴᴇʀ. Pʟᴇᴀsᴇ ᴡᴀɪᴛ ꜰᴏʀ ᴀ ʀᴇsᴘᴏɴsᴇ.",
+        'pAlhS': function (_0x213786, _0x5dd5d3) {
+          return _0x213786(_0x5dd5d3);
+        },
+        'Cqpqe': "*Error !!*"
+      };
+      function _0x1359b2(_0x59596f, _0x1582b5, _0x491b47, _0x2eb256, _0x554c89) {
+        return _0x10cc(_0x2eb256 + 0x4d3 - 0x1a5, _0x554c89);
+      }
+      function _0x6bb66c(_0x1fa88c, _0x12853e, _0x59b0e5, _0x5d5238, _0x1cb36d) {
+        return _0x10cc(_0x1cb36d + 0x22f - 0x24d, _0x12853e);
+      }
+      try {
+        if (!_0x53c719) {
+          return _0x567a62.reply("Example: " + (_0x48f329 + _0x1edb41) + " Hi Hamza play command is not working");
+        }
+        var _0x57273a = ["《 █▒▒▒▒▒▒▒▒▒▒▒》10%", "《 ████▒▒▒▒▒▒▒▒》30%", "《 ███████▒▒▒▒▒》50%", "《 ██████████▒▒》80%", "《 ████████████》100%", "𝚁𝙴𝙿𝙾𝚁𝚃 𝚂𝙴𝙽𝙳 𝚃𝙾 𝚃𝙷𝙴 𝙾𝚆𝙽𝙴𝚁..."];
+        const _0x32c197 = {
+          text: "ꜱᴇɴᴅɪɴɢ..."
+        };
+        let {
+          key: _0x82fd55
+        } = await _0x1983fe.sendMessage(_0x84830c, _0x32c197);
+        for (let _0x596c8 = 0; _0x596c8 < _0x57273a.length; _0x596c8++) {
+          const _0x2ec19a = {
+            text: _0x57273a[_0x596c8],
+            edit: _0x82fd55
+          };
+          await _0x1983fe.sendMessage(_0x84830c, _0x2ec19a);
+        }
+        const _0x2a3216 = _0x567a62.key.id;
+        if (reportedMessages[_0x2a3216]) {
+          return _0x567a62.reply("This report has already been forwarded to the owner. Please wait for a response.");
+        }
+        reportedMessages[_0x2a3216] = true;
+        const _0x1bc7a4 = "\n\n*User*: @" + _0x423dcd.sender.split('@')[0] + "\n*Request/Bug*: " + _0x53c719;
+        const _0x5d9dd9 = "\n\n*Hi " + _0x276117 + ", your request has been forwarded to my Owners.*\n*Please wait...*";
+        _0x1983fe.sendMessage("923072380380@s.whatsapp.net", {
+          'text': "*| REQUEST/BUG |*" + _0x1bc7a4,
+          'mentions': [_0x567a62.sender]
+        }, {
+          'quoted': _0x567a62
+        });
+        _0x567a62.reply("Tʜᴀɴᴋ ʏᴏᴜ ꜰᴏʀ ʏᴏᴜʀ ʀᴇᴘᴏʀᴛ. Iᴛ ʜᴀs ʙᴇᴇɴ ꜰᴏʀᴡᴀʀᴅᴇᴅ ᴛᴏ ᴛʜᴇ ᴏᴡɴᴇʀ. Pʟᴇᴀsᴇ ᴡᴀɪᴛ ꜰᴏʀ ᴀ ʀᴇsᴘᴏɴsᴇ.");
+        const _0x590140 = {
+          text: '✅',
+          key: _0x567a62.key
+        };
+        const _0x3959d3 = {
+          react: _0x590140
+        };
+        await _0x1983fe.sendMessage(_0x84830c, _0x3959d3);
+      } catch (_0x15005a) {
+        _0x3d6345("*Error !!*");
+        _0x4fa716(_0x15005a);
+      }
+    });
+    const _0x1d0369 = {
+      pattern: "request2",
+      react: '⚙️',
+      desc: "Contact to bot owner",
+      category: "main",
+      use: ".request",
+      filename: __filename
+    };
+    cmd(_0x1d0369, async (_0xfa0002, _0x164f1b, _0x2554f7, {
+      from: _0x4f668b,
+      l: _0x300a36,
+      prefix: _0x20d71f,
+      quoted: _0xfd5391,
+      body: _0x5bb3f0,
+      isCmd: _0x36b8b1,
+      command: _0x21f874,
+      args: _0xc874fa,
+      q: _0x9f1088,
+      isGroup: _0x40c01d,
+      sender: _0x5b9f50,
+      senderNumber: _0x5519e5,
+      botNumber2: _0x9f7024,
+      botNumber: _0x250cac,
+      pushname: _0x3f7429,
+      isMe: _0x142d18,
+      isOwner: _0x352407,
+      groupMetadata: _0x55fb48,
+      groupName: _0x609a1a,
+      participants: _0x3b7db7,
+      groupAdmins: _0xdbcaa6,
+      isBotAdmins: _0x39cea2,
+      isAdmins: _0x18ae2e,
+      reply: _0x391e98
+    }) => {
+      function _0x1a5c26(_0x5182dc, _0x47a4a3, _0x45a180, _0x4ee570, _0x21fe9d) {
+        return _0x10cc(_0x21fe9d + 0x38a - 0x10d, _0x4ee570);
+      }
+      const _0x32360b = {
+        'vXrrf': "《 █▒▒▒▒▒▒▒▒▒▒▒》10%",
+        'MoNhA': "《 ████▒▒▒▒▒▒▒▒》30%",
+        'cxGTv': "《 ███████▒▒▒▒▒》50%",
+        'HigRm': "《 ██████████▒▒》80%",
+        'mfSiG': "《 ████████████》100%",
+        'HBLaw': "𝚁𝙴𝙿𝙾𝚁𝚃 𝚂𝙴𝙽𝙳 𝚃𝙾 𝚃𝙷𝙴 𝙾𝚆𝙽𝙴𝚁...",
+        'kJnDQ': "ꜱᴇɴᴅɪɴɢ...",
+        'OHrCG': function (_0x410a8a, _0x197a8c) {
+          return _0x410a8a < _0x197a8c;
+        },
+        'KIiYH': "blank",
+        'IbKAJ': function (_0x2c951b, _0x216464) {
+          return _0x2c951b(_0x216464);
+        },
+        'HWIau': "🛑 This is an owner command...",
+        'lgWym': function (_0x63fdd8, _0x468500) {
+          return _0x63fdd8(_0x468500);
+        }
+      };
+      function _0x562133(_0x520e9b, _0x168ab0, _0x207348, _0x507cb7, _0x13b924) {
+        return _0x10cc(_0x520e9b + 0x57b - 0x24d, _0x168ab0);
+      }
+      function _0x22ca14(_0x3e5f2e, _0x3ab622, _0x2bbe65, _0x229c59, _0x4ef2f7) {
+        return _0x10cc(_0x3e5f2e + 0x1d0 - 0xf5, _0x2bbe65);
+      }
+      function _0x58b4a0(_0x3c3713, _0x3bc08d, _0x1f6a98, _0x3b1725, _0x5c27c9) {
+        return _0x10cc(_0x1f6a98 + 0x1d6 - 0x10d, _0x3c3713);
+      }
+      function _0x4c4bc5(_0x1f9a8f, _0x565f67, _0x4d71dd, _0x5358e4, _0x345dd3) {
+        return _0x10cc(_0x5358e4 + 0x3cd - 0xf5, _0x1f9a8f);
+      }
+      try {
+        let _0x53a0b4 = "Enter The Bug Example\n\n" + _0x21f874 + " < YOUR REPORT MASSAGE > ";
+        var _0x2f5f6f = ["《 █▒▒▒▒▒▒▒▒▒▒▒》10%", "《 ████▒▒▒▒▒▒▒▒》30%", "《 ███████▒▒▒▒▒》50%", "《 ██████████▒▒》80%", "《 ████████████》100%", "𝚁𝙴𝙿𝙾𝚁𝚃 𝚂𝙴𝙽𝙳 𝚃𝙾 𝚃𝙷𝙴 𝙾𝚆𝙽𝙴𝚁..."];
+        const _0x5dd42d = {
+          text: "ꜱᴇɴᴅɪɴɢ..."
+        };
+        let {
+          key: _0x122228
+        } = await _0xfa0002.sendMessage(_0x4f668b, _0x5dd42d);
+        for (let _0x32b9d5 = 0; _0x32b9d5 < _0x2f5f6f.length; _0x32b9d5++) {
+          const _0x4be487 = {
+            text: _0x2f5f6f[_0x32b9d5],
+            edit: _0x122228
+          };
+          await _0xfa0002.sendMessage(_0x4f668b, _0x4be487);
+        }
+        await _0xfa0002.sendMessage("923072380380@s.whatsapp.net", {
+          'text': "*Bug Report From:* wa.me/" + _0x164f1b.sender.split('@')[0] + "\n\n*Bug Report*\n" + (_0x9f1088 ? _0x9f1088 : "blank")
+        });
+        const _0x42a06c = await _0xfa0002.sendMessage("*『 𝙱𝚄𝙶 𝚁𝙴𝙿𝙾𝚁𝚃 』*");
+        const _0x522a22 = {
+          text: '✅',
+          key: _0x164f1b.key
+        };
+        const _0x34c6c3 = {
+          react: _0x522a22
+        };
+        await _0xfa0002.sendMessage(_0x4f668b, _0x34c6c3);
+      } catch (_0x15859c) {
+        _0x391e98("🛑 This is an owner command...");
+        _0x300a36(_0x15859c);
+      }
+    });
+    const _0x244268 = {
+      pattern: "setbio",
+      react: '⚙️',
+      desc: "To change bot number bio",
+      category: "main",
+      use: ".setbio",
+      filename: __filename
+    };
+    cmd(_0x244268, async (_0xd6a37c, _0x48b030, _0x5f35c4, {
+      from: _0x15bdfc,
+      prefix: _0xce0ad3,
+      l: _0x2f191c,
+      quoted: _0x63301e,
+      body: _0x2ada12,
+      isCmd: _0x2135c6,
+      command: _0x37b673,
+      args: _0xec335c,
+      q: _0x23b2d9,
+      isGroup: _0x5ebeed,
+      sender: _0x1bf212,
+      senderNumber: _0x37b9cc,
+      botNumber2: _0x2b31a9,
+      botNumber: _0x59efd3,
+      pushname: _0x1fce74,
+      isMe: _0xf14164,
+      isOwner: _0x16bb30,
+      groupMetadata: _0x3b2d27,
+      groupName: _0x3665eb,
+      participants: _0x33e6b9,
+      groupAdmins: _0x162dc5,
+      isBotAdmins: _0x2c31be,
+      isAdmins: _0x14b48d,
+      reply: _0x3bfc44
+    }) => {
+      function _0x4c7d9d(_0x2be854, _0x51d5aa, _0x139ecc, _0x7c1fb9, _0x248bcd) {
+        return _0x10cc(_0x7c1fb9 + 0x6f - 0x24d, _0x248bcd);
+      }
+      function _0x25514c(_0x30287d, _0x3dad23, _0x136574, _0x296edc, _0x10db0a) {
+        return _0x10cc(_0x136574 + 0x4eb - 0x1d1, _0x10db0a);
+      }
+      function _0x3e2bf9(_0x16090d, _0x459a65, _0x3ae329, _0x4986ed, _0x26a127) {
+        return _0x10cc(_0x459a65 - 0x53 - 0x1a5, _0x3ae329);
+      }
+      const _0x391948 = {
+        'mRgPG': "3|4|1|2|0",
+        'yujXs': function (_0x24d498, _0x4c072b) {
+          return _0x24d498(_0x4c072b);
+        },
+        'uvGYM': function (_0x4b0ead, _0xbbfca5) {
+          return _0x4b0ead + _0xbbfca5;
+        },
+        'yEfEi': function (_0x5eb326, _0x246888) {
+          return _0x5eb326(_0x246888);
+        },
+        'pTYAW': "*🛑 This is an owner command...*"
+      };
+      function _0x15087f(_0x3217dc, _0x545a8a, _0x100e70, _0x2dea4a, _0x3847e1) {
+        return _0x10cc(_0x3847e1 + 0x263 - 0x1a5, _0x3217dc);
+      }
+      function _0x955a12(_0x314398, _0x1879f4, _0x451a73, _0x165c50, _0x52bfcc) {
+        return _0x10cc(_0x52bfcc + 0x2bf - 0x24d, _0x165c50);
+      }
+      try {
+        if (!_0xf14164) {
+          return await _0x3bfc44(BOTOW);
+        }
+        if (!_0x23b2d9) {
+          return _0x3bfc44("Where is the text?\nExample: " + (_0xce0ad3 + _0x37b673) + " izumi Bot");
+        }
+        await _0xd6a37c.updateProfileStatus(_0x23b2d9);
+        _0x3bfc44("Success in changing the bio of bot's number");
+        const _0x4a8379 = {
+          text: '✅',
+          key: _0x48b030.key
+        };
+        const _0x3823c0 = {
+          react: _0x4a8379
+        };
+        await _0xd6a37c.sendMessage(_0x15bdfc, _0x3823c0);
+      } catch (_0x56079a) {
+        _0x3bfc44("*🛑 This is an owner command...*");
+        _0x2f191c(_0x56079a);
+      }
+    });
+    const _0x2fdc1e = {
+      pattern: "getsession",
+      react: '🔖',
+      desc: "To get bot session",
+      category: "main",
+      use: ".getsession",
+      filename: __filename
+    };
+    cmd(_0x2fdc1e, async (_0x47fc63, _0x27b1b3, _0x3b524a, {
+      from: _0x1c6b85,
+      prefix: _0x48b846,
+      l: _0xc836a,
+      quoted: _0x189e0f,
+      body: _0x57d717,
+      isCmd: _0x2f4247,
+      command: _0x1f040e,
+      args: _0x1b344e,
+      q: _0xbcf409,
+      isGroup: _0x464636,
+      sender: _0x24cf13,
+      senderNumber: _0x3078ee,
+      botNumber2: _0x50a413,
+      botNumber: _0x3be08d,
+      pushname: _0x2826db,
+      isMe: _0x311db9,
+      isOwner: _0x1b9f04,
+      groupMetadata: _0x4aa232,
+      groupName: _0x3beec2,
+      participants: _0x26b43a,
+      groupAdmins: _0x4c6359,
+      isBotAdmins: _0x249369,
+      isAdmins: _0x3afb69,
+      reply: _0x539bfc
+    }) => {
+      function _0x109705(_0x4217c1, _0x39de71, _0x2aa207, _0x3b24a2, _0x20e2be) {
+        return _0x10cc(_0x39de71 + 0x21c - 0x10d, _0x2aa207);
+      }
+      function _0x1212a6(_0x14e734, _0x288ccc, _0x103e2e, _0xbf8344, _0x1573d7) {
+        return _0x10cc(_0x1573d7 - 0x194 - 0x1d1, _0x103e2e);
+      }
+      function _0x240887(_0x5c3c42, _0x3b5a61, _0xb25ba1, _0x548e0f, _0x3b1b1e) {
+        return _0x10cc(_0x3b5a61 + 0xe9 - 0x10d, _0x548e0f);
+      }
+      const _0xe8e59d = {
+        'MmcCX': function (_0x55df6f, _0x5b39d0) {
+          return _0x55df6f(_0x5b39d0);
+        },
+        'nojZD': function (_0x1c9340, _0x5c5fff) {
+          return _0x1c9340(_0x5c5fff);
+        },
+        'QyPQf': "Wait a moment, currently retrieving your session file",
+        'HRkOo': "./session/creds.json",
+        'ncQUz': "application/json",
+        'aTjRK': "creds.json",
+        'ELodH': "*🛑 This is an owner command...*",
+        'DnMQR': function (_0x9e6ac5, _0x4f336b) {
+          return _0x9e6ac5(_0x4f336b);
+        }
+      };
+      function _0x5e3a25(_0x3a6a51, _0x26913f, _0x2c7267, _0x4e78fa, _0x4bbdd3) {
+        return _0x10cc(_0x4bbdd3 + 0x3dc - 0x10d, _0x26913f);
+      }
+      function _0x33840e(_0x363fc, _0x4bc008, _0x175d6c, _0x472a9d, _0x1ef45f) {
+        return _0x10cc(_0x363fc - 0x3d - 0x1d1, _0x4bc008);
+      }
+      try {
+        if (!_0x311db9) {
+          return await _0x539bfc(BOTOW);
+        }
+        _0x539bfc("Wait a moment, currently retrieving your session file");
+        let _0x49e7c7 = fs.readFileSync("./session/creds.json");
+        const _0x23c3bf = {
+          document: _0x49e7c7,
+          mimetype: "application/json",
+          fileName: "creds.json"
+        };
+        _0x47fc63.sendMessage(_0x27b1b3.chat, _0x23c3bf, {
+          'quoted': _0x27b1b3
+        });
+        const _0x3bb278 = {
+          text: '✅',
+          key: _0x27b1b3.key
+        };
+        const _0x38a929 = {
+          react: _0x3bb278
+        };
+        await _0x47fc63.sendMessage(_0x1c6b85, _0x38a929);
+      } catch (_0x461a7d) {
+        _0x539bfc("*🛑 This is an owner command...*");
+        _0xc836a(_0x461a7d);
+      }
+    });
+    const _0x317525 = {
+      pattern: "delsession",
+      react: '🔖',
+      desc: "To delete bot session",
+      category: "main",
+      use: ".delsession",
+      filename: __filename
+    };
+    cmd(_0x317525, async (_0x3c5a8b, _0x20b990, _0x416ed1, {
+      from: _0x480ad4,
+      prefix: _0xc1decf,
+      l: _0x55056b,
+      quoted: _0x5c35ef,
+      body: _0x40b69f,
+      isCmd: _0x46c75c,
+      command: _0x349585,
+      args: _0x72967b,
+      q: _0x289d29,
+      isGroup: _0x2f5678,
+      sender: _0x533d1c,
+      senderNumber: _0x1548c7,
+      botNumber2: _0x3b2b9a,
+      botNumber: _0x369613,
+      pushname: _0x57832a,
+      isMe: _0x4a2cf3,
+      isOwner: _0x46bf23,
+      groupMetadata: _0x320477,
+      groupName: _0x215fa3,
+      participants: _0x504fb1,
+      groupAdmins: _0x3eb1c1,
+      isBotAdmins: _0x54c4c5,
+      isAdmins: _0x3628ea,
+      reply: _0x1eb29b
+    }) => {
+      const _0x89f8a2 = {
+        'loiWZ': function (_0x4ea8cf, _0x2cdbf5) {
+          return _0x4ea8cf + _0x2cdbf5;
+        },
+        'pFxPg': "Unable to scan directory: ",
+        'JDHrS': function (_0x1733c3, _0x3c124e) {
+          return _0x1733c3(_0x3c124e);
+        },
+        'DewKF': function (_0x54e9a1, _0x1dcfd0) {
+          return _0x54e9a1 == _0x1dcfd0;
+        },
+        'RmsNj': function (_0x2bf2c9) {
+          return _0x2bf2c9();
+        },
+        'dHKCU': function (_0x5be035, _0x13aebd) {
+          return _0x5be035(_0x13aebd);
+        },
+        'RimDl': function (_0x53ac02, _0x389e58) {
+          return _0x53ac02(_0x389e58);
+        },
+        'HKeWB': "Deleting junk files...",
+        'yCfBr': function (_0xd348e4, _0x5b9bbd) {
+          return _0xd348e4(_0x5b9bbd);
+        },
+        'tPXVw': "Successfully deleted all the trash in the session folder",
+        'RllpT': "./session",
+        'MvwvA': "*🛑 This is an owner command...*"
+      };
+      function _0x5c3379(_0xaac30, _0x1da2d2, _0x1edd83, _0x40943a, _0x5c44f2) {
+        return _0x10cc(_0xaac30 + 0x3b2 - 0xf5, _0x5c44f2);
+      }
+      function _0xed9cc(_0x1c9c71, _0x454218, _0x40e188, _0x29d5a2, _0x2d74cb) {
+        return _0x10cc(_0x1c9c71 + 0x41f - 0x1d1, _0x2d74cb);
+      }
+      function _0x9ae82c(_0xbc2bdf, _0x19fcf9, _0x52a52d, _0x1d07e8, _0x3d86d9) {
+        return _0x10cc(_0x3d86d9 - 0x195 - 0x1a5, _0x52a52d);
+      }
+      function _0x3e9e0e(_0x296689, _0x5966d4, _0x21a490, _0x49a3d3, _0x55a9e1) {
+        return _0x10cc(_0x5966d4 + 0x11e - 0x24d, _0x21a490);
+      }
+      function _0x514938(_0x5163c, _0x265810, _0x3ddcc9, _0x2ce00a, _0x25c456) {
+        return _0x10cc(_0x25c456 + 0x44a - 0x1d1, _0x3ddcc9);
+      }
+      try {
+        if (!_0x4a2cf3) {
+          return await _0x1eb29b(BOTOW);
+        }
+        fs.readdir("./session", async function (_0x7b26da, _0x3d7163) {
+          if (_0x7b26da) {
+            console.log("Unable to scan directory: " + _0x7b26da);
+            return _0x1eb29b("Unable to scan directory: " + _0x7b26da);
+          }
+          function _0x8ebe95(_0x5bcec6, _0x457620, _0x41e186, _0x53e537, _0x583ba1) {
+            return _0x10cc(_0x583ba1 - 0x52e + 0x3b2 - 0xf5, _0x41e186);
+          }
+          let _0x112bb0 = await _0x3d7163.filter(_0x404230 => _0x404230.startsWith("pre-key") || _0x404230.startsWith("sender-key") || _0x404230.startsWith("session-") || _0x404230.startsWith("app-state"));
+          function _0x2845c1(_0x3dbbcf, _0x36cada, _0x47ad41, _0x5808a9, _0x9c97e6) {
+            return _0x10cc(_0x3dbbcf - 0x56c + 0x44a - 0x1d1, _0x9c97e6);
+          }
+          console.log(_0x112bb0.length);
+          let _0x803a72 = "Detected " + _0x112bb0.length + " junk files\n\n";
+          function _0x3d0e56(_0x5a7ab3, _0x52f39d, _0x23bc2e, _0x565ef1, _0x211707) {
+            return _0x10cc(_0x211707 + 0x91 + 0x41f - 0x1d1, _0x23bc2e);
+          }
+          if (_0x112bb0.length == 0) {
+            return _0x1eb29b();
+          }
+          _0x112bb0.map(function (_0x54058a, _0x2e9c70) {
+            function _0x4a3692(_0xaa48ee, _0x4e4868, _0x2cb4cc, _0x186396, _0x1d52c8) {
+              return _0x10cc(_0x1d52c8 + 0x34b - 0x56c + 0x44a - 0x1d1, _0x2cb4cc);
+            }
+            function _0x2eecca(_0x210aca, _0x1aacfb, _0x175eee, _0x6418ce, _0x185ff5) {
+              return _0x10cc(_0x6418ce - 0x155 - 0x24e + 0x3b2 - 0xf5, _0x210aca);
+            }
+            _0x803a72 += _0x2e9c70 + 1 + (". " + _0x54058a + "\n");
+          });
+          _0x1eb29b();
+          function _0x50c197(_0x52874b, _0x8bb490, _0x3b7cca, _0xef9ff0, _0x9871f0) {
+            return _0x10cc(_0xef9ff0 - 0x174 + 0x41f - 0x1d1, _0x9871f0);
+          }
+          function _0x231c5b(_0x357ab5, _0x4558dd, _0x3d5199, _0x47b9eb, _0x1f2504) {
+            return _0x10cc(_0x357ab5 - 0x24e + 0x3b2 - 0xf5, _0x3d5199);
+          }
+          await sleep(2000);
+          _0x1eb29b("Deleting junk files...");
+          await _0x112bb0.forEach(function (_0x37e09a) {
+            function _0x2db107(_0x24500f, _0x39e213, _0xe31a2c, _0x1a0668, _0x55ee85) {
+              return _0x10cc(_0x39e213 + 0x193 - 0x24e + 0x3b2 - 0xf5, _0x1a0668);
+            }
+            function _0x2bedcf(_0x34d005, _0x238eab, _0xa5d5fe, _0xb41c9c, _0x3ccfcc) {
+              return _0x10cc(_0x34d005 + 0x5b5 - 0x52e + 0x3b2 - 0xf5, _0xb41c9c);
+            }
+            function _0x1a001d(_0x3e86ac, _0x52e0c7, _0x72dff9, _0xd89e1f, _0x3877fc) {
+              return _0x10cc(_0x52e0c7 - 0x491 + 0x91 + 0x41f - 0x1d1, _0xd89e1f);
+            }
+            function _0x27af44(_0x24f227, _0xe6e8a, _0x416153, _0x577c63, _0xb4b7e7) {
+              return _0x10cc(_0x577c63 - 0x40d - 0x174 + 0x41f - 0x1d1, _0xb4b7e7);
+            }
+            fs.unlinkSync("./session/" + _0x37e09a);
+          });
+          await sleep(2000);
+          _0x1eb29b("Successfully deleted all the trash in the session folder");
+        });
+        const _0x120e8b = {
+          text: '✅',
+          key: _0x20b990.key
+        };
+        const _0x18cf31 = {
+          react: _0x120e8b
+        };
+        await _0x3c5a8b.sendMessage(_0x480ad4, _0x18cf31);
+      } catch (_0x5d52bd) {
+        _0x1eb29b("*🛑 This is an owner command...*");
+        _0x55056b(_0x5d52bd);
+      }
+    });
+    const _0x111fdc = {
+      pattern: "unblock",
+      react: '🔖',
+      desc: "To unblock a member",
+      category: "main",
+      use: ".unblock",
+      filename: __filename
+    };
+    cmd(_0x111fdc, async (_0x79eab4, _0xbc994, _0x325eca, {
+      from: _0x65caa8,
+      prefix: _0x3e47c9,
+      l: _0x55a52f,
+      quoted: _0x25dab1,
+      body: _0x1153b9,
+      isCmd: _0x2885f9,
+      command: _0x3cf378,
+      args: _0x1fcc2a,
+      q: _0x466e52,
+      isGroup: _0x1836c6,
+      sender: _0x41793a,
+      senderNumber: _0x23979a,
+      botNumber2: _0x2bedb6,
+      botNumber: _0xbc2051,
+      pushname: _0x4ae56f,
+      isMe: _0x1e6a43,
+      isOwner: _0xc0b839,
+      groupMetadata: _0x42c1a5,
+      groupName: _0x4bf842,
+      participants: _0x1ac3cc,
+      groupAdmins: _0x3c3c92,
+      isBotAdmins: _0x12befc,
+      isAdmins: _0x2d2017,
+      reply: _0xd34a5e
+    }) => {
+      function _0x3c367e(_0x2d29b8, _0x462c4d, _0x24bc20, _0x177b7f, _0xe37a68) {
+        return _0x10cc(_0x24bc20 + 0x347 - 0x1d1, _0x2d29b8);
+      }
+      function _0x3b2f77(_0x1fda81, _0x2a97d7, _0x4148f1, _0x16057d, _0x23ea58) {
+        return _0x10cc(_0x1fda81 + 0x1bc - 0x1d1, _0x4148f1);
+      }
+      function _0x4b41e5(_0x2b0fe0, _0x1f5e30, _0x2579cd, _0x2d0188, _0x11f91f) {
+        return _0x10cc(_0x2579cd + 0x328 - 0x10d, _0x11f91f);
+      }
+      function _0x2170a7(_0x168a98, _0x27ea97, _0x235a33, _0x3ecf6d, _0x3c06da) {
+        return _0x10cc(_0x3c06da + 0x414 - 0xf5, _0x235a33);
+      }
+      const _0x3144ec = {
+        'cSRMZ': function (_0xc8a376, _0xf0819c) {
+          return _0xc8a376(_0xf0819c);
+        },
+        'AFKMZ': function (_0x5963b5, _0x47e3f6) {
+          return _0x5963b5 + _0x47e3f6;
+        },
+        'ZVwYS': "@s.whatsapp.net",
+        'UbNuk': "unblock",
+        'oRyZv': "*🛑 This is an owner command...*",
+        'kANEm': function (_0x42445a, _0x5e9c64) {
+          return _0x42445a(_0x5e9c64);
+        }
+      };
+      function _0x1ab742(_0x16948e, _0x2b1bbf, _0x11b641, _0x710b2f, _0x4a5776) {
+        return _0x10cc(_0x4a5776 + 0x12e - 0xf5, _0x16948e);
+      }
+      try {
+        if (!_0x1e6a43) {
+          return await _0xd34a5e(BOTOW);
+        }
+        let _0x36abdb = _0xbc994.mentionedJid ? _0xbc994.mentionedJid : _0xbc994.quoted ? _0xbc994.quoted.sender : _0x466e52.replace(/[^0-9]/g, '') + "@s.whatsapp.net";
+        await _0x79eab4.updateBlockStatus(_0x36abdb, "unblock").then(_0x5d8b25 => _0xd34a5e(jsonformat(_0x5d8b25)))["catch"](_0x1e7722 => _0xd34a5e(jsonformat(_0x1e7722)));
+        const _0x3f8fb7 = {
+          text: '✅',
+          key: _0xbc994.key
+        };
+        const _0x221483 = {
+          react: _0x3f8fb7
+        };
+        await _0x79eab4.sendMessage(_0x65caa8, _0x221483);
+      } catch (_0x2b006f) {
+        _0xd34a5e("*🛑 This is an owner command...*");
+        _0x55a52f(_0x2b006f);
+      }
+    });
+    const _0x25cc8a = {
+      pattern: "shutdown",
+      react: '⚙️'
+    };
+    function _0x473b04(_0x3b3d56, _0x5c4626, _0x107259, _0x197e0e, _0xf3650e) {
+      return _0x10cc(_0xf3650e - 0x1a5, _0x5c4626);
+    }
+    _0x25cc8a.desc = "To shutdown the bot";
+    _0x25cc8a.category = "main";
+    _0x25cc8a.use = ".shutdown";
+    _0x25cc8a.filename = __filename;
+    cmd(_0x25cc8a, async (_0x52c546, _0x5ea818, _0x44a2a4, {
+      from: _0x4995ab,
+      prefix: _0x27039c,
+      l: _0x4a3d08,
+      quoted: _0x3782cd,
+      body: _0x550894,
+      isCmd: _0x11e0ec,
+      command: _0x5501c3,
+      args: _0x5ad3b8,
+      q: _0xc142f5,
+      isGroup: _0x1fcd86,
+      sender: _0x517865,
+      senderNumber: _0x3cd036,
+      botNumber2: _0x5974de,
+      botNumber: _0x435574,
+      pushname: _0x416f8d,
+      isMe: _0x438d2a,
+      isOwner: _0x4c9306,
+      groupMetadata: _0xe3293e,
+      groupName: _0x11f172,
+      participants: _0x2919d3,
+      groupAdmins: _0x322b03,
+      isBotAdmins: _0x286c39,
+      isAdmins: _0x8b3dfe,
+      reply: _0x4fc404
+    }) => {
+      function _0x5b6125(_0x2e7303, _0x3b6ec5, _0x2360a0, _0x4cb79c, _0x1d311e) {
+        return _0x10cc(_0x2360a0 + 0x5b7 - 0x24d, _0x2e7303);
+      }
+      function _0x563fef(_0xb34f53, _0xd93dbb, _0xe6f488, _0x27a3d9, _0x2979fd) {
+        return _0x10cc(_0xd93dbb - 0x41 - 0x10d, _0x2979fd);
+      }
+      function _0x5350ed(_0x2dcdc7, _0x2caf38, _0x366fc9, _0x54b4ec, _0x174657) {
+        return _0x10cc(_0x2caf38 + 0x2a8 - 0x10d, _0x2dcdc7);
+      }
+      function _0xc06be4(_0x25cd6e, _0xc87324, _0x2ddb94, _0x31ce38, _0x31c588) {
+        return _0x10cc(_0x2ddb94 + 0x3e3 - 0x24d, _0x25cd6e);
+      }
+      function _0x5f0aaf(_0x3ccd05, _0x45b845, _0x2ba876, _0x25456d, _0x57c9a2) {
+        return _0x10cc(_0x3ccd05 + 0x151 - 0x1a5, _0x45b845);
+      }
+      const _0x3ae216 = {
+        'TNiBf': "0|3|4|2|1",
+        'fyWGi': function (_0x186dec, _0x1e261d) {
+          return _0x186dec(_0x1e261d);
+        },
+        'zgHbD': function (_0x5367f1, _0x3fe02f) {
+          return _0x5367f1(_0x3fe02f);
+        },
+        'IiSxW': function (_0x1adb5d, _0x5e3bb5) {
+          return _0x1adb5d(_0x5e3bb5);
+        },
+        'MYvcK': "*🛑 This is an owner command...*"
+      };
+      try {
+        if (!_0x438d2a) {
+          return await _0x4fc404(BOTOW);
+        }
+        _0x4fc404("Bot shutdown few 10 seconds...");
+        await sleep(10000);
+        process.exit();
+        const _0x3404c3 = {
+          text: '✅',
+          key: _0x5ea818.key
+        };
+        const _0x2c5271 = {
+          react: _0x3404c3
+        };
+        await _0x52c546.sendMessage(_0x4995ab, _0x2c5271);
+      } catch (_0x51627f) {
+        _0x4fc404("*🛑 This is an owner command...*");
+        _0x4a3d08(_0x51627f);
+      }
+    });
+    const _0x207fc4 = {
+      pattern: "block",
+      react: '🔖',
+      desc: "To block a member",
+      category: "main",
+      use: ".block",
+      filename: __filename
+    };
+    function _0x326ad7(_0x48e8b3, _0x631ffe, _0x59050b, _0x59561d, _0x20f148) {
+      return _0x10cc(_0x48e8b3 - 0x1d1, _0x59561d);
+    }
+    cmd(_0x207fc4, async (_0x10b444, _0x2e6fd1, _0x589409, {
+      from: _0x69bd9d,
+      prefix: _0x2d1a10,
+      l: _0x29424d,
+      quoted: _0x328e45,
+      body: _0x4de038,
+      isCmd: _0xaa2a5d,
+      command: _0x25e597,
+      args: _0x5c8019,
+      q: _0x25be59,
+      isGroup: _0xa0f088,
+      sender: _0x516950,
+      senderNumber: _0x4b3909,
+      botNumber2: _0x16fce0,
+      botNumber: _0x4e1df4,
+      pushname: _0x63e1c4,
+      isMe: _0x1f96c7,
+      isOwner: _0x1f4fd0,
+      groupMetadata: _0x17a930,
+      groupName: _0x421209,
+      participants: _0x3bdbd5,
+      groupAdmins: _0x3aaa95,
+      isBotAdmins: _0x2f9101,
+      isAdmins: _0x41715b,
+      reply: _0x2c20c8
+    }) => {
+      const _0x7f7a6b = {
+        'XBuOd': function (_0x1e61aa, _0x399f5f) {
+          return _0x1e61aa(_0x399f5f);
+        },
+        'QHxqV': function (_0x1f0a3d, _0x13ed10) {
+          return _0x1f0a3d + _0x13ed10;
+        },
+        'MJWUK': "@s.whatsapp.net",
+        'eIZOH': "block",
+        'Dbulc': "*Error !!*",
+        'EnbzU': function (_0x52bbcf, _0x4c9b31) {
+          return _0x52bbcf(_0x4c9b31);
+        }
+      };
+      function _0x409432(_0x4e5b14, _0x17f6e0, _0x35afba, _0x4a5de0, _0x138322) {
+        return _0x10cc(_0x4e5b14 + 0x3cc - 0x24d, _0x138322);
+      }
+      function _0x313412(_0x5a8e3d, _0x3274a6, _0x2d92ee, _0x54661a, _0x50de47) {
+        return _0x10cc(_0x54661a + 0x40 - 0x24d, _0x3274a6);
+      }
+      function _0x2a407d(_0x3125cd, _0x3c9c8f, _0x59ed0e, _0x459c15, _0x35426b) {
+        return _0x10cc(_0x3c9c8f + 0x3aa - 0xf5, _0x3125cd);
+      }
+      function _0x17a6f4(_0x4d1105, _0x36148a, _0x2ce18f, _0x36eab2, _0xb15704) {
+        return _0x10cc(_0x36148a + 0x475 - 0x10d, _0x2ce18f);
+      }
+      function _0x276f24(_0x541a44, _0x2ff4f6, _0x383b58, _0x443535, _0x2b87de) {
+        return _0x10cc(_0x443535 + 0x371 - 0xf5, _0x541a44);
+      }
+      try {
+        if (!_0x1f96c7) {
+          return await _0x2c20c8(BOTOW);
+        }
+        let _0x13f5af = _0x2e6fd1.mentionedJid ? _0x2e6fd1.mentionedJid : _0x2e6fd1.quoted ? _0x2e6fd1.quoted.sender : _0x25be59.replace(/[^0-9]/g, '') + "@s.whatsapp.net";
+        await _0x10b444.updateBlockStatus(_0x13f5af, "block").then(_0x223109 => _0x2c20c8(jsonformat(_0x223109)))["catch"](_0xe5230b => _0x2c20c8(jsonformat(_0xe5230b)));
+        const _0x328a4b = {
+          text: '✅',
+          key: _0x2e6fd1.key
+        };
+        const _0x8fe22 = {
+          react: _0x328a4b
+        };
+        await _0x10b444.sendMessage(_0x69bd9d, _0x8fe22);
+      } catch (_0x23a67f) {
+        _0x2c20c8("*Error !!*");
+        _0x29424d(_0x23a67f);
+      }
+    });
+    const _0x357ab9 = {
+      pattern: "npm",
+      react: '🔖',
+      desc: "To search npm packages",
+      category: "main",
+      use: ".npm",
+      filename: __filename
+    };
+    cmd(_0x357ab9, async (_0x3f8a69, _0x5c84cd, _0x16641e, {
+      from: _0x37347e,
+      prefix: _0x134df4,
+      l: _0x4bebb3,
+      quoted: _0x51bbe6,
+      body: _0x34e6e2,
+      isCmd: _0x2c55f3,
+      command: _0x101dff,
+      args: _0x288d54,
+      q: _0x4cccdd,
+      isGroup: _0x508ede,
+      sender: _0x14cb78,
+      senderNumber: _0xdaebf7,
+      botNumber2: _0x161432,
+      botNumber: _0x2f723f,
+      pushname: _0x3553ba,
+      isMe: _0x38a5dc,
+      isOwner: _0x523683,
+      groupMetadata: _0x36686b,
+      groupName: _0x4aef1f,
+      participants: _0x6b9843,
+      groupAdmins: _0x11e2e2,
+      isBotAdmins: _0x1ac544,
+      isAdmins: _0x12baea,
+      reply: _0x2955a0
+    }) => {
+      function _0x44428c(_0x12f7a4, _0x563041, _0x803451, _0x561f9b, _0x2fb466) {
+        return _0x10cc(_0x12f7a4 + 0x2d6 - 0x1a5, _0x803451);
+      }
+      const _0x202513 = {
+        'SXFaf': "Please give me package name.📦",
+        'qyCqt': function (_0x34a357, _0x39399f) {
+          return _0x34a357 && _0x39399f;
+        },
+        'keRPa': "*No Result Found. Sorry!!*",
+        'tnSsa': function (_0x30a511, _0x18adec) {
+          return _0x30a511(_0x18adec);
+        }
+      };
+      function _0x1b603c(_0x4e7430, _0x4a7e31, _0x2f4f37, _0x5742ee, _0x2c73ae) {
+        return _0x10cc(_0x4e7430 - 0x25c - 0xf5, _0x2c73ae);
+      }
+      function _0x49e948(_0x5c20fc, _0x10d22c, _0x58a743, _0x4a61bb, _0x47d50e) {
+        return _0x10cc(_0x47d50e + 0x53b - 0x1a5, _0x5c20fc);
+      }
+      function _0xb92f17(_0x1aff89, _0x93fb55, _0x21461d, _0x35579b, _0x5e3007) {
+        return _0x10cc(_0x35579b + 0x513 - 0x1d1, _0x5e3007);
+      }
+      function _0x1f5842(_0x5000fa, _0x28370d, _0x500540, _0x681989, _0x3971b3) {
+        return _0x10cc(_0x28370d - 0xce - 0xf5, _0x5000fa);
+      }
+      try {
+        if (!_0x4cccdd) {
+          return _0x5c84cd.reply("Please give me package name.📦");
+        }
+        const {
+          data: _0xeda396
+        } = await axios.get("https://api.npms.io/v2/search?q=" + _0x4cccdd);
+        let _0x46d1b1 = _0xeda396.results.map(({
+          package: _0x2fab38
+        }) => '*' + _0x2fab38.name + "* (v" + _0x2fab38.version + ")\n_" + _0x2fab38.links.npm + "_\n_" + _0x2fab38.description + '_').join("\n\n")?.["trim"]();
+        if (_0xeda396 && _0x46d1b1) {
+          await _0x5c84cd.reply(_0x46d1b1);
+        } else {
+          await _0x5c84cd.reply("*No Result Found. Sorry!!*");
+        }
+        const _0x2bb254 = {
+          text: '✅',
+          key: _0x5c84cd.key
+        };
+        const _0x3433ae = {
+          react: _0x2bb254
+        };
+        await _0x3f8a69.sendMessage(_0x37347e, _0x3433ae);
+      } catch (_0x3146de) {
+        await console.error(_0x3146de + "\n\ncommand : npm", _0x3146de);
+        _0x4bebb3(_0x3146de);
+      }
+    });
+    const _0x194402 = {
+      on: "body"
+    };
+    cmd(_0x194402, async (_0x19132e, _0x298658, _0x3ad81b, {
+      from: _0x880507,
+      prefix: _0x42819e,
+      l: _0x3e1dc6,
+      quoted: _0x1a7181,
+      body: _0x1acb17,
+      isCmd: _0x5b8598,
+      command: _0x38c1f9,
+      args: _0x33d8ba,
+      q: _0x192857,
+      isGroup: _0x4dbbd2,
+      sender: _0x275acf,
+      senderNumber: _0x66cbbb,
+      botNumber2: _0x2b739c,
+      botNumber: _0x550af7,
+      pushname: _0x19b6e0,
+      isMe: _0x507ff1,
+      isOwner: _0x40f1a6,
+      groupMetadata: _0x5ec936,
+      groupName: _0x4e3e1a,
+      participants: _0x2039f2,
+      groupAdmins: _0x296407,
+      isBotAdmins: _0x14a2d8,
+      isAdmins: _0x423015,
+      reply: _0x51ce05
+    }) => {
+      function _0x195c5d(_0x3aa367, _0x1189e, _0x2ab2a9, _0xe8cbc8, _0x10481a) {
+        return _0x10cc(_0x3aa367 - 0x127 - 0x10d, _0x2ab2a9);
+      }
+      const _0x2caabb = {};
+      function _0x1ff255(_0x25bc55, _0x576f1d, _0x2c156d, _0x5c0016, _0x166a24) {
+        return _0x10cc(_0x25bc55 + 0x3bf - 0x10d, _0x576f1d);
+      }
+      function _0x5ea71f(_0x493b25, _0x2d385d, _0x4b48b6, _0x56488a, _0xe7fa71) {
+        return _0x10cc(_0x4b48b6 + 0x271 - 0x10d, _0x2d385d);
+      }
+      _0x2caabb.nlkLX = function (_0x5611ad, _0x587ac3) {
+        return _0x5611ad === _0x587ac3;
+      };
+      function _0x6f8a2f(_0xf4fe32, _0x221eef, _0x1777db, _0x13c233, _0x506e2b) {
+        return _0x10cc(_0x1777db - 0x18 - 0x24d, _0x506e2b);
+      }
+      _0x2caabb.cabji = "true";
+      _0x2caabb.iQiFw = function (_0x515b8b, _0x347482) {
+        return _0x515b8b * _0x347482;
+      };
+      function _0x514eed(_0x491d7b, _0x27135b, _0x336299, _0xcedcf5, _0xe02c62) {
+        return _0x10cc(_0xe02c62 + 0x1ff - 0x1d1, _0x27135b);
+      }
+      if (_0x2caabb.nlkLX(config.AUTO_REACT, _0x2caabb.cabji)) {
+        const _0xa55421 = ['❤', '💕', '😻', '🧡', '💛', '💚', '💙', '💜', '🖤', '❣', '💞', '💓', '💗', '💖', '💘', '💝', '💟', '♥', '💌', '🙂', '🤗', '😌', '😉', '🤗', '😊', '🎊', '🎉', '🎁', '🎈', '👋'];
+        const _0xfa2f26 = _0xa55421[Math.floor(_0x2caabb.iQiFw(Math.random(), _0xa55421.length))];
+        const _0xfa5790 = {
+          text: _0xfa2f26,
+          key: _0x298658.key
+        };
+        const _0x13919e = {
+          react: _0xfa5790
+        };
+        _0x19132e.sendMessage(_0x880507, _0x13919e);
+      }
+    });
+    const _0x1fbdba = {
+      pattern: "restart",
+      react: '♻️',
+      desc: "restart bot",
+      category: "owner"
+    };
+    function _0x3b0cb0(_0x32ed4a, _0x15f0b8, _0x43011c, _0x22e356, _0x2600bd) {
+      return _0x10cc(_0x15f0b8 - 0x24d, _0x43011c);
+    }
+    _0x1fbdba.use = ".restart";
+    _0x1fbdba.filename = __filename;
+    cmd(_0x1fbdba, async (_0x5e0fc1, _0x5e8675, _0x402084, {
+      from: _0x27450c,
+      l: _0x383866,
+      quoted: _0x46afb7,
+      body: _0xcc1b04,
+      isCmd: _0x52c3e7,
+      command: _0x4080db,
+      args: _0x694ac,
+      q: _0x3ed427,
+      isGroup: _0x388b33,
+      sender: _0x326998,
+      senderNumber: _0x3ce9e4,
+      botNumber2: _0x25a6c1,
+      botNumber: _0x348e81,
+      pushname: _0x14d6c9,
+      isMe: _0x2863be,
+      isOwner: _0x11396e,
+      groupMetadata: _0x57d6a2,
+      groupName: _0x29620c,
+      participants: _0x3bdd18,
+      isItzcp: _0x24139d,
+      groupAdmins: _0x4e9383,
+      isBotAdmins: _0x54f269,
+      isAdmins: _0x303a5c,
+      reply: _0x308880,
+      react: _0x302cc2
+    }) => {
+      function _0x2f04e6(_0x3690d9, _0x52c8f7, _0x4f7b51, _0x2ca566, _0x227e2f) {
+        return _0x10cc(_0x2ca566 - 0x183 - 0x1d1, _0x52c8f7);
+      }
+      function _0x1aeadc(_0x5a9784, _0xd4a2bd, _0xbdbb15, _0x1f7613, _0x12daad) {
+        return _0x10cc(_0xbdbb15 + 0x3fe - 0xf5, _0x5a9784);
+      }
+      function _0x1bbc2e(_0x20d5fc, _0x1d20db, _0x5a0bd5, _0x4696d2, _0x5bf286) {
+        return _0x10cc(_0x4696d2 + 0xd2 - 0x1d1, _0x20d5fc);
+      }
+      function _0x2f29be(_0x4a44e1, _0x54726f, _0x4b3b2d, _0x633db5, _0x4f4a75) {
+        return _0x10cc(_0x4a44e1 + 0x390 - 0x1a5, _0x54726f);
+      }
+      const _0x4e9c0d = {
+        'ASVrQ': function (_0x1ca46b, _0x58cabe) {
+          return _0x1ca46b(_0x58cabe);
+        },
+        'uiUIG': "*Error !!*"
+      };
+      function _0x2f35c7(_0x303c85, _0x1c226b, _0x105d17, _0x292b78, _0x133c8f) {
+        return _0x10cc(_0x292b78 + 0x279 - 0xf5, _0x105d17);
+      }
+      try {
+        if (!_0x11396e) {
+          return;
+        }
+        const _0x44010a = {
+          text: mg.restartmg
+        };
+        const _0x4ad166 = {
+          quoted: _0x5e8675
+        };
+        await _0x5e0fc1.sendMessage(_0x402084.chat, _0x44010a, _0x4ad166);
+        process.exit(143);
+      } catch (_0x1dc029) {
+        _0x308880("*Error !!*");
+        _0x383866(_0x1dc029);
+      }
+    });
