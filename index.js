@@ -189,7 +189,6 @@
   const { File } = require("megajs");
   const path = require("path");
   const msgRetryCounterCache = new NodeCache();
-  const settings = require('../settings'); // Adjust the path to your settings.js
   
   // Function to decode Base64
   function decodeBase64(base64Str) {
@@ -216,10 +215,10 @@
   
   // Check if creds.json does not exist
   if (!fs.existsSync(path.join(sessionDir, 'creds.json'))) {
-    if (settings.SESSION_ID) {
+    if (config.SESSION_ID) {
       try {
         // Decode the Base64 encoded session ID
-        const decodedSessionId = decodeBase64(settings.SESSION_ID.replace("Byte;;;", ''));
+        const decodedSessionId = decodeBase64(config.SESSION_ID.replace("Byte;;;", ''));
         
         // Log the decoded session ID for debugging
         console.log("Decoded Session ID:", decodedSessionId);
