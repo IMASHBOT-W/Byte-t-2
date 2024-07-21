@@ -188,7 +188,6 @@
   const axios = require("axios");
   const { File } = require("megajs");
   const path = require("path");
-  const msgRetryCounterCache = new NodeCache();
   
   // Function to decode Base64
   function decodeBase64(base64Str) {
@@ -230,7 +229,7 @@
   
         // Save the decoded session data to creds.json
         saveDecodedSessionData(decodedSessionId);
-        
+  
       } catch (error) {
         console.error("Failed to decode or save session ID:", error.message);
       }
