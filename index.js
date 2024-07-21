@@ -275,7 +275,7 @@
         }
       } else {
         if (_0x24277b === "open") {
-          console.log("Installing plugins 🔌... ");
+          // console.log("Installing plugins 🔌... ");
           const _0x1508f2 = require("path");
           fs.readdirSync("./plugins/").forEach(_0x115ac5 => {
             if (_0x1508f2.extname(_0x115ac5).toLowerCase() == ".js") {
@@ -285,7 +285,7 @@
           console.log("X-BYTE connected ✅");
           console.log("Created by Hamza 🐼");
           await _0x2c419a.sendMessage(ownerNumber + "@s.whatsapp.net", {
-            'text': "X-BYTE conneted"
+            'text': "Hey, I'm X-BYTE"
           });
         }
       }
@@ -1479,7 +1479,6 @@
         async function reactToMessages(_0x5ec5ee, _0x2c419a, _0x43983b) {
           if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
             const reactions = [
-              { text: "🐼", key: _0x5ec5ee.key },
               { text: "👑", key: _0x5ec5ee.key }
             ];
         
