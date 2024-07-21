@@ -1493,86 +1493,32 @@
             }
           }
         }
-        if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
-          const _0x52a81c = {
-            text: "💟️",
-            key: mem.key
-          };
-          const _0x48e6c8 = {
-            react: _0x52a81c
-          };
-          await _0x2c419a.sendMessage(_0x43983b, _0x48e6c8);
+        const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+        async function reactToMessages(_0x5ec5ee, _0x2c419a, _0x43983b) {
+          if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
+            const reactions = [
+              { text: "💟️", key: _0x5ec5ee.key },
+              { text: '🖤', key: _0x5ec5ee.key },
+              { text: '🤍', key: _0x5ec5ee.key },
+              { text: '⚕️', key: _0x5ec5ee.key },
+              { text: '🐋', key: _0x5ec5ee.key },
+              { text: "🧜‍♂", key: _0x5ec5ee.key },
+              { text: '⚜️', key: _0x5ec5ee.key },
+              { text: "👨‍💻", key: _0x5ec5ee.key }
+            ];
+        
+            for (const reaction of reactions) {
+              const _0x48e6c8 = { react: reaction };
+              await _0x2c419a.sendMessage(_0x43983b, _0x48e6c8);
+              await delay(1000); // 1 second delay between each reaction
+            }
+          }
         }
-        if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
-          const _0x25841b = {
-            text: '🖤',
-            key: _0x5ec5ee.key
-          };
-          const _0x52fa07 = {
-            react: _0x25841b
-          };
-          await _0x2c419a.sendMessage(_0x43983b, _0x52fa07);
-        }
-        if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
-          const _0x472ce0 = {
-            text: '🤍',
-            key: _0x5ec5ee.key
-          };
-          const _0x5eb446 = {
-            react: _0x472ce0
-          };
-          await _0x2c419a.sendMessage(_0x43983b, _0x5eb446);
-        }
-        if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
-          const _0x25db97 = {
-            text: '⚕️',
-            key: _0x5ec5ee.key
-          };
-          const _0x5258e8 = {
-            react: _0x25db97
-          };
-          await _0x2c419a.sendMessage(_0x43983b, _0x5258e8);
-        }
-        if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
-          const _0x2f267d = {
-            text: '🐋',
-            key: _0x5ec5ee.key
-          };
-          const _0x17a6b1 = {
-            react: _0x2f267d
-          };
-          await _0x2c419a.sendMessage(_0x43983b, _0x17a6b1);
-        }
-        if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
-          const _0x421543 = {
-            text: "🧜‍♂",
-            key: _0x5ec5ee.key
-          };
-          const _0x5b47ab = {
-            react: _0x421543
-          };
-          await _0x2c419a.sendMessage(_0x43983b, _0x5b47ab);
-        }
-        if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
-          const _0x5d9d82 = {
-            text: '⚜️',
-            key: _0x5ec5ee.key
-          };
-          const _0x368593 = {
-            react: _0x5d9d82
-          };
-          await _0x2c419a.sendMessage(_0x43983b, _0x368593);
-        }
-        if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
-          const _0x5f21c8 = {
-            text: "🐼",
-            key: _0x5ec5ee.key
-          };
-          const _0x2b7ade = {
-            react: _0x5f21c8
-          };
-          await _0x2c419a.sendMessage(_0x43983b, _0x2b7ade);
-        }
+        
+        // Call the function with your parameters
+        reactToMessages(_0x5ec5ee, _0x2c419a, _0x43983b);
+        
         if (config.WELCOME === "true") {
           _0x2c419a.ev.on("group-participants.update", async _0x4d7dcb => {
             console.log(_0x4d7dcb);
