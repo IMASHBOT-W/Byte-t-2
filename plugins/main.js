@@ -279,7 +279,7 @@
               }
             }
           }
-          const _0x32d4b0 = "*╭──〖 X-BYTE 〗────╮*\n| *Prefix:* "+"[ "+ xprefix +" ]" +  "\n| *Memory:* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n| *Runtime:* " + runtime(process.uptime())+"\n\n";
+          const _0x32d4b0 = "*╭──〖 X-BYTE 〗────╮*\n| *Prefix:* "+"[ "+ xprefix +" ]" +  "\n| *Memory:* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n| *Runtime:* " + runtime(process.uptime());
           const _0x463791 = [];
           const _0x181fa0 = new Map();
           for (let _0x37434c = 0; _0x37434c < 1; _0x37434c++) {
@@ -677,7 +677,7 @@
             }
           }
           ;
-          let _0x8e9c18 = "*╭──〖 X-BYTE 〗──╮*\n*│o: Prefix:* "+"[ "+ xprefix +" ]"+ "\n*│o:Run Time:* " + runtime(process.uptime()) + " \n*│o:Ram usage:* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n*╰──────────●●►*\n*X-BYTE COMMANDS*\n *╭──────────●●►*\n\n\n\n *│ DOWNLOAD COMMANDS*\n\n" + _0x1f9061 + "*╰───────────●●►*\n *╭──────────●●►*\n *│ SEARCH COMMANDS*\n\n" + _0x3ea1e0 + "*╰───────────●●►*\n *╭──────────●●►*\n *│ CONVERT COMMANDS*\n\n" + _0x2ace9b + "*╰───────────●●►*\n *╭──────────●●►*\n *│ LOGO COMMANDS*\n\n" + _0x4046ab + "*╰───────────●●►*\n *╭──────────●●►*\n *│ MAIN COMMANDS*\n\n" + _0x9abccf + "*╰───────────●●►*\n *╭──────────●●►*\n *│ GROUP COMMANDS*\n\n" + _0x8d8eb5 + "*╰───────────●●►*\n *╭──────────●●►*\n *│ BUG COMMANDS*\n\n" + _0x253600 + "*╰───────────●●►*\n *╭──────────●●►*\n *│ OTHER COMMANDS*\n\n" + _0x5829ec + "*╰───────────●●►*\t\n\n *POWERED BY TALKDROVE*";
+          let _0x8e9c18 = "*╭──〖 X-BYTE 〗──╮*\n*│o: Prefix:* "+"[ "+ xprefix +" ]"+ "\n*│o:Run Time:* " + runtime(process.uptime()) + " \n*│o:Ram usage:* " + (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB / " + Math.round(require('os').totalmem / 1024 / 1024) + "MB\n*╰──────────●●►*\n*X-BYTE COMMANDS*\n *╭──────────●●►*\n *│ DOWNLOAD COMMANDS*\n\n\n\n\n\n" + _0x1f9061 + "*╰───────────●●►*\n *╭──────────●●►*\n *│ SEARCH COMMANDS*\n\n" + _0x3ea1e0 + "*╰───────────●●►*\n *╭──────────●●►*\n *│ CONVERT COMMANDS*\n\n" + _0x2ace9b + "*╰───────────●●►*\n *╭──────────●●►*\n *│ LOGO COMMANDS*\n\n" + _0x4046ab + "*╰───────────●●►*\n *╭──────────●●►*\n *│ MAIN COMMANDS*\n\n" + _0x9abccf + "*╰───────────●●►*\n *╭──────────●●►*\n *│ GROUP COMMANDS*\n\n" + _0x8d8eb5 + "*╰───────────●●►*\n *╭──────────●●►*\n *│ BUG COMMANDS*\n\n" + _0x253600 + "*╰───────────●●►*\n *╭──────────●●►*\n *│ OTHER COMMANDS*\n\n" + _0x5829ec + "*╰───────────●●►*\t\n\n *POWERED BY TALKDROVE*";
           const _0x1150b3 = {
             url: config.LOGO
           };
