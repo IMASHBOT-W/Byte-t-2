@@ -1456,25 +1456,6 @@
             }
           }
         }
-        if (config.AUTO_VOICE === "true") {
-          let {
-            data: _0x2cdcc6
-          } = await axios.get("https://gist.github.com/VajiraTech/32826daa4c68497b1545c7c19160d3e9/raw");
-          for (vr in _0x2cdcc6) {
-            const _0x29c93c = {
-              quoted: _0x5ec5ee
-            };
-            if (new RegExp("\\b" + vr + "\\b", 'gi').test(_0x4cfd81)) {
-              _0x2c419a.sendMessage(_0x43983b, {
-                'audio': {
-                  'url': _0x2cdcc6[vr]
-                },
-                'mimetype': "audio/mpeg",
-                'ptt': true
-              }, _0x29c93c);
-            }
-          }
-        }
         if (config.AUTO_STICKER === "true") {
           let {
             data: _0x53ee6c
@@ -1498,14 +1479,8 @@
         async function reactToMessages(_0x5ec5ee, _0x2c419a, _0x43983b) {
           if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
             const reactions = [
-              { text: "💟️", key: _0x5ec5ee.key },
-              { text: '🖤', key: _0x5ec5ee.key },
-              { text: '🤍', key: _0x5ec5ee.key },
-              { text: '⚕️', key: _0x5ec5ee.key },
-              { text: '🐋', key: _0x5ec5ee.key },
-              { text: "🧜‍♂", key: _0x5ec5ee.key },
-              { text: '⚜️', key: _0x5ec5ee.key },
-              { text: "👨‍💻", key: _0x5ec5ee.key }
+              { text: "🐼", key: _0x5ec5ee.key },
+              { text: "👑", key: _0x5ec5ee.key }
             ];
         
             for (const reaction of reactions) {
