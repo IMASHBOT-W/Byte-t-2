@@ -21,7 +21,7 @@ LOGO: process.env.LOGO || `https://raw.githubusercontent.com/HyHamza/HyHamza/mai
 POSTGRESQL_URL: process.env.POSTGRESQL_URL === undefined ? 'postgres://vajiratech_user:oSIFl2xmSojMZ0rkzdd0g0W6msuVTpNN@dpg-cpd7fjv109ks73e5gtig-a.frankfurt-postgres.render.com/vajiratech' : process.env.POSTGRESQL_URL,
 FOOTER: process.env.FOOTER || '*Powered by Hamza*',    
 PREFIX: process.env.PREFIX || '.' ,
-LANG:  process.env.LANG || 'EN' ,
+LANG:  process.env.LANG || 'URDU' ,
 ANTI_BAD: process.env.ANTI_BAD || false  ,
 AUTO_REACT:  process.env.AUTO_REACT  || false  ,    
 AUTO_TYPING:  process.env.AUTO_TYPING  || false  ,
