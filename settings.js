@@ -16,7 +16,7 @@ travaSend: process.env.TRAVA_SEND || '25' ,
 MODERATORS : process.env.MODERATORS === undefined ? "923072380380" : process.env.MODERATORS ,    
 MAX_SIZE: process.env.MAX_SIZE === undefined ? '1536': process.env.MAX_SIZE,/*add this in megabytes*/    
 OWNER_NAME: process.env.OWNER_NAME || 'Hamza' ,
-COMMAND_TYPE: process.env.COMMAND_TYPE || 'button' ,
+COMMAND_TYPE: process.env.COMMAND_TYPE || 'nonbutton' ,
 LOGO: process.env.LOGO || `https://raw.githubusercontent.com/HyHamza/HyHamza/main/Images/XByte-logo.png` ,
 POSTGRESQL_URL: process.env.POSTGRESQL_URL === undefined ? 'postgres://vajiratech_user:oSIFl2xmSojMZ0rkzdd0g0W6msuVTpNN@dpg-cpd7fjv109ks73e5gtig-a.frankfurt-postgres.render.com/vajiratech' : process.env.POSTGRESQL_URL,
 FOOTER: process.env.FOOTER || '*Powered by Hamza*',    
