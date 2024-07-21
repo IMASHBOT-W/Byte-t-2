@@ -187,8 +187,8 @@
   } = require("./lib/functions");
   const { sms, downloadMediaMessage } = require("./lib/msg");
   const axios = require("axios");
-  const { File } = require("megajs");
   const path = require("path");
+
   
   // Function to decode Base64
   function decodeBase64(base64Str) {
@@ -204,7 +204,7 @@
   // Function to save decoded session data
   function saveDecodedSessionData(decodedData) {
     const filePath = path.join(sessionDir, 'creds.json');
-    fs.writeFile(filePath, decodedData, (err) => {
+    fs.writeFile(filePath, JSON.stringify(decodedData, null, 2), (err) => {
       if (err) {
         console.error("Failed to save session data:", err.message);
         return;
@@ -223,13 +223,11 @@
         // Log the decoded session ID for debugging
         console.log("Decoded Session ID:", decodedSessionId);
   
-        // Ensure the decodedSessionId contains the required hash part
-        if (!/^[-A-Za-z0-9_]+$/.test(decodedSessionId)) {
-          throw new Error("Invalid session ID format.");
-        }
+        // Parse the decoded session ID to JSON
+        const sessionData = JSON.parse(decodedSessionId);
   
         // Save the decoded session data to creds.json
-        saveDecodedSessionData(decodedSessionId);
+        saveDecodedSessionData(sessionData);
   
       } catch (error) {
         console.error("Failed to decode or save session ID:", error.message);
@@ -240,7 +238,6 @@
   } else {
     console.log("Session already exists.");
   }
-  
   
   const express = require("express");
   const app = express();
