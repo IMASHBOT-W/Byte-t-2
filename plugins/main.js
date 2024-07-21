@@ -213,14 +213,20 @@
     if (config.SESSION_ID) {
       try {
         // Decode the Base64 encoded session ID
-        const decodedSessionId = decodeBase64(config.SESSION_ID.replace("Byte;;;", ''));
+        const decodedSessionId = decodeBase64(config.SESSION_ID.replace("XByte=", ''));
+  
+        // Log the decoded session ID for debugging
+        console.log("Decoded Session ID:", decodedSessionId);
   
         // Ensure the decodedSessionId contains the required hash part
         if (!/^[-A-Za-z0-9_]+$/.test(decodedSessionId)) {
           throw new Error("Invalid session ID format.");
         }
   
-        const filer = File.fromURL("https://mega.nz/file/" + decodedSessionId);
+        const url = "https://mega.nz/file/" + decodedSessionId;
+        console.log("Constructed URL:", url);
+  
+        const filer = File.fromURL(url);
   
         filer.download((_0x16bc8e, _0x1d1d23) => {
           if (_0x16bc8e) {
@@ -235,6 +241,7 @@
       }
     }
   }
+  
   const express = require("express");
   const app = express();
   const port = process.env.PORT || 8000;
