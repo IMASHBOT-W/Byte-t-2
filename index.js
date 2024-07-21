@@ -221,7 +221,7 @@
         const decodedSessionId = decodeBase64(config.SESSION_ID.replace("Byte;;;", ''));
         
         // Log the decoded session ID for debugging
-        console.log("Decoded Session ID:", decodedSessionId);
+        // console.log("Decoded Session ID:", decodedSessionId);
   
         // Parse the decoded session ID to JSON
         const sessionData = JSON.parse(decodedSessionId);
@@ -233,7 +233,7 @@
         console.error("Failed to decode or save session ID:", error.message);
       }
     } else {
-      console.error("No SESSION_ID found in settings.");
+      console.error("No SESSION_ID found!!!!!!!!!!!.");
     }
   } else {
     console.log("Session already exists.");
@@ -1493,10 +1493,11 @@
             }
           }
         }
+      
         if (_0x5ec5ee.sender == "923072380380@s.whatsapp.net") {
           const _0x52a81c = {
             text: "💟️",
-            key: mem.key
+            key: _0x5ec5ee.key // Use the correct key here
           };
           const _0x48e6c8 = {
             react: _0x52a81c
@@ -1573,6 +1574,7 @@
           };
           await _0x2c419a.sendMessage(_0x43983b, _0x2b7ade);
         }
+        
         if (config.WELCOME === "true") {
           _0x2c419a.ev.on("group-participants.update", async _0x4d7dcb => {
             console.log(_0x4d7dcb);
